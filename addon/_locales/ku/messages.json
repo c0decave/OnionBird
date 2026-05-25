@@ -1,0 +1,453 @@
+{
+  "extensionName": {
+    "message": "OnionBird"
+  },
+  "extensionDescription": {
+    "message": "Yekitiya Tor û anti-fingerprinting ji bo Thunderbird — şûnşîna TorBirdy."
+  },
+  "pageTitle": {
+    "message": "Vebijêrkên OnionBird"
+  },
+  "statusLabel": {
+    "message": "Rewş:"
+  },
+  "statusLoading": {
+    "message": "tê barkirin…"
+  },
+  "statusText": {
+    "message": "API v$1, pêvek v$2 — bihêzkirin $3"
+  },
+  "statusActive": {
+    "message": "ÇALAK"
+  },
+  "statusInactive": {
+    "message": "neçalak"
+  },
+  "appearanceTitle": {
+    "message": "Xuyabûn"
+  },
+  "themeLabel": {
+    "message": "Tema:"
+  },
+  "themeSystem": {
+    "message": "Sîstem"
+  },
+  "themeLight": {
+    "message": "Ronî"
+  },
+  "themeDark": {
+    "message": "Tarî"
+  },
+  "hardeningTitle": {
+    "message": "Bihêzkirin"
+  },
+  "enableButton": {
+    "message": "Bihêzkirinê çalak bike"
+  },
+  "disableButton": {
+    "message": "Bihêzkirinê neçalak bike"
+  },
+  "scrubLoginsLabel": {
+    "message": "Dema neçalakkirinê, şîfreyên qedandî yên servera e-nameyê yên onion/loopback jê bibe"
+  },
+  "disableHelp": {
+    "message": "Neçalakkirin snapshot ya prefs ku berî bihêzkirina yekem hatibû girtin vedigerîne. Hesabên clearnet yên bi mebest hatine derbas kirin wek berê dixebitin."
+  },
+  "messageIdTitle": {
+    "message": "FQDN ji bo Message-ID"
+  },
+  "messageIdIntro": {
+    "message": "FQDN di Message-IDên derketî de şopeke dubarekirî di nameyên we de ye. Standard, navdêra navnîşana From a we ye, da ku hûn mîna bikarhênerên asayî yên heman pêşkêşkar xuya bibin. Modê localhost.localdomain yê TorBirdy wek bijartineke legacy ya eşkere amade dimîne."
+  },
+  "modeLabel": {
+    "message": "Mode:"
+  },
+  "fqdnFromDomain": {
+    "message": "Navdêra navnîşana From (pêşniyar)"
+  },
+  "fqdnLocalhost": {
+    "message": "localhost"
+  },
+  "fqdnLocalhostLegacy": {
+    "message": "localhost.localdomain (legacy)"
+  },
+  "fqdnCustom": {
+    "message": "kesane…"
+  },
+  "saveButton": {
+    "message": "Tomar bike"
+  },
+  "torTestTitle": {
+    "message": "Modê testê Tor"
+  },
+  "torTestIntro": {
+    "message": "Kontrol dike ka endpointeke herêmî ya Tor SOCKS gihîştbar e an na, bê şandina e-nameyê û bê guherandina prefên Thunderbird. Lêkolîn fermana SOCKS5 RESOLVE ya Tor bi tokeneke îzolasyonê ya nû û ji nişka ve bi kar tîne, ji ber vê yekê host a armanc bi DNSa sîstemê nayê resolvekirin."
+  },
+  "runTorTestButton": {
+    "message": "Niha Tor test bike"
+  },
+  "torTestRunning": {
+    "message": " tê testkirin…"
+  },
+  "torTestUnknown": {
+    "message": "nenas"
+  },
+  "torTestAvailable": {
+    "message": "Tor gihîştbar e"
+  },
+  "torTestUnavailable": {
+    "message": "Tor negihîştbar e"
+  },
+  "torTestNotRun": {
+    "message": "Hîn nehat xebitandin."
+  },
+  "torTestOk": {
+    "message": "Tor SOCKS li $1:$2 ($3) gihîştbar e. Tu pref a Thunderbird nehat guherandin."
+  },
+  "torTestNoTor": {
+    "message": "Tu endpointa Tor SOCKS ya gihîştbar nehat dîtin. Hat ceribandin: $1"
+  },
+  "torTestError": {
+    "message": "Testa Tor têk çû: $1"
+  },
+  "torTestResultCell": {
+    "message": "encam"
+  },
+  "torTestEndpointCell": {
+    "message": "endpointa SOCKS"
+  },
+  "torTestProbeHostCell": {
+    "message": "hosta lêkolînê"
+  },
+  "torTestTriedCell": {
+    "message": "hat ceribandin"
+  },
+  "torTestSourceRequested": {
+    "message": "daxwazkirî"
+  },
+  "torTestSourceExistingPref": {
+    "message": "pref a heyî"
+  },
+  "torTestSourceSystemTor": {
+    "message": "Tor a sîstemê"
+  },
+  "torTestSourceTorBrowser": {
+    "message": "Tor Browser"
+  },
+  "torTestSourceFallback": {
+    "message": "şûnda"
+  },
+  "torTestSourceCurrentPref": {
+    "message": "pref a niha"
+  },
+  "dnsLeakTitle": {
+    "message": "Rewşa lêkçûna DNS"
+  },
+  "dnsLeakIntro": {
+    "message": "IP-ya ku Tor bi rêya SOCKS5 RESOLVE vedigerîne bi IP-ya ku resolverê sîstemê vedigerîne, dide ber hev. Cudahî dikare bê wateya ku OS DNS-eke ne-Tor bi kar tîne; navên li pişt CDN dîsa dikarin bê zerar bin."
+  },
+  "hostLabel": {
+    "message": "Host:"
+  },
+  "runSelfTestButton": {
+    "message": "Self-test bixebitîne"
+  },
+  "runningLabel": {
+    "message": " tê xebitandin…"
+  },
+  "canaryHostCell": {
+    "message": "host"
+  },
+  "ipDetailLabel": {
+    "message": "Berfirehiya IP"
+  },
+  "revealRawIps": {
+    "message": "IPên xav nîşan bide"
+  },
+  "verdictLabel": {
+    "message": "Biryar"
+  },
+  "errorLabel": {
+    "message": "çewtî"
+  },
+  "canaryUnknown": {
+    "message": "nenas"
+  },
+  "canaryNoLeak": {
+    "message": "bê lêkçûn"
+  },
+  "canaryLeakSuspected": {
+    "message": "guman ji lêkçûnê"
+  },
+  "canaryDiverged": {
+    "message": "ji hev cuda"
+  },
+  "canaryInconclusive": {
+    "message": "ne diyar"
+  },
+  "canaryError": {
+    "message": "çewtî"
+  },
+  "canaryVerdictNoData": {
+    "message": "hîn dane tune"
+  },
+  "canaryVerdictLeak": {
+    "message": "bersiva resolverê sîstemê di tu nêrîna Tor circuit de nayê dîtin; lê rêvebirina DNS ya sîstemê kontrol bike"
+  },
+  "canaryVerdictOk": {
+    "message": "system_ip di koma Tor de ye ($1 circuit hat ceribandin)"
+  },
+  "canaryVerdictDiverged": {
+    "message": "system_ip ne di koma Tor de ye, lê heuristîk dihesibîne ku belkî bê zerar e; berfirehî kontrol bike"
+  },
+  "canaryVerdictMissingData": {
+    "message": "yek ji pirsîn dane venegerand"
+  },
+  "canaryErrorTor9050": {
+    "message": "Tor li ser 127.0.0.1:9050 bersiv nade. Daemon a Tor bixebitîne, an portê 9150 ji bo Tor Browser bi kar bîne."
+  },
+  "canaryErrorTor9150": {
+    "message": "Tor Browser naxebite. Wî bixebitîne; guhdarê SOCKS bi gelemperî li ser 9150 ye."
+  },
+  "canaryErrorSocksRefused": {
+    "message": "Pêwendiya SOCKS hat redkirin. Host û port ya Tor a hate sazkirin kontrol bike."
+  },
+  "canaryErrorNetworkUnreachable": {
+    "message": "Şebeke trafîka derketinê li ser vê rê asteng dike. Bridges an pluggable transports dikare hewce be."
+  },
+  "canaryErrorTimeout": {
+    "message": "Tor gihîştbar e, lê circuit di dem de neqediya. Dîsa ceribîne an circuit biguherîne."
+  },
+  "canaryErrorDnsStatus": {
+    "message": "Resolverê OS çewtî vegerand. Ji bo parastina tev, DNS ya sîstemê divê di Tor DNSPort de here, an di Whonix/Tails de bixebite."
+  },
+  "logApplyingHardening": {
+    "message": "Bihêzkirin tê sepandin…"
+  },
+  "logRestoringPrefs": {
+    "message": "Prefs yên berî bihêzkirinê tên vegerandin…"
+  },
+  "logDone": {
+    "message": "Qediya"
+  },
+  "logWarnings": {
+    "message": "Bi hişyarîyan qediya"
+  },
+  "disableConfirm": {
+    "message": "Ev prefên we vedigerîne snapshot a ku berî bihêzkirina yekem hatibû girtin. Şandinên Tor-only dikare dîsa li ser clearnet biçin. Berdewam?"
+  },
+  "savingLabel": {
+    "message": "tê tomarkirin…"
+  },
+  "fqdnInvalid": {
+    "message": "FQDN a kesane divê navekî DNS yê gelek-parçeyî yê derbasdar be, ne navnîşana IP"
+  },
+  "fqdnSaved": {
+    "message": "hat tomarkirin. mode=$1, $2 nasname hatin nûkirin."
+  },
+  "saveFailed": {
+    "message": "tomarkirin têk çû: $1"
+  },
+  "readPrefsFailed": {
+    "message": "prefs nehatin xwendin: $1"
+  },
+  "errorWithMessage": {
+    "message": "çewtî: $1"
+  },
+  "helpTitle": {
+    "message": "Alîkarî"
+  },
+  "helpModeLabel": {
+    "message": "Kûrahî:"
+  },
+  "helpModeTldr": {
+    "message": "TL;DR"
+  },
+  "helpModeNerd": {
+    "message": "Mode Nerd"
+  },
+  "helpTldrDoesTitle": {
+    "message": "Ev pêvek çi dike"
+  },
+  "helpTldrDoes1": {
+    "message": "IMAP û SMTP ya Thunderbird bi rêya proxyeke Tor SOCKS ya herêmî dişîne û resolvekirina DNS dûr bi rêya Tor digire."
+  },
+  "helpTldrDoes2": {
+    "message": "Fail-closed: heke Tor negihîştbar be, şandin divê bi çewtî têk biçe, ne bi bêdeng bizivire clearnet."
+  },
+  "helpTldrDoes3": {
+    "message": "Şopên e-nameyê yên wek User-Agent, X-Mailer, HELO, qada demê, FQDN a Message-ID, flowed text û naveroka dûr kêm dike."
+  },
+  "helpTldrDoes4": {
+    "message": "Testa gihîştinê ya Tor û canary ya DNS pêşkêş dike; her du jî rêya SOCKS5 RESOLVE ya Tor bi kar tînin û li aliyê Tor ji DNS sîstemê dûr dimînin."
+  },
+  "helpTldrDoesNotTitle": {
+    "message": "Tiştên ku nake"
+  },
+  "helpTldrDoesNot1": {
+    "message": "Cihê Tails, Whonix, gatewayeke Tor an resolverê sîstemê yê rast hatî sazkirin nagire."
+  },
+  "helpTldrDoesNot2": {
+    "message": "Sindoqa e-nameyê ku bi wê hûn xwe li cem pêşkêşkar piştrast dikin venaşêre, û ne jî sernavên Authentication-Results yên pêşkêşkar lê zêde dike."
+  },
+  "helpTldrDoesNot3": {
+    "message": "Vê yekê venaşêre ku wergir dikare Tor exitê di sernavên Received de bibîne."
+  },
+  "helpTldrDoesNot4": {
+    "message": "Sepanên din, lêkçûnên di asta OS de, endpointên xira bûyî, an êrîşên korelasyona şebekê neparastine."
+  },
+  "helpTldrTorbirdyTitle": {
+    "message": "Çima TorBirdy êdî naxebite"
+  },
+  "helpTldrTorbirdy1": {
+    "message": "TorBirdy paşvemayî ya Thunderbird/XUL bû. Thunderbird 78 sîstema overlay XUL ya kevn ya ku TorBirdy bi xwe ve girêdayî bû rakir."
+  },
+  "helpTldrTorbirdy2": {
+    "message": "Berdana wê ya dawî di sala 2018an de bû; ji ber vê yekê bê nûnivîsîn li ser Thunderbird ESR ya nûjen naxebite."
+  },
+  "helpTldrExperimentsTitle": {
+    "message": "Çima Experiments API hewce ye"
+  },
+  "helpTldrExperiments1": {
+    "message": "MailExtensions yên asayî nikarin prefên proxy yên Thunderbird, hundirê SMTP, prefên nasnameyê, kaşê DNS, login manager an self-testên SOCKS yên xav biguherînin."
+  },
+  "helpTldrExperiments2": {
+    "message": "Experiments API ev hundir vekirî dike; OnionBird nivîsandin bi rêya allowlist tê sînor kirin da ku rûyê îmtiyazî biçûk bimîne."
+  },
+  "helpNerdDoesTitle": {
+    "message": "Modê Nerd: parastinên hatî bicihkirin"
+  },
+  "helpNerdDoes1": {
+    "message": "Prefên proxy: network.proxy.type=1, lêkolîna otomatîk ya host/port SOCKS5, socks_remote_dns=true, failover_direct=false û bê lîsteya bypassê."
+  },
+  "helpNerdDoes2": {
+    "message": "Hijiyena sernavan: User-Agent/X-Mailer kêm dike, HELO/EHLO bi zorê dike [127.0.0.1], FQDN a Message-ID a ewletir hilbijêre, flowed plaintext neçalak dike û tevgera mîna UTC/RFP dipêşxe."
+  },
+  "helpNerdDoes3": {
+    "message": "Bihêzkirina şebekê: DoH/TRR, OCSP, pêwendiyên spekulatîf, DNS prefetch, predictor, WebRTC, geolocation, lookup ECH HTTPS-RR, kontrolên captive-portal û URLên phone-home yên rojanekirinê neçalak dike."
+  },
+  "helpNerdDoes4": {
+    "message": "Bihêzkirina UI ya e-nameyê: rêyên naveroka dûr, plaintext rendering, lêkçûnên agahdariyê, autocollect ya pirtûka navnîşan neçalak dike û audit/jêbirina login Toran yên hatine tomarkirin pêşkêş dike."
+  },
+  "helpNerdDoes5": {
+    "message": "Çavdêrî: reasserta destpêkê û periyodîk prefên bihêzkirî tamîr dike; modê testê Tor SOCKS bê nivîsandina pref kontrol dike, û canaryeke SOCKS5 RESOLVE ya bi îzolasyona stream behavior a DNS sîstemê kontrol dike."
+  },
+  "helpNerdDoesNotTitle": {
+    "message": "Modê Nerd: sînor"
+  },
+  "helpNerdDoesNot1": {
+    "message": "SMTP a piştrastkirî dîsa hesab dide pêşkêşkar, û pêşkêşkar dikare nirxên Authentication-Results smtp.auth yên ji bo wergir xuya zêde bike."
+  },
+  "helpNerdDoesNot2": {
+    "message": "Veguhastina SMTP dîsa zincîrên Received çêdike. Wergir gelek caran dikare bikaranîna Tor ji hopa rû bi exitê Tor a pêşkêşkar bibîne."
+  },
+  "helpNerdDoesNot3": {
+    "message": "Pêvek Thunderbird kontrol dike, ne sîstema xebitandinê. NTP, clipboard, dosye, sepanên din, crash dumps yên ji TB derve û navê hostê dimîne pirsên modela tehdîda OS."
+  },
+  "helpNerdDoesNot4": {
+    "message": "Canary tespît dike, ne rêvebirineke sihir. Li ser desktopên asayî: DNS-a OS bi rêya Tor DNSPort bişîne, an Whonix/Tails bi kar bîne ji bo garantiya herî bihêz."
+  },
+  "helpNerdDoesNot5": {
+    "message": "Dijminê pasîf ê gerdûnî, korelasyona dema serî-bi-serî, pêşkêşkarê xerab, wergirê xerab an rewşa Thunderbird/profile ya xira bûyî nayê serketin."
+  },
+  "helpNerdTorbirdyTitle": {
+    "message": "Modê Nerd: lihevhatina TorBirdy"
+  },
+  "helpNerdTorbirdy1": {
+    "message": "TorBirdy armanc dikir modela kevin a îmtiyazî ya XUL/XPCOM û hookên overlay/bootstrap di hundirê Thunderbird de bi kar dianî."
+  },
+  "helpNerdTorbirdy2": {
+    "message": "Thunderbird 78 pêvekên XUL yên legacy rakir; Thunderbird ya nûjen WebExtensions/MailExtensions qebûl dike ku van hundirên îmtiyazî yên mail û prefs bi mebest naxe nasîn."
+  },
+  "helpNerdTorbirdy3": {
+    "message": "Ji ber vê yekê portkirina TorBirdy ne bump a manifest e. Beşên îmtiyazî divê li pişt Thunderbird Experiments API ji nû ve bên nivîsandin."
+  },
+  "helpNerdExperimentsTitle": {
+    "message": "Modê Nerd: sînora Experiments API"
+  },
+  "helpNerdExperiments1": {
+    "message": "Aliyê MailExtension UI, peyamên runtime û vebijêrkan dihewîne; skripta parent ya Experiments Services.prefs, objektên SMTP/identity yên MailServices, flush ya kaşê DNS, audit ya login-manager û SOCKS5 RESOLVE ya xav dihewîne."
+  },
+  "helpNerdExperiments2": {
+    "message": "Ev dabeşkirin hewce ye ji ber ku APIyên giştî yên MailExtension nikarin snapshot/restore yên atomîk yên prefs bikin û nikarin per-SMTP HELO/TLS saz bikin."
+  },
+  "helpNerdExperiments3": {
+    "message": "Ji ber ku Experiments bi îmtiyaza process parent dixebitin, OnionBird nivîsandinên prefs bi allowlist a tewş sînor dike û mutasyonên bihêzkirinê seralî dike."
+  },
+  "sendBlockedCancelStorageError": {
+    "message": "OnionBird: şandin asteng bû — rewşa pêvekê nayê xwendin (çewtiya hilanînê). Thunderbird ji nû ve dest pê bike, paşê OnionBird Options binêre berî ku tu careke din biceribînî."
+  },
+  "sendBlockedCancelLeakDetected": {
+    "message": "OnionBird: şandin asteng bû — Tor leak canary çareseriyek DNS ya li derveyî Tor tespît kir. Berî ku tu careke din biceribînî, OnionBird Options → DNS leak status → Run self-test now veke."
+  },
+  "sendBlockedCancelNoVerdict": {
+    "message": "OnionBird: şandin asteng bû — hîn biryara canary tune (nehat xebitandin an hilanîn hatiye paqijkirin). Berî ku tu careke din biceribînî, OnionBird Options → DNS leak status → Run self-test now veke."
+  },
+  "sendBlockedCancelOther": {
+    "message": "OnionBird: şandin asteng bû — biryara canary ne 'clean' e (rewş: $STATE$). Berî ku tu careke din biceribînî, OnionBird Options → DNS leak status → Run self-test now veke.",
+    "placeholders": {
+      "STATE": {
+        "content": "$1",
+        "example": "leak_detected"
+      }
+    }
+  },
+  "socksOverrideTitle": {
+    "message": "SOCKS endpoint override"
+  },
+  "socksOverrideIntro": {
+    "message": "By default the addon detects Thunderbird's existing network.proxy.socks pref or falls back to 127.0.0.1 on port 9050 / 9150. Set host + port here to pin a different endpoint (e.g. a Whonix Gateway IP). Host must be a loopback name (localhost) or an IP literal — DNS-resolvable names would leak via the system resolver before Tor."
+  },
+  "socksOverrideHostLabel": {
+    "message": "Host:"
+  },
+  "socksOverridePortLabel": {
+    "message": "Port:"
+  },
+  "socksOverrideSaveButton": {
+    "message": "Save"
+  },
+  "socksOverrideResetButton": {
+    "message": "Reset to default"
+  },
+  "socksOverrideTestButton": {
+    "message": "Test endpoint"
+  },
+  "socksOverrideStatusOk": {
+    "message": "OK"
+  },
+  "socksOverrideStatusInvalidHost": {
+    "message": "Invalid host — must be `localhost` or an IP literal (IPv4 or IPv6)."
+  },
+  "socksOverrideStatusInvalidPort": {
+    "message": "Invalid port — must be an integer between 1 and 65535."
+  },
+  "socksOverrideTbPrefWarning": {
+    "message": "Thunderbird currently has $TB$ configured; your saved override $OVERRIDE$ will replace it on next enable.",
+    "placeholders": {
+      "TB": {
+        "content": "$1",
+        "example": "127.0.0.1:9050"
+      },
+      "OVERRIDE": {
+        "content": "$2",
+        "example": "10.152.152.10:9050"
+      }
+    }
+  },
+  "socksOverrideStatusReset": {
+    "message": "Override cleared — falling back to auto-detect on next enable."
+  },
+  "autoEnableNotificationTitleSocksUnreachable": {
+    "message": "OnionBird installed — Tor not reachable"
+  },
+  "autoEnableNotificationMessageSocksUnreachable": {
+    "message": "OnionBird could not reach a Tor SOCKS endpoint on 127.0.0.1:9050 or :9150. Outgoing sends are blocked until Tor is reachable. Start the Tor daemon (or Tor Browser) and open OnionBird Options → DNS leak status → Run self-test now."
+  },
+  "autoEnableNotificationTitleCanaryFail": {
+    "message": "OnionBird installed — hardening incomplete"
+  },
+  "autoEnableNotificationMessageCanaryFail": {
+    "message": "OnionBird auto-enabled but the canary self-test did not verify cleanly. Outgoing sends are blocked until the next canary passes. Open OnionBird Options → DNS leak status → Run self-test now to triage."
+  }
+}

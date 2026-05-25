@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="OnionBird icon">
+  <rect width="64" height="64" rx="12" fill="#0E0A18"/>
+  <g transform="translate(14 18)">
+    <circle r="5" fill="#4A2D67"/>
+    <circle r="2" fill="#7D4698"/>
+  </g>
+  <path d="M 14 18 L 26 24 L 38 18 L 50 30 L 42 42 L 28 38 L 36 50"
+        fill="none" stroke="#E66100" stroke-width="1.5" stroke-dasharray="1.5 3" stroke-linecap="round"/>
+  <g fill="#F9A11B">
+    <circle cx="26" cy="24" r="2.4"/>
+    <circle cx="38" cy="18" r="2.4"/>
+    <circle cx="50" cy="30" r="2.4"/>
+    <circle cx="42" cy="42" r="2.4"/>
+    <circle cx="28" cy="38" r="2.4"/>
+    <circle cx="36" cy="50" r="2.4"/>
+  </g>
+  <path d="M 38 50 L 46 52 L 42 58 Z" fill="#F9A11B"/>
+</svg>

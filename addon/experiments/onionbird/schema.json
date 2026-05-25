@@ -1,0 +1,282 @@
+[
+  {
+    "namespace": "onionbird",
+    "functions": [
+      {
+        "name": "getApiVersion",
+        "type": "function",
+        "async": true,
+        "parameters": [],
+        "returns": { "type": "string" }
+      },
+      {
+        "name": "setPref",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "name", "type": "string", "maxLength": 256 },
+          {
+            "name": "value",
+            "choices": [
+              { "type": "string", "maxLength": 65536 },
+              { "type": "integer" },
+              { "type": "boolean" }
+            ]
+          }
+        ],
+        "returns": { "type": "boolean" }
+      },
+      {
+        "name": "getPref",
+        "type": "function",
+        "async": true,
+        "parameters": [{ "name": "name", "type": "string", "maxLength": 256 }],
+        "returns": {
+          "choices": [
+            { "type": "string" },
+            { "type": "integer" },
+            { "type": "boolean" },
+            { "type": "null" }
+          ]
+        }
+      },
+      {
+        "name": "clearPref",
+        "type": "function",
+        "async": true,
+        "parameters": [{ "name": "name", "type": "string", "maxLength": 256 }],
+        "returns": { "type": "boolean" }
+      },
+      {
+        "name": "setSocksOverride",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "field", "type": "string", "enum": ["host", "port"] },
+          {
+            "name": "value",
+            "choices": [
+              { "type": "string", "maxLength": 256 },
+              { "type": "integer" }
+            ]
+          }
+        ],
+        "returns": { "type": "boolean" }
+      },
+      {
+        "name": "setSocksOverridePair",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "pair", "type": "object", "additionalProperties": true }
+        ],
+        "returns": { "type": "object" }
+      },
+      {
+        "name": "getSocksOverride",
+        "type": "function",
+        "async": true,
+        "parameters": [],
+        "returns": { "type": "object", "optional": true }
+      },
+      {
+        "name": "clearDnsCache",
+        "type": "function",
+        "async": true,
+        "parameters": [],
+        "returns": { "type": "object" }
+      },
+      {
+        "name": "clearAddonOwnedPrefs",
+        "type": "function",
+        "async": true,
+        "parameters": [],
+        "returns": { "type": "object" }
+      },
+      {
+        "name": "applyPrefs",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          {
+            "name": "prefs",
+            "type": "array",
+            "maxItems": 256,
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "properties": {
+                "name": { "type": "string", "maxLength": 256 },
+                "value": {
+                  "choices": [
+                    { "type": "string", "maxLength": 65536 },
+                    { "type": "integer" },
+                    { "type": "boolean" }
+                  ]
+                }
+              }
+            }
+          }
+        ],
+        "returns": { "type": "object" }
+      },
+      {
+        "name": "snapshotPrefs",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          {
+            "name": "names",
+            "type": "array",
+            "maxItems": 4096,
+            "items": { "type": "string", "maxLength": 256 }
+          },
+          {
+            "name": "options",
+            "type": "object",
+            "optional": true,
+            "properties": {
+              "source": {
+                "type": "string",
+                "enum": ["user", "default"],
+                "optional": true
+              }
+            },
+            "additionalProperties": false
+          }
+        ],
+        "returns": { "type": "object" }
+      },
+      {
+        "name": "restorePrefs",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          {
+            "name": "snapshot",
+            "type": "object",
+            "additionalProperties": {
+              "choices": [
+                { "type": "string", "maxLength": 65536 },
+                { "type": "integer" },
+                { "type": "boolean" },
+                { "type": "null" }
+              ]
+            }
+          }
+        ],
+        "returns": { "type": "object" }
+      },
+      {
+        "name": "getSmtpHardeningPrefNames",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          {
+            "name": "onlyOnionHosts",
+            "type": "boolean",
+            "optional": true
+          }
+        ],
+        "returns": { "type": "object" }
+      },
+      {
+        "name": "getIdentityHardeningPrefNames",
+        "type": "function",
+        "async": true,
+        "parameters": [],
+        "returns": { "type": "object" }
+      },
+      {
+        "name": "applyHardeningToAllSmtpServers",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          {
+            "name": "onlyOnionHosts",
+            "type": "boolean",
+            "optional": true
+          }
+        ],
+        "returns": { "type": "object" }
+      },
+      {
+        "name": "applyHardeningToAllIdentities",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          {
+            "name": "options",
+            "type": "object",
+            "optional": true,
+            "properties": {
+              "onlyOnionIdentities": { "type": "boolean", "optional": true }
+            },
+            "additionalProperties": false
+          }
+        ],
+        "returns": { "type": "object" }
+      },
+      {
+        "name": "clearHardeningFromAllSmtpServers",
+        "type": "function",
+        "async": true,
+        "parameters": [],
+        "returns": { "type": "object" }
+      },
+      {
+        "name": "clearHardeningFromAllIdentities",
+        "type": "function",
+        "async": true,
+        "parameters": [],
+        "returns": { "type": "object" }
+      },
+      {
+        "name": "auditSavedLoginsForTorServers",
+        "type": "function",
+        "async": true,
+        "parameters": [],
+        "returns": { "type": "object" }
+      },
+      {
+        "name": "removeSavedLoginsForTorServers",
+        "type": "function",
+        "async": true,
+        "parameters": [],
+        "returns": { "type": "object" }
+      },
+      {
+        "name": "probeSocks",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "socksHost", "type": "string", "maxLength": 253 },
+          { "name": "socksPort", "type": "integer" },
+          { "name": "host", "type": "string", "maxLength": 253, "optional": true },
+          { "name": "options", "type": "object", "optional": true, "additionalProperties": true }
+        ],
+        "returns": { "type": "object" }
+      },
+      {
+        "name": "runSelfTest",
+        "type": "function",
+        "async": true,
+        "parameters": [
+          { "name": "host", "type": "string", "maxLength": 253 },
+          {
+            "name": "options",
+            "type": "object",
+            "optional": true,
+            "properties": {
+              "tries": { "type": "integer", "optional": true },
+              "socksHost": { "type": "string", "maxLength": 253, "optional": true },
+              "socksPort": { "type": "integer", "optional": true }
+            },
+            "additionalProperties": false
+          }
+        ],
+        "returns": { "type": "object" }
+      }
+    ]
+  }
+]

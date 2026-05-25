@@ -1,0 +1,453 @@
+{
+  "extensionName": {
+    "message": "OnionBird"
+  },
+  "extensionDescription": {
+    "message": "Thunderbird 的 Tor 集成与反指纹追踪 — TorBirdy 的继任者。"
+  },
+  "pageTitle": {
+    "message": "OnionBird 选项"
+  },
+  "statusLabel": {
+    "message": "状态："
+  },
+  "statusLoading": {
+    "message": "加载中…"
+  },
+  "statusText": {
+    "message": "API v$1, 扩展 v$2 — 加固 $3"
+  },
+  "statusActive": {
+    "message": "已启用"
+  },
+  "statusInactive": {
+    "message": "未启用"
+  },
+  "appearanceTitle": {
+    "message": "外观"
+  },
+  "themeLabel": {
+    "message": "主题："
+  },
+  "themeSystem": {
+    "message": "跟随系统"
+  },
+  "themeLight": {
+    "message": "浅色"
+  },
+  "themeDark": {
+    "message": "深色"
+  },
+  "hardeningTitle": {
+    "message": "加固"
+  },
+  "enableButton": {
+    "message": "启用加固"
+  },
+  "disableButton": {
+    "message": "禁用加固"
+  },
+  "scrubLoginsLabel": {
+    "message": "禁用时删除 onion/loopback 邮件服务器的已保存密码"
+  },
+  "disableHelp": {
+    "message": "禁用会恢复首次加固之前所做的 prefs 快照。被刻意绕过的 clearnet 帐户将继续正常工作。"
+  },
+  "messageIdTitle": {
+    "message": "Message-ID FQDN"
+  },
+  "messageIdIntro": {
+    "message": "外发 Message-ID 中的 FQDN 是邮件中反复出现的指纹。默认使用您的 From 地址的域名，以便与同一提供商的普通用户混在一起。TorBirdy 的 localhost.localdomain 模式仍作为明确的 legacy 选项保留。"
+  },
+  "modeLabel": {
+    "message": "模式："
+  },
+  "fqdnFromDomain": {
+    "message": "From 地址的域名 (推荐)"
+  },
+  "fqdnLocalhost": {
+    "message": "localhost"
+  },
+  "fqdnLocalhostLegacy": {
+    "message": "localhost.localdomain (legacy)"
+  },
+  "fqdnCustom": {
+    "message": "自定义…"
+  },
+  "saveButton": {
+    "message": "保存"
+  },
+  "torTestTitle": {
+    "message": "Tor 测试模式"
+  },
+  "torTestIntro": {
+    "message": "在不发送邮件也不修改 Thunderbird prefs 的情况下，检查本地 Tor SOCKS 端点是否可达。探测使用 Tor 的 SOCKS5 RESOLVE 命令，带有全新的随机隔离令牌，因此目标主机不会通过系统 DNS 解析。"
+  },
+  "runTorTestButton": {
+    "message": "立即测试 Tor"
+  },
+  "torTestRunning": {
+    "message": " 测试中…"
+  },
+  "torTestUnknown": {
+    "message": "未知"
+  },
+  "torTestAvailable": {
+    "message": "Tor 可用"
+  },
+  "torTestUnavailable": {
+    "message": "Tor 不可用"
+  },
+  "torTestNotRun": {
+    "message": "尚未运行。"
+  },
+  "torTestOk": {
+    "message": "Tor SOCKS 在 $1:$2 ($3) 可达。未修改任何 Thunderbird prefs。"
+  },
+  "torTestNoTor": {
+    "message": "未找到可达的 Tor SOCKS 端点。已尝试： $1"
+  },
+  "torTestError": {
+    "message": "Tor 测试失败： $1"
+  },
+  "torTestResultCell": {
+    "message": "结果"
+  },
+  "torTestEndpointCell": {
+    "message": "SOCKS 端点"
+  },
+  "torTestProbeHostCell": {
+    "message": "探测主机"
+  },
+  "torTestTriedCell": {
+    "message": "已尝试"
+  },
+  "torTestSourceRequested": {
+    "message": "请求的"
+  },
+  "torTestSourceExistingPref": {
+    "message": "现有 pref"
+  },
+  "torTestSourceSystemTor": {
+    "message": "系统 Tor"
+  },
+  "torTestSourceTorBrowser": {
+    "message": "Tor Browser"
+  },
+  "torTestSourceFallback": {
+    "message": "回退"
+  },
+  "torTestSourceCurrentPref": {
+    "message": "当前 pref"
+  },
+  "dnsLeakTitle": {
+    "message": "DNS 泄露状态"
+  },
+  "dnsLeakIntro": {
+    "message": "将 Tor 通过 SOCKS5 RESOLVE 返回的 IP 与系统 resolver 返回的 IP 进行比较。差异可能意味着操作系统在使用非 Tor 的 DNS;由 CDN 支撑的名称仍可能是良性的。"
+  },
+  "hostLabel": {
+    "message": "主机："
+  },
+  "runSelfTestButton": {
+    "message": "立即运行自检"
+  },
+  "runningLabel": {
+    "message": " 运行中…"
+  },
+  "canaryHostCell": {
+    "message": "主机"
+  },
+  "ipDetailLabel": {
+    "message": "IP 详情"
+  },
+  "revealRawIps": {
+    "message": "显示原始 IP"
+  },
+  "verdictLabel": {
+    "message": "判定"
+  },
+  "errorLabel": {
+    "message": "错误"
+  },
+  "canaryUnknown": {
+    "message": "未知"
+  },
+  "canaryNoLeak": {
+    "message": "无泄露"
+  },
+  "canaryLeakSuspected": {
+    "message": "疑似泄露"
+  },
+  "canaryDiverged": {
+    "message": "出现差异"
+  },
+  "canaryInconclusive": {
+    "message": "无法确定"
+  },
+  "canaryError": {
+    "message": "错误"
+  },
+  "canaryVerdictNoData": {
+    "message": "暂无数据"
+  },
+  "canaryVerdictLeak": {
+    "message": "系统 resolver 的回答未出现在任何 Tor circuit 视图中；请检查系统 DNS 路由"
+  },
+  "canaryVerdictOk": {
+    "message": "system_ip 在 Tor 集合中 (尝试了 $1 个 circuit)"
+  },
+  "canaryVerdictDiverged": {
+    "message": "system_ip 不在 Tor 集合中，但启发式判断可能仍是良性；请查看详情"
+  },
+  "canaryVerdictMissingData": {
+    "message": "其中一次查询未返回数据"
+  },
+  "canaryErrorTor9050": {
+    "message": "Tor 在 127.0.0.1:9050 上没有响应。请启动 Tor daemon,或为 Tor Browser 使用端口 9150。"
+  },
+  "canaryErrorTor9150": {
+    "message": "Tor Browser 未在运行。请启动它；SOCKS 监听端口通常为 9150。"
+  },
+  "canaryErrorSocksRefused": {
+    "message": "SOCKS 连接被拒绝。请检查已配置的 Tor 主机和端口。"
+  },
+  "canaryErrorNetworkUnreachable": {
+    "message": "网络在此路径上阻止了出站流量。可能需要 bridges 或 pluggable transports。"
+  },
+  "canaryErrorTimeout": {
+    "message": "Tor 可达，但 circuit 未能及时完成。请重试或更换 circuit。"
+  },
+  "canaryErrorDnsStatus": {
+    "message": "OS resolver 返回了错误。为了完整保护，系统 DNS 应当走 Tor DNSPort,或运行在 Whonix/Tails 中。"
+  },
+  "logApplyingHardening": {
+    "message": "正在应用加固…"
+  },
+  "logRestoringPrefs": {
+    "message": "正在恢复加固前的 prefs…"
+  },
+  "logDone": {
+    "message": "完成"
+  },
+  "logWarnings": {
+    "message": "完成，但带有警告"
+  },
+  "disableConfirm": {
+    "message": "此操作会将您的 prefs 恢复到首次加固之前的快照。Tor-only 发送可能会回到 clearnet。继续吗？"
+  },
+  "savingLabel": {
+    "message": "保存中…"
+  },
+  "fqdnInvalid": {
+    "message": "自定义 FQDN 必须是有效的多标签 DNS 名称，而不是 IP 地址"
+  },
+  "fqdnSaved": {
+    "message": "已保存。模式=$1,已更新 $2 个身份。"
+  },
+  "saveFailed": {
+    "message": "保存失败： $1"
+  },
+  "readPrefsFailed": {
+    "message": "无法读取 prefs: $1"
+  },
+  "errorWithMessage": {
+    "message": "错误： $1"
+  },
+  "helpTitle": {
+    "message": "帮助"
+  },
+  "helpModeLabel": {
+    "message": "详尽度："
+  },
+  "helpModeTldr": {
+    "message": "TL;DR"
+  },
+  "helpModeNerd": {
+    "message": "极客模式"
+  },
+  "helpTldrDoesTitle": {
+    "message": "此扩展做什么"
+  },
+  "helpTldrDoes1": {
+    "message": "通过本地 Tor SOCKS 代理路由 Thunderbird 的 IMAP 和 SMTP,并通过 Tor 远端进行 DNS 解析。"
+  },
+  "helpTldrDoes2": {
+    "message": "Fail-closed: 当 Tor 不可达时，发送应当失败，而不是悄悄回落到 clearnet。"
+  },
+  "helpTldrDoes3": {
+    "message": "减少邮件指纹，如 User-Agent、X-Mailer、HELO、时区、Message-ID FQDN、flowed text 和远程内容。"
+  },
+  "helpTldrDoes4": {
+    "message": "提供 Tor 可用性测试和 DNS canary;两者都使用 Tor 的 SOCKS5 RESOLVE 路径，并在 Tor 一侧避免使用系统 DNS。"
+  },
+  "helpTldrDoesNotTitle": {
+    "message": "它不做什么"
+  },
+  "helpTldrDoesNot1": {
+    "message": "它不能取代 Tails、Whonix、Tor 网关或正确配置的系统 resolver。"
+  },
+  "helpTldrDoesNot2": {
+    "message": "它不会向您的服务商或其添加的 Authentication-Results 头隐藏您用以鉴权的邮箱。"
+  },
+  "helpTldrDoesNot3": {
+    "message": "它不会隐藏收件人可能在 Received 头中看到 Tor 出口节点这一事实。"
+  },
+  "helpTldrDoesNot4": {
+    "message": "它不保护其他应用、OS 层泄露、被攻陷的端点或网络相关性攻击。"
+  },
+  "helpTldrTorbirdyTitle": {
+    "message": "为什么 TorBirdy 不再能用"
+  },
+  "helpTldrTorbirdy1": {
+    "message": "TorBirdy 是旧式 Thunderbird/XUL 扩展。Thunderbird 78 移除了它所依赖的 legacy XUL overlay 扩展系统。"
+  },
+  "helpTldrTorbirdy2": {
+    "message": "它的最后一次发布是在 2018 年，因此在不重写的情况下无法运行于现代 Thunderbird ESR 版本。"
+  },
+  "helpTldrExperimentsTitle": {
+    "message": "为什么需要 Experiments API"
+  },
+  "helpTldrExperiments1": {
+    "message": "普通 MailExtensions 无法修改 Thunderbird 的代理 prefs、SMTP 服务器内部、identity prefs、DNS 缓存、登录管理器，也无法做原始的 SOCKS 自检。"
+  },
+  "helpTldrExperiments2": {
+    "message": "Experiments API 暴露了这些 Thunderbird 内部；OnionBird 通过 allowlist 控制写入，以保持特权面尽量小。"
+  },
+  "helpNerdDoesTitle": {
+    "message": "极客模式： 已实现的保护"
+  },
+  "helpNerdDoes1": {
+    "message": "代理 prefs: network.proxy.type=1,SOCKS5 主机/端口自动探测，socks_remote_dns=true,failover_direct=false,无 proxy bypass 列表。"
+  },
+  "helpNerdDoes2": {
+    "message": "头部卫生： 抑制 User-Agent/X-Mailer,将 HELO/EHLO 强制为 [127.0.0.1],选择更安全的 Message-ID FQDN,禁用 flowed plaintext,并推行 UTC/RFP 类行为。"
+  },
+  "helpNerdDoes3": {
+    "message": "网络加固： 禁用 DoH/TRR、OCSP、speculative connects、DNS prefetch、predictor、WebRTC、geolocation、ECH HTTPS-RR lookup、captive-portal 检查以及更新的 phone-home URL。"
+  },
+  "helpNerdDoes4": {
+    "message": "邮件 UI 加固： 禁用远程邮件内容路径、plaintext 渲染、通知泄漏、通讯录自动收集，并在禁用时提供对已保存 Tor 登录的审计/删除。"
+  },
+  "helpNerdDoes5": {
+    "message": "监控： 启动和周期性 reassert 修复被加固的 prefs;测试模式在不写入 prefs 的情况下检查 Tor SOCKS,而流隔离的 SOCKS5 RESOLVE canary 检查系统 DNS 行为。"
+  },
+  "helpNerdDoesNotTitle": {
+    "message": "极客模式： 边界"
+  },
+  "helpNerdDoesNot1": {
+    "message": "经身份认证的 SMTP 仍然让服务商知道帐户，且服务商可能添加对收件人可见的 Authentication-Results smtp.auth 值。"
+  },
+  "helpNerdDoesNot2": {
+    "message": "SMTP 传输仍然产生 Received 链。收件人通常可以从面向服务商 Tor 出口的 hop 推断出 Tor 的使用。"
+  },
+  "helpNerdDoesNot3": {
+    "message": "扩展控制 Thunderbird,而不是操作系统。NTP、剪贴板、文件、其他应用、TB 之外的 crash dumps 和 hostname 仍然是 OS 威胁模型的问题。"
+  },
+  "helpNerdDoesNot4": {
+    "message": "Canary 用于检测，而非神奇的路由。在普通桌面上： 通过 Tor DNSPort 路由 OS DNS,或使用 Whonix/Tails 以获得最强保证。"
+  },
+  "helpNerdDoesNot5": {
+    "message": "它无法对抗全球被动对手、端到端时序相关性、恶意服务商、恶意收件人，或被攻陷的 Thunderbird/profile 状态。"
+  },
+  "helpNerdTorbirdyTitle": {
+    "message": "极客模式： TorBirdy 兼容性"
+  },
+  "helpNerdTorbirdy1": {
+    "message": "TorBirdy 针对旧的特权 XUL/XPCOM 扩展模型，并使用 overlay/bootstrap 钩入 Thunderbird 内部。"
+  },
+  "helpNerdTorbirdy2": {
+    "message": "Thunderbird 78 移除了 legacy XUL 扩展；现代 Thunderbird 接受 WebExtensions/MailExtensions,这些有意不暴露那些特权 mail 和 prefs 内部。"
+  },
+  "helpNerdTorbirdy3": {
+    "message": "因此移植 TorBirdy 不只是一次 manifest bump。特权部分必须改写到 Thunderbird Experiments API 之后。"
+  },
+  "helpNerdExperimentsTitle": {
+    "message": "极客模式： Experiments API 边界"
+  },
+  "helpNerdExperiments1": {
+    "message": "MailExtension 端拥有 UI、runtime 消息和选项；Experiments parent 脚本拥有 Services.prefs、MailServices 的 SMTP/identity 对象、DNS 缓存刷新、登录管理器审计和原始 SOCKS5 RESOLVE。"
+  },
+  "helpNerdExperiments2": {
+    "message": "这种划分是必要的，因为公开的 MailExtension API 无法原子地 snapshot/restore prefs,也无法设置 per-SMTP 的 HELO/TLS。"
+  },
+  "helpNerdExperiments3": {
+    "message": "由于 Experiments 以 parent-process 权限运行，OnionBird 将 pref 写入限制在一份狭窄的 allowlist 中，并对加固变更串行化。"
+  },
+  "sendBlockedCancelStorageError": {
+    "message": "OnionBird: 发送已阻止 — 无法读取扩展状态（存储错误）。请重启 Thunderbird，然后在重试前检查 OnionBird Options。"
+  },
+  "sendBlockedCancelLeakDetected": {
+    "message": "OnionBird: 发送已阻止 — Tor leak canary 检测到未通过 Tor 的 DNS 解析。重试前请打开 OnionBird Options → DNS leak status → Run self-test now。"
+  },
+  "sendBlockedCancelNoVerdict": {
+    "message": "OnionBird: 发送已阻止 — 尚无 canary 判定（未运行或存储已清除）。重试前请打开 OnionBird Options → DNS leak status → Run self-test now。"
+  },
+  "sendBlockedCancelOther": {
+    "message": "OnionBird: 发送已阻止 — canary 判定不是 'clean'（状态: $STATE$）。重试前请打开 OnionBird Options → DNS leak status → Run self-test now。",
+    "placeholders": {
+      "STATE": {
+        "content": "$1",
+        "example": "leak_detected"
+      }
+    }
+  },
+  "socksOverrideTitle": {
+    "message": "SOCKS endpoint override"
+  },
+  "socksOverrideIntro": {
+    "message": "By default the addon detects Thunderbird's existing network.proxy.socks pref or falls back to 127.0.0.1 on port 9050 / 9150. Set host + port here to pin a different endpoint (e.g. a Whonix Gateway IP). Host must be a loopback name (localhost) or an IP literal — DNS-resolvable names would leak via the system resolver before Tor."
+  },
+  "socksOverrideHostLabel": {
+    "message": "Host:"
+  },
+  "socksOverridePortLabel": {
+    "message": "Port:"
+  },
+  "socksOverrideSaveButton": {
+    "message": "Save"
+  },
+  "socksOverrideResetButton": {
+    "message": "Reset to default"
+  },
+  "socksOverrideTestButton": {
+    "message": "Test endpoint"
+  },
+  "socksOverrideStatusOk": {
+    "message": "OK"
+  },
+  "socksOverrideStatusInvalidHost": {
+    "message": "Invalid host — must be `localhost` or an IP literal (IPv4 or IPv6)."
+  },
+  "socksOverrideStatusInvalidPort": {
+    "message": "Invalid port — must be an integer between 1 and 65535."
+  },
+  "socksOverrideTbPrefWarning": {
+    "message": "Thunderbird currently has $TB$ configured; your saved override $OVERRIDE$ will replace it on next enable.",
+    "placeholders": {
+      "TB": {
+        "content": "$1",
+        "example": "127.0.0.1:9050"
+      },
+      "OVERRIDE": {
+        "content": "$2",
+        "example": "10.152.152.10:9050"
+      }
+    }
+  },
+  "socksOverrideStatusReset": {
+    "message": "Override cleared — falling back to auto-detect on next enable."
+  },
+  "autoEnableNotificationTitleSocksUnreachable": {
+    "message": "OnionBird installed — Tor not reachable"
+  },
+  "autoEnableNotificationMessageSocksUnreachable": {
+    "message": "OnionBird could not reach a Tor SOCKS endpoint on 127.0.0.1:9050 or :9150. Outgoing sends are blocked until Tor is reachable. Start the Tor daemon (or Tor Browser) and open OnionBird Options → DNS leak status → Run self-test now."
+  },
+  "autoEnableNotificationTitleCanaryFail": {
+    "message": "OnionBird installed — hardening incomplete"
+  },
+  "autoEnableNotificationMessageCanaryFail": {
+    "message": "OnionBird auto-enabled but the canary self-test did not verify cleanly. Outgoing sends are blocked until the next canary passes. Open OnionBird Options → DNS leak status → Run self-test now to triage."
+  }
+}

@@ -1,0 +1,453 @@
+{
+  "extensionName": {
+    "message": "OnionBird"
+  },
+  "extensionDescription": {
+    "message": "ለThunderbird የTor ውህደት እና ጸረ-ጣት-አሻራ — የTorBirdy ተተኪ።"
+  },
+  "pageTitle": {
+    "message": "የOnionBird አማራጮች"
+  },
+  "statusLabel": {
+    "message": "ሁኔታ:"
+  },
+  "statusLoading": {
+    "message": "በመጫን ላይ…"
+  },
+  "statusText": {
+    "message": "API v$1፣ ተጨማሪ v$2 — ማጠናከር $3"
+  },
+  "statusActive": {
+    "message": "በሥራ ላይ"
+  },
+  "statusInactive": {
+    "message": "ንቁ ያልሆነ"
+  },
+  "appearanceTitle": {
+    "message": "ገጽታ"
+  },
+  "themeLabel": {
+    "message": "ገጽታ:"
+  },
+  "themeSystem": {
+    "message": "ሥርዓት"
+  },
+  "themeLight": {
+    "message": "ብርሃን"
+  },
+  "themeDark": {
+    "message": "ጨለማ"
+  },
+  "hardeningTitle": {
+    "message": "ማጠናከር"
+  },
+  "enableButton": {
+    "message": "ማጠናከርን አንቃ"
+  },
+  "disableButton": {
+    "message": "ማጠናከርን አጥፋ"
+  },
+  "scrubLoginsLabel": {
+    "message": "ሲያጠፋ ለonion/loopback ኢሜል አገልጋዮች የተቀመጡ የይለፍ ቃላትን ሰርዝ"
+  },
+  "disableHelp": {
+    "message": "ማጥፋት ማጠናከር ለመጀመሪያ ጊዜ ከመነቃቱ በፊት የተወሰደውን የprefs ቅጽበታዊ ገጽታ ይመልሳል። ሆን ተብለው የተተዉ የclearnet መለያዎች በመደበኛነት መሥራታቸውን ይቀጥላሉ።"
+  },
+  "messageIdTitle": {
+    "message": "የMessage-ID FQDN"
+  },
+  "messageIdIntro": {
+    "message": "በወጪ Message-IDs ውስጥ ያለው FQDN በኢሜሎችዎ ላይ ተደጋጋሚ ጣት-አሻራ ነው። ነባሪ የFrom-አድራሻዎን ጎራ ይጠቀማል፣ በተመሳሳዩ አቅራቢ ካሉ መደበኛ ተጠቃሚዎች ጋር እንዲደባለቁ። የTorBirdy localhost.localdomain ሁነታ እንደ ግልጽ የቀድሞ ምርጫ ይቀራል።"
+  },
+  "modeLabel": {
+    "message": "ሁነታ:"
+  },
+  "fqdnFromDomain": {
+    "message": "የFrom-አድራሻ ጎራ (የተመከረ)"
+  },
+  "fqdnLocalhost": {
+    "message": "localhost"
+  },
+  "fqdnLocalhostLegacy": {
+    "message": "localhost.localdomain (ቀድሞ)"
+  },
+  "fqdnCustom": {
+    "message": "ብጁ…"
+  },
+  "saveButton": {
+    "message": "አስቀምጥ"
+  },
+  "torTestTitle": {
+    "message": "የTor ሙከራ ሁነታ"
+  },
+  "torTestIntro": {
+    "message": "ኢሜል ሳይልክ ወይም የThunderbird prefs ሳይቀየር አካባቢያዊ Tor SOCKS endpoint ሊደረስበት ይችል እንደሆነ ይፈትሻል። ምርመራው የTor SOCKS5 RESOLVE ትዕዛዝ በአዲስ የዘፈቀደ ማግለያ ቶከን ይጠቀማል፣ ስለዚህ ዒላማ አስተናጋጁ በስርዓት DNS አይፈታም።"
+  },
+  "runTorTestButton": {
+    "message": "Tor አሁን ሞክር"
+  },
+  "torTestRunning": {
+    "message": " በሙከራ ላይ…"
+  },
+  "torTestUnknown": {
+    "message": "ያልታወቀ"
+  },
+  "torTestAvailable": {
+    "message": "Tor ይገኛል"
+  },
+  "torTestUnavailable": {
+    "message": "Tor የለም"
+  },
+  "torTestNotRun": {
+    "message": "እስካሁን አልተሠራም።"
+  },
+  "torTestOk": {
+    "message": "Tor SOCKS በ$1:$2 ($3) ሊደረስ ይችላል። ምንም Thunderbird prefs አልተቀየረም።"
+  },
+  "torTestNoTor": {
+    "message": "ሊደረስ የሚችል Tor SOCKS endpoint አልተገኘም። ተሞክሯል: $1"
+  },
+  "torTestError": {
+    "message": "የTor ሙከራ አልተሳካም: $1"
+  },
+  "torTestResultCell": {
+    "message": "ውጤት"
+  },
+  "torTestEndpointCell": {
+    "message": "SOCKS endpoint"
+  },
+  "torTestProbeHostCell": {
+    "message": "የምርመራ አስተናጋጅ"
+  },
+  "torTestTriedCell": {
+    "message": "ተሞክሯል"
+  },
+  "torTestSourceRequested": {
+    "message": "ተጠይቋል"
+  },
+  "torTestSourceExistingPref": {
+    "message": "ያለ pref"
+  },
+  "torTestSourceSystemTor": {
+    "message": "የስርዓት Tor"
+  },
+  "torTestSourceTorBrowser": {
+    "message": "Tor Browser"
+  },
+  "torTestSourceFallback": {
+    "message": "ምትክ"
+  },
+  "torTestSourceCurrentPref": {
+    "message": "የአሁኑ pref"
+  },
+  "dnsLeakTitle": {
+    "message": "የDNS መንቆርቆር ሁኔታ"
+  },
+  "dnsLeakIntro": {
+    "message": "Tor በSOCKS5 RESOLVE የሚመልሰውን IP ከስርዓትዎ ፈሺ የተመለሰው IP ጋር ያወዳድራል። ልዩነት OS ያልሆነ Tor DNS ይጠቀማል ማለት ሊሆን ይችላል፣ ሆኖም CDN-የተደገፉ ስሞች አሁንም ጥሩ ሊሆኑ ይችላሉ።"
+  },
+  "hostLabel": {
+    "message": "አስተናጋጅ:"
+  },
+  "runSelfTestButton": {
+    "message": "የራስ-ሙከራ አሁን አሂድ"
+  },
+  "runningLabel": {
+    "message": " በሥራ ላይ…"
+  },
+  "canaryHostCell": {
+    "message": "አስተናጋጅ"
+  },
+  "ipDetailLabel": {
+    "message": "የIP ዝርዝር"
+  },
+  "revealRawIps": {
+    "message": "ጥሬ IPs አሳይ"
+  },
+  "verdictLabel": {
+    "message": "ብያኔ"
+  },
+  "errorLabel": {
+    "message": "ስህተት"
+  },
+  "canaryUnknown": {
+    "message": "ያልታወቀ"
+  },
+  "canaryNoLeak": {
+    "message": "መንቆርቆር የለም"
+  },
+  "canaryLeakSuspected": {
+    "message": "መንቆርቆር ይጠረጠራል"
+  },
+  "canaryDiverged": {
+    "message": "ተለያይቷል"
+  },
+  "canaryInconclusive": {
+    "message": "ያልተደመደመ"
+  },
+  "canaryError": {
+    "message": "ስህተት"
+  },
+  "canaryVerdictNoData": {
+    "message": "ገና ምንም ውሂብ የለም"
+  },
+  "canaryVerdictLeak": {
+    "message": "የስርዓቱ ፈሺ መልስ በምንም የTor ዙር ውስጥ አይታይም; የስርዓት DNS routing አረጋግጡ"
+  },
+  "canaryVerdictOk": {
+    "message": "system_ip በTor ስብስብ ውስጥ ነው ($1 ዙር(ሮች) ተሞክረዋል)"
+  },
+  "canaryVerdictDiverged": {
+    "message": "system_ip በTor ስብስብ ውስጥ አይደለም፣ ነገር ግን heuristic ይህ ምናልባት ጥሩ ነው ይላል; ዝርዝሮችን ይመረምሩ"
+  },
+  "canaryVerdictMissingData": {
+    "message": "ከፍለጋዎቹ አንዱ ውሂብ አልመለሰም"
+  },
+  "canaryErrorTor9050": {
+    "message": "Tor በ127.0.0.1:9050 አይመልስም። የTor daemon ይጀምሩ፣ ወይም ለTor Browser port 9150 ይጠቀሙ።"
+  },
+  "canaryErrorTor9150": {
+    "message": "Tor Browser እየሰራ አይደለም። ይጀምሩት; SOCKS አድማጩ ብዙ ጊዜ በ9150 ላይ ነው።"
+  },
+  "canaryErrorSocksRefused": {
+    "message": "የSOCKS ግንኙነት ተቀባይነት አላገኘም። የተዋቀረውን Tor አስተናጋጅ እና port ይፈትሹ።"
+  },
+  "canaryErrorNetworkUnreachable": {
+    "message": "ኔትወርኩ በዚህ መንገድ ላይ የውጪ ትራፊክን ይከለክላል። ድልድዮች ወይም pluggable transports ሊያስፈልጉ ይችላሉ።"
+  },
+  "canaryErrorTimeout": {
+    "message": "Tor ሊደረስ ይችላል፣ ነገር ግን ዙሩ በሰዓቱ አልጨረሰም። እንደገና ይሞክሩ ወይም ዙሮችን ያሽከርክሩ።"
+  },
+  "canaryErrorDnsStatus": {
+    "message": "የOS ፈሺ ስህተት መለሰ። ለሙሉ ጥበቃ የስርዓት DNS Tor DNSPort መጠቀም አለበት ወይም Whonix/Tails ውስጥ ማስኬድ።"
+  },
+  "logApplyingHardening": {
+    "message": "ማጠናከርን በመተግበር ላይ…"
+  },
+  "logRestoringPrefs": {
+    "message": "ከማጠናከር በፊት የነበሩ prefs በማደስ ላይ…"
+  },
+  "logDone": {
+    "message": "ተጠናቅቋል"
+  },
+  "logWarnings": {
+    "message": "በማስጠንቀቂያዎች ተጠናቅቋል"
+  },
+  "disableConfirm": {
+    "message": "ይህ ማጠናከር ለመጀመሪያ ጊዜ ከመነቃቱ በፊት ወደተወሰደው ቅጽበታዊ ገጽታ prefs ይመልሳል። የTor-only ላኪዎች ወደ clearnet ሊመለሱ ይችላሉ። ይቀጥሉ?"
+  },
+  "savingLabel": {
+    "message": "በማስቀመጥ ላይ…"
+  },
+  "fqdnInvalid": {
+    "message": "ብጁ FQDN ትክክለኛ multi-label DNS ስም መሆን አለበት፣ IP አድራሻ አይደለም"
+  },
+  "fqdnSaved": {
+    "message": "ተቀመጠ። mode=$1፣ $2 መለያ/ዎች ተዘምነዋል።"
+  },
+  "saveFailed": {
+    "message": "ማስቀመጥ አልተሳካም: $1"
+  },
+  "readPrefsFailed": {
+    "message": "prefs ማንበብ አልተቻለም: $1"
+  },
+  "errorWithMessage": {
+    "message": "ስህተት: $1"
+  },
+  "helpTitle": {
+    "message": "እርዳታ"
+  },
+  "helpModeLabel": {
+    "message": "ጥልቀት:"
+  },
+  "helpModeTldr": {
+    "message": "ማጠቃለያ"
+  },
+  "helpModeNerd": {
+    "message": "ናርድ ሁነታ"
+  },
+  "helpTldrDoesTitle": {
+    "message": "ይህ ተጨማሪ ምን ያደርጋል"
+  },
+  "helpTldrDoes1": {
+    "message": "የThunderbird IMAP እና SMTP በአካባቢያዊ Tor SOCKS proxy ያስተላልፋል እና የDNS ፍታት በTor በኩል ሩቅ ያደርጋል።"
+  },
+  "helpTldrDoes2": {
+    "message": "Fail-closed: Tor ሊደረስ ካልቻለ ኢሜል መላክ ወደ clearnet ከመመለስ ይልቅ መሳካት የለበትም።"
+  },
+  "helpTldrDoes3": {
+    "message": "የUser-Agent፣ X-Mailer፣ HELO፣ የጊዜ ሰቅ፣ Message-ID FQDN፣ flowed ጽሑፍ እና የሩቅ ይዘት ያሉ የኢሜል ጣት-አሻራዎችን ይቀንሳል።"
+  },
+  "helpTldrDoes4": {
+    "message": "የTor ተደራሽነት ሙከራ እና የDNS canary ይሰጣል; ሁለቱም የTor SOCKS5 RESOLVE መንገድ ይጠቀማሉ እና ለTor ጎን የስርዓት DNS ይርቃሉ።"
+  },
+  "helpTldrDoesNotTitle": {
+    "message": "ምን አያደርግም"
+  },
+  "helpTldrDoesNot1": {
+    "message": "Tails፣ Whonix፣ Tor gateway ወይም በትክክል የተዋቀረ የስርዓት ፈሺ አይተካም።"
+  },
+  "helpTldrDoesNot2": {
+    "message": "የተረጋገጡበትን የመልዕክት ሳጥን ከአቅራቢዎ ወይም በአቅራቢው ከታከሉ Authentication-Results headers አይደብቅም።"
+  },
+  "helpTldrDoesNot3": {
+    "message": "ተቀባዩ በReceived headers ውስጥ Tor exit ሊያይ የሚችለውን እውነታ አይደብቅም።"
+  },
+  "helpTldrDoesNot4": {
+    "message": "ሌሎች መተግበሪያዎችን፣ የOS-ደረጃ መንቆርቆሮችን፣ የተበላሹ endpoints ወይም የኔትወርክ-correlation ጥቃቶችን አይከላከልም።"
+  },
+  "helpTldrTorbirdyTitle": {
+    "message": "TorBirdy ለምን ከእንግዲህ አይሰራም"
+  },
+  "helpTldrTorbirdy1": {
+    "message": "TorBirdy የቀድሞ Thunderbird/XUL ቅጥያ ነበር። Thunderbird 78 ይተማመንበት የነበረውን ቀድሞ XUL overlay ቅጥያ ስርዓት አስወግዷል።"
+  },
+  "helpTldrTorbirdy2": {
+    "message": "የመጨረሻ መለቀቅ በ2018 ነበር፣ ስለዚህ ሳይጻፍ በዘመናዊ Thunderbird ESR builds ላይ መሥራት አይችልም።"
+  },
+  "helpTldrExperimentsTitle": {
+    "message": "የExperiments API ለምን ያስፈልጋል"
+  },
+  "helpTldrExperiments1": {
+    "message": "መደበኛ MailExtensions የThunderbird proxy prefs፣ የSMTP server internals፣ የidentity prefs፣ DNS cache፣ login manager ወይም raw SOCKS self-tests መለወጥ አይችሉም።"
+  },
+  "helpTldrExperiments2": {
+    "message": "Experiments API እነዚያን የThunderbird internals ይገልጻል; OnionBird ጥቅም-ያለው ወለልን ትንሽ ለማቆየት በallowlist በኩል writes ይከለክላል።"
+  },
+  "helpNerdDoesTitle": {
+    "message": "ናርድ ሁነታ: የተተገበሩ ጥበቃዎች"
+  },
+  "helpNerdDoes1": {
+    "message": "Proxy prefs: network.proxy.type=1፣ SOCKS5 host/port ራስ-ምርመራ፣ socks_remote_dns=true፣ failover_direct=false እና ምንም proxy bypass ዝርዝር የለም።"
+  },
+  "helpNerdDoes2": {
+    "message": "የHeader ንፅህና: User-Agent/X-Mailer ይጭናል፣ HELO/EHLO ወደ [127.0.0.1] ያስገድዳል፣ ይበልጥ ደህንነቱ የተጠበቀ Message-ID FQDN ይመርጣል፣ flowed plaintext ያጠፋል እና UTC/RFP-ተዛማጅ ባህሪን ይገፋል።"
+  },
+  "helpNerdDoes3": {
+    "message": "የኔትወርክ ማጠናከር: DoH/TRR፣ OCSP፣ speculative connects፣ DNS prefetch፣ predictor፣ WebRTC፣ geolocation፣ ECH HTTPS-RR lookup፣ captive-portal ምርመራዎች እና update phone-home URLs ያጠፋል።"
+  },
+  "helpNerdDoes4": {
+    "message": "Mail UI ማጠናከር: የሩቅ ኢሜል ይዘት መንገዶችን፣ plaintext rendering፣ የማስታወቂያ መንቆርቆሮችን፣ የአድራሻ መጽሐፍ ራስ-መሰብሰብ እና ሲያጠፋ የተቀመጡ Tor-login ኦዲት/መወገድን ያጠፋል።"
+  },
+  "helpNerdDoes5": {
+    "message": "ክትትል: ጅምር እና ወቅታዊ ድጋሚ ማረጋገጥ የተጠናከሩ prefs ይጠግናሉ; የሙከራ ሁነታ ያለ pref writes Tor SOCKS ይፈትሻል፣ እና stream-isolated SOCKS5 RESOLVE canary የስርዓት DNS ባህሪን ይፈትሻል።"
+  },
+  "helpNerdDoesNotTitle": {
+    "message": "ናርድ ሁነታ: ድንበሮች"
+  },
+  "helpNerdDoesNot1": {
+    "message": "የተረጋገጠ SMTP አሁንም አቅራቢውን ስለ መለያው ያሳውቃል፣ እና አቅራቢዎች ለተቀባዮች የሚታዩ Authentication-Results smtp.auth እሴቶችን ሊጨምሩ ይችላሉ።"
+  },
+  "helpNerdDoesNot2": {
+    "message": "SMTP transport አሁንም Received ሰንሰለቶችን ይፈጥራል። ተቀባዩ ብዙ ጊዜ ከአቅራቢው Tor-exit-facing hop ላይ የTor አጠቃቀምን መገመት ይችላል።"
+  },
+  "helpNerdDoesNot3": {
+    "message": "ተጨማሪው Thunderbird ይቆጣጠራል፣ operating system ሳይሆን። NTP፣ clipboard፣ ፋይሎች፣ ሌሎች መተግበሪያዎች፣ ከTB ውጭ ያሉ crash dumps እና hostnames የOS-ስጋት-ሞዴል ጉዳዮች ሆነው ይቆያሉ።"
+  },
+  "helpNerdDoesNot4": {
+    "message": "Canary ግኝት ነው፣ የአስማት routing አይደለም። በstock desktops ላይ የOS DNS በTor DNSPort ያስተላልፉ ወይም ለጠንካራ ዋስትና Whonix/Tails ይጠቀሙ።"
+  },
+  "helpNerdDoesNot5": {
+    "message": "ዓለም አቀፍ passive ጠላቶችን፣ end-to-end timing correlation፣ ተንኮል አዘል አቅራቢዎችን፣ ተንኮል አዘል ተቀባዮችን ወይም የተበላሹ Thunderbird/profile ሁኔታ አያሸንፍም።"
+  },
+  "helpNerdTorbirdyTitle": {
+    "message": "ናርድ ሁነታ: የTorBirdy ተኳኋኝነት"
+  },
+  "helpNerdTorbirdy1": {
+    "message": "TorBirdy የቀድሞ ጥቅም-ያለው XUL/XPCOM ተጨማሪ ሞዴል ላይ ያተኮረ ሲሆን overlay/bootstrap hooks ወደ Thunderbird internals ይጠቀም ነበር።"
+  },
+  "helpNerdTorbirdy2": {
+    "message": "Thunderbird 78 ቀድሞ XUL ቅጥያዎችን አስወግዷል; ዘመናዊ Thunderbird WebExtensions/MailExtensions ይቀበላል፣ እነዚህም ሆን ብለው እነዚያን ጥቅም-ያላቸውን የmail እና pref internals አያጋልጡም።"
+  },
+  "helpNerdTorbirdy3": {
+    "message": "ስለዚህ TorBirdy ማስተላለፍ የmanifest bump አይደለም። ጥቅም-ያላቸው ክፍሎች ከThunderbird Experiments API በስተጀርባ መጻፍ አለባቸው።"
+  },
+  "helpNerdExperimentsTitle": {
+    "message": "ናርድ ሁነታ: የExperiments API ድንበር"
+  },
+  "helpNerdExperiments1": {
+    "message": "MailExtension ጎን UI፣ runtime መልዕክቶች እና options ይይዛል; Experiments parent script የServices.prefs፣ MailServices SMTP/identity objects፣ DNS cache flushing፣ login-manager ኦዲት እና raw SOCKS5 RESOLVE ይይዛል።"
+  },
+  "helpNerdExperiments2": {
+    "message": "ይህ መከፋፈል አስፈላጊ ነው ምክንያቱም ይፋ የሆኑ MailExtension APIs prefs atomically snapshot/restore ማድረግ አይችሉም ወይም per-SMTP HELO/TLS settings ማስቀመጥ አይችሉም።"
+  },
+  "helpNerdExperiments3": {
+    "message": "Experiments በparent-process privilege ስለሚሰሩ OnionBird የpref writes ወደ ጠባብ allowlist ይገድባል እና የማጠናከር mutations ይከታተላል።"
+  },
+  "sendBlockedCancelStorageError": {
+    "message": "OnionBird: መላክ ታግዷል — የተጨማሪ ሁኔታ ሊነበብ አይችልም (የማከማቻ ስህተት)። Thunderbird ን እንደገና ያስጀምሩ፣ ከዚያ ከመሞከርዎ በፊት OnionBird Options ን ይመልከቱ።"
+  },
+  "sendBlockedCancelLeakDetected": {
+    "message": "OnionBird: መላክ ታግዷል — Tor leak canary ከTor ውጭ የሆነ DNS ፍታት አግኝቷል። ከመሞከርዎ በፊት OnionBird Options → DNS leak status → Run self-test now ይክፈቱ።"
+  },
+  "sendBlockedCancelNoVerdict": {
+    "message": "OnionBird: መላክ ታግዷል — እስካሁን ምንም የcanary ብያኔ የለም (አልሄደም ወይም ማከማቻ ጸድቷል)። ከመሞከርዎ በፊት OnionBird Options → DNS leak status → Run self-test now ይክፈቱ።"
+  },
+  "sendBlockedCancelOther": {
+    "message": "OnionBird: መላክ ታግዷል — የcanary ብያኔ 'clean' አይደለም (ሁኔታ: $STATE$)። ከመሞከርዎ በፊት OnionBird Options → DNS leak status → Run self-test now ይክፈቱ።",
+    "placeholders": {
+      "STATE": {
+        "content": "$1",
+        "example": "leak_detected"
+      }
+    }
+  },
+  "socksOverrideTitle": {
+    "message": "SOCKS endpoint override"
+  },
+  "socksOverrideIntro": {
+    "message": "By default the addon detects Thunderbird's existing network.proxy.socks pref or falls back to 127.0.0.1 on port 9050 / 9150. Set host + port here to pin a different endpoint (e.g. a Whonix Gateway IP). Host must be a loopback name (localhost) or an IP literal — DNS-resolvable names would leak via the system resolver before Tor."
+  },
+  "socksOverrideHostLabel": {
+    "message": "Host:"
+  },
+  "socksOverridePortLabel": {
+    "message": "Port:"
+  },
+  "socksOverrideSaveButton": {
+    "message": "Save"
+  },
+  "socksOverrideResetButton": {
+    "message": "Reset to default"
+  },
+  "socksOverrideTestButton": {
+    "message": "Test endpoint"
+  },
+  "socksOverrideStatusOk": {
+    "message": "OK"
+  },
+  "socksOverrideStatusInvalidHost": {
+    "message": "Invalid host — must be `localhost` or an IP literal (IPv4 or IPv6)."
+  },
+  "socksOverrideStatusInvalidPort": {
+    "message": "Invalid port — must be an integer between 1 and 65535."
+  },
+  "socksOverrideTbPrefWarning": {
+    "message": "Thunderbird currently has $TB$ configured; your saved override $OVERRIDE$ will replace it on next enable.",
+    "placeholders": {
+      "TB": {
+        "content": "$1",
+        "example": "127.0.0.1:9050"
+      },
+      "OVERRIDE": {
+        "content": "$2",
+        "example": "10.152.152.10:9050"
+      }
+    }
+  },
+  "socksOverrideStatusReset": {
+    "message": "Override cleared — falling back to auto-detect on next enable."
+  },
+  "autoEnableNotificationTitleSocksUnreachable": {
+    "message": "OnionBird installed — Tor not reachable"
+  },
+  "autoEnableNotificationMessageSocksUnreachable": {
+    "message": "OnionBird could not reach a Tor SOCKS endpoint on 127.0.0.1:9050 or :9150. Outgoing sends are blocked until Tor is reachable. Start the Tor daemon (or Tor Browser) and open OnionBird Options → DNS leak status → Run self-test now."
+  },
+  "autoEnableNotificationTitleCanaryFail": {
+    "message": "OnionBird installed — hardening incomplete"
+  },
+  "autoEnableNotificationMessageCanaryFail": {
+    "message": "OnionBird auto-enabled but the canary self-test did not verify cleanly. Outgoing sends are blocked until the next canary passes. Open OnionBird Options → DNS leak status → Run self-test now to triage."
+  }
+}

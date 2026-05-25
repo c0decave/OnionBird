@@ -1,0 +1,453 @@
+{
+  "extensionName": {
+    "message": "OnionBird"
+  },
+  "extensionDescription": {
+    "message": "Tor-ის ინტეგრაცია და ანტი-ფინგერპრინტინგი Thunderbird-ისთვის — TorBirdy-ის მემკვიდრე."
+  },
+  "pageTitle": {
+    "message": "OnionBird-ის პარამეტრები"
+  },
+  "statusLabel": {
+    "message": "სტატუსი:"
+  },
+  "statusLoading": {
+    "message": "იტვირთება…"
+  },
+  "statusText": {
+    "message": "API v$1, დანამატი v$2 — გამყარება $3"
+  },
+  "statusActive": {
+    "message": "აქტიური"
+  },
+  "statusInactive": {
+    "message": "არააქტიური"
+  },
+  "appearanceTitle": {
+    "message": "გარეგნობა"
+  },
+  "themeLabel": {
+    "message": "თემა:"
+  },
+  "themeSystem": {
+    "message": "სისტემა"
+  },
+  "themeLight": {
+    "message": "ღია"
+  },
+  "themeDark": {
+    "message": "მუქი"
+  },
+  "hardeningTitle": {
+    "message": "გამყარება"
+  },
+  "enableButton": {
+    "message": "გამყარების ჩართვა"
+  },
+  "disableButton": {
+    "message": "გამყარების გამორთვა"
+  },
+  "scrubLoginsLabel": {
+    "message": "გამორთვისას წაშალე onion/loopback ფოსტის სერვერების შენახული პაროლები"
+  },
+  "disableHelp": {
+    "message": "გამორთვა აღადგენს pref-ების სნაპშოტს, რომელიც გადაღებულია გამყარების პირველად ჩართვამდე. განზრახ გვერდის ავლით გავლილი clearnet ანგარიშები ნორმალურად განაგრძობენ მუშაობას."
+  },
+  "messageIdTitle": {
+    "message": "Message-ID FQDN"
+  },
+  "messageIdIntro": {
+    "message": "FQDN გამავალ Message-ID-ებში არის განმეორებადი ფინგერპრინტი თქვენი ფოსტის გასწვრივ. ნაგულისხმევი იყენებს თქვენი From-მისამართის დომენს, რათა შერეული იყოთ იმავე პროვაიდერის ჩვეულებრივ მომხმარებლებთან. TorBirdy-ის localhost.localdomain რეჟიმი ხელმისაწვდომი რჩება როგორც აშკარა მემკვიდრეობითი არჩევანი."
+  },
+  "modeLabel": {
+    "message": "რეჟიმი:"
+  },
+  "fqdnFromDomain": {
+    "message": "From-მისამართის დომენი (რეკომენდებული)"
+  },
+  "fqdnLocalhost": {
+    "message": "localhost"
+  },
+  "fqdnLocalhostLegacy": {
+    "message": "localhost.localdomain (მემკვიდრეობითი)"
+  },
+  "fqdnCustom": {
+    "message": "მორგებული…"
+  },
+  "saveButton": {
+    "message": "შენახვა"
+  },
+  "torTestTitle": {
+    "message": "Tor-ის ტესტ-რეჟიმი"
+  },
+  "torTestIntro": {
+    "message": "ამოწმებს, ხელმისაწვდომია თუ არა ლოკალური Tor SOCKS endpoint ფოსტის გაგზავნის ან Thunderbird-ის pref-ების შეცვლის გარეშე. ზონდი იყენებს Tor-ის SOCKS5 RESOLVE ბრძანებას ახალი შემთხვევითი იზოლაციის ტოკენით, ამიტომ სამიზნე ჰოსტი არ წყდება სისტემის DNS-ის გავლით."
+  },
+  "runTorTestButton": {
+    "message": "Tor-ის ტესტი ახლა"
+  },
+  "torTestRunning": {
+    "message": " მიმდინარეობს…"
+  },
+  "torTestUnknown": {
+    "message": "უცნობი"
+  },
+  "torTestAvailable": {
+    "message": "Tor ხელმისაწვდომია"
+  },
+  "torTestUnavailable": {
+    "message": "Tor მიუწვდომელია"
+  },
+  "torTestNotRun": {
+    "message": "ჯერ არ გაშვებულა."
+  },
+  "torTestOk": {
+    "message": "Tor SOCKS ხელმისაწვდომია $1:$2-ზე ($3). არცერთი Thunderbird pref არ შეცვლილა."
+  },
+  "torTestNoTor": {
+    "message": "მიუწვდომელი Tor SOCKS endpoint ვერ მოიძებნა. სცადეთ: $1"
+  },
+  "torTestError": {
+    "message": "Tor-ის ტესტი ვერ მოხერხდა: $1"
+  },
+  "torTestResultCell": {
+    "message": "შედეგი"
+  },
+  "torTestEndpointCell": {
+    "message": "SOCKS endpoint"
+  },
+  "torTestProbeHostCell": {
+    "message": "ზონდის ჰოსტი"
+  },
+  "torTestTriedCell": {
+    "message": "ცდილობილი"
+  },
+  "torTestSourceRequested": {
+    "message": "მოთხოვნილი"
+  },
+  "torTestSourceExistingPref": {
+    "message": "არსებული pref"
+  },
+  "torTestSourceSystemTor": {
+    "message": "სისტემის Tor"
+  },
+  "torTestSourceTorBrowser": {
+    "message": "Tor Browser"
+  },
+  "torTestSourceFallback": {
+    "message": "სათადარიგო"
+  },
+  "torTestSourceCurrentPref": {
+    "message": "მიმდინარე pref"
+  },
+  "dnsLeakTitle": {
+    "message": "DNS გაჟონვის სტატუსი"
+  },
+  "dnsLeakIntro": {
+    "message": "ადარებს IP-ს, რომელსაც Tor აბრუნებს SOCKS5 RESOLVE-ის გავლით, თქვენი სისტემის რეზოლვერის მიერ დაბრუნებულ IP-სთან. სხვაობა შეიძლება ნიშნავდეს, რომ OS იყენებს არა-Tor DNS-ს; CDN-ით მხარდაჭერილი სახელები მაინც შეიძლება უვნებელი იყოს."
+  },
+  "hostLabel": {
+    "message": "ჰოსტი:"
+  },
+  "runSelfTestButton": {
+    "message": "სელფ-ტესტის გაშვება ახლა"
+  },
+  "runningLabel": {
+    "message": " მიმდინარეობს…"
+  },
+  "canaryHostCell": {
+    "message": "ჰოსტი"
+  },
+  "ipDetailLabel": {
+    "message": "IP-ის დეტალი"
+  },
+  "revealRawIps": {
+    "message": "ნედლი IP-ების ჩვენება"
+  },
+  "verdictLabel": {
+    "message": "განაჩენი"
+  },
+  "errorLabel": {
+    "message": "შეცდომა"
+  },
+  "canaryUnknown": {
+    "message": "უცნობი"
+  },
+  "canaryNoLeak": {
+    "message": "გაჟონვა არ არის"
+  },
+  "canaryLeakSuspected": {
+    "message": "გაჟონვა საეჭვო"
+  },
+  "canaryDiverged": {
+    "message": "გადახრილი"
+  },
+  "canaryInconclusive": {
+    "message": "დაუსაბუთებელი"
+  },
+  "canaryError": {
+    "message": "შეცდომა"
+  },
+  "canaryVerdictNoData": {
+    "message": "ჯერ მონაცემები არ არის"
+  },
+  "canaryVerdictLeak": {
+    "message": "სისტემის რეზოლვერის პასუხი არცერთი Tor წრედის ხედვაში არ არის; გადაამოწმე სისტემის DNS მარშრუტიზაცია"
+  },
+  "canaryVerdictOk": {
+    "message": "system_ip Tor-ის ნაკრებშია ($1 წრედი იქნა ცდილი)"
+  },
+  "canaryVerdictDiverged": {
+    "message": "system_ip არ არის Tor-ის ნაკრებში, მაგრამ ჰევრისტიკა ამბობს, რომ ეს ალბათ უვნებელია; დაათვალიერე დეტალები"
+  },
+  "canaryVerdictMissingData": {
+    "message": "ერთ-ერთმა საძიებელმა მონაცემი არ დააბრუნა"
+  },
+  "canaryErrorTor9050": {
+    "message": "Tor არ პასუხობს 127.0.0.1:9050-ზე. გაუშვი Tor-ის დემონი, ან გამოიყენე პორტი 9150 Tor Browser-ისთვის."
+  },
+  "canaryErrorTor9150": {
+    "message": "Tor Browser არ მუშაობს. გაუშვი; მისი SOCKS მსმენი ჩვეულებრივ არის 9150-ზე."
+  },
+  "canaryErrorSocksRefused": {
+    "message": "SOCKS კავშირი უარყოფილია. შეამოწმე კონფიგურირებული Tor ჰოსტი და პორტი."
+  },
+  "canaryErrorNetworkUnreachable": {
+    "message": "ქსელი ბლოკავს გამავალ ტრაფიკს ამ გზაზე. შეიძლება საჭირო იყოს ხიდები ან pluggable ტრანსპორტი."
+  },
+  "canaryErrorTimeout": {
+    "message": "Tor ხელმისაწვდომია, მაგრამ წრედი დროულად არ დასრულდა. სცადე ხელახლა ან მოატრიალე წრედები."
+  },
+  "canaryErrorDnsStatus": {
+    "message": "OS-ის რეზოლვერმა შეცდომა დააბრუნა. სრული დაცვისთვის, სისტემის DNS უნდა იყენებდეს Tor DNSPort-ს ან გაშვებული იყოს Whonix/Tails-ის შიგნით."
+  },
+  "logApplyingHardening": {
+    "message": "გამყარების გამოყენება…"
+  },
+  "logRestoringPrefs": {
+    "message": "გამყარების წინა pref-ების აღდგენა…"
+  },
+  "logDone": {
+    "message": "დასრულდა"
+  },
+  "logWarnings": {
+    "message": "დასრულდა გაფრთხილებებით"
+  },
+  "disableConfirm": {
+    "message": "ეს აღადგენს თქვენს pref-ებს იმ სნაპშოტში, რომელიც გადაღებულია გამყარების პირველი ჩართვის წინ. Tor-only გაგზავნები შეიძლება დაბრუნდნენ clearnet-ის გავლით. გაგრძელება?"
+  },
+  "savingLabel": {
+    "message": "ინახება…"
+  },
+  "fqdnInvalid": {
+    "message": "მორგებული FQDN უნდა იყოს ნამდვილი მრავალლეიბლიანი DNS სახელი, არა IP მისამართი"
+  },
+  "fqdnSaved": {
+    "message": "შენახულია. mode=$1, $2 იდენტობა განახლდა."
+  },
+  "saveFailed": {
+    "message": "შენახვა ვერ მოხერხდა: $1"
+  },
+  "readPrefsFailed": {
+    "message": "pref-ების წაკითხვა ვერ მოხერხდა: $1"
+  },
+  "errorWithMessage": {
+    "message": "შეცდომა: $1"
+  },
+  "helpTitle": {
+    "message": "დახმარება"
+  },
+  "helpModeLabel": {
+    "message": "სიღრმე:"
+  },
+  "helpModeTldr": {
+    "message": "მოკლედ"
+  },
+  "helpModeNerd": {
+    "message": "ნერდის რეჟიმი"
+  },
+  "helpTldrDoesTitle": {
+    "message": "რას აკეთებს ეს დანამატი"
+  },
+  "helpTldrDoes1": {
+    "message": "მიმართავს Thunderbird-ის IMAP და SMTP-ს ლოკალური Tor SOCKS proxy-ის გავლით და DNS რეზოლუციას ინახავს დისტანციურად Tor-ის გავლით."
+  },
+  "helpTldrDoes2": {
+    "message": "Fail-closed: თუ Tor მიუწვდომელია, ფოსტის გაგზავნამ უნდა ჩაიშალოს, ნაცვლად იმისა, რომ clearnet-ზე დაბრუნდეს."
+  },
+  "helpTldrDoes3": {
+    "message": "ამცირებს ფოსტის ფინგერპრინტებს, როგორებიცაა User-Agent, X-Mailer, HELO, დროის სარტყელი, Message-ID FQDN, flowed ტექსტი და დისტანციური შინაარსი."
+  },
+  "helpTldrDoes4": {
+    "message": "გთავაზობს Tor-ის ხელმისაწვდომობის ტესტს და DNS canary-ს; ორივე იყენებს Tor-ის SOCKS5 RESOLVE გზას და გვერდს უვლის სისტემის DNS-ს Tor-ის მხარისთვის."
+  },
+  "helpTldrDoesNotTitle": {
+    "message": "რას არ აკეთებს"
+  },
+  "helpTldrDoesNot1": {
+    "message": "ის არ ცვლის Tails-ს, Whonix-ს, Tor gateway-ს ან სწორად კონფიგურირებულ სისტემის რეზოლვერს."
+  },
+  "helpTldrDoesNot2": {
+    "message": "ის არ მალავს საფოსტო ყუთს, რომელშიც ავთენტიკაციას აკეთებთ, თქვენი პროვაიდერისგან ან პროვაიდერის მიერ დამატებული Authentication-Results სათაურებისგან."
+  },
+  "helpTldrDoesNot3": {
+    "message": "ის არ მალავს იმ ფაქტს, რომ მიმღებმა შეიძლება დაინახოს Tor exit Received სათაურებში."
+  },
+  "helpTldrDoesNot4": {
+    "message": "ის არ იცავს სხვა აპლიკაციებს, OS-დონის გაჟონვებს, კომპრომეტირებულ endpoint-ებს ან ქსელის კორელაციის შეტევებს."
+  },
+  "helpTldrTorbirdyTitle": {
+    "message": "რატომ აღარ მუშაობს TorBirdy"
+  },
+  "helpTldrTorbirdy1": {
+    "message": "TorBirdy იყო მემკვიდრეობითი Thunderbird/XUL გაფართოება. Thunderbird 78-მა მოაცილა მემკვიდრეობითი XUL overlay გაფართოების სისტემა, რომელზეც ის იყო დამოკიდებული."
+  },
+  "helpTldrTorbirdy2": {
+    "message": "მისი ბოლო გამოშვება იყო 2018-ში, ამიტომ ის ვერ ჩამოიქცევა თანამედროვე Thunderbird ESR ბილდებზე ხელახალი დაწერის გარეშე."
+  },
+  "helpTldrExperimentsTitle": {
+    "message": "რატომ არის საჭირო Experiments API"
+  },
+  "helpTldrExperiments1": {
+    "message": "ჩვეულებრივი MailExtensions ვერ ცვლის Thunderbird-ის proxy pref-ებს, SMTP სერვერის შიდა ნაწილებს, იდენტობის pref-ებს, DNS ქეშს, ლოგინ მენეჯერს, ან ნედლი SOCKS-ის სელფ-ტესტებს."
+  },
+  "helpTldrExperiments2": {
+    "message": "Experiments API ავლენს იმ Thunderbird-ის შიდა ნაწილებს; OnionBird წერებს ხურავს allowlist-ის გავლით, რომ პრივილეგირებული ზედაპირი მცირე დარჩეს."
+  },
+  "helpNerdDoesTitle": {
+    "message": "ნერდის რეჟიმი: დანერგილი დაცვები"
+  },
+  "helpNerdDoes1": {
+    "message": "Proxy pref-ები: network.proxy.type=1, SOCKS5 ჰოსტი/პორტი ავტო-ზონდირება, socks_remote_dns=true, failover_direct=false და proxy-ის გვერდის ავლის სია არ არის."
+  },
+  "helpNerdDoes2": {
+    "message": "სათაურების ჰიგიენა: ახშობს User-Agent/X-Mailer-ს, აიძულებს HELO/EHLO-ს იყოს [127.0.0.1], ირჩევს უფრო უსაფრთხო Message-ID FQDN-ს, თიშავს flowed plaintext-ს და ჩასახავს UTC/RFP-თან დაკავშირებულ ქცევას."
+  },
+  "helpNerdDoes3": {
+    "message": "ქსელის გამყარება: თიშავს DoH/TRR-ს, OCSP-ს, speculative connect-ებს, DNS prefetch-ს, predictor-ს, WebRTC-ს, geolocation-ს, ECH HTTPS-RR lookup-ს, captive-portal შემოწმებებს და update phone-home URL-ებს."
+  },
+  "helpNerdDoes4": {
+    "message": "ფოსტის UI გამყარება: თიშავს დისტანციური ფოსტის შინაარსის გზებს, plaintext რენდერინგს, შეტყობინებების გაჟონვებს, მისამართების წიგნის ავტო-შეგროვებას და გამორთვისას შენახული Tor-ლოგინის აუდიტს/მოცილებას."
+  },
+  "helpNerdDoes5": {
+    "message": "მონიტორინგი: გაშვების და პერიოდული გადამოწმება ასწორებს გამყარებულ pref-ებს; ტესტ-რეჟიმი ამოწმებს Tor SOCKS-ს pref წერის გარეშე, და stream-isolated SOCKS5 RESOLVE canary ამოწმებს სისტემის DNS ქცევას."
+  },
+  "helpNerdDoesNotTitle": {
+    "message": "ნერდის რეჟიმი: საზღვრები"
+  },
+  "helpNerdDoesNot1": {
+    "message": "ავთენტიფიცირებული SMTP კვლავ აცნობებს პროვაიდერს ანგარიშის შესახებ, და პროვაიდერებმა შეიძლება დაამატონ Authentication-Results smtp.auth მნიშვნელობები, ხილული მიმღებებისთვის."
+  },
+  "helpNerdDoesNot2": {
+    "message": "SMTP ტრანსპორტი კვლავ ქმნის Received ჯაჭვებს. მიმღებს ხშირად შეუძლია გამოიტანოს Tor-ის გამოყენების შესახებ პროვაიდერის Tor-exit-მიმართული hop-იდან."
+  },
+  "helpNerdDoesNot3": {
+    "message": "დანამატი აკონტროლებს Thunderbird-ს, არა ოპერაციულ სისტემას. NTP, ბუფერი, ფაილები, სხვა აპლიკაციები, TB-ის გარეთ ავარიული dump-ები და ჰოსტნეიმები რჩება OS-საფრთხის-მოდელის საკითხებად."
+  },
+  "helpNerdDoesNot4": {
+    "message": "Canary არის გამოვლენა, არა ჯადოსნური მარშრუტიზაცია. სტოკ დესკტოპებზე, მიმართეთ OS DNS-ი Tor DNSPort-ის გავლით ან გამოიყენე Whonix/Tails ყველაზე ძლიერი გარანტიისთვის."
+  },
+  "helpNerdDoesNot5": {
+    "message": "ის ვერ ამარცხებს გლობალურ პასიურ მოწინააღმდეგეებს, end-to-end დროის კორელაციას, მავნე პროვაიდერებს, მავნე მიმღებებს, ან კომპრომეტირებულ Thunderbird/profile მდგომარეობას."
+  },
+  "helpNerdTorbirdyTitle": {
+    "message": "ნერდის რეჟიმი: TorBirdy-ის თავსებადობა"
+  },
+  "helpNerdTorbirdy1": {
+    "message": "TorBirdy მიზნად ისახავდა ძველ პრივილეგირებულ XUL/XPCOM დანამატის მოდელს და იყენებდა overlay/bootstrap hook-ებს Thunderbird-ის შიდა ნაწილებში."
+  },
+  "helpNerdTorbirdy2": {
+    "message": "Thunderbird 78-მა მოაცილა მემკვიდრეობითი XUL გაფართოებები; თანამედროვე Thunderbird იღებს WebExtensions/MailExtensions-ს, რომლებიც განზრახ არ ავლენენ ამ პრივილეგირებულ ფოსტისა და pref-ის შიდა ნაწილებს."
+  },
+  "helpNerdTorbirdy3": {
+    "message": "TorBirdy-ის გადატანა, შესაბამისად, არ არის უბრალო manifest-ის განახლება. პრივილეგირებული ნაწილები უნდა გადაიწეროს Thunderbird Experiments API-ის უკან."
+  },
+  "helpNerdExperimentsTitle": {
+    "message": "ნერდის რეჟიმი: Experiments API-ის საზღვარი"
+  },
+  "helpNerdExperiments1": {
+    "message": "MailExtension მხარეს ეკუთვნის UI, runtime შეტყობინებები და ოფციები; Experiments parent სკრიპტს ეკუთვნის Services.prefs, MailServices SMTP/identity ობიექტები, DNS ქეშის გასუფთავება, ლოგინ-მენეჯერის აუდიტი და ნედლი SOCKS5 RESOLVE."
+  },
+  "helpNerdExperiments2": {
+    "message": "ეს გაყოფა აუცილებელია, რადგან საჯარო MailExtension API-ებს არ შეუძლიათ atomic-ად pref-ების სნაპშოტი/აღდგენა ან per-SMTP HELO/TLS პარამეტრების დაყენება."
+  },
+  "helpNerdExperiments3": {
+    "message": "ვინაიდან Experiments მუშაობს parent-process პრივილეგიით, OnionBird ზღუდავს pref წერებს ვიწრო allowlist-ით და სერიალიზებს გამყარების მუტაციებს."
+  },
+  "sendBlockedCancelStorageError": {
+    "message": "OnionBird: გაგზავნა დაბლოკილია — დანამატის მდგომარეობა ვერ იკითხება (საცავის შეცდომა). გადატვირთეთ Thunderbird და ხელახლა მცდელობამდე შეამოწმეთ OnionBird Options."
+  },
+  "sendBlockedCancelLeakDetected": {
+    "message": "OnionBird: გაგზავნა დაბლოკილია — Tor leak canary აღმოაჩინა DNS გადაწყვეტა, რომელიც არ გავიდა Tor-ის გავლით. ხელახლა მცდელობამდე გახსენით OnionBird Options → DNS leak status → Run self-test now."
+  },
+  "sendBlockedCancelNoVerdict": {
+    "message": "OnionBird: გაგზავნა დაბლოკილია — ჯერ არ არსებობს canary-ის გადაწყვეტა (არ გაშვებულა ან საცავი გასუფთავდა). ხელახლა მცდელობამდე გახსენით OnionBird Options → DNS leak status → Run self-test now."
+  },
+  "sendBlockedCancelOther": {
+    "message": "OnionBird: გაგზავნა დაბლოკილია — canary-ის გადაწყვეტა არ არის 'clean' (მდგომარეობა: $STATE$). ხელახლა მცდელობამდე გახსენით OnionBird Options → DNS leak status → Run self-test now.",
+    "placeholders": {
+      "STATE": {
+        "content": "$1",
+        "example": "leak_detected"
+      }
+    }
+  },
+  "socksOverrideTitle": {
+    "message": "SOCKS endpoint override"
+  },
+  "socksOverrideIntro": {
+    "message": "By default the addon detects Thunderbird's existing network.proxy.socks pref or falls back to 127.0.0.1 on port 9050 / 9150. Set host + port here to pin a different endpoint (e.g. a Whonix Gateway IP). Host must be a loopback name (localhost) or an IP literal — DNS-resolvable names would leak via the system resolver before Tor."
+  },
+  "socksOverrideHostLabel": {
+    "message": "Host:"
+  },
+  "socksOverridePortLabel": {
+    "message": "Port:"
+  },
+  "socksOverrideSaveButton": {
+    "message": "Save"
+  },
+  "socksOverrideResetButton": {
+    "message": "Reset to default"
+  },
+  "socksOverrideTestButton": {
+    "message": "Test endpoint"
+  },
+  "socksOverrideStatusOk": {
+    "message": "OK"
+  },
+  "socksOverrideStatusInvalidHost": {
+    "message": "Invalid host — must be `localhost` or an IP literal (IPv4 or IPv6)."
+  },
+  "socksOverrideStatusInvalidPort": {
+    "message": "Invalid port — must be an integer between 1 and 65535."
+  },
+  "socksOverrideTbPrefWarning": {
+    "message": "Thunderbird currently has $TB$ configured; your saved override $OVERRIDE$ will replace it on next enable.",
+    "placeholders": {
+      "TB": {
+        "content": "$1",
+        "example": "127.0.0.1:9050"
+      },
+      "OVERRIDE": {
+        "content": "$2",
+        "example": "10.152.152.10:9050"
+      }
+    }
+  },
+  "socksOverrideStatusReset": {
+    "message": "Override cleared — falling back to auto-detect on next enable."
+  },
+  "autoEnableNotificationTitleSocksUnreachable": {
+    "message": "OnionBird installed — Tor not reachable"
+  },
+  "autoEnableNotificationMessageSocksUnreachable": {
+    "message": "OnionBird could not reach a Tor SOCKS endpoint on 127.0.0.1:9050 or :9150. Outgoing sends are blocked until Tor is reachable. Start the Tor daemon (or Tor Browser) and open OnionBird Options → DNS leak status → Run self-test now."
+  },
+  "autoEnableNotificationTitleCanaryFail": {
+    "message": "OnionBird installed — hardening incomplete"
+  },
+  "autoEnableNotificationMessageCanaryFail": {
+    "message": "OnionBird auto-enabled but the canary self-test did not verify cleanly. Outgoing sends are blocked until the next canary passes. Open OnionBird Options → DNS leak status → Run self-test now to triage."
+  }
+}

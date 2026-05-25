@@ -1,0 +1,453 @@
+{
+  "extensionName": {
+    "message": "OnionBird"
+  },
+  "extensionDescription": {
+    "message": "Tích hợp Tor và chống fingerprinting cho Thunderbird — kế nhiệm TorBirdy."
+  },
+  "pageTitle": {
+    "message": "Tùy chọn OnionBird"
+  },
+  "statusLabel": {
+    "message": "Trạng thái:"
+  },
+  "statusLoading": {
+    "message": "đang tải…"
+  },
+  "statusText": {
+    "message": "API v$1, tiện ích v$2 — gia cố $3"
+  },
+  "statusActive": {
+    "message": "ĐANG BẬT"
+  },
+  "statusInactive": {
+    "message": "tắt"
+  },
+  "appearanceTitle": {
+    "message": "Giao diện"
+  },
+  "themeLabel": {
+    "message": "Chủ đề:"
+  },
+  "themeSystem": {
+    "message": "Hệ thống"
+  },
+  "themeLight": {
+    "message": "Sáng"
+  },
+  "themeDark": {
+    "message": "Tối"
+  },
+  "hardeningTitle": {
+    "message": "Gia cố"
+  },
+  "enableButton": {
+    "message": "Bật gia cố"
+  },
+  "disableButton": {
+    "message": "Tắt gia cố"
+  },
+  "scrubLoginsLabel": {
+    "message": "Xóa mật khẩu đã lưu cho máy chủ thư onion/loopback khi tắt"
+  },
+  "disableHelp": {
+    "message": "Tắt sẽ khôi phục bản snapshot prefs được chụp trước lần gia cố đầu tiên. Các tài khoản clearnet được cố ý bỏ qua vẫn hoạt động bình thường."
+  },
+  "messageIdTitle": {
+    "message": "FQDN trong Message-ID"
+  },
+  "messageIdIntro": {
+    "message": "FQDN trong các Message-ID đi ra là một dấu vân tay lặp lại trong thư của bạn. Mặc định dùng tên miền của địa chỉ From để bạn hòa lẫn với người dùng thông thường của cùng nhà cung cấp. Chế độ localhost.localdomain của TorBirdy vẫn có sẵn như một lựa chọn legacy rõ ràng."
+  },
+  "modeLabel": {
+    "message": "Chế độ:"
+  },
+  "fqdnFromDomain": {
+    "message": "Tên miền của địa chỉ From (khuyến nghị)"
+  },
+  "fqdnLocalhost": {
+    "message": "localhost"
+  },
+  "fqdnLocalhostLegacy": {
+    "message": "localhost.localdomain (legacy)"
+  },
+  "fqdnCustom": {
+    "message": "tùy chỉnh…"
+  },
+  "saveButton": {
+    "message": "Lưu"
+  },
+  "torTestTitle": {
+    "message": "Chế độ kiểm thử Tor"
+  },
+  "torTestIntro": {
+    "message": "Kiểm tra xem một endpoint Tor SOCKS cục bộ có thể truy cập được không, mà không gửi thư hay thay đổi prefs Thunderbird. Phép thử dùng lệnh SOCKS5 RESOLVE của Tor với một isolation token ngẫu nhiên mới, vì vậy host đích không bị resolve qua DNS hệ thống."
+  },
+  "runTorTestButton": {
+    "message": "Kiểm tra Tor ngay"
+  },
+  "torTestRunning": {
+    "message": " đang kiểm tra…"
+  },
+  "torTestUnknown": {
+    "message": "không rõ"
+  },
+  "torTestAvailable": {
+    "message": "Tor khả dụng"
+  },
+  "torTestUnavailable": {
+    "message": "Tor không khả dụng"
+  },
+  "torTestNotRun": {
+    "message": "Chưa chạy."
+  },
+  "torTestOk": {
+    "message": "Tor SOCKS có thể truy cập tại $1:$2 ($3). Không có prefs Thunderbird nào bị thay đổi."
+  },
+  "torTestNoTor": {
+    "message": "Không tìm thấy endpoint Tor SOCKS có thể truy cập. Đã thử: $1"
+  },
+  "torTestError": {
+    "message": "Kiểm tra Tor thất bại: $1"
+  },
+  "torTestResultCell": {
+    "message": "kết quả"
+  },
+  "torTestEndpointCell": {
+    "message": "endpoint SOCKS"
+  },
+  "torTestProbeHostCell": {
+    "message": "host kiểm tra"
+  },
+  "torTestTriedCell": {
+    "message": "đã thử"
+  },
+  "torTestSourceRequested": {
+    "message": "được yêu cầu"
+  },
+  "torTestSourceExistingPref": {
+    "message": "pref hiện có"
+  },
+  "torTestSourceSystemTor": {
+    "message": "Tor hệ thống"
+  },
+  "torTestSourceTorBrowser": {
+    "message": "Tor Browser"
+  },
+  "torTestSourceFallback": {
+    "message": "dự phòng"
+  },
+  "torTestSourceCurrentPref": {
+    "message": "pref hiện tại"
+  },
+  "dnsLeakTitle": {
+    "message": "Trạng thái rò rỉ DNS"
+  },
+  "dnsLeakIntro": {
+    "message": "So sánh IP mà Tor trả về qua SOCKS5 RESOLVE với IP mà resolver hệ thống trả về. Khác biệt có thể nghĩa là OS đang dùng DNS không phải Tor; các tên dựa trên CDN vẫn có thể vô hại."
+  },
+  "hostLabel": {
+    "message": "Host:"
+  },
+  "runSelfTestButton": {
+    "message": "Chạy self-test ngay"
+  },
+  "runningLabel": {
+    "message": " đang chạy…"
+  },
+  "canaryHostCell": {
+    "message": "host"
+  },
+  "ipDetailLabel": {
+    "message": "chi tiết IP"
+  },
+  "revealRawIps": {
+    "message": "hiện IP thô"
+  },
+  "verdictLabel": {
+    "message": "phán quyết"
+  },
+  "errorLabel": {
+    "message": "lỗi"
+  },
+  "canaryUnknown": {
+    "message": "không rõ"
+  },
+  "canaryNoLeak": {
+    "message": "không rò rỉ"
+  },
+  "canaryLeakSuspected": {
+    "message": "nghi ngờ rò rỉ"
+  },
+  "canaryDiverged": {
+    "message": "khác biệt"
+  },
+  "canaryInconclusive": {
+    "message": "chưa kết luận"
+  },
+  "canaryError": {
+    "message": "lỗi"
+  },
+  "canaryVerdictNoData": {
+    "message": "chưa có dữ liệu"
+  },
+  "canaryVerdictLeak": {
+    "message": "câu trả lời của resolver hệ thống không xuất hiện trong bất kỳ view Tor circuit nào; hãy xác minh định tuyến DNS hệ thống"
+  },
+  "canaryVerdictOk": {
+    "message": "system_ip nằm trong tập Tor (đã thử $1 circuit)"
+  },
+  "canaryVerdictDiverged": {
+    "message": "system_ip không nằm trong tập Tor, nhưng heuristic cho rằng có thể vô hại; hãy xem chi tiết"
+  },
+  "canaryVerdictMissingData": {
+    "message": "một trong các tra cứu không trả về dữ liệu"
+  },
+  "canaryErrorTor9050": {
+    "message": "Tor không trả lời tại 127.0.0.1:9050. Khởi động daemon Tor, hoặc dùng cổng 9150 cho Tor Browser."
+  },
+  "canaryErrorTor9150": {
+    "message": "Tor Browser không chạy. Hãy khởi động nó; SOCKS listener thường ở 9150."
+  },
+  "canaryErrorSocksRefused": {
+    "message": "Kết nối SOCKS bị từ chối. Kiểm tra host và cổng Tor đã cấu hình."
+  },
+  "canaryErrorNetworkUnreachable": {
+    "message": "Mạng chặn lưu lượng đi ra qua đường này. Có thể cần bridges hoặc pluggable transports."
+  },
+  "canaryErrorTimeout": {
+    "message": "Tor có thể truy cập, nhưng circuit không hoàn thành kịp. Hãy thử lại hoặc xoay circuit."
+  },
+  "canaryErrorDnsStatus": {
+    "message": "Resolver của OS trả về lỗi. Để bảo vệ đầy đủ, DNS hệ thống nên đi qua Tor DNSPort hoặc chạy trong Whonix/Tails."
+  },
+  "logApplyingHardening": {
+    "message": "Đang áp dụng gia cố…"
+  },
+  "logRestoringPrefs": {
+    "message": "Đang khôi phục prefs trước gia cố…"
+  },
+  "logDone": {
+    "message": "Xong"
+  },
+  "logWarnings": {
+    "message": "Hoàn tất kèm cảnh báo"
+  },
+  "disableConfirm": {
+    "message": "Điều này sẽ khôi phục prefs của bạn về snapshot trước lần gia cố đầu tiên. Việc gửi Tor-only có thể quay lại đi qua clearnet. Tiếp tục?"
+  },
+  "savingLabel": {
+    "message": "đang lưu…"
+  },
+  "fqdnInvalid": {
+    "message": "FQDN tùy chỉnh phải là tên DNS nhiều nhãn hợp lệ, không phải địa chỉ IP"
+  },
+  "fqdnSaved": {
+    "message": "đã lưu. chế độ=$1, đã cập nhật $2 danh tính."
+  },
+  "saveFailed": {
+    "message": "lưu thất bại: $1"
+  },
+  "readPrefsFailed": {
+    "message": "không thể đọc prefs: $1"
+  },
+  "errorWithMessage": {
+    "message": "lỗi: $1"
+  },
+  "helpTitle": {
+    "message": "Trợ giúp"
+  },
+  "helpModeLabel": {
+    "message": "Độ sâu:"
+  },
+  "helpModeTldr": {
+    "message": "TL;DR"
+  },
+  "helpModeNerd": {
+    "message": "Chế độ nerd"
+  },
+  "helpTldrDoesTitle": {
+    "message": "Tiện ích này làm gì"
+  },
+  "helpTldrDoes1": {
+    "message": "Định tuyến IMAP và SMTP của Thunderbird qua một proxy Tor SOCKS cục bộ và giữ phân giải DNS từ xa qua Tor."
+  },
+  "helpTldrDoes2": {
+    "message": "Fail-closed: nếu Tor không truy cập được, việc gửi nên thất bại thay vì âm thầm quay lại clearnet."
+  },
+  "helpTldrDoes3": {
+    "message": "Giảm các dấu vân tay thư như User-Agent, X-Mailer, HELO, múi giờ, FQDN của Message-ID, flowed text và nội dung từ xa."
+  },
+  "helpTldrDoes4": {
+    "message": "Cung cấp kiểm thử khả dụng Tor và canary DNS; cả hai dùng đường SOCKS5 RESOLVE của Tor và tránh DNS hệ thống ở phía Tor."
+  },
+  "helpTldrDoesNotTitle": {
+    "message": "Nó không làm gì"
+  },
+  "helpTldrDoesNot1": {
+    "message": "Nó không thay thế Tails, Whonix, một Tor gateway, hay một resolver hệ thống được cấu hình đúng."
+  },
+  "helpTldrDoesNot2": {
+    "message": "Nó không giấu hộp thư mà bạn xác thực với nhà cung cấp, cũng không giấu các header Authentication-Results do nhà cung cấp thêm vào."
+  },
+  "helpTldrDoesNot3": {
+    "message": "Nó không giấu việc người nhận có thể thấy một Tor exit trong header Received."
+  },
+  "helpTldrDoesNot4": {
+    "message": "Nó không bảo vệ các ứng dụng khác, rò rỉ ở mức OS, endpoint bị xâm phạm, hay tấn công tương quan mạng."
+  },
+  "helpTldrTorbirdyTitle": {
+    "message": "Vì sao TorBirdy không còn hoạt động"
+  },
+  "helpTldrTorbirdy1": {
+    "message": "TorBirdy là một tiện ích legacy Thunderbird/XUL. Thunderbird 78 đã loại bỏ hệ thống overlay XUL legacy mà nó dựa vào."
+  },
+  "helpTldrTorbirdy2": {
+    "message": "Bản phát hành cuối cùng vào năm 2018; vì vậy nó không chạy trên các bản Thunderbird ESR hiện đại nếu không viết lại."
+  },
+  "helpTldrExperimentsTitle": {
+    "message": "Vì sao cần Experiments API"
+  },
+  "helpTldrExperiments1": {
+    "message": "MailExtensions thông thường không thể thay đổi prefs proxy của Thunderbird, nội bộ SMTP, prefs identity, DNS cache, login manager hay self-test SOCKS thô."
+  },
+  "helpTldrExperiments2": {
+    "message": "Experiments API mở các nội bộ Thunderbird này; OnionBird gate ghi qua một allowlist để giữ bề mặt đặc quyền nhỏ."
+  },
+  "helpNerdDoesTitle": {
+    "message": "Chế độ nerd: các bảo vệ đã triển khai"
+  },
+  "helpNerdDoes1": {
+    "message": "Prefs proxy: network.proxy.type=1, dò tự động host/port SOCKS5, socks_remote_dns=true, failover_direct=false và không có danh sách bypass proxy."
+  },
+  "helpNerdDoes2": {
+    "message": "Vệ sinh header: ức chế User-Agent/X-Mailer, ép HELO/EHLO thành [127.0.0.1], chọn FQDN Message-ID an toàn hơn, tắt flowed plaintext và đẩy hành vi giống UTC/RFP."
+  },
+  "helpNerdDoes3": {
+    "message": "Gia cố mạng: tắt DoH/TRR, OCSP, kết nối speculative, DNS prefetch, predictor, WebRTC, geolocation, lookup ECH HTTPS-RR, kiểm tra captive-portal và URL phone-home của update."
+  },
+  "helpNerdDoes4": {
+    "message": "Gia cố UI thư: tắt đường dẫn nội dung từ xa, plaintext rendering, rò rỉ thông báo, auto-collect address-book, và cung cấp audit/xóa login Tor đã lưu khi tắt."
+  },
+  "helpNerdDoes5": {
+    "message": "Giám sát: reassert lúc khởi động và định kỳ sửa prefs đã gia cố; chế độ test kiểm tra Tor SOCKS không ghi prefs, và một canary SOCKS5 RESOLVE cô lập stream kiểm tra hành vi DNS hệ thống."
+  },
+  "helpNerdDoesNotTitle": {
+    "message": "Chế độ nerd: ranh giới"
+  },
+  "helpNerdDoesNot1": {
+    "message": "SMTP đã xác thực vẫn để nhà cung cấp biết tài khoản, và nhà cung cấp có thể thêm các giá trị Authentication-Results smtp.auth mà người nhận nhìn thấy."
+  },
+  "helpNerdDoesNot2": {
+    "message": "SMTP transport vẫn tạo các chuỗi Received. Người nhận thường có thể suy ra việc dùng Tor từ hop hướng về Tor-exit của nhà cung cấp."
+  },
+  "helpNerdDoesNot3": {
+    "message": "Tiện ích điều khiển Thunderbird, không phải hệ điều hành. NTP, clipboard, tệp, các ứng dụng khác, crash dumps ngoài TB và hostname vẫn là vấn đề mô hình mối đe dọa OS."
+  },
+  "helpNerdDoesNot4": {
+    "message": "Canary là phát hiện, không phải định tuyến phép thuật. Trên desktop bình thường: định tuyến OS DNS qua Tor DNSPort hoặc dùng Whonix/Tails để có bảo đảm mạnh nhất."
+  },
+  "helpNerdDoesNot5": {
+    "message": "Nó không đánh bại đối thủ thụ động toàn cầu, tương quan thời gian end-to-end, nhà cung cấp độc hại, người nhận độc hại, hay trạng thái Thunderbird/profile đã bị xâm phạm."
+  },
+  "helpNerdTorbirdyTitle": {
+    "message": "Chế độ nerd: tương thích với TorBirdy"
+  },
+  "helpNerdTorbirdy1": {
+    "message": "TorBirdy nhắm đến mô hình tiện ích đặc quyền cũ XUL/XPCOM và dùng hook overlay/bootstrap vào nội bộ Thunderbird."
+  },
+  "helpNerdTorbirdy2": {
+    "message": "Thunderbird 78 đã loại bỏ tiện ích XUL legacy; Thunderbird hiện đại chấp nhận WebExtensions/MailExtensions, vốn cố ý không mở những nội bộ đặc quyền về mail và prefs."
+  },
+  "helpNerdTorbirdy3": {
+    "message": "Do đó port TorBirdy không phải là một bump manifest. Các phần đặc quyền phải được viết lại phía sau một Thunderbird Experiments API."
+  },
+  "helpNerdExperimentsTitle": {
+    "message": "Chế độ nerd: ranh giới Experiments API"
+  },
+  "helpNerdExperiments1": {
+    "message": "Phía MailExtension sở hữu UI, runtime messages và options; script parent của Experiments sở hữu Services.prefs, đối tượng SMTP/identity của MailServices, flush DNS cache, audit login-manager và SOCKS5 RESOLVE thô."
+  },
+  "helpNerdExperiments2": {
+    "message": "Việc tách này là cần thiết vì các API MailExtension công khai không thể snapshot/restore prefs nguyên tử và không thể đặt cấu hình per-SMTP HELO/TLS."
+  },
+  "helpNerdExperiments3": {
+    "message": "Vì Experiments chạy với quyền của parent process, OnionBird giới hạn việc ghi prefs trong một allowlist hẹp và serialize các thay đổi gia cố."
+  },
+  "sendBlockedCancelStorageError": {
+    "message": "OnionBird: gửi bị chặn — không đọc được trạng thái add-on (lỗi lưu trữ). Khởi động lại Thunderbird, sau đó kiểm tra OnionBird Options trước khi thử lại."
+  },
+  "sendBlockedCancelLeakDetected": {
+    "message": "OnionBird: gửi bị chặn — Tor leak canary phát hiện một phân giải DNS không đi qua Tor. Mở OnionBird Options → DNS leak status → Run self-test now trước khi thử lại."
+  },
+  "sendBlockedCancelNoVerdict": {
+    "message": "OnionBird: gửi bị chặn — chưa có quyết định canary (chưa chạy hoặc lưu trữ đã bị xóa). Mở OnionBird Options → DNS leak status → Run self-test now trước khi thử lại."
+  },
+  "sendBlockedCancelOther": {
+    "message": "OnionBird: gửi bị chặn — quyết định canary không phải 'clean' (trạng thái: $STATE$). Mở OnionBird Options → DNS leak status → Run self-test now trước khi thử lại.",
+    "placeholders": {
+      "STATE": {
+        "content": "$1",
+        "example": "leak_detected"
+      }
+    }
+  },
+  "socksOverrideTitle": {
+    "message": "SOCKS endpoint override"
+  },
+  "socksOverrideIntro": {
+    "message": "By default the addon detects Thunderbird's existing network.proxy.socks pref or falls back to 127.0.0.1 on port 9050 / 9150. Set host + port here to pin a different endpoint (e.g. a Whonix Gateway IP). Host must be a loopback name (localhost) or an IP literal — DNS-resolvable names would leak via the system resolver before Tor."
+  },
+  "socksOverrideHostLabel": {
+    "message": "Host:"
+  },
+  "socksOverridePortLabel": {
+    "message": "Port:"
+  },
+  "socksOverrideSaveButton": {
+    "message": "Save"
+  },
+  "socksOverrideResetButton": {
+    "message": "Reset to default"
+  },
+  "socksOverrideTestButton": {
+    "message": "Test endpoint"
+  },
+  "socksOverrideStatusOk": {
+    "message": "OK"
+  },
+  "socksOverrideStatusInvalidHost": {
+    "message": "Invalid host — must be `localhost` or an IP literal (IPv4 or IPv6)."
+  },
+  "socksOverrideStatusInvalidPort": {
+    "message": "Invalid port — must be an integer between 1 and 65535."
+  },
+  "socksOverrideTbPrefWarning": {
+    "message": "Thunderbird currently has $TB$ configured; your saved override $OVERRIDE$ will replace it on next enable.",
+    "placeholders": {
+      "TB": {
+        "content": "$1",
+        "example": "127.0.0.1:9050"
+      },
+      "OVERRIDE": {
+        "content": "$2",
+        "example": "10.152.152.10:9050"
+      }
+    }
+  },
+  "socksOverrideStatusReset": {
+    "message": "Override cleared — falling back to auto-detect on next enable."
+  },
+  "autoEnableNotificationTitleSocksUnreachable": {
+    "message": "OnionBird installed — Tor not reachable"
+  },
+  "autoEnableNotificationMessageSocksUnreachable": {
+    "message": "OnionBird could not reach a Tor SOCKS endpoint on 127.0.0.1:9050 or :9150. Outgoing sends are blocked until Tor is reachable. Start the Tor daemon (or Tor Browser) and open OnionBird Options → DNS leak status → Run self-test now."
+  },
+  "autoEnableNotificationTitleCanaryFail": {
+    "message": "OnionBird installed — hardening incomplete"
+  },
+  "autoEnableNotificationMessageCanaryFail": {
+    "message": "OnionBird auto-enabled but the canary self-test did not verify cleanly. Outgoing sends are blocked until the next canary passes. Open OnionBird Options → DNS leak status → Run self-test now to triage."
+  }
+}

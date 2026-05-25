@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 240" role="img" aria-label="Onion study — halved/cut">
+  <title>Onion Study — Halved Onion (cross-section reveals real rings)</title>
+  <defs>
+    <radialGradient id="cut-outer" cx="42%" cy="38%" r="75%">
+      <stop offset="0%" stop-color="#F2D9B0"/>
+      <stop offset="55%" stop-color="#D8A24A"/>
+      <stop offset="100%" stop-color="#7A4B12"/>
+    </radialGradient>
+    <radialGradient id="cut-flesh" cx="50%" cy="55%" r="70%">
+      <stop offset="0%" stop-color="#FFFCF2"/>
+      <stop offset="50%" stop-color="#F8ECCB"/>
+      <stop offset="100%" stop-color="#D8B878"/>
+    </radialGradient>
+  </defs>
+
+  <!-- LEFT: whole onion (back) -->
+  <g transform="translate(0 0)">
+    <ellipse cx="84" cy="206" rx="56" ry="5" fill="#000" opacity="0.22"/>
+    <g stroke="#5A3A12" stroke-width="1.1" stroke-linecap="round" fill="none" opacity="0.85">
+      <path d="M 68 198 Q 60 218, 52 232"/>
+      <path d="M 80 200 Q 78 222, 76 240"/>
+      <path d="M 92 200 Q 96 222, 100 238"/>
+      <path d="M 104 198 Q 112 216, 118 230"/>
+    </g>
+    <path d="M 22 116 C 22 60, 50 42, 84 38 C 118 42, 146 60, 146 116 C 146 178, 122 202, 84 202 C 46 202, 22 178, 22 116 Z"
+          fill="url(#cut-outer)"/>
+    <g fill="none" stroke="#5A3A12" stroke-width="0.8" opacity="0.45" stroke-linecap="round">
+      <path d="M 84 40 C 60 56, 38 86, 32 122 C 38 172, 62 198, 82 200"/>
+      <path d="M 84 40 C 100 60, 110 92, 108 130 C 106 180, 90 198, 84 200"/>
+      <path d="M 84 40 C 116 58, 134 88, 138 124 C 132 172, 110 196, 86 200"/>
+    </g>
+    <ellipse cx="56" cy="92" rx="14" ry="30" fill="#FFF8D8" opacity="0.4" transform="rotate(-14 56 92)"/>
+    <path d="M 82 40 C 78 26, 82 14, 78 6 C 76 2, 84 0, 86 6 C 88 16, 84 28, 88 38 Z" fill="#5A3A12"/>
+    <path d="M 90 38 C 96 26, 96 14, 100 8 C 102 4, 96 2, 94 8 C 90 18, 90 30, 86 40" fill="#7A4F18" opacity="0.9"/>
+  </g>
+
+  <!-- RIGHT: halved/cut onion (cross-section) -->
+  <g transform="translate(150 6)">
+    <ellipse cx="84" cy="200" rx="56" ry="5" fill="#000" opacity="0.22"/>
+
+    <!-- flesh (overall white-ish body) -->
+    <path d="M 22 116
+             C 22 60, 50 42, 84 38
+             C 118 42, 146 60, 146 116
+             C 146 178, 122 196, 84 196
+             C 46 196, 22 178, 22 116 Z"
+          fill="url(#cut-flesh)"/>
+
+    <!-- concentric ring layers (real onion rings, drawn like nested teardrops) -->
+    <g fill="none" stroke="#C99450" stroke-width="1.6" stroke-linecap="round">
+      <path d="M 30 116 C 30 64, 56 48, 84 44 C 112 48, 138 64, 138 116 C 138 174, 116 190, 84 190 C 52 190, 30 174, 30 116 Z"/>
+      <path d="M 40 118 C 40 72, 62 56, 84 52 C 106 56, 128 72, 128 118 C 128 168, 110 184, 84 184 C 58 184, 40 168, 40 118 Z"/>
+      <path d="M 52 120 C 52 82, 68 66, 84 62 C 100 66, 116 82, 116 120 C 116 160, 102 174, 84 174 C 66 174, 52 160, 52 120 Z"/>
+      <path d="M 64 124 C 64 94, 74 80, 84 76 C 94 80, 104 94, 104 124 C 104 152, 96 162, 84 162 C 72 162, 64 152, 64 124 Z"/>
+      <path d="M 74 132 C 74 116, 80 108, 84 106 C 88 108, 94 116, 94 132 C 94 146, 90 152, 84 152 C 78 152, 74 146, 74 132 Z"/>
+    </g>
+
+    <!-- center growth core (basal plate) -->
+    <ellipse cx="84" cy="194" rx="10" ry="3.5" fill="#A07030"/>
+
+    <!-- outer papery skin (gold edge) -->
+    <path d="M 22 116
+             C 22 60, 50 42, 84 38
+             C 118 42, 146 60, 146 116
+             C 146 178, 122 196, 84 196
+             C 46 196, 22 178, 22 116 Z"
+          fill="none" stroke="#9C6B25" stroke-width="3"/>
+
+    <!-- subtle inner gloss to suggest moisture on cut face -->
+    <ellipse cx="64" cy="92" rx="12" ry="22" fill="#FFFFFF" opacity="0.35" transform="rotate(-14 64 92)"/>
+
+    <!-- dry stalk on top -->
+    <path d="M 82 40 C 78 26, 82 14, 78 6 C 76 2, 84 0, 86 6 C 88 16, 84 28, 88 38 Z" fill="#5A3A12"/>
+  </g>
+</svg>

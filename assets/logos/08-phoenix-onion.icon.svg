@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="OnionBird icon">
+  <rect width="64" height="64" rx="12" fill="#FFF7EE"/>
+  <g transform="translate(32 46)">
+    <path d="M -18 -2 Q -18 -14 0 -16 Q 18 -14 18 -2 Q 18 12 0 12 Q -18 12 -18 -2 Z" fill="#4A2D67"/>
+    <path d="M -12 -4 Q -12 -12 0 -14" fill="none" stroke="#9C6BB8" stroke-width="1"/>
+    <path d="M -6 -6 Q -6 -10 0 -12" fill="none" stroke="#C49BD8" stroke-width="1"/>
+  </g>
+  <g transform="translate(32 26)">
+    <path d="M 0 8 Q -16 -2 -22 -16 Q -10 -8 -6 -4 Q -10 -16 -6 -22 Q -2 -14 0 -10 Z" fill="#E66100"/>
+    <path d="M 0 8 Q 16 -2 22 -16 Q 10 -8 6 -4 Q 10 -16 6 -22 Q 2 -14 0 -10 Z" fill="#F9A11B"/>
+    <ellipse cx="0" cy="2" rx="3.5" ry="7" fill="#E66100"/>
+    <circle cx="0" cy="-6" r="3" fill="#E66100"/>
+    <path d="M 3 -6 L 9 -5 L 5 -3 Z" fill="#F9A11B"/>
+  </g>
+</svg>

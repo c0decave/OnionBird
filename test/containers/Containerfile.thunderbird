@@ -1,0 +1,60 @@
+FROM docker.io/debian:bookworm-slim
+
+ARG TB_VERSION=140.11.0esr
+ARG TB_LANG=en-US
+ENV DEBIAN_FRONTEND=noninteractive
+
+RUN apt-get update && apt-get install -y --no-install-recommends \
+        xvfb \
+        dbus-x11 \
+        libgtk-3-0 \
+        libdbus-glib-1-2 \
+        libasound2 \
+        libxt6 \
+        libx11-xcb1 \
+        libxcb-shm0 \
+        libxcb-glx0 \
+        libxcomposite1 \
+        libxdamage1 \
+        libxfixes3 \
+        libxrandr2 \
+        libxtst6 \
+        libsecret-1-0 \
+        libnss3 \
+        fonts-noto-core \
+        ca-certificates \
+        wget \
+        xz-utils \
+        procps \
+        netcat-openbsd \
+        socat \
+        x11-utils \
+    && rm -rf /var/lib/apt/lists/*
+
+RUN release_base="https://archive.mozilla.org/pub/thunderbird/releases/${TB_VERSION}" \
+    && artifact="linux-x86_64/${TB_LANG}/thunderbird-${TB_VERSION}.tar.xz" \
+    && wget -q "${release_base}/${artifact}" -O /tmp/tb.tar.xz \
+    && wget -q "${release_base}/SHA256SUMS" -O /tmp/SHA256SUMS \
+    && awk -v artifact="${artifact}" '$2 == artifact || $2 == "./" artifact { print $1 "  /tmp/tb.tar.xz"; found=1 } END { exit found ? 0 : 1 }' /tmp/SHA256SUMS | sha256sum -c - \
+    && tar -xJf /tmp/tb.tar.xz -C /opt \
+    && rm /tmp/tb.tar.xz /tmp/SHA256SUMS \
+    && ln -s /opt/thunderbird/thunderbird /usr/local/bin/thunderbird
+
+RUN useradd -m -s /bin/bash tbuser \
+    && apt-get update && apt-get install -y --no-install-recommends gosu \
+    && rm -rf /var/lib/apt/lists/*
+
+WORKDIR /home/tbuser
+
+RUN mkdir -p /home/tbuser/.thunderbird/test \
+    && chown -R tbuser:tbuser /home/tbuser/.thunderbird
+COPY --chown=tbuser:tbuser profile-prefs.js /home/tbuser/.thunderbird/test/user.js
+COPY --chown=tbuser:tbuser profiles.ini /home/tbuser/.thunderbird/profiles.ini
+
+COPY entrypoint.sh /usr/local/bin/entrypoint.sh
+RUN chmod +x /usr/local/bin/entrypoint.sh
+
+EXPOSE 2828
+
+# Entrypoint runs as root (to override resolv.conf), then drops to tbuser.
+ENTRYPOINT ["/usr/local/bin/entrypoint.sh"]

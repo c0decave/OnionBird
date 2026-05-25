@@ -1,0 +1,27 @@
+DataDirectory /var/lib/tor
+SOCKSPort 0.0.0.0:9050
+SOCKSPolicy accept 172.30.112.0/24
+SOCKSPolicy reject *
+
+# DNS over Tor — dns-trap forwards clearnet queries to this port.
+# Non-privileged port: tor process does not need CAP_NET_BIND_SERVICE.
+# Access control: container network isolation only (no `ports:` mapping
+# in compose.yaml, so 5353/udp is only reachable from t0net). Tor 0.4.9
+# has no `DNSPolicy` directive — open-resolver risk is mitigated by the
+# compose network boundary, not by ACL inside torrc. Anyone mapping this
+# port to a host interface MUST front it with iptables/nftables filter.
+DNSPort 0.0.0.0:5353
+
+ControlPort 0.0.0.0:9051
+CookieAuthentication 0
+
+HiddenServiceDir /var/lib/tor/hs_smtp
+# Tor's HiddenServicePort parser is stricter than regular container DNS
+# clients on some releases; use compose's pinned SMTP trap IP.
+HiddenServicePort 25 172.30.112.2:25
+HiddenServiceVersion 3
+
+ClientOnly 1
+AvoidDiskWrites 0
+
+Log notice stdout

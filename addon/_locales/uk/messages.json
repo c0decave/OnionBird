@@ -1,0 +1,453 @@
+{
+  "extensionName": {
+    "message": "OnionBird"
+  },
+  "extensionDescription": {
+    "message": "Інтеграція Tor і анти-фінгерпринтинг для Thunderbird — наступник TorBirdy."
+  },
+  "pageTitle": {
+    "message": "Налаштування OnionBird"
+  },
+  "statusLabel": {
+    "message": "Статус:"
+  },
+  "statusLoading": {
+    "message": "завантаження…"
+  },
+  "statusText": {
+    "message": "API v$1, додаток v$2 — гартування $3"
+  },
+  "statusActive": {
+    "message": "АКТИВНО"
+  },
+  "statusInactive": {
+    "message": "неактивно"
+  },
+  "appearanceTitle": {
+    "message": "Вигляд"
+  },
+  "themeLabel": {
+    "message": "Тема:"
+  },
+  "themeSystem": {
+    "message": "Системна"
+  },
+  "themeLight": {
+    "message": "Світла"
+  },
+  "themeDark": {
+    "message": "Темна"
+  },
+  "hardeningTitle": {
+    "message": "Гартування"
+  },
+  "enableButton": {
+    "message": "Увімкнути гартування"
+  },
+  "disableButton": {
+    "message": "Вимкнути гартування"
+  },
+  "scrubLoginsLabel": {
+    "message": "Видаляти збережені паролі поштових серверів onion/loopback під час вимкнення"
+  },
+  "disableHelp": {
+    "message": "Вимкнення відновлює снапшот prefs, зроблений перед першим гартуванням. Свідомо обійдені clearnet-акаунти продовжують працювати нормально."
+  },
+  "messageIdTitle": {
+    "message": "FQDN для Message-ID"
+  },
+  "messageIdIntro": {
+    "message": "FQDN у вихідних Message-ID — це повторюваний відбиток у вашій пошті. За замовчуванням використовується домен вашої From-адреси, щоб зливатися зі звичайними користувачами того ж провайдера. Режим localhost.localdomain з TorBirdy лишається доступним як явний legacy-вибір."
+  },
+  "modeLabel": {
+    "message": "Режим:"
+  },
+  "fqdnFromDomain": {
+    "message": "Домен From-адреси (рекомендовано)"
+  },
+  "fqdnLocalhost": {
+    "message": "localhost"
+  },
+  "fqdnLocalhostLegacy": {
+    "message": "localhost.localdomain (legacy)"
+  },
+  "fqdnCustom": {
+    "message": "власний…"
+  },
+  "saveButton": {
+    "message": "Зберегти"
+  },
+  "torTestTitle": {
+    "message": "Режим тесту Tor"
+  },
+  "torTestIntro": {
+    "message": "Перевіряє, чи доступний локальний SOCKS-ендпоінт Tor, без надсилання пошти і без зміни prefs Thunderbird. Проба використовує команду SOCKS5 RESOLVE з новим випадковим токеном ізоляції, тож цільовий хост не резолвиться через системний DNS."
+  },
+  "runTorTestButton": {
+    "message": "Тестувати Tor зараз"
+  },
+  "torTestRunning": {
+    "message": " тестування…"
+  },
+  "torTestUnknown": {
+    "message": "невідомо"
+  },
+  "torTestAvailable": {
+    "message": "Tor доступний"
+  },
+  "torTestUnavailable": {
+    "message": "Tor недоступний"
+  },
+  "torTestNotRun": {
+    "message": "Ще не запускали."
+  },
+  "torTestOk": {
+    "message": "Tor SOCKS доступний на $1:$2 ($3). Prefs Thunderbird не змінювалися."
+  },
+  "torTestNoTor": {
+    "message": "Не знайдено доступного Tor SOCKS-ендпоінту. Перевірено: $1"
+  },
+  "torTestError": {
+    "message": "Тест Tor невдалий: $1"
+  },
+  "torTestResultCell": {
+    "message": "результат"
+  },
+  "torTestEndpointCell": {
+    "message": "SOCKS-ендпоінт"
+  },
+  "torTestProbeHostCell": {
+    "message": "хост проби"
+  },
+  "torTestTriedCell": {
+    "message": "перевірено"
+  },
+  "torTestSourceRequested": {
+    "message": "запитано"
+  },
+  "torTestSourceExistingPref": {
+    "message": "наявний pref"
+  },
+  "torTestSourceSystemTor": {
+    "message": "системний Tor"
+  },
+  "torTestSourceTorBrowser": {
+    "message": "Tor Browser"
+  },
+  "torTestSourceFallback": {
+    "message": "запасний"
+  },
+  "torTestSourceCurrentPref": {
+    "message": "поточний pref"
+  },
+  "dnsLeakTitle": {
+    "message": "Стан витоків DNS"
+  },
+  "dnsLeakIntro": {
+    "message": "Порівнює IP, який повертає Tor через SOCKS5 RESOLVE, з IP від системного резолвера. Розбіжність може означати, що ОС використовує не-Tor DNS; імена за CDN усе одно можуть бути безпечними."
+  },
+  "hostLabel": {
+    "message": "Хост:"
+  },
+  "runSelfTestButton": {
+    "message": "Запустити self-test"
+  },
+  "runningLabel": {
+    "message": " виконується…"
+  },
+  "canaryHostCell": {
+    "message": "хост"
+  },
+  "ipDetailLabel": {
+    "message": "деталі IP"
+  },
+  "revealRawIps": {
+    "message": "показати сирі IP"
+  },
+  "verdictLabel": {
+    "message": "вердикт"
+  },
+  "errorLabel": {
+    "message": "помилка"
+  },
+  "canaryUnknown": {
+    "message": "невідомо"
+  },
+  "canaryNoLeak": {
+    "message": "без витоку"
+  },
+  "canaryLeakSuspected": {
+    "message": "підозра на витік"
+  },
+  "canaryDiverged": {
+    "message": "розбіжність"
+  },
+  "canaryInconclusive": {
+    "message": "невизначено"
+  },
+  "canaryError": {
+    "message": "помилка"
+  },
+  "canaryVerdictNoData": {
+    "message": "ще немає даних"
+  },
+  "canaryVerdictLeak": {
+    "message": "відповідь системного резолвера не з’являється в жодному вигляді Tor-circuit; перевірте DNS-маршрутизацію системи"
+  },
+  "canaryVerdictOk": {
+    "message": "system_ip є в наборі Tor (перевірено $1 circuit(s))"
+  },
+  "canaryVerdictDiverged": {
+    "message": "system_ip не в наборі Tor, але евристика вважає це ймовірно безпечним; перевірте деталі"
+  },
+  "canaryVerdictMissingData": {
+    "message": "один із запитів не повернув даних"
+  },
+  "canaryErrorTor9050": {
+    "message": "Tor не відповідає на 127.0.0.1:9050. Запустіть daemon Tor або використайте порт 9150 для Tor Browser."
+  },
+  "canaryErrorTor9150": {
+    "message": "Tor Browser не запущений. Запустіть його; SOCKS-слухач зазвичай на 9150."
+  },
+  "canaryErrorSocksRefused": {
+    "message": "SOCKS-з’єднання відхилено. Перевірте налаштовані хост і порт Tor."
+  },
+  "canaryErrorNetworkUnreachable": {
+    "message": "Мережа блокує вихідний трафік цим шляхом. Можуть знадобитися bridges або pluggable transports."
+  },
+  "canaryErrorTimeout": {
+    "message": "Tor доступний, але circuit не встиг завершитись. Спробуйте знову або ротуйте circuit."
+  },
+  "canaryErrorDnsStatus": {
+    "message": "Резолвер ОС повернув помилку. Для повного захисту системний DNS має використовувати Tor DNSPort або працювати у Whonix/Tails."
+  },
+  "logApplyingHardening": {
+    "message": "Застосовується гартування…"
+  },
+  "logRestoringPrefs": {
+    "message": "Відновлюються prefs до гартування…"
+  },
+  "logDone": {
+    "message": "Готово"
+  },
+  "logWarnings": {
+    "message": "Завершено з попередженнями"
+  },
+  "disableConfirm": {
+    "message": "Це поверне prefs до снапшоту, зробленого перед першим гартуванням. Tor-only надсилання можуть знову піти через clearnet. Продовжити?"
+  },
+  "savingLabel": {
+    "message": "зберігання…"
+  },
+  "fqdnInvalid": {
+    "message": "власний FQDN має бути валідним багатоскладовим DNS-іменем, а не IP-адресою"
+  },
+  "fqdnSaved": {
+    "message": "збережено. режим=$1, оновлено $2 ідентичностей."
+  },
+  "saveFailed": {
+    "message": "не вдалося зберегти: $1"
+  },
+  "readPrefsFailed": {
+    "message": "не вдалося прочитати prefs: $1"
+  },
+  "errorWithMessage": {
+    "message": "помилка: $1"
+  },
+  "helpTitle": {
+    "message": "Довідка"
+  },
+  "helpModeLabel": {
+    "message": "Глибина:"
+  },
+  "helpModeTldr": {
+    "message": "TL;DR"
+  },
+  "helpModeNerd": {
+    "message": "Нерд-режим"
+  },
+  "helpTldrDoesTitle": {
+    "message": "Що робить цей додаток"
+  },
+  "helpTldrDoes1": {
+    "message": "Маршрутизує IMAP і SMTP Thunderbird через локальний Tor SOCKS-проксі та тримає DNS-резолвінг віддалено через Tor."
+  },
+  "helpTldrDoes2": {
+    "message": "Fail-closed: якщо Tor недоступний, надсилання має зазнавати помилки, а не повертатися до clearnet."
+  },
+  "helpTldrDoes3": {
+    "message": "Зменшує поштові відбитки: User-Agent, X-Mailer, HELO, часовий пояс, FQDN Message-ID, flowed text і віддалений вміст."
+  },
+  "helpTldrDoes4": {
+    "message": "Пропонує тест доступності Tor і DNS-канарку; обидва використовують шлях SOCKS5 RESOLVE Tor та оминають системний DNS на боці Tor."
+  },
+  "helpTldrDoesNotTitle": {
+    "message": "Чого не робить"
+  },
+  "helpTldrDoesNot1": {
+    "message": "Не замінює Tails, Whonix, Tor-шлюз чи правильно налаштований системний резолвер."
+  },
+  "helpTldrDoesNot2": {
+    "message": "Не приховує поштову скриньку, якою ви автентифікуєтесь у провайдера, та заголовки Authentication-Results від провайдера."
+  },
+  "helpTldrDoesNot3": {
+    "message": "Не приховує того, що отримувач може побачити Tor-exit у заголовках Received."
+  },
+  "helpTldrDoesNot4": {
+    "message": "Не захищає інші застосунки, витоки на рівні ОС, скомпрометовані ендпоінти чи мережеву кореляцію."
+  },
+  "helpTldrTorbirdyTitle": {
+    "message": "Чому TorBirdy більше не працює"
+  },
+  "helpTldrTorbirdy1": {
+    "message": "TorBirdy — це legacy-розширення Thunderbird/XUL. Thunderbird 78 прибрав легасі XUL overlay-систему, на якій воно тримається."
+  },
+  "helpTldrTorbirdy2": {
+    "message": "Останній реліз — 2018; без переписування воно не запускається на сучасних збірках Thunderbird ESR."
+  },
+  "helpTldrExperimentsTitle": {
+    "message": "Чому потрібен Experiments API"
+  },
+  "helpTldrExperiments1": {
+    "message": "Звичайні MailExtensions не можуть міняти proxy-prefs Thunderbird, нутрощі SMTP-серверів, identity-prefs, DNS-кеш, login-manager чи робити сирі SOCKS-self-test."
+  },
+  "helpTldrExperiments2": {
+    "message": "Experiments API відкриває ці нутрощі Thunderbird; OnionBird обмежує записи через allowlist, щоб тримати привілейовану поверхню малою."
+  },
+  "helpNerdDoesTitle": {
+    "message": "Нерд-режим: реалізовані захисти"
+  },
+  "helpNerdDoes1": {
+    "message": "Proxy prefs: network.proxy.type=1, авто-проба хоста/порту SOCKS5, socks_remote_dns=true, failover_direct=false, без списку bypass."
+  },
+  "helpNerdDoes2": {
+    "message": "Гігієна заголовків: придушує User-Agent/X-Mailer, форсує HELO/EHLO=[127.0.0.1], обирає безпечніший FQDN Message-ID, вимикає flowed plaintext і виштовхує UTC/RFP-подібну поведінку."
+  },
+  "helpNerdDoes3": {
+    "message": "Гартування мережі: вимикає DoH/TRR, OCSP, спекулятивні з’єднання, DNS prefetch, predictor, WebRTC, геолокацію, lookup ECH HTTPS-RR, captive-portal та URL-и оновлень."
+  },
+  "helpNerdDoes4": {
+    "message": "Гартування поштового UI: вимикає шляхи віддаленого контенту, plaintext-рендеринг, витоки нотифікацій, autocollect адресної книги і пропонує аудит/видалення збережених Tor-логінів при вимкненні."
+  },
+  "helpNerdDoes5": {
+    "message": "Моніторинг: стартовий і періодичний reassert лагодять загартовані prefs; тестовий режим перевіряє Tor SOCKS без запису prefs, а stream-ізольована SOCKS5 RESOLVE-канарка перевіряє поведінку системного DNS."
+  },
+  "helpNerdDoesNotTitle": {
+    "message": "Нерд-режим: межі"
+  },
+  "helpNerdDoesNot1": {
+    "message": "Автентифікований SMTP усе одно лишає провайдеру знання акаунта, і провайдер може додати значення Authentication-Results smtp.auth, видимі отримувачам."
+  },
+  "helpNerdDoesNot2": {
+    "message": "SMTP-транспорт усе одно створює Received-ланцюги. Отримувач часто може зробити висновок про використання Tor з hop біля Tor-exit провайдера."
+  },
+  "helpNerdDoesNot3": {
+    "message": "Додаток керує Thunderbird, не ОС. NTP, буфер обміну, файли, інші застосунки, crash dumps поза TB і hostname лишаються темами загроз ОС."
+  },
+  "helpNerdDoesNot4": {
+    "message": "Канарка — це детекція, а не магічне маршрутування. На звичайних десктопах: пускайте OS DNS через Tor DNSPort або використовуйте Whonix/Tails для найсильнішої гарантії."
+  },
+  "helpNerdDoesNot5": {
+    "message": "Не долає глобальних пасивних супротивників, кореляції таймінгу end-to-end, зловмисних провайдерів, зловмисних отримувачів чи скомпрометований стан Thunderbird/профілю."
+  },
+  "helpNerdTorbirdyTitle": {
+    "message": "Нерд-режим: сумісність з TorBirdy"
+  },
+  "helpNerdTorbirdy1": {
+    "message": "TorBirdy цілив на стару привілейовану XUL/XPCOM модель і використовував overlay/bootstrap-гуки у нутрощі Thunderbird."
+  },
+  "helpNerdTorbirdy2": {
+    "message": "Thunderbird 78 прибрав legacy XUL; сучасні Thunderbird приймають WebExtensions/MailExtensions, які навмисно не відкривають ці привілейовані mail/prefs нутрощі."
+  },
+  "helpNerdTorbirdy3": {
+    "message": "Тому порт TorBirdy — це не bump манифеста. Привілейовані шматки треба переписати за Thunderbird Experiments API."
+  },
+  "helpNerdExperimentsTitle": {
+    "message": "Нерд-режим: межа Experiments API"
+  },
+  "helpNerdExperiments1": {
+    "message": "Сторона MailExtension володіє UI, runtime-повідомленнями й опціями; parent-скрипт Experiments — Services.prefs, об’єктами MailServices SMTP/identity, flush DNS-кешу, audit login-manager і сирим SOCKS5 RESOLVE."
+  },
+  "helpNerdExperiments2": {
+    "message": "Цей поділ необхідний, бо публічні MailExtension API не вміють атомарно знімати/повертати prefs і не дозволяють задавати per-SMTP HELO/TLS."
+  },
+  "helpNerdExperiments3": {
+    "message": "Оскільки Experiments працюють з привілеєм parent-процесу, OnionBird обмежує записи prefs до вузької allowlist та серіалізує мутації гартування."
+  },
+  "sendBlockedCancelStorageError": {
+    "message": "OnionBird: надсилання заблоковано — неможливо прочитати стан додатка (помилка сховища). Перезапустіть Thunderbird та перевірте OnionBird Options перед повторною спробою."
+  },
+  "sendBlockedCancelLeakDetected": {
+    "message": "OnionBird: надсилання заблоковано — Tor leak canary виявив DNS-резолюцію поза Tor. Відкрийте OnionBird Options → DNS leak status → Run self-test now перед повторною спробою."
+  },
+  "sendBlockedCancelNoVerdict": {
+    "message": "OnionBird: надсилання заблоковано — ще немає вердикту canary (не запускався або сховище очищене). Відкрийте OnionBird Options → DNS leak status → Run self-test now перед повторною спробою."
+  },
+  "sendBlockedCancelOther": {
+    "message": "OnionBird: надсилання заблоковано — вердикт canary не 'clean' (стан: $STATE$). Відкрийте OnionBird Options → DNS leak status → Run self-test now перед повторною спробою.",
+    "placeholders": {
+      "STATE": {
+        "content": "$1",
+        "example": "leak_detected"
+      }
+    }
+  },
+  "socksOverrideTitle": {
+    "message": "SOCKS endpoint override"
+  },
+  "socksOverrideIntro": {
+    "message": "By default the addon detects Thunderbird's existing network.proxy.socks pref or falls back to 127.0.0.1 on port 9050 / 9150. Set host + port here to pin a different endpoint (e.g. a Whonix Gateway IP). Host must be a loopback name (localhost) or an IP literal — DNS-resolvable names would leak via the system resolver before Tor."
+  },
+  "socksOverrideHostLabel": {
+    "message": "Host:"
+  },
+  "socksOverridePortLabel": {
+    "message": "Port:"
+  },
+  "socksOverrideSaveButton": {
+    "message": "Save"
+  },
+  "socksOverrideResetButton": {
+    "message": "Reset to default"
+  },
+  "socksOverrideTestButton": {
+    "message": "Test endpoint"
+  },
+  "socksOverrideStatusOk": {
+    "message": "OK"
+  },
+  "socksOverrideStatusInvalidHost": {
+    "message": "Invalid host — must be `localhost` or an IP literal (IPv4 or IPv6)."
+  },
+  "socksOverrideStatusInvalidPort": {
+    "message": "Invalid port — must be an integer between 1 and 65535."
+  },
+  "socksOverrideTbPrefWarning": {
+    "message": "Thunderbird currently has $TB$ configured; your saved override $OVERRIDE$ will replace it on next enable.",
+    "placeholders": {
+      "TB": {
+        "content": "$1",
+        "example": "127.0.0.1:9050"
+      },
+      "OVERRIDE": {
+        "content": "$2",
+        "example": "10.152.152.10:9050"
+      }
+    }
+  },
+  "socksOverrideStatusReset": {
+    "message": "Override cleared — falling back to auto-detect on next enable."
+  },
+  "autoEnableNotificationTitleSocksUnreachable": {
+    "message": "OnionBird installed — Tor not reachable"
+  },
+  "autoEnableNotificationMessageSocksUnreachable": {
+    "message": "OnionBird could not reach a Tor SOCKS endpoint on 127.0.0.1:9050 or :9150. Outgoing sends are blocked until Tor is reachable. Start the Tor daemon (or Tor Browser) and open OnionBird Options → DNS leak status → Run self-test now."
+  },
+  "autoEnableNotificationTitleCanaryFail": {
+    "message": "OnionBird installed — hardening incomplete"
+  },
+  "autoEnableNotificationMessageCanaryFail": {
+    "message": "OnionBird auto-enabled but the canary self-test did not verify cleanly. Outgoing sends are blocked until the next canary passes. Open OnionBird Options → DNS leak status → Run self-test now to triage."
+  }
+}

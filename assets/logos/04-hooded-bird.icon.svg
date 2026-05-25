@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="OnionBird icon">
+  <rect width="64" height="64" rx="12" fill="#FFF7EE"/>
+  <ellipse cx="36" cy="38" rx="20" ry="14" fill="#E66100"/>
+  <path d="M 50 44 L 60 50 L 56 38 L 60 28 Z" fill="#E66100" stroke="#7A2E00" stroke-width="1"/>
+  <path d="M 22 38 L 10 34 L 10 42 Z" fill="#F9A11B"/>
+  <path d="M 16 34 Q 16 16 34 14 Q 42 32 32 40 Q 22 44 16 34 Z" fill="#4A2D67"/>
+  <path d="M 27 14 Q 24 8 28 4 Q 32 10 27 14 Z" fill="#4A2D67"/>
+  <circle cx="24" cy="32" r="1.6" fill="#F9A11B"/>
+</svg>

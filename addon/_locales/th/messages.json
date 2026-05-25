@@ -1,0 +1,453 @@
+{
+  "extensionName": {
+    "message": "OnionBird"
+  },
+  "extensionDescription": {
+    "message": "การผสาน Tor และการต้านการทำลายตัวตน (fingerprinting) สำหรับ Thunderbird — ผู้สืบทอด TorBirdy"
+  },
+  "pageTitle": {
+    "message": "ตัวเลือก OnionBird"
+  },
+  "statusLabel": {
+    "message": "สถานะ:"
+  },
+  "statusLoading": {
+    "message": "กำลังโหลด…"
+  },
+  "statusText": {
+    "message": "API v$1, ส่วนเสริม v$2 — การเสริมความแข็งแกร่ง $3"
+  },
+  "statusActive": {
+    "message": "เปิดใช้"
+  },
+  "statusInactive": {
+    "message": "ไม่ได้เปิดใช้"
+  },
+  "appearanceTitle": {
+    "message": "รูปลักษณ์"
+  },
+  "themeLabel": {
+    "message": "ธีม:"
+  },
+  "themeSystem": {
+    "message": "ระบบ"
+  },
+  "themeLight": {
+    "message": "สว่าง"
+  },
+  "themeDark": {
+    "message": "มืด"
+  },
+  "hardeningTitle": {
+    "message": "การเสริมความแข็งแกร่ง"
+  },
+  "enableButton": {
+    "message": "เปิดการเสริมความแข็งแกร่ง"
+  },
+  "disableButton": {
+    "message": "ปิดการเสริมความแข็งแกร่ง"
+  },
+  "scrubLoginsLabel": {
+    "message": "ลบรหัสผ่านที่บันทึกไว้ของเซิร์ฟเวอร์เมล onion/loopback เมื่อปิด"
+  },
+  "disableHelp": {
+    "message": "การปิดจะกู้คืนสแน็ปช็อต prefs ที่ถ่ายไว้ก่อนการเสริมความแข็งแกร่งครั้งแรก บัญชี clearnet ที่ตั้งใจข้ามไว้จะยังทำงานปกติ"
+  },
+  "messageIdTitle": {
+    "message": "FQDN ใน Message-ID"
+  },
+  "messageIdIntro": {
+    "message": "FQDN ใน Message-ID ขาออกเป็นลายนิ้วมือที่ปรากฏซ้ำในเมลของคุณ ค่าตั้งต้นใช้โดเมนของที่อยู่ From เพื่อให้คุณกลมกลืนกับผู้ใช้ทั่วไปของผู้ให้บริการเดียวกัน โหมด localhost.localdomain ของ TorBirdy ยังคงมีให้เป็นตัวเลือก legacy ที่ชัดเจน"
+  },
+  "modeLabel": {
+    "message": "โหมด:"
+  },
+  "fqdnFromDomain": {
+    "message": "โดเมนของที่อยู่ From (แนะนำ)"
+  },
+  "fqdnLocalhost": {
+    "message": "localhost"
+  },
+  "fqdnLocalhostLegacy": {
+    "message": "localhost.localdomain (legacy)"
+  },
+  "fqdnCustom": {
+    "message": "กำหนดเอง…"
+  },
+  "saveButton": {
+    "message": "บันทึก"
+  },
+  "torTestTitle": {
+    "message": "โหมดทดสอบ Tor"
+  },
+  "torTestIntro": {
+    "message": "ตรวจว่ามี endpoint Tor SOCKS ภายในเครื่องที่เข้าถึงได้หรือไม่ โดยไม่ส่งเมลและไม่เปลี่ยน prefs ของ Thunderbird การทดสอบใช้คำสั่ง SOCKS5 RESOLVE ของ Tor พร้อม isolation token แบบสุ่มใหม่ ดังนั้น host เป้าหมายจะไม่ถูก resolve ผ่าน DNS ของระบบ"
+  },
+  "runTorTestButton": {
+    "message": "ทดสอบ Tor เดี๋ยวนี้"
+  },
+  "torTestRunning": {
+    "message": " กำลังทดสอบ…"
+  },
+  "torTestUnknown": {
+    "message": "ไม่ทราบ"
+  },
+  "torTestAvailable": {
+    "message": "Tor พร้อมใช้งาน"
+  },
+  "torTestUnavailable": {
+    "message": "Tor ไม่พร้อมใช้งาน"
+  },
+  "torTestNotRun": {
+    "message": "ยังไม่ได้รัน"
+  },
+  "torTestOk": {
+    "message": "Tor SOCKS เข้าถึงได้ที่ $1:$2 ($3) ไม่มี prefs ของ Thunderbird ถูกแก้ไข"
+  },
+  "torTestNoTor": {
+    "message": "ไม่พบ endpoint Tor SOCKS ที่เข้าถึงได้ ที่ลอง: $1"
+  },
+  "torTestError": {
+    "message": "การทดสอบ Tor ล้มเหลว: $1"
+  },
+  "torTestResultCell": {
+    "message": "ผลลัพธ์"
+  },
+  "torTestEndpointCell": {
+    "message": "endpoint SOCKS"
+  },
+  "torTestProbeHostCell": {
+    "message": "host ของการทดสอบ"
+  },
+  "torTestTriedCell": {
+    "message": "ที่ลอง"
+  },
+  "torTestSourceRequested": {
+    "message": "ที่ร้องขอ"
+  },
+  "torTestSourceExistingPref": {
+    "message": "pref ที่มีอยู่"
+  },
+  "torTestSourceSystemTor": {
+    "message": "Tor ของระบบ"
+  },
+  "torTestSourceTorBrowser": {
+    "message": "Tor Browser"
+  },
+  "torTestSourceFallback": {
+    "message": "สำรอง"
+  },
+  "torTestSourceCurrentPref": {
+    "message": "pref ปัจจุบัน"
+  },
+  "dnsLeakTitle": {
+    "message": "สถานะการรั่วของ DNS"
+  },
+  "dnsLeakIntro": {
+    "message": "เปรียบเทียบ IP ที่ Tor ตอบกลับผ่าน SOCKS5 RESOLVE กับ IP ที่ resolver ของระบบตอบกลับ ความแตกต่างอาจหมายถึงระบบกำลังใช้ DNS ที่ไม่ใช่ Tor ชื่อที่ถูก CDN รองรับยังอาจไม่เป็นอันตราย"
+  },
+  "hostLabel": {
+    "message": "Host:"
+  },
+  "runSelfTestButton": {
+    "message": "รัน self-test เดี๋ยวนี้"
+  },
+  "runningLabel": {
+    "message": " กำลังทำงาน…"
+  },
+  "canaryHostCell": {
+    "message": "host"
+  },
+  "ipDetailLabel": {
+    "message": "รายละเอียด IP"
+  },
+  "revealRawIps": {
+    "message": "เปิดเผย IP ดิบ"
+  },
+  "verdictLabel": {
+    "message": "ข้อสรุป"
+  },
+  "errorLabel": {
+    "message": "ข้อผิดพลาด"
+  },
+  "canaryUnknown": {
+    "message": "ไม่ทราบ"
+  },
+  "canaryNoLeak": {
+    "message": "ไม่มีการรั่ว"
+  },
+  "canaryLeakSuspected": {
+    "message": "สงสัยว่ารั่ว"
+  },
+  "canaryDiverged": {
+    "message": "แตกต่าง"
+  },
+  "canaryInconclusive": {
+    "message": "สรุปไม่ได้"
+  },
+  "canaryError": {
+    "message": "ข้อผิดพลาด"
+  },
+  "canaryVerdictNoData": {
+    "message": "ยังไม่มีข้อมูล"
+  },
+  "canaryVerdictLeak": {
+    "message": "คำตอบของ resolver ระบบไม่ปรากฏในมุมมอง Tor circuit ใด ๆ; ตรวจสอบเส้นทาง DNS ของระบบ"
+  },
+  "canaryVerdictOk": {
+    "message": "system_ip อยู่ในชุด Tor (ลอง $1 circuit)"
+  },
+  "canaryVerdictDiverged": {
+    "message": "system_ip ไม่อยู่ในชุด Tor แต่ heuristic ประเมินว่าน่าจะไม่เป็นอันตราย; ตรวจรายละเอียด"
+  },
+  "canaryVerdictMissingData": {
+    "message": "การสืบค้นหนึ่งไม่คืนข้อมูล"
+  },
+  "canaryErrorTor9050": {
+    "message": "Tor ไม่ตอบที่ 127.0.0.1:9050 เริ่ม daemon ของ Tor หรือใช้พอร์ต 9150 สำหรับ Tor Browser"
+  },
+  "canaryErrorTor9150": {
+    "message": "Tor Browser ไม่ทำงานอยู่ เริ่มมัน; SOCKS listener มักอยู่ที่ 9150"
+  },
+  "canaryErrorSocksRefused": {
+    "message": "การเชื่อมต่อ SOCKS ถูกปฏิเสธ ตรวจ host และพอร์ต Tor ที่ตั้งค่าไว้"
+  },
+  "canaryErrorNetworkUnreachable": {
+    "message": "เครือข่ายปิดกั้นการจราจรขาออกในเส้นทางนี้ อาจต้องใช้ bridges หรือ pluggable transports"
+  },
+  "canaryErrorTimeout": {
+    "message": "Tor เข้าถึงได้ แต่ circuit ไม่เสร็จทันเวลา ลองใหม่หรือเปลี่ยน circuit"
+  },
+  "canaryErrorDnsStatus": {
+    "message": "resolver ของระบบคืนข้อผิดพลาด เพื่อการป้องกันที่สมบูรณ์ DNS ของระบบควรใช้ Tor DNSPort หรือทำงานใน Whonix/Tails"
+  },
+  "logApplyingHardening": {
+    "message": "กำลังใช้การเสริมความแข็งแกร่ง…"
+  },
+  "logRestoringPrefs": {
+    "message": "กำลังกู้คืน prefs ก่อนการเสริมความแข็งแกร่ง…"
+  },
+  "logDone": {
+    "message": "เสร็จ"
+  },
+  "logWarnings": {
+    "message": "เสร็จพร้อมคำเตือน"
+  },
+  "disableConfirm": {
+    "message": "นี่จะกู้คืน prefs ของคุณไปยังสแน็ปช็อตก่อนการเสริมความแข็งแกร่งครั้งแรก การส่งแบบ Tor-only อาจกลับไปวิ่งบน clearnet ดำเนินการต่อ?"
+  },
+  "savingLabel": {
+    "message": "กำลังบันทึก…"
+  },
+  "fqdnInvalid": {
+    "message": "FQDN ที่กำหนดเองต้องเป็นชื่อ DNS แบบหลายฉลากที่ใช้ได้ ไม่ใช่ที่อยู่ IP"
+  },
+  "fqdnSaved": {
+    "message": "บันทึกแล้ว โหมด=$1, อัปเดต $2 ตัวตน"
+  },
+  "saveFailed": {
+    "message": "บันทึกล้มเหลว: $1"
+  },
+  "readPrefsFailed": {
+    "message": "อ่าน prefs ไม่ได้: $1"
+  },
+  "errorWithMessage": {
+    "message": "ข้อผิดพลาด: $1"
+  },
+  "helpTitle": {
+    "message": "วิธีใช้"
+  },
+  "helpModeLabel": {
+    "message": "ระดับลึก:"
+  },
+  "helpModeTldr": {
+    "message": "TL;DR"
+  },
+  "helpModeNerd": {
+    "message": "โหมด Nerd"
+  },
+  "helpTldrDoesTitle": {
+    "message": "ส่วนเสริมนี้ทำอะไร"
+  },
+  "helpTldrDoes1": {
+    "message": "ส่ง IMAP และ SMTP ของ Thunderbird ผ่าน proxy Tor SOCKS ภายในเครื่อง และคง DNS resolution ที่ปลายทางผ่าน Tor"
+  },
+  "helpTldrDoes2": {
+    "message": "Fail-closed: หาก Tor ไม่สามารถเข้าถึงได้ การส่งเมลควรล้มเหลวแทนที่จะตกกลับไปยัง clearnet"
+  },
+  "helpTldrDoes3": {
+    "message": "ลดลายนิ้วมือของเมล เช่น User-Agent, X-Mailer, HELO, เขตเวลา, FQDN ของ Message-ID, flowed text และเนื้อหาทางไกล"
+  },
+  "helpTldrDoes4": {
+    "message": "มีการทดสอบความพร้อมของ Tor และ canary ของ DNS ทั้งสองใช้เส้นทาง SOCKS5 RESOLVE ของ Tor และหลีกเลี่ยง DNS ของระบบฝั่ง Tor"
+  },
+  "helpTldrDoesNotTitle": {
+    "message": "สิ่งที่ไม่ได้ทำ"
+  },
+  "helpTldrDoesNot1": {
+    "message": "ไม่ทดแทน Tails, Whonix, Tor gateway หรือ resolver ของระบบที่ตั้งค่าถูกต้อง"
+  },
+  "helpTldrDoesNot2": {
+    "message": "ไม่ซ่อนกล่องจดหมายที่คุณยืนยันตัวต่อผู้ให้บริการ และไม่ซ่อน header Authentication-Results ที่ผู้ให้บริการเพิ่มเข้ามา"
+  },
+  "helpTldrDoesNot3": {
+    "message": "ไม่ปกปิดความจริงที่ว่าผู้รับอาจเห็น Tor exit ใน header Received"
+  },
+  "helpTldrDoesNot4": {
+    "message": "ไม่ปกป้องแอปอื่น ๆ การรั่วระดับ OS endpoint ที่ถูกบุก หรือการโจมตีแบบ correlation ทางเครือข่าย"
+  },
+  "helpTldrTorbirdyTitle": {
+    "message": "ทำไม TorBirdy ใช้งานไม่ได้แล้ว"
+  },
+  "helpTldrTorbirdy1": {
+    "message": "TorBirdy เป็นส่วนเสริม legacy Thunderbird/XUL Thunderbird 78 ลบระบบ overlay XUL legacy ที่มันพึ่งพา"
+  },
+  "helpTldrTorbirdy2": {
+    "message": "รุ่นสุดท้ายของมันออกในปี 2018; ดังนั้นจึงไม่สามารถรันบน Thunderbird ESR สมัยใหม่ได้โดยไม่เขียนใหม่"
+  },
+  "helpTldrExperimentsTitle": {
+    "message": "ทำไมจึงต้องใช้ Experiments API"
+  },
+  "helpTldrExperiments1": {
+    "message": "MailExtensions ปกติไม่สามารถเปลี่ยน proxy prefs ของ Thunderbird, ภายในของ SMTP, identity prefs, DNS cache, login manager หรือ self-test SOCKS แบบดิบได้"
+  },
+  "helpTldrExperiments2": {
+    "message": "Experiments API เปิดภายในของ Thunderbird เหล่านี้; OnionBird ควบคุมการเขียนผ่าน allowlist เพื่อให้พื้นที่ที่มีสิทธิ์พิเศษเล็ก"
+  },
+  "helpNerdDoesTitle": {
+    "message": "โหมด Nerd: การป้องกันที่นำมาใช้"
+  },
+  "helpNerdDoes1": {
+    "message": "Proxy prefs: network.proxy.type=1, ตรวจ host/port SOCKS5 อัตโนมัติ, socks_remote_dns=true, failover_direct=false และไม่มีรายการ bypass"
+  },
+  "helpNerdDoes2": {
+    "message": "สุขอนามัย header: ระงับ User-Agent/X-Mailer, บังคับ HELO/EHLO เป็น [127.0.0.1], เลือก FQDN ของ Message-ID ที่ปลอดภัยกว่า, ปิด flowed plaintext และผลักดันพฤติกรรมแบบ UTC/RFP"
+  },
+  "helpNerdDoes3": {
+    "message": "การเสริมความแข็งของเครือข่าย: ปิด DoH/TRR, OCSP, การเชื่อมต่อ speculative, DNS prefetch, predictor, WebRTC, geolocation, lookup ECH HTTPS-RR, การตรวจ captive-portal และ URL phone-home ของ update"
+  },
+  "helpNerdDoes4": {
+    "message": "การเสริมความแข็งของ UI เมล: ปิดเส้นทางเนื้อหาทางไกล, การเรนเดอร์ plaintext, การรั่วของการแจ้งเตือน, autocollect ของสมุดที่อยู่ และเสนอ audit/ลบล็อกอิน Tor ที่บันทึกไว้เมื่อปิด"
+  },
+  "helpNerdDoes5": {
+    "message": "การตรวจตรา: reassert ตอนเริ่มและตามเวลา ซ่อม prefs ที่เสริมความแข็งแล้ว; โหมดทดสอบตรวจ Tor SOCKS โดยไม่เขียน pref และ canary SOCKS5 RESOLVE แบบ stream-isolated ตรวจพฤติกรรม DNS ของระบบ"
+  },
+  "helpNerdDoesNotTitle": {
+    "message": "โหมด Nerd: ขอบเขต"
+  },
+  "helpNerdDoesNot1": {
+    "message": "SMTP ที่ยืนยันตัวยังคงให้ผู้ให้บริการรู้บัญชี และผู้ให้บริการอาจเพิ่มค่า Authentication-Results smtp.auth ที่ผู้รับมองเห็น"
+  },
+  "helpNerdDoesNot2": {
+    "message": "การส่ง SMTP ยังสร้างห่วงโซ่ Received ผู้รับมักอนุมานการใช้ Tor จาก hop ที่หันสู่ Tor-exit ของผู้ให้บริการ"
+  },
+  "helpNerdDoesNot3": {
+    "message": "ส่วนเสริมควบคุม Thunderbird ไม่ใช่ระบบปฏิบัติการ NTP, clipboard, ไฟล์, แอปอื่น ๆ, crash dumps นอก TB และ hostname ยังเป็นประเด็นของโมเดลภัยคุกคามระดับ OS"
+  },
+  "helpNerdDoesNot4": {
+    "message": "Canary คือการตรวจจับ ไม่ใช่ routing วิเศษ บนเดสก์ท็อปทั่วไป: ส่ง DNS ของ OS ผ่าน Tor DNSPort หรือใช้ Whonix/Tails เพื่อการรับประกันที่แข็งแกร่งที่สุด"
+  },
+  "helpNerdDoesNot5": {
+    "message": "ไม่สามารถเอาชนะคู่ต่อสู้แบบ passive ทั่วโลก, การ correlation จังหวะเวลา end-to-end, ผู้ให้บริการที่ประสงค์ร้าย, ผู้รับที่ประสงค์ร้าย หรือสถานะ Thunderbird/profile ที่ถูกบุก"
+  },
+  "helpNerdTorbirdyTitle": {
+    "message": "โหมด Nerd: ความเข้ากันได้กับ TorBirdy"
+  },
+  "helpNerdTorbirdy1": {
+    "message": "TorBirdy มุ่งไปยังโมเดลส่วนเสริมที่มีสิทธิ์พิเศษเก่า XUL/XPCOM และใช้ overlay/bootstrap hooks ในภายในของ Thunderbird"
+  },
+  "helpNerdTorbirdy2": {
+    "message": "Thunderbird 78 ลบส่วนเสริม XUL legacy; Thunderbird สมัยใหม่ยอมรับ WebExtensions/MailExtensions ซึ่งจงใจไม่เปิดเผยภายในของ mail และ prefs ที่มีสิทธิ์พิเศษ"
+  },
+  "helpNerdTorbirdy3": {
+    "message": "ดังนั้นการ port TorBirdy ไม่ใช่แค่การ bump manifest ชิ้นส่วนที่มีสิทธิ์พิเศษต้องเขียนใหม่หลัง Thunderbird Experiments API"
+  },
+  "helpNerdExperimentsTitle": {
+    "message": "โหมด Nerd: ขอบเขตของ Experiments API"
+  },
+  "helpNerdExperiments1": {
+    "message": "ฝั่ง MailExtension ครอง UI, runtime messages และตัวเลือก; สคริปต์ parent ของ Experiments ครอง Services.prefs, อ็อบเจ็กต์ SMTP/identity ของ MailServices, flush DNS cache, audit login-manager และ SOCKS5 RESOLVE แบบดิบ"
+  },
+  "helpNerdExperiments2": {
+    "message": "การแบ่งนี้จำเป็นเพราะ API MailExtension สาธารณะไม่สามารถ snapshot/restore prefs แบบ atomic หรือกำหนดการตั้งค่า per-SMTP HELO/TLS ได้"
+  },
+  "helpNerdExperiments3": {
+    "message": "เนื่องจาก Experiments ทำงานด้วยสิทธิ์ของ parent process, OnionBird จำกัดการเขียน prefs ไว้กับ allowlist แคบ ๆ และทำให้การเปลี่ยนแปลงเชิงเสริมความแข็งเป็นลำดับ"
+  },
+  "sendBlockedCancelStorageError": {
+    "message": "OnionBird: บล็อกการส่งแล้ว — ไม่สามารถอ่านสถานะส่วนเสริม (ข้อผิดพลาดการจัดเก็บ). รีสตาร์ท Thunderbird แล้วตรวจสอบ OnionBird Options ก่อนลองอีกครั้ง."
+  },
+  "sendBlockedCancelLeakDetected": {
+    "message": "OnionBird: บล็อกการส่งแล้ว — Tor leak canary ตรวจพบการแก้ไข DNS ที่ไม่ผ่าน Tor. เปิด OnionBird Options → DNS leak status → Run self-test now ก่อนลองอีกครั้ง."
+  },
+  "sendBlockedCancelNoVerdict": {
+    "message": "OnionBird: บล็อกการส่งแล้ว — ยังไม่มีคำตัดสินของ canary (ยังไม่ได้รันหรือที่จัดเก็บถูกล้าง). เปิด OnionBird Options → DNS leak status → Run self-test now ก่อนลองอีกครั้ง."
+  },
+  "sendBlockedCancelOther": {
+    "message": "OnionBird: บล็อกการส่งแล้ว — คำตัดสิน canary ไม่ใช่ 'clean' (สถานะ: $STATE$). เปิด OnionBird Options → DNS leak status → Run self-test now ก่อนลองอีกครั้ง.",
+    "placeholders": {
+      "STATE": {
+        "content": "$1",
+        "example": "leak_detected"
+      }
+    }
+  },
+  "socksOverrideTitle": {
+    "message": "SOCKS endpoint override"
+  },
+  "socksOverrideIntro": {
+    "message": "By default the addon detects Thunderbird's existing network.proxy.socks pref or falls back to 127.0.0.1 on port 9050 / 9150. Set host + port here to pin a different endpoint (e.g. a Whonix Gateway IP). Host must be a loopback name (localhost) or an IP literal — DNS-resolvable names would leak via the system resolver before Tor."
+  },
+  "socksOverrideHostLabel": {
+    "message": "Host:"
+  },
+  "socksOverridePortLabel": {
+    "message": "Port:"
+  },
+  "socksOverrideSaveButton": {
+    "message": "Save"
+  },
+  "socksOverrideResetButton": {
+    "message": "Reset to default"
+  },
+  "socksOverrideTestButton": {
+    "message": "Test endpoint"
+  },
+  "socksOverrideStatusOk": {
+    "message": "OK"
+  },
+  "socksOverrideStatusInvalidHost": {
+    "message": "Invalid host — must be `localhost` or an IP literal (IPv4 or IPv6)."
+  },
+  "socksOverrideStatusInvalidPort": {
+    "message": "Invalid port — must be an integer between 1 and 65535."
+  },
+  "socksOverrideTbPrefWarning": {
+    "message": "Thunderbird currently has $TB$ configured; your saved override $OVERRIDE$ will replace it on next enable.",
+    "placeholders": {
+      "TB": {
+        "content": "$1",
+        "example": "127.0.0.1:9050"
+      },
+      "OVERRIDE": {
+        "content": "$2",
+        "example": "10.152.152.10:9050"
+      }
+    }
+  },
+  "socksOverrideStatusReset": {
+    "message": "Override cleared — falling back to auto-detect on next enable."
+  },
+  "autoEnableNotificationTitleSocksUnreachable": {
+    "message": "OnionBird installed — Tor not reachable"
+  },
+  "autoEnableNotificationMessageSocksUnreachable": {
+    "message": "OnionBird could not reach a Tor SOCKS endpoint on 127.0.0.1:9050 or :9150. Outgoing sends are blocked until Tor is reachable. Start the Tor daemon (or Tor Browser) and open OnionBird Options → DNS leak status → Run self-test now."
+  },
+  "autoEnableNotificationTitleCanaryFail": {
+    "message": "OnionBird installed — hardening incomplete"
+  },
+  "autoEnableNotificationMessageCanaryFail": {
+    "message": "OnionBird auto-enabled but the canary self-test did not verify cleanly. Outgoing sends are blocked until the next canary passes. Open OnionBird Options → DNS leak status → Run self-test now to triage."
+  }
+}

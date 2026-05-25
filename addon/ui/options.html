@@ -1,0 +1,292 @@
+<!doctype html>
+<!-- SPDX-License-Identifier: MPL-2.0 -->
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="color-scheme" content="light dark" />
+    <title>onionbird options</title>
+    <style>
+      :root {
+        --bg: #f7f8fa;
+        --fg: #182026;
+        --muted: #59636e;
+        --panel: #ffffff;
+        --panel-border: #d7dde3;
+        --control: #ffffff;
+        --control-border: #b9c2cc;
+        --control-hover: #eef3f7;
+        --accent: #166a8f;
+        --accent-contrast: #ffffff;
+        --code-bg: #eef1f4;
+        --shadow: 0 1px 2px rgba(15, 23, 42, .08);
+      }
+      @media (prefers-color-scheme: dark) {
+        :root:not([data-theme="light"]) {
+          --bg: #15191d;
+          --fg: #eef3f7;
+          --muted: #a8b2bd;
+          --panel: #1e2429;
+          --panel-border: #343d45;
+          --control: #242b31;
+          --control-border: #4b5660;
+          --control-hover: #2f3941;
+          --accent: #55a9c9;
+          --accent-contrast: #071116;
+          --code-bg: #101418;
+          --shadow: none;
+        }
+      }
+      :root[data-theme="dark"] {
+        --bg: #15191d;
+        --fg: #eef3f7;
+        --muted: #a8b2bd;
+        --panel: #1e2429;
+        --panel-border: #343d45;
+        --control: #242b31;
+        --control-border: #4b5660;
+        --control-hover: #2f3941;
+        --accent: #55a9c9;
+        --accent-contrast: #071116;
+        --code-bg: #101418;
+        --shadow: none;
+      }
+      :root[data-theme="light"] {
+        --bg: #f7f8fa;
+        --fg: #182026;
+        --muted: #59636e;
+        --panel: #ffffff;
+        --panel-border: #d7dde3;
+        --control: #ffffff;
+        --control-border: #b9c2cc;
+        --control-hover: #eef3f7;
+        --accent: #166a8f;
+        --accent-contrast: #ffffff;
+        --code-bg: #eef1f4;
+        --shadow: 0 1px 2px rgba(15, 23, 42, .08);
+      }
+      body {
+        background: var(--bg);
+        color: var(--fg);
+        font-family: system-ui, sans-serif;
+        max-width: 760px;
+        padding: 1em;
+      }
+      h1 { font-size: 1.4em; margin-bottom: .2em; }
+      h2 { font-size: 1.05em; margin-top: 1.4em; }
+      h3 { font-size: .98em; margin: .9em 0 .35em; }
+      section {
+        background: var(--panel);
+        border: 1px solid var(--panel-border);
+        border-radius: 6px;
+        box-shadow: var(--shadow);
+        padding: .7em .95em;
+        margin: .7em 0;
+      }
+      button, select, input[type="text"], input[type="number"] {
+        background: var(--control);
+        border: 1px solid var(--control-border);
+        border-radius: 5px;
+        color: var(--fg);
+        font: inherit;
+      }
+      button { padding: .45em 1em; cursor: pointer; }
+      button:hover, select:hover { background: var(--control-hover); }
+      button:disabled { cursor: default; opacity: .65; }
+      select, input[type="text"], input[type="number"] { padding: .35em .5em; }
+      code, #status, #log {
+        background: var(--code-bg);
+        border-radius: 3px;
+      }
+      #status { font-family: monospace; padding: .2em .5em; }
+      #log { padding: .5em .7em; max-height: 12em; overflow: auto; white-space: pre-wrap; }
+      .toolbar { display: flex; flex-wrap: wrap; gap: .5em; align-items: center; }
+      .segmented {
+        display: inline-flex;
+        gap: 0;
+        border: 1px solid var(--control-border);
+        border-radius: 6px;
+        overflow: hidden;
+      }
+      .segmented button {
+        border: 0;
+        border-radius: 0;
+        border-right: 1px solid var(--control-border);
+      }
+      .segmented button:last-child { border-right: 0; }
+      .segmented button[aria-pressed="true"] {
+        background: var(--accent);
+        color: var(--accent-contrast);
+      }
+      .help-list { margin: .35em 0 .8em; padding-left: 1.25em; }
+
+      /* Canary badge: explicit visual states */
+      .badge {
+        display: inline-block; padding: .2em .7em; border-radius: 999px;
+        font-weight: 600; font-size: .9em; color: white;
+      }
+      .badge.unknown { background: #888; }
+      .badge.ok      { background: #1e8e3e; }   /* green   */
+      .badge.warn    { background: #c87814; }   /* orange  */
+      .badge.leak    { background: #b22222; }   /* red     */
+      .badge.error   { background: #555; }
+      .small { font-size: .85em; color: var(--muted); }
+      .status-line { margin-top: .45em; }
+      .kv { font-family: monospace; font-size: .9em; }
+      .kv td { padding: .15em .5em; vertical-align: top; }
+      .kv td:first-child { color: var(--muted); }
+    </style>
+  </head>
+  <body>
+    <h1>onionbird</h1>
+    <p><strong data-i18n="statusLabel">Status:</strong> <span id="status" data-i18n="statusLoading">loading…</span></p>
+
+    <section>
+      <h2 data-i18n="appearanceTitle">Appearance</h2>
+      <p class="toolbar">
+        <span data-i18n="themeLabel">Theme:</span>
+        <span class="segmented" id="theme-controls" role="group" aria-label="Theme">
+          <button type="button" data-theme-choice="system" aria-pressed="true" data-i18n="themeSystem">System</button>
+          <button type="button" data-theme-choice="light" aria-pressed="false" data-i18n="themeLight">Light</button>
+          <button type="button" data-theme-choice="dark" aria-pressed="false" data-i18n="themeDark">Dark</button>
+        </span>
+      </p>
+    </section>
+
+    <section>
+      <h2 data-i18n="hardeningTitle">Hardening</h2>
+      <p class="toolbar">
+        <button id="enable" data-i18n="enableButton">Enable hardening</button>
+        <button id="disable" data-i18n="disableButton">Disable hardening</button>
+      </p>
+      <p class="small">
+        <label>
+          <input id="scrub-logins" type="checkbox" checked />
+          <span data-i18n="scrubLoginsLabel">Delete saved passwords for onion/loopback mail servers when disabling</span>
+        </label>
+      </p>
+      <p class="small" data-i18n="disableHelp">
+        Disable restores the prefs snapshot taken before hardening was first
+        enabled. Clearnet accounts that were intentionally bypassed (B-003
+        opt-in) will work normally again.
+      </p>
+      <pre id="log"></pre>
+    </section>
+
+    <section>
+      <h2 data-i18n="messageIdTitle">Message-ID FQDN</h2>
+      <p class="small" data-i18n="messageIdIntro">
+        The FQDN in outgoing Message-IDs is a recurring fingerprint
+        across your mail. Default uses your From-address domain so you
+        blend with regular users at the same provider. TorBirdy's
+        localhost.localdomain mode remains available as an explicit
+        legacy choice.
+      </p>
+      <p>
+        <label><span data-i18n="modeLabel">Mode:</span>
+          <select id="fqdn-mode">
+            <option value="from_domain" data-i18n="fqdnFromDomain">From-address domain (recommended)</option>
+            <option value="localhost" data-i18n="fqdnLocalhost">localhost</option>
+            <option value="localhost.localdomain" data-i18n="fqdnLocalhostLegacy">localhost.localdomain (legacy)</option>
+            <option value="custom" data-i18n="fqdnCustom">custom…</option>
+          </select>
+        </label>
+        <input id="fqdn-custom" type="text" placeholder="example.com"
+               style="margin-left:.4em; display:none;" />
+        <button id="fqdn-save" data-i18n="saveButton">Save</button>
+      </p>
+      <p id="fqdn-status" class="small">&nbsp;</p>
+    </section>
+
+    <section>
+      <h2 data-i18n="socksOverrideTitle">SOCKS endpoint override</h2>
+      <p class="small" data-i18n="socksOverrideIntro">
+        By default the addon detects Thunderbird's existing
+        network.proxy.socks pref or falls back to 127.0.0.1 on port
+        9050 / 9150. Set host + port here to pin a different endpoint
+        (e.g. a Whonix Gateway IP). Host must be a loopback name
+        (`localhost`) or an IP literal — DNS-resolvable names would
+        leak via the system resolver before Tor.
+      </p>
+      <p class="toolbar">
+        <label><span data-i18n="socksOverrideHostLabel">Host:</span>
+          <input id="socks-override-host" type="text"
+                 placeholder="127.0.0.1" autocomplete="off"
+                 spellcheck="false" />
+        </label>
+        <label><span data-i18n="socksOverridePortLabel">Port:</span>
+          <input id="socks-override-port" type="number" min="1" max="65535"
+                 placeholder="9050" style="width:6em;" />
+        </label>
+        <button id="socks-override-save" data-i18n="socksOverrideSaveButton">Save</button>
+        <button id="socks-override-reset" data-i18n="socksOverrideResetButton">Reset to default</button>
+        <button id="socks-override-test" data-i18n="socksOverrideTestButton">Test endpoint</button>
+      </p>
+      <p id="socks-override-status" class="small status-line">&nbsp;</p>
+    </section>
+
+    <section>
+      <h2><span data-i18n="torTestTitle">Tor test mode</span> <span id="tor-test-badge" class="badge unknown" data-i18n="torTestUnknown">unknown</span></h2>
+      <p class="small" data-i18n="torTestIntro">
+        Checks whether a local Tor SOCKS endpoint is reachable without sending
+        mail or changing Thunderbird prefs. The probe uses Tor's SOCKS5 RESOLVE
+        command with a fresh random isolation token, so the target host is not
+        resolved through system DNS.
+      </p>
+      <p class="toolbar">
+        <button id="run-tor-test" data-i18n="runTorTestButton">Test Tor now</button>
+        <span id="tor-test-spinner" class="small" hidden data-i18n="torTestRunning"> testing…</span>
+      </p>
+      <p id="tor-test-status" class="small status-line" data-i18n="torTestNotRun">Not run yet.</p>
+      <table id="tor-test-detail" class="kv" hidden>
+        <tr><td data-i18n="torTestResultCell">result</td>        <td id="tor-test-result"></td></tr>
+        <tr><td data-i18n="torTestEndpointCell">SOCKS endpoint</td><td id="tor-test-endpoint"></td></tr>
+        <tr><td data-i18n="torTestProbeHostCell">probe host</td>  <td id="tor-test-host"></td></tr>
+        <tr><td data-i18n="torTestTriedCell">tried</td>           <td id="tor-test-tried"></td></tr>
+        <tr><td data-i18n="errorLabel">error</td>                 <td id="tor-test-error"></td></tr>
+      </table>
+    </section>
+
+    <section>
+      <h2><span data-i18n="dnsLeakTitle">DNS leak status</span> <span id="canary-badge" class="badge unknown" data-i18n="canaryUnknown">unknown</span></h2>
+      <p class="small" data-i18n="dnsLeakIntro">
+        Compares the IP that Tor returns via SOCKS5 RESOLVE against what
+        your system resolver returns. A divergence may indicate your OS
+        is using a non-Tor DNS server. False positives are possible on
+        CDN-backed names — see details below.
+      </p>
+      <p>
+        <label><span data-i18n="hostLabel">Host:</span>
+          <input id="canary-host-input" type="text" value="check.torproject.org" />
+        </label>
+        <button id="run-self-test" data-i18n="runSelfTestButton">Run self-test now</button>
+        <span id="canary-spinner" class="small" hidden data-i18n="runningLabel"> running…</span>
+      </p>
+      <table id="canary-detail" class="kv" hidden>
+        <tr><td data-i18n="canaryHostCell">host</td>       <td id="canary-host"></td></tr>
+        <tr>
+          <td data-i18n="ipDetailLabel">IP detail</td>
+          <td><label><input id="canary-reveal-ips" type="checkbox" /> <span data-i18n="revealRawIps">reveal raw IPs</span></label></td>
+        </tr>
+        <tr><td>tor_ips</td>    <td id="canary-tor"></td></tr>
+        <tr><td>system_ip</td>  <td id="canary-system"></td></tr>
+        <tr><td>system_ptr</td> <td id="canary-ptr"></td></tr>
+        <tr><td data-i18n="verdictLabel">verdict</td>    <td id="canary-verdict"></td></tr>
+        <tr><td data-i18n="errorLabel">error</td>      <td id="canary-error"></td></tr>
+      </table>
+    </section>
+
+    <section id="help">
+      <h2 data-i18n="helpTitle">Help</h2>
+      <p class="toolbar">
+        <span data-i18n="helpModeLabel">Depth:</span>
+        <span class="segmented" id="help-mode-controls" role="group" aria-label="Help depth">
+          <button type="button" data-help-mode="tldr" aria-pressed="true" data-i18n="helpModeTldr">TL;DR</button>
+          <button type="button" data-help-mode="nerd" aria-pressed="false" data-i18n="helpModeNerd">Nerd mode</button>
+        </span>
+      </p>
+      <div id="help-content"></div>
+    </section>
+
+    <script src="options.js"></script>
+  </body>
+</html>

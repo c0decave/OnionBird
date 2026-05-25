@@ -1,0 +1,453 @@
+{
+  "extensionName": {
+    "message": "OnionBird"
+  },
+  "extensionDescription": {
+    "message": "Thunderbird ئۈچۈن Tor بىرلەشتۈرۈش ۋە بارماق ئىزىغا قارشى — TorBirdy نىڭ ئورنىنى باسقۇچى."
+  },
+  "pageTitle": {
+    "message": "OnionBird تەڭشەكلىرى"
+  },
+  "statusLabel": {
+    "message": "ھالەت:"
+  },
+  "statusLoading": {
+    "message": "يۈكلىنىۋاتىدۇ…"
+  },
+  "statusText": {
+    "message": "API v$1، قىستۇرما v$2 — مۇستەھكەملەش $3"
+  },
+  "statusActive": {
+    "message": "ئاكتىپ"
+  },
+  "statusInactive": {
+    "message": "ئاكتىپ ئەمەس"
+  },
+  "appearanceTitle": {
+    "message": "كۆرۈنۈش"
+  },
+  "themeLabel": {
+    "message": "تېما:"
+  },
+  "themeSystem": {
+    "message": "سىستېما"
+  },
+  "themeLight": {
+    "message": "يورۇق"
+  },
+  "themeDark": {
+    "message": "قاراڭغۇ"
+  },
+  "hardeningTitle": {
+    "message": "مۇستەھكەملەش"
+  },
+  "enableButton": {
+    "message": "مۇستەھكەملەشنى قوزغات"
+  },
+  "disableButton": {
+    "message": "مۇستەھكەملەشنى توختات"
+  },
+  "scrubLoginsLabel": {
+    "message": "توختاتقاندا onion/loopback ئېلخەت مۇلازىمېتىرلىرى ئۈچۈن ساقلانغان ئىمنى ئۆچۈر"
+  },
+  "disableHelp": {
+    "message": "توختىتىش مۇستەھكەملەش تۇنجى قوزغىتىلىشتىن بۇرۇن ئېلىنغان prefs قاپقاش رەسىمنى ئەسلىگە كەلتۈرىدۇ. قەستەن ئاتلاپ كەتكەن clearnet ھېساباتلىرى نورمال ئىشلىشىنى داۋاملاشتۇرىدۇ."
+  },
+  "messageIdTitle": {
+    "message": "Message-ID FQDN"
+  },
+  "messageIdIntro": {
+    "message": "چىقىش Message-ID لاردىكى FQDN سىزنىڭ ئېلخەتلىرىڭىزدە قايتىلانغان بارماق ئىزى. سۈكۈتتىكى ھالەت سىزنىڭ From-ئادرېسىڭىزنىڭ دائىرە نامىنى ئىشلىتىدۇ، شۇنىڭ بىلەن سىز ئوخشاش تەمىنلىگۈچىنىڭ نورمال ئىشلەتكۈچىلىرى بىلەن ئارىلىشىپ كېتىسىز. TorBirdy نىڭ localhost.localdomain ھالىتى ئېنىق ئەنئەنىۋى تاللاش سۈپىتىدە مەۋجۇت بولۇپ تۇرىدۇ."
+  },
+  "modeLabel": {
+    "message": "ھالەت:"
+  },
+  "fqdnFromDomain": {
+    "message": "From-ئادرېسىنىڭ دائىرىسى (تەۋسىيە قىلىنىدۇ)"
+  },
+  "fqdnLocalhost": {
+    "message": "localhost"
+  },
+  "fqdnLocalhostLegacy": {
+    "message": "localhost.localdomain (ئەنئەنىۋى)"
+  },
+  "fqdnCustom": {
+    "message": "ئىختىيارى…"
+  },
+  "saveButton": {
+    "message": "ساقلا"
+  },
+  "torTestTitle": {
+    "message": "Tor سىناق ھالىتى"
+  },
+  "torTestIntro": {
+    "message": "ئېلخەت ئەۋەتمەي ياكى Thunderbird prefs نى ئۆزگەرتمەي يەرلىك Tor SOCKS endpoint قا يېتىشكە بولىدىغانلىقىنى تەكشۈرىدۇ. سىناق Tor نىڭ SOCKS5 RESOLVE بۇيرۇقىنى يېڭى تاسادىپىي ئايرىش بەلگىسى بىلەن ئىشلىتىدۇ، شۇڭا نىشانلىق ئاساس سىستېما DNS ئارقىلىق ھەل قىلىنمايدۇ."
+  },
+  "runTorTestButton": {
+    "message": "Tor نى ھازىر سىنا"
+  },
+  "torTestRunning": {
+    "message": " سىنىلىۋاتىدۇ…"
+  },
+  "torTestUnknown": {
+    "message": "نامەلۇم"
+  },
+  "torTestAvailable": {
+    "message": "Tor بار"
+  },
+  "torTestUnavailable": {
+    "message": "Tor يوق"
+  },
+  "torTestNotRun": {
+    "message": "تېخى ئىجرا قىلىنمىدى."
+  },
+  "torTestOk": {
+    "message": "Tor SOCKS قا $1:$2 ($3) دە يېتىش مۇمكىن. ھېچقانداق Thunderbird pref ئۆزگەرتىلمىدى."
+  },
+  "torTestNoTor": {
+    "message": "يېتىشكە بولىدىغان Tor SOCKS endpoint تېپىلمىدى. سىنالغان: $1"
+  },
+  "torTestError": {
+    "message": "Tor سىنىقى مەغلۇپ بولدى: $1"
+  },
+  "torTestResultCell": {
+    "message": "نەتىجە"
+  },
+  "torTestEndpointCell": {
+    "message": "SOCKS endpoint"
+  },
+  "torTestProbeHostCell": {
+    "message": "سىناق ئاساسى"
+  },
+  "torTestTriedCell": {
+    "message": "سىنالغان"
+  },
+  "torTestSourceRequested": {
+    "message": "تەلەپ قىلىنغان"
+  },
+  "torTestSourceExistingPref": {
+    "message": "مەۋجۇت pref"
+  },
+  "torTestSourceSystemTor": {
+    "message": "سىستېما Tor"
+  },
+  "torTestSourceTorBrowser": {
+    "message": "Tor Browser"
+  },
+  "torTestSourceFallback": {
+    "message": "زاپاس"
+  },
+  "torTestSourceCurrentPref": {
+    "message": "ھازىرقى pref"
+  },
+  "dnsLeakTitle": {
+    "message": "DNS سىزىش ھالىتى"
+  },
+  "dnsLeakIntro": {
+    "message": "Tor نىڭ SOCKS5 RESOLVE ئارقىلىق قايتۇرغان IP سى بىلەن سىستېمىڭىزنىڭ resolver ى قايتۇرغان IP نى سېلىشتۇرىدۇ. ئوخشىماسلىق OS نىڭ Tor ئەمەس DNS ئىشلىتىۋاتقانلىقىنى كۆرسىتىشى مۇمكىن؛ CDN-غا ئاساسلانغان ئىسىملار يەنىلا بىخەتەر بولۇشى مۇمكىن."
+  },
+  "hostLabel": {
+    "message": "ئاساس:"
+  },
+  "runSelfTestButton": {
+    "message": "ئۆز-سىنىقىنى ھازىر ئىجرا قىل"
+  },
+  "runningLabel": {
+    "message": " ئىجرا بولۇۋاتىدۇ…"
+  },
+  "canaryHostCell": {
+    "message": "ئاساس"
+  },
+  "ipDetailLabel": {
+    "message": "IP تەپسىلاتى"
+  },
+  "revealRawIps": {
+    "message": "خام IP لارنى كۆرسەت"
+  },
+  "verdictLabel": {
+    "message": "ھۆكۈم"
+  },
+  "errorLabel": {
+    "message": "خاتالىق"
+  },
+  "canaryUnknown": {
+    "message": "نامەلۇم"
+  },
+  "canaryNoLeak": {
+    "message": "سىزىش يوق"
+  },
+  "canaryLeakSuspected": {
+    "message": "سىزىش گۇمانلىنىدۇ"
+  },
+  "canaryDiverged": {
+    "message": "ئايرىلدى"
+  },
+  "canaryInconclusive": {
+    "message": "ھۆكۈم چىقىرىلمىدى"
+  },
+  "canaryError": {
+    "message": "خاتالىق"
+  },
+  "canaryVerdictNoData": {
+    "message": "تېخى سانلىق مەلۇمات يوق"
+  },
+  "canaryVerdictLeak": {
+    "message": "سىستېما resolver نىڭ جاۋابى ھېچقانداق Tor circuit نىڭ كۆرۈشىدە يوق؛ سىستېما DNS routing نى دەلىللەڭ"
+  },
+  "canaryVerdictOk": {
+    "message": "system_ip Tor توپلىمىدا ($1 circuit سىنالدى)"
+  },
+  "canaryVerdictDiverged": {
+    "message": "system_ip Tor توپلىمىدا يوق، ئەمما heuristic بۇ بەلكىم بىخەتەردۇر دەيدۇ؛ تەپسىلاتلارنى تەكشۈرۈڭ"
+  },
+  "canaryVerdictMissingData": {
+    "message": "ئىزدەشلەرنىڭ بىرى سانلىق مەلۇمات قايتۇرمىدى"
+  },
+  "canaryErrorTor9050": {
+    "message": "Tor 127.0.0.1:9050 دە جاۋاب بەرمەيدۇ. Tor daemon نى قوزغىتىڭ، ياكى Tor Browser ئۈچۈن port 9150 نى ئىشلىتىڭ."
+  },
+  "canaryErrorTor9150": {
+    "message": "Tor Browser ئىجرا بولمايدۇ. ئۇنى قوزغىتىڭ؛ ئۇنىڭ SOCKS تىڭشىغۇچىسى ئادەتتە 9150 دە."
+  },
+  "canaryErrorSocksRefused": {
+    "message": "SOCKS ئۇلىنىشى رەت قىلىندى. سەپلەنگەن Tor ئاساسى ۋە port نى تەكشۈرۈڭ."
+  },
+  "canaryErrorNetworkUnreachable": {
+    "message": "تور بۇ يولدا چىقىش ترافىكنى توسىدۇ. Bridges ياكى pluggable transports كېرەك بولۇشى مۇمكىن."
+  },
+  "canaryErrorTimeout": {
+    "message": "Tor قا يېتىش مۇمكىن، ئەمما circuit ۋاقتىدا تۈگىمىدى. قايتا سىناڭ ياكى circuit لارنى ئالماشتۇرۇڭ."
+  },
+  "canaryErrorDnsStatus": {
+    "message": "OS resolver خاتالىق قايتۇردى. تولۇق قوغداش ئۈچۈن سىستېما DNS Tor DNSPort نى ئىشلىتىشى ياكى Whonix/Tails ئىچىدە ئىجرا قىلىنىشى كېرەك."
+  },
+  "logApplyingHardening": {
+    "message": "مۇستەھكەملەش قوللىنىلىۋاتىدۇ…"
+  },
+  "logRestoringPrefs": {
+    "message": "مۇستەھكەملەشتىن بۇرۇنقى prefs ئەسلىگە كەلتۈرۈلۈۋاتىدۇ…"
+  },
+  "logDone": {
+    "message": "تامام"
+  },
+  "logWarnings": {
+    "message": "ئاگاھلاندۇرۇشلار بىلەن تامام بولدى"
+  },
+  "disableConfirm": {
+    "message": "بۇ سىزنىڭ prefs ىڭىزنى مۇستەھكەملەشنىڭ تۇنجى قوزغىتىلىشىدىن بۇرۇن ئېلىنغان قاپقاش رەسىمگە ئەسلىگە كەلتۈرىدۇ. Tor-only ئەۋەتىش clearnet ئارقىلىق قايتىپ كېلىشى مۇمكىن. داۋاملاشتۇرۇلسۇنمۇ؟"
+  },
+  "savingLabel": {
+    "message": "ساقلىنىۋاتىدۇ…"
+  },
+  "fqdnInvalid": {
+    "message": "ئىختىيارى FQDN چوقۇم ئىناۋەتلىك multi-label DNS ئىسمى بولۇشى كېرەك، IP ئادرېسى ئەمەس"
+  },
+  "fqdnSaved": {
+    "message": "ساقلاندى. mode=$1، $2 identity يېڭىلاندى."
+  },
+  "saveFailed": {
+    "message": "ساقلاش مەغلۇپ بولدى: $1"
+  },
+  "readPrefsFailed": {
+    "message": "prefs ئوقۇلمىدى: $1"
+  },
+  "errorWithMessage": {
+    "message": "خاتالىق: $1"
+  },
+  "helpTitle": {
+    "message": "ياردەم"
+  },
+  "helpModeLabel": {
+    "message": "چوڭقۇرلۇق:"
+  },
+  "helpModeTldr": {
+    "message": "قىسقىچە"
+  },
+  "helpModeNerd": {
+    "message": "نېرد ھالىتى"
+  },
+  "helpTldrDoesTitle": {
+    "message": "بۇ قىستۇرما نېمە قىلىدۇ"
+  },
+  "helpTldrDoes1": {
+    "message": "Thunderbird IMAP ۋە SMTP نى يەرلىك Tor SOCKS proxy ئارقىلىق يۆتكەيدۇ ۋە DNS ھەل قىلىشنى Tor ئارقىلىق يىراقتا ساقلايدۇ."
+  },
+  "helpTldrDoes2": {
+    "message": "Fail-closed: ئەگەر Tor قا يېتىش مۇمكىن بولمىسا، ئېلخەت ئەۋەتىش clearnet قا قايتىش ئورنىغا مەغلۇپ بولۇشى كېرەك."
+  },
+  "helpTldrDoes3": {
+    "message": "User-Agent، X-Mailer، HELO، ۋاقىت رايونى، Message-ID FQDN، flowed تېكىست ۋە يىراق مەزمۇن سىياقىدىكى ئېلخەت بارماق ئىزلىرىنى ئازايتىدۇ."
+  },
+  "helpTldrDoes4": {
+    "message": "Tor نىڭ بارلىقىنى سىناش ۋە DNS canary نى تەمىنلەيدۇ؛ ئىككىلىسى Tor نىڭ SOCKS5 RESOLVE يولىنى ئىشلىتىدۇ ۋە Tor تەرىپى ئۈچۈن سىستېما DNS دىن قاچىدۇ."
+  },
+  "helpTldrDoesNotTitle": {
+    "message": "نېمىنى قىلمايدۇ"
+  },
+  "helpTldrDoesNot1": {
+    "message": "ئۇ Tails، Whonix، Tor gateway ياكى توغرا سەپلەنگەن سىستېما resolver نىڭ ئورنىنى ئالمايدۇ."
+  },
+  "helpTldrDoesNot2": {
+    "message": "ئۇ سىز كىملىك تەكشۈرگەن mailbox نى تەمىنلىگۈچىڭىزدىن ياكى تەمىنلىگۈچى تەرىپىدىن قوشۇلغان Authentication-Results headers دىن يوشۇرمايدۇ."
+  },
+  "helpTldrDoesNot3": {
+    "message": "ئۇ قوبۇل قىلغۇچىنىڭ Received headers دە Tor exit نى كۆرۈشى مۇمكىن دېگەن پاكىتنى يوشۇرمايدۇ."
+  },
+  "helpTldrDoesNot4": {
+    "message": "ئۇ باشقا قوللىنىشچان پروگراممىلار، OS-دەرىجىلىك سىزىشلار، بۇزۇلغان endpoints ياكى تور-correlation ھۇجۇملىرىنى قوغدىمايدۇ."
+  },
+  "helpTldrTorbirdyTitle": {
+    "message": "نېمە ئۈچۈن TorBirdy ئەمدى ئىشلىمەيدۇ"
+  },
+  "helpTldrTorbirdy1": {
+    "message": "TorBirdy ئەنئەنىۋى Thunderbird/XUL كېڭەيتمە ئىدى. Thunderbird 78 ئۇ تايانغان ئەنئەنىۋى XUL overlay كېڭەيتمە سىستېمىسىنى ئېلىۋەتتى."
+  },
+  "helpTldrTorbirdy2": {
+    "message": "ئۇنىڭ ئەڭ ئاخىرقى نەشرى 2018 يىلى ئىدى، شۇڭا قايتا يېزىشسىز زامانىۋى Thunderbird ESR builds دا ئىجرا قىلىشقا بولمايدۇ."
+  },
+  "helpTldrExperimentsTitle": {
+    "message": "نېمە ئۈچۈن Experiments API كېرەك"
+  },
+  "helpTldrExperiments1": {
+    "message": "نورمال MailExtensions Thunderbird نىڭ proxy prefs، SMTP server internals، identity prefs، DNS cache، login manager ياكى خام SOCKS self-tests نى ئۆزگەرتەلمەيدۇ."
+  },
+  "helpTldrExperiments2": {
+    "message": "Experiments API بۇ Thunderbird internals نى ئاشكارىلايدۇ؛ OnionBird ئىمتىيازلىق يۈزنى كىچىك ساقلاش ئۈچۈن allowlist ئارقىلىق writes نى نازارەت قىلىدۇ."
+  },
+  "helpNerdDoesTitle": {
+    "message": "نېرد ھالىتى: قوللىنىلغان قوغدانىشلار"
+  },
+  "helpNerdDoes1": {
+    "message": "Proxy prefs: network.proxy.type=1، SOCKS5 ئاساس/port ئاپتوماتىك سىناش، socks_remote_dns=true، failover_direct=false ۋە proxy bypass تىزىمى يوق."
+  },
+  "helpNerdDoes2": {
+    "message": "Header پاكىزلىقى: User-Agent/X-Mailer نى بېسىپ قويىدۇ، HELO/EHLO نى [127.0.0.1] قا مەجبۇر قىلىدۇ، تېخىمۇ بىخەتەر Message-ID FQDN نى تاللايدۇ، flowed plaintext نى ئېتىدۇ ۋە UTC/RFP غا مۇناسىۋەتلىك ھەرىكەتلەرنى ئىتتىرىدۇ."
+  },
+  "helpNerdDoes3": {
+    "message": "تور مۇستەھكەملەش: DoH/TRR، OCSP، speculative connects، DNS prefetch، predictor، WebRTC، geolocation، ECH HTTPS-RR lookup، captive-portal تەكشۈرۈشلىرى ۋە update phone-home URL لىرىنى ئېتىدۇ."
+  },
+  "helpNerdDoes4": {
+    "message": "Mail UI مۇستەھكەملەش: يىراق ئېلخەت مەزمۇن يوللىرى، plaintext rendering، ئۇقتۇرۇش سىزىشلىرى، ئادرېس كىتابى ئاپتوماتىك يىغىش ۋە توختىتىشتا ساقلانغان Tor-login تەكشۈرۈش/چىقىرىش نى ئېتىدۇ."
+  },
+  "helpNerdDoes5": {
+    "message": "نازارەت: قوزغىتىش ۋە دەۋرىي قايتا تەكشۈرۈش مۇستەھكەملەنگەن prefs نى رېمونت قىلىدۇ؛ سىناق ھالىتى pref writes سىز Tor SOCKS نى تەكشۈرىدۇ، ۋە stream-isolated SOCKS5 RESOLVE canary سىستېما DNS ھەرىكىتىنى تەكشۈرىدۇ."
+  },
+  "helpNerdDoesNotTitle": {
+    "message": "نېرد ھالىتى: چېگرالار"
+  },
+  "helpNerdDoesNot1": {
+    "message": "كىملىكى دەلىللەنگەن SMTP يەنىلا تەمىنلىگۈچىگە ھېسابات توغرىسىدا خەۋەر بېرىدۇ، ۋە تەمىنلىگۈچىلەر قوبۇل قىلغۇچىلارغا كۆرۈنىدىغان Authentication-Results smtp.auth قىممەتلىرىنى قوشۇشى مۇمكىن."
+  },
+  "helpNerdDoesNot2": {
+    "message": "SMTP transport يەنىلا Received زەنجىرلىرىنى يارىتىدۇ. قوبۇل قىلغۇچى ئادەتتە تەمىنلىگۈچىنىڭ Tor-exit-facing hop ىدىن Tor ئىشلىتىلگەنلىكىنى بىلىشى مۇمكىن."
+  },
+  "helpNerdDoesNot3": {
+    "message": "قىستۇرما Thunderbird نى كونترول قىلىدۇ، مەشغۇلات سىستېمىسىنى ئەمەس. NTP، clipboard، ھۆججەتلەر، باشقا قوللىنىشچان پروگراممىلار، TB دىن سىرتقى crash dumps ۋە hostnames OS-تەھدىت-مودېلى مەسىلىلىرى بولۇپ قالىدۇ."
+  },
+  "helpNerdDoesNot4": {
+    "message": "Canary بايقاش، سېھىرلىك routing ئەمەس. ئادەتتىكى desktops دا، OS DNS نى Tor DNSPort ئارقىلىق يۆتكەڭ ياكى ئەڭ كۈچلۈك كاپالەت ئۈچۈن Whonix/Tails نى ئىشلىتىڭ."
+  },
+  "helpNerdDoesNot5": {
+    "message": "ئۇ گىلوبال passive رەقىبلەر، end-to-end timing correlation، يامان تەمىنلىگۈچىلەر، يامان قوبۇل قىلغۇچىلار ياكى بۇزۇلغان Thunderbird/profile ھالىتى ئۈستىدىن غەلىبە قىلالمايدۇ."
+  },
+  "helpNerdTorbirdyTitle": {
+    "message": "نېرد ھالىتى: TorBirdy ماسلىشىشى"
+  },
+  "helpNerdTorbirdy1": {
+    "message": "TorBirdy كونا ئىمتىيازلىق XUL/XPCOM قىستۇرما مودېلىغا قارىتىلغان ۋە Thunderbird internals غا overlay/bootstrap hooks نى ئىشلەتكەن."
+  },
+  "helpNerdTorbirdy2": {
+    "message": "Thunderbird 78 ئەنئەنىۋى XUL extensions نى ئېلىۋەتتى؛ زامانىۋى Thunderbird WebExtensions/MailExtensions نى قوبۇل قىلىدۇ، بۇلار ئاتايىن ئۇ ئىمتىيازلىق mail ۋە pref internals نى ئاشكارىلىمايدۇ."
+  },
+  "helpNerdTorbirdy3": {
+    "message": "شۇڭا TorBirdy نى يۆتكەش manifest bump ئەمەس. ئىمتىيازلىق قىسىملار Thunderbird Experiments API ئارقىسىدا قايتا يېزىلىشى كېرەك."
+  },
+  "helpNerdExperimentsTitle": {
+    "message": "نېرد ھالىتى: Experiments API چېگرىسى"
+  },
+  "helpNerdExperiments1": {
+    "message": "MailExtension تەرىپى UI، runtime messages ۋە options نى ئىگىلەيدۇ؛ Experiments parent script Services.prefs، MailServices SMTP/identity objects، DNS cache flushing، login-manager تەكشۈرۈش ۋە خام SOCKS5 RESOLVE نى ئىگىلەيدۇ."
+  },
+  "helpNerdExperiments2": {
+    "message": "بۇ بۆلۈنۈش زۆرۈر چۈنكى ئاممىۋى MailExtension APIs prefs نى atomically snapshot/restore قىلالمايدۇ ياكى per-SMTP HELO/TLS settings نى تەڭشىيەلمەيدۇ."
+  },
+  "helpNerdExperiments3": {
+    "message": "Experiments parent-process ئىمتىيازى بىلەن ئىجرا بولغاچقا، OnionBird pref writes نى تار allowlist قا چەكلەيدۇ ۋە مۇستەھكەملەش mutations نى تەرتىپلەشتۈرىدۇ."
+  },
+  "sendBlockedCancelStorageError": {
+    "message": "OnionBird: ئەۋەتىش توسۇلدى — قىستۇرما ھالىتى ئوقۇلمايدۇ (ساقلاش خاتالىقى). Thunderbird نى قايتا قوزغىتىڭ، ئاندىن قايتا سىناشتىن بۇرۇن OnionBird Options نى تەكشۈرۈڭ."
+  },
+  "sendBlockedCancelLeakDetected": {
+    "message": "OnionBird: ئەۋەتىش توسۇلدى — Tor leak canary Tor دىن ئۆتمىگەن DNS ھەل قىلىشنى بايقىدى. قايتا سىناشتىن بۇرۇن OnionBird Options → DNS leak status → Run self-test now نى ئېچىڭ."
+  },
+  "sendBlockedCancelNoVerdict": {
+    "message": "OnionBird: ئەۋەتىش توسۇلدى — تېخى canary ھۆكۈمى يوق (يۈرگۈزۈلمىگەن ياكى ساقلاش تازىلانغان). قايتا سىناشتىن بۇرۇن OnionBird Options → DNS leak status → Run self-test now نى ئېچىڭ."
+  },
+  "sendBlockedCancelOther": {
+    "message": "OnionBird: ئەۋەتىش توسۇلدى — canary ھۆكۈمى 'clean' ئەمەس (ھالەت: $STATE$). قايتا سىناشتىن بۇرۇن OnionBird Options → DNS leak status → Run self-test now نى ئېچىڭ.",
+    "placeholders": {
+      "STATE": {
+        "content": "$1",
+        "example": "leak_detected"
+      }
+    }
+  },
+  "socksOverrideTitle": {
+    "message": "SOCKS endpoint override"
+  },
+  "socksOverrideIntro": {
+    "message": "By default the addon detects Thunderbird's existing network.proxy.socks pref or falls back to 127.0.0.1 on port 9050 / 9150. Set host + port here to pin a different endpoint (e.g. a Whonix Gateway IP). Host must be a loopback name (localhost) or an IP literal — DNS-resolvable names would leak via the system resolver before Tor."
+  },
+  "socksOverrideHostLabel": {
+    "message": "Host:"
+  },
+  "socksOverridePortLabel": {
+    "message": "Port:"
+  },
+  "socksOverrideSaveButton": {
+    "message": "Save"
+  },
+  "socksOverrideResetButton": {
+    "message": "Reset to default"
+  },
+  "socksOverrideTestButton": {
+    "message": "Test endpoint"
+  },
+  "socksOverrideStatusOk": {
+    "message": "OK"
+  },
+  "socksOverrideStatusInvalidHost": {
+    "message": "Invalid host — must be `localhost` or an IP literal (IPv4 or IPv6)."
+  },
+  "socksOverrideStatusInvalidPort": {
+    "message": "Invalid port — must be an integer between 1 and 65535."
+  },
+  "socksOverrideTbPrefWarning": {
+    "message": "Thunderbird currently has $TB$ configured; your saved override $OVERRIDE$ will replace it on next enable.",
+    "placeholders": {
+      "TB": {
+        "content": "$1",
+        "example": "127.0.0.1:9050"
+      },
+      "OVERRIDE": {
+        "content": "$2",
+        "example": "10.152.152.10:9050"
+      }
+    }
+  },
+  "socksOverrideStatusReset": {
+    "message": "Override cleared — falling back to auto-detect on next enable."
+  },
+  "autoEnableNotificationTitleSocksUnreachable": {
+    "message": "OnionBird installed — Tor not reachable"
+  },
+  "autoEnableNotificationMessageSocksUnreachable": {
+    "message": "OnionBird could not reach a Tor SOCKS endpoint on 127.0.0.1:9050 or :9150. Outgoing sends are blocked until Tor is reachable. Start the Tor daemon (or Tor Browser) and open OnionBird Options → DNS leak status → Run self-test now."
+  },
+  "autoEnableNotificationTitleCanaryFail": {
+    "message": "OnionBird installed — hardening incomplete"
+  },
+  "autoEnableNotificationMessageCanaryFail": {
+    "message": "OnionBird auto-enabled but the canary self-test did not verify cleanly. Outgoing sends are blocked until the next canary passes. Open OnionBird Options → DNS leak status → Run self-test now to triage."
+  }
+}

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 380" role="img" aria-label="OnionBird — circuit-bird">
+  <title>OnionBird — Tor-Circuit forms the Bird</title>
+  <!-- background dark -->
+  <rect x="20" y="30" width="280" height="260" rx="20" fill="#0E0A18"/>
+  <!-- onion top-left -->
+  <g transform="translate(70 80)">
+    <circle r="22" fill="#4A2D67"/>
+    <circle r="14" fill="none" stroke="#9C6BB8" stroke-width="2"/>
+    <circle r="6" fill="#7D4698"/>
+  </g>
+  <!-- circuit hops (nodes) shaping a bird flying -->
+  <g fill="#F9A11B" stroke="#E66100" stroke-width="2">
+    <circle cx="120" cy="120" r="8"/>
+    <circle cx="170" cy="100" r="8"/>
+    <circle cx="215" cy="135" r="8"/>
+    <circle cx="245" cy="180" r="8"/>
+    <circle cx="200" cy="200" r="8"/>
+    <circle cx="160" cy="190" r="8"/>
+    <circle cx="120" cy="210" r="8"/>
+    <circle cx="180" cy="240" r="8"/>
+  </g>
+  <!-- circuit connecting lines (path of bird outline) -->
+  <path d="M 92 80 L 120 120 L 170 100 L 215 135 L 245 180 L 200 200 L 160 190 L 120 210 L 180 240"
+        fill="none" stroke="#E66100" stroke-width="3" stroke-dasharray="2 6" stroke-linecap="round"/>
+  <!-- bird suggestive curve (overlay) -->
+  <path d="M 92 80 Q 180 60 245 180 Q 200 230 120 210 Q 150 195 180 240"
+        fill="none" stroke="#F9A11B" stroke-width="2" opacity="0.55"/>
+  <!-- exit node marker (beak) -->
+  <path d="M 184 240 L 210 245 L 200 258 Z" fill="#F9A11B"/>
+  <!-- wordmark -->
+  <text x="160" y="325" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="44" fill="#2B1640">OnionBird</text>
+  <text x="160" y="351" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="500" font-size="12" fill="#7D4698" letter-spacing="6">TOR · THUNDERBIRD</text>
+</svg>

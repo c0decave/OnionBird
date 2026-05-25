@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 360" role="img" aria-label="OnionBird — realistic yellow onion + lightning">
+  <title>OnionBird — Yellow Onion with Thunderbird-Bolt</title>
+  <defs>
+    <radialGradient id="yb-bulb" cx="38%" cy="32%" r="78%">
+      <stop offset="0%" stop-color="#FFF1B8"/>
+      <stop offset="30%" stop-color="#F2C868"/>
+      <stop offset="65%" stop-color="#C48420"/>
+      <stop offset="100%" stop-color="#6B4108"/>
+    </radialGradient>
+    <linearGradient id="yb-bolt" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#FFFCE4"/>
+      <stop offset="40%" stop-color="#F9A11B"/>
+      <stop offset="100%" stop-color="#E66100"/>
+    </linearGradient>
+  </defs>
+
+  <ellipse cx="160" cy="278" rx="92" ry="7" fill="#000" opacity="0.22"/>
+
+  <g stroke="#6B4108" stroke-width="1.3" stroke-linecap="round" fill="none" opacity="0.85">
+    <path d="M 132 268 Q 124 290, 116 308"/>
+    <path d="M 146 272 Q 142 294, 138 314"/>
+    <path d="M 160 274 Q 160 298, 160 318"/>
+    <path d="M 174 272 Q 178 294, 184 312"/>
+    <path d="M 188 268 Q 198 290, 208 304"/>
+    <path d="M 122 262 Q 108 278, 96 290"/>
+    <path d="M 198 262 Q 212 278, 224 292"/>
+  </g>
+
+  <path d="M 64 165
+           C 64 96, 108 70, 160 64
+           C 212 70, 256 96, 256 165
+           C 256 242, 218 274, 160 274
+           C 102 274, 64 242, 64 165 Z"
+        fill="url(#yb-bulb)"/>
+
+  <g fill="none" stroke="#6B4108" stroke-width="1" stroke-linecap="round" opacity="0.42">
+    <path d="M 160 66 C 122 84, 86 122, 78 168 C 86 232, 124 268, 158 272"/>
+    <path d="M 160 66 C 138 88, 110 126, 100 172 C 108 240, 138 270, 162 272"/>
+    <path d="M 160 66 C 175 92, 178 130, 178 178 C 175 240, 165 270, 160 272"/>
+    <path d="M 160 66 C 190 88, 218 124, 230 170 C 222 238, 192 270, 164 272"/>
+    <path d="M 160 66 C 200 84, 232 118, 244 166 C 234 234, 200 270, 166 272"/>
+  </g>
+
+  <ellipse cx="108" cy="138" rx="24" ry="50" fill="#FFF8D8" opacity="0.42" transform="rotate(-14 108 138)"/>
+  <ellipse cx="96" cy="180" rx="7" ry="16" fill="#FFFBE8" opacity="0.55"/>
+
+  <!-- dry stalk -->
+  <path d="M 158 66 C 154 50, 158 32, 154 18 C 150 10, 160 8, 162 14 C 164 28, 159 46, 164 64 Z" fill="#5A3A12"/>
+  <path d="M 166 64 C 174 50, 172 34, 178 22 C 182 16, 174 12, 172 18 C 168 32, 168 48, 162 66" fill="#8B5E1E" opacity="0.9"/>
+  <path d="M 145 66 Q 160 78 175 66 Q 160 82 145 66 Z" fill="#000" opacity="0.20"/>
+
+  <!-- lightning bolt forking through onion -->
+  <path d="M 178 78
+           L 128 170
+           L 168 170
+           L 132 268
+           L 220 152
+           L 182 152
+           L 214 78 Z"
+        fill="url(#yb-bolt)"
+        stroke="#7A2E00" stroke-width="2.5" stroke-linejoin="round"/>
+  <!-- bolt inner glow -->
+  <path d="M 195 92 L 162 158 L 188 158 L 168 224"
+        fill="none" stroke="#FFFCE4" stroke-width="2" stroke-linecap="round" opacity="0.85"/>
+
+  <text x="160" y="332" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="38" fill="#2B1640">OnionBird</text>
+</svg>

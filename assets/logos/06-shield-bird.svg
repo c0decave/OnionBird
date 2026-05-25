@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 380" role="img" aria-label="OnionBird — shield-bird">
+  <title>OnionBird — Onion Shield with Thunderbird</title>
+  <!-- shield outline -->
+  <path d="M 160 40 L 270 70 L 270 170 Q 270 240 160 290 Q 50 240 50 170 L 50 70 Z" fill="#4A2D67"/>
+  <path d="M 160 40 L 270 70 L 270 170 Q 270 240 160 290 Q 50 240 50 170 L 50 70 Z" fill="none" stroke="#2B1640" stroke-width="4"/>
+  <!-- onion layers inside shield -->
+  <g fill="none" stroke="#9C6BB8" stroke-width="3">
+    <path d="M 160 70 L 246 92 L 246 168 Q 246 218 160 256 Q 74 218 74 168 L 74 92 Z"/>
+    <path d="M 160 100 L 222 116 L 222 168 Q 222 200 160 226 Q 98 200 98 168 L 98 116 Z"/>
+  </g>
+  <!-- thunderbird silhouette atop shield -->
+  <g transform="translate(160 170)">
+    <path d="M -60 -20 Q -20 -50 30 -30 Q 60 -10 60 20 Q 20 35 -30 25 Q -55 10 -60 -20 Z" fill="#E66100"/>
+    <path d="M -60 -20 L -86 -28 L -82 -10 L -86 -2 L -60 -10 Z" fill="#F9A11B"/>
+    <path d="M 60 5 L 86 15 L 78 28 L 86 38 L 60 28 Z" fill="#E66100"/>
+    <!-- wing sweep -->
+    <path d="M -10 -25 Q 25 -45 50 -10" fill="none" stroke="#7A2E00" stroke-width="4" stroke-linecap="round"/>
+    <circle cx="-40" cy="-10" r="3.5" fill="#FFF7EE"/>
+  </g>
+  <!-- wordmark -->
+  <text x="160" y="335" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="44" fill="#2B1640">OnionBird</text>
+  <text x="160" y="361" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="500" font-size="12" fill="#7D4698" letter-spacing="6">TOR · THUNDERBIRD</text>
+</svg>

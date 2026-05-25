@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="OnionBird icon">
+  <rect width="64" height="64" rx="12" fill="#2B1640"/>
+  <g fill="none" stroke="#7D4698" stroke-width="1.3">
+    <circle cx="32" cy="32" r="22"/>
+    <circle cx="32" cy="32" r="16"/>
+    <circle cx="32" cy="32" r="10"/>
+  </g>
+  <path d="M 36 12 L 22 33 L 30 33 L 24 52 L 42 30 L 34 30 L 42 12 Z"
+        fill="#F9A11B" stroke="#E66100" stroke-width="1.2" stroke-linejoin="round"/>
+  <path d="M 32 8 Q 28 4 32 0 Q 36 4 32 8 Z" fill="#7D4698"/>
+</svg>

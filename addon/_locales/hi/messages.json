@@ -1,0 +1,453 @@
+{
+  "extensionName": {
+    "message": "OnionBird"
+  },
+  "extensionDescription": {
+    "message": "Thunderbird के लिए Tor एकीकरण और एंटी-फिंगरप्रिंटिंग — TorBirdy का उत्तराधिकारी।"
+  },
+  "pageTitle": {
+    "message": "OnionBird विकल्प"
+  },
+  "statusLabel": {
+    "message": "स्थिति:"
+  },
+  "statusLoading": {
+    "message": "लोड हो रहा है…"
+  },
+  "statusText": {
+    "message": "API v$1, ऐड-ऑन v$2 — हार्डनिंग $3"
+  },
+  "statusActive": {
+    "message": "सक्रिय"
+  },
+  "statusInactive": {
+    "message": "निष्क्रिय"
+  },
+  "appearanceTitle": {
+    "message": "रूप"
+  },
+  "themeLabel": {
+    "message": "थीम:"
+  },
+  "themeSystem": {
+    "message": "सिस्टम"
+  },
+  "themeLight": {
+    "message": "हल्की"
+  },
+  "themeDark": {
+    "message": "गहरी"
+  },
+  "hardeningTitle": {
+    "message": "हार्डनिंग"
+  },
+  "enableButton": {
+    "message": "हार्डनिंग सक्षम करें"
+  },
+  "disableButton": {
+    "message": "हार्डनिंग अक्षम करें"
+  },
+  "scrubLoginsLabel": {
+    "message": "अक्षम करते समय onion/loopback मेल सर्वर के सहेजे गए पासवर्ड हटाएँ"
+  },
+  "disableHelp": {
+    "message": "अक्षम करना पहली हार्डनिंग से पहले लिए गए prefs के snapshot को बहाल करता है। जान-बूझकर बायपास किए गए clearnet खाते सामान्य रूप से काम करते रहते हैं।"
+  },
+  "messageIdTitle": {
+    "message": "Message-ID में FQDN"
+  },
+  "messageIdIntro": {
+    "message": "आपके आउटगोइंग Message-IDs में FQDN आपकी मेल में बार-बार आने वाला फिंगरप्रिंट है। डिफ़ॉल्ट आपके From पते का डोमेन उपयोग करता है ताकि आप उसी प्रदाता के सामान्य उपयोगकर्ताओं जैसे दिखें। TorBirdy का localhost.localdomain मोड एक स्पष्ट legacy विकल्प के रूप में उपलब्ध रहता है।"
+  },
+  "modeLabel": {
+    "message": "मोड:"
+  },
+  "fqdnFromDomain": {
+    "message": "From पते का डोमेन (अनुशंसित)"
+  },
+  "fqdnLocalhost": {
+    "message": "localhost"
+  },
+  "fqdnLocalhostLegacy": {
+    "message": "localhost.localdomain (legacy)"
+  },
+  "fqdnCustom": {
+    "message": "कस्टम…"
+  },
+  "saveButton": {
+    "message": "सहेजें"
+  },
+  "torTestTitle": {
+    "message": "Tor परीक्षण मोड"
+  },
+  "torTestIntro": {
+    "message": "बिना मेल भेजे या Thunderbird prefs बदले, जाँचता है कि स्थानीय Tor SOCKS endpoint पहुँच योग्य है या नहीं। प्रोब Tor का SOCKS5 RESOLVE कमांड एक नए यादृच्छिक isolation token के साथ उपयोग करता है, इसलिए लक्ष्य host सिस्टम DNS के माध्यम से resolve नहीं होता।"
+  },
+  "runTorTestButton": {
+    "message": "अभी Tor परीक्षण करें"
+  },
+  "torTestRunning": {
+    "message": " परीक्षण हो रहा है…"
+  },
+  "torTestUnknown": {
+    "message": "अज्ञात"
+  },
+  "torTestAvailable": {
+    "message": "Tor उपलब्ध है"
+  },
+  "torTestUnavailable": {
+    "message": "Tor अनुपलब्ध"
+  },
+  "torTestNotRun": {
+    "message": "अभी तक नहीं चलाया।"
+  },
+  "torTestOk": {
+    "message": "Tor SOCKS $1:$2 पर पहुँच योग्य है ($3)। कोई Thunderbird prefs नहीं बदली गई।"
+  },
+  "torTestNoTor": {
+    "message": "कोई पहुँच योग्य Tor SOCKS endpoint नहीं मिला। आज़माए गए: $1"
+  },
+  "torTestError": {
+    "message": "Tor परीक्षण विफल: $1"
+  },
+  "torTestResultCell": {
+    "message": "परिणाम"
+  },
+  "torTestEndpointCell": {
+    "message": "SOCKS endpoint"
+  },
+  "torTestProbeHostCell": {
+    "message": "probe host"
+  },
+  "torTestTriedCell": {
+    "message": "आज़माए गए"
+  },
+  "torTestSourceRequested": {
+    "message": "अनुरोधित"
+  },
+  "torTestSourceExistingPref": {
+    "message": "मौजूदा pref"
+  },
+  "torTestSourceSystemTor": {
+    "message": "सिस्टम Tor"
+  },
+  "torTestSourceTorBrowser": {
+    "message": "Tor Browser"
+  },
+  "torTestSourceFallback": {
+    "message": "fallback"
+  },
+  "torTestSourceCurrentPref": {
+    "message": "वर्तमान pref"
+  },
+  "dnsLeakTitle": {
+    "message": "DNS लीक स्थिति"
+  },
+  "dnsLeakIntro": {
+    "message": "Tor द्वारा SOCKS5 RESOLVE से लौटाए गए IP की तुलना आपके सिस्टम resolver द्वारा लौटाए गए IP से करता है। विचलन का अर्थ हो सकता है कि OS गैर-Tor DNS उपयोग कर रहा है; CDN-समर्थित नाम फिर भी हानिरहित हो सकते हैं।"
+  },
+  "hostLabel": {
+    "message": "Host:"
+  },
+  "runSelfTestButton": {
+    "message": "अभी self-test चलाएँ"
+  },
+  "runningLabel": {
+    "message": " चल रहा है…"
+  },
+  "canaryHostCell": {
+    "message": "host"
+  },
+  "ipDetailLabel": {
+    "message": "IP विवरण"
+  },
+  "revealRawIps": {
+    "message": "कच्चे IPs दिखाएँ"
+  },
+  "verdictLabel": {
+    "message": "निर्णय"
+  },
+  "errorLabel": {
+    "message": "त्रुटि"
+  },
+  "canaryUnknown": {
+    "message": "अज्ञात"
+  },
+  "canaryNoLeak": {
+    "message": "कोई लीक नहीं"
+  },
+  "canaryLeakSuspected": {
+    "message": "लीक का संदेह"
+  },
+  "canaryDiverged": {
+    "message": "भिन्न"
+  },
+  "canaryInconclusive": {
+    "message": "अनिर्णायक"
+  },
+  "canaryError": {
+    "message": "त्रुटि"
+  },
+  "canaryVerdictNoData": {
+    "message": "अभी डेटा नहीं"
+  },
+  "canaryVerdictLeak": {
+    "message": "सिस्टम resolver का उत्तर किसी भी Tor circuit के दृश्य में नहीं है; सिस्टम DNS routing सत्यापित करें"
+  },
+  "canaryVerdictOk": {
+    "message": "system_ip Tor सेट में है ($1 circuit आज़माए गए)"
+  },
+  "canaryVerdictDiverged": {
+    "message": "system_ip Tor सेट में नहीं, लेकिन heuristic इसे संभवतः हानिरहित मानती है; विवरण देखें"
+  },
+  "canaryVerdictMissingData": {
+    "message": "किसी एक query ने डेटा नहीं लौटाया"
+  },
+  "canaryErrorTor9050": {
+    "message": "Tor 127.0.0.1:9050 पर उत्तर नहीं दे रहा। Tor daemon शुरू करें, या Tor Browser के लिए पोर्ट 9150 उपयोग करें।"
+  },
+  "canaryErrorTor9150": {
+    "message": "Tor Browser नहीं चल रहा। उसे शुरू करें; SOCKS listener आमतौर पर 9150 पर होता है।"
+  },
+  "canaryErrorSocksRefused": {
+    "message": "SOCKS कनेक्शन अस्वीकृत। कॉन्फ़िगर किया गया Tor host और पोर्ट जाँचें।"
+  },
+  "canaryErrorNetworkUnreachable": {
+    "message": "नेटवर्क इस मार्ग से आउटबाउंड ट्रैफ़िक ब्लॉक करता है। bridges या pluggable transports आवश्यक हो सकते हैं।"
+  },
+  "canaryErrorTimeout": {
+    "message": "Tor पहुँच योग्य है, लेकिन circuit समय पर समाप्त नहीं हुआ। पुनः प्रयास करें या circuits घुमाएँ।"
+  },
+  "canaryErrorDnsStatus": {
+    "message": "OS resolver ने त्रुटि लौटाई। पूर्ण सुरक्षा के लिए सिस्टम DNS को Tor DNSPort उपयोग करना चाहिए या Whonix/Tails के अंदर चलना चाहिए।"
+  },
+  "logApplyingHardening": {
+    "message": "हार्डनिंग लागू हो रही है…"
+  },
+  "logRestoringPrefs": {
+    "message": "हार्डनिंग से पहले की prefs बहाल हो रही हैं…"
+  },
+  "logDone": {
+    "message": "पूर्ण"
+  },
+  "logWarnings": {
+    "message": "चेतावनियों के साथ पूर्ण"
+  },
+  "disableConfirm": {
+    "message": "यह आपकी prefs को पहली हार्डनिंग से पहले लिए गए snapshot पर बहाल करेगा। Tor-only भेज क्रियाएँ फिर से clearnet पर जा सकती हैं। जारी रखें?"
+  },
+  "savingLabel": {
+    "message": "सहेज रहा है…"
+  },
+  "fqdnInvalid": {
+    "message": "कस्टम FQDN एक मान्य बहु-लेबल DNS नाम होना चाहिए, IP पता नहीं"
+  },
+  "fqdnSaved": {
+    "message": "सहेजा गया। मोड=$1, $2 पहचान अद्यतन की गईं।"
+  },
+  "saveFailed": {
+    "message": "सहेजना विफल: $1"
+  },
+  "readPrefsFailed": {
+    "message": "prefs नहीं पढ़ी जा सकीं: $1"
+  },
+  "errorWithMessage": {
+    "message": "त्रुटि: $1"
+  },
+  "helpTitle": {
+    "message": "सहायता"
+  },
+  "helpModeLabel": {
+    "message": "गहराई:"
+  },
+  "helpModeTldr": {
+    "message": "TL;DR"
+  },
+  "helpModeNerd": {
+    "message": "Nerd मोड"
+  },
+  "helpTldrDoesTitle": {
+    "message": "यह ऐड-ऑन क्या करता है"
+  },
+  "helpTldrDoes1": {
+    "message": "Thunderbird IMAP और SMTP को स्थानीय Tor SOCKS proxy के माध्यम से रूट करता है और DNS resolution Tor के माध्यम से दूर रखता है।"
+  },
+  "helpTldrDoes2": {
+    "message": "Fail-closed: यदि Tor पहुँच योग्य न हो तो मेल भेजना विफल होना चाहिए, बजाय चुपचाप clearnet पर लौटने के।"
+  },
+  "helpTldrDoes3": {
+    "message": "मेल फिंगरप्रिंट कम करता है जैसे User-Agent, X-Mailer, HELO, समय क्षेत्र, Message-ID FQDN, flowed text और remote content।"
+  },
+  "helpTldrDoes4": {
+    "message": "Tor उपलब्धता परीक्षण और DNS canary प्रदान करता है; दोनों Tor के SOCKS5 RESOLVE पथ का उपयोग करते हैं और Tor की ओर सिस्टम DNS से बचते हैं।"
+  },
+  "helpTldrDoesNotTitle": {
+    "message": "यह क्या नहीं करता"
+  },
+  "helpTldrDoesNot1": {
+    "message": "यह Tails, Whonix, Tor gateway, या सही ढंग से कॉन्फ़िगर किए गए सिस्टम resolver का स्थान नहीं लेता।"
+  },
+  "helpTldrDoesNot2": {
+    "message": "आपके प्रदाता से जिस मेलबॉक्स से आप authenticate करते हैं उसे, या प्रदाता द्वारा जोड़े गए Authentication-Results हेडर को नहीं छिपाता।"
+  },
+  "helpTldrDoesNot3": {
+    "message": "इस तथ्य को नहीं छिपाता कि प्राप्तकर्ता Received हेडर में Tor exit देख सकता है।"
+  },
+  "helpTldrDoesNot4": {
+    "message": "अन्य ऐप्स, OS-स्तर के लीक, समझौता किए गए endpoints, या नेटवर्क-correlation हमलों से सुरक्षा नहीं देता।"
+  },
+  "helpTldrTorbirdyTitle": {
+    "message": "TorBirdy अब क्यों काम नहीं करता"
+  },
+  "helpTldrTorbirdy1": {
+    "message": "TorBirdy एक legacy Thunderbird/XUL एक्सटेंशन था। Thunderbird 78 ने legacy XUL overlay सिस्टम हटा दिया जिस पर वह निर्भर था।"
+  },
+  "helpTldrTorbirdy2": {
+    "message": "इसकी अंतिम रिलीज़ 2018 में थी, इसलिए बिना पुनर्लेखन के यह आधुनिक Thunderbird ESR बिल्ड पर नहीं चल सकता।"
+  },
+  "helpTldrExperimentsTitle": {
+    "message": "Experiments API क्यों आवश्यक है"
+  },
+  "helpTldrExperiments1": {
+    "message": "सामान्य MailExtensions Thunderbird के proxy prefs, SMTP server internals, identity prefs, DNS cache, login manager, या कच्चे SOCKS self-test नहीं बदल सकतीं।"
+  },
+  "helpTldrExperiments2": {
+    "message": "Experiments API इन Thunderbird internals को उजागर करता है; OnionBird allowlist के माध्यम से लेखन को gate करता है ताकि privileged surface छोटा रहे।"
+  },
+  "helpNerdDoesTitle": {
+    "message": "Nerd मोड: कार्यान्वित सुरक्षा"
+  },
+  "helpNerdDoes1": {
+    "message": "Proxy prefs: network.proxy.type=1, SOCKS5 host/port auto-probe, socks_remote_dns=true, failover_direct=false और कोई bypass सूची नहीं।"
+  },
+  "helpNerdDoes2": {
+    "message": "हेडर स्वच्छता: User-Agent/X-Mailer दबाता है, HELO/EHLO को [127.0.0.1] पर बाध्य करता है, सुरक्षित Message-ID FQDN चुनता है, flowed plaintext अक्षम करता है और UTC/RFP-समान व्यवहार लागू करता है।"
+  },
+  "helpNerdDoes3": {
+    "message": "नेटवर्क हार्डनिंग: DoH/TRR, OCSP, speculative connects, DNS prefetch, predictor, WebRTC, geolocation, ECH HTTPS-RR lookup, captive-portal checks और update phone-home URLs अक्षम करता है।"
+  },
+  "helpNerdDoes4": {
+    "message": "मेल UI हार्डनिंग: remote mail content paths, plaintext rendering, notification leaks, address-book auto-collect अक्षम करता है और अक्षम करने पर सहेजे गए Tor logins के audit/हटाव की पेशकश करता है।"
+  },
+  "helpNerdDoes5": {
+    "message": "निगरानी: स्टार्टअप और आवधिक reassert हार्डन की गई prefs को सुधारते हैं; test mode pref लेखन के बिना Tor SOCKS जाँचता है, और एक stream-isolated SOCKS5 RESOLVE canary सिस्टम DNS व्यवहार जाँचता है।"
+  },
+  "helpNerdDoesNotTitle": {
+    "message": "Nerd मोड: सीमाएँ"
+  },
+  "helpNerdDoesNot1": {
+    "message": "Authenticated SMTP अब भी प्रदाता को खाता जानने देता है, और प्रदाता Authentication-Results smtp.auth मान जोड़ सकते हैं जो प्राप्तकर्ता को दिखें।"
+  },
+  "helpNerdDoesNot2": {
+    "message": "SMTP transport अब भी Received chains बनाता है। प्राप्तकर्ता प्रदाता के Tor-exit की ओर hop से Tor उपयोग का अनुमान लगा सकता है।"
+  },
+  "helpNerdDoesNot3": {
+    "message": "ऐड-ऑन Thunderbird को नियंत्रित करता है, ऑपरेटिंग सिस्टम को नहीं। NTP, क्लिपबोर्ड, फ़ाइलें, अन्य ऐप्लिकेशन, TB के बाहर crash dumps और hostnames OS-threat-model के मुद्दे रहते हैं।"
+  },
+  "helpNerdDoesNot4": {
+    "message": "Canary detection है, magical routing नहीं। मानक desktops पर OS DNS को Tor DNSPort के माध्यम से रूट करें या सबसे मजबूत गारंटी के लिए Whonix/Tails का उपयोग करें।"
+  },
+  "helpNerdDoesNot5": {
+    "message": "यह global passive adversaries, end-to-end timing correlation, दुर्भावनापूर्ण प्रदाताओं, दुर्भावनापूर्ण प्राप्तकर्ताओं, या compromised Thunderbird/profile state को नहीं हराता।"
+  },
+  "helpNerdTorbirdyTitle": {
+    "message": "Nerd मोड: TorBirdy संगतता"
+  },
+  "helpNerdTorbirdy1": {
+    "message": "TorBirdy ने पुराने privileged XUL/XPCOM ऐड-ऑन मॉडल को लक्षित किया था और Thunderbird internals में overlay/bootstrap hooks का उपयोग किया।"
+  },
+  "helpNerdTorbirdy2": {
+    "message": "Thunderbird 78 ने legacy XUL एक्सटेंशन हटा दिए; आधुनिक Thunderbird WebExtensions/MailExtensions स्वीकार करता है, जो इन privileged mail और prefs internals को जानबूझकर उजागर नहीं करतीं।"
+  },
+  "helpNerdTorbirdy3": {
+    "message": "इसलिए TorBirdy को port करना manifest bump नहीं है। privileged हिस्सों को Thunderbird Experiments API के पीछे फिर से लिखा जाना चाहिए।"
+  },
+  "helpNerdExperimentsTitle": {
+    "message": "Nerd मोड: Experiments API सीमा"
+  },
+  "helpNerdExperiments1": {
+    "message": "MailExtension पक्ष UI, runtime messages और options का स्वामी है; Experiments parent script Services.prefs, MailServices SMTP/identity objects, DNS cache flushing, login-manager audit और कच्चे SOCKS5 RESOLVE का स्वामी है।"
+  },
+  "helpNerdExperiments2": {
+    "message": "यह विभाजन आवश्यक है क्योंकि सार्वजनिक MailExtension APIs prefs को atomically snapshot/restore नहीं कर सकतीं और per-SMTP HELO/TLS सेटिंग्स सेट नहीं कर सकतीं।"
+  },
+  "helpNerdExperiments3": {
+    "message": "चूँकि Experiments parent-process privilege के साथ चलते हैं, OnionBird pref लेखन को एक संकीर्ण allowlist तक सीमित करता है और hardening mutations को serialize करता है।"
+  },
+  "sendBlockedCancelStorageError": {
+    "message": "OnionBird: भेजना अवरुद्ध — ऐड-ऑन की स्थिति पढ़ी नहीं जा सकती (स्टोरेज त्रुटि)। Thunderbird को पुनरारंभ करें, फिर पुनः प्रयास से पहले OnionBird Options जाँचें।"
+  },
+  "sendBlockedCancelLeakDetected": {
+    "message": "OnionBird: भेजना अवरुद्ध — Tor leak canary ने एक DNS रिज़ोल्यूशन का पता लगाया जो Tor से नहीं गुज़रा। पुनः प्रयास से पहले OnionBird Options → DNS leak status → Run self-test now खोलें।"
+  },
+  "sendBlockedCancelNoVerdict": {
+    "message": "OnionBird: भेजना अवरुद्ध — अभी कोई canary फैसला नहीं (नहीं चला या स्टोरेज साफ़ कर दिया गया)। पुनः प्रयास से पहले OnionBird Options → DNS leak status → Run self-test now खोलें।"
+  },
+  "sendBlockedCancelOther": {
+    "message": "OnionBird: भेजना अवरुद्ध — canary फैसला 'clean' नहीं है (स्थिति: $STATE$)। पुनः प्रयास से पहले OnionBird Options → DNS leak status → Run self-test now खोलें।",
+    "placeholders": {
+      "STATE": {
+        "content": "$1",
+        "example": "leak_detected"
+      }
+    }
+  },
+  "socksOverrideTitle": {
+    "message": "SOCKS endpoint override"
+  },
+  "socksOverrideIntro": {
+    "message": "By default the addon detects Thunderbird's existing network.proxy.socks pref or falls back to 127.0.0.1 on port 9050 / 9150. Set host + port here to pin a different endpoint (e.g. a Whonix Gateway IP). Host must be a loopback name (localhost) or an IP literal — DNS-resolvable names would leak via the system resolver before Tor."
+  },
+  "socksOverrideHostLabel": {
+    "message": "Host:"
+  },
+  "socksOverridePortLabel": {
+    "message": "Port:"
+  },
+  "socksOverrideSaveButton": {
+    "message": "Save"
+  },
+  "socksOverrideResetButton": {
+    "message": "Reset to default"
+  },
+  "socksOverrideTestButton": {
+    "message": "Test endpoint"
+  },
+  "socksOverrideStatusOk": {
+    "message": "OK"
+  },
+  "socksOverrideStatusInvalidHost": {
+    "message": "Invalid host — must be `localhost` or an IP literal (IPv4 or IPv6)."
+  },
+  "socksOverrideStatusInvalidPort": {
+    "message": "Invalid port — must be an integer between 1 and 65535."
+  },
+  "socksOverrideTbPrefWarning": {
+    "message": "Thunderbird currently has $TB$ configured; your saved override $OVERRIDE$ will replace it on next enable.",
+    "placeholders": {
+      "TB": {
+        "content": "$1",
+        "example": "127.0.0.1:9050"
+      },
+      "OVERRIDE": {
+        "content": "$2",
+        "example": "10.152.152.10:9050"
+      }
+    }
+  },
+  "socksOverrideStatusReset": {
+    "message": "Override cleared — falling back to auto-detect on next enable."
+  },
+  "autoEnableNotificationTitleSocksUnreachable": {
+    "message": "OnionBird installed — Tor not reachable"
+  },
+  "autoEnableNotificationMessageSocksUnreachable": {
+    "message": "OnionBird could not reach a Tor SOCKS endpoint on 127.0.0.1:9050 or :9150. Outgoing sends are blocked until Tor is reachable. Start the Tor daemon (or Tor Browser) and open OnionBird Options → DNS leak status → Run self-test now."
+  },
+  "autoEnableNotificationTitleCanaryFail": {
+    "message": "OnionBird installed — hardening incomplete"
+  },
+  "autoEnableNotificationMessageCanaryFail": {
+    "message": "OnionBird auto-enabled but the canary self-test did not verify cleanly. Outgoing sends are blocked until the next canary passes. Open OnionBird Options → DNS leak status → Run self-test now to triage."
+  }
+}

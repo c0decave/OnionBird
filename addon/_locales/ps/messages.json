@@ -1,0 +1,453 @@
+{
+  "extensionName": {
+    "message": "OnionBird"
+  },
+  "extensionDescription": {
+    "message": "د Thunderbird لپاره د Tor یوځای کول او د ګوتو نښې پر ضد — د TorBirdy ځای ناستی."
+  },
+  "pageTitle": {
+    "message": "د OnionBird اختیارونه"
+  },
+  "statusLabel": {
+    "message": "حالت:"
+  },
+  "statusLoading": {
+    "message": "بار کول…"
+  },
+  "statusText": {
+    "message": "API v$1، ضمیمه v$2 — کلکوالی $3"
+  },
+  "statusActive": {
+    "message": "فعال"
+  },
+  "statusInactive": {
+    "message": "غیر فعال"
+  },
+  "appearanceTitle": {
+    "message": "بڼه"
+  },
+  "themeLabel": {
+    "message": "ګامه:"
+  },
+  "themeSystem": {
+    "message": "سیسټم"
+  },
+  "themeLight": {
+    "message": "روښانه"
+  },
+  "themeDark": {
+    "message": "تیاره"
+  },
+  "hardeningTitle": {
+    "message": "کلکوالی"
+  },
+  "enableButton": {
+    "message": "کلکوالی فعال کړئ"
+  },
+  "disableButton": {
+    "message": "کلکوالی غیر فعال کړئ"
+  },
+  "scrubLoginsLabel": {
+    "message": "د غیر فعالولو پر مهال د onion/loopback میل سرورونو لپاره ساتل شوي پاسوردونه پاک کړئ"
+  },
+  "disableHelp": {
+    "message": "غیر فعالول د کلکوالي د لومړي فعالولو وړاندې اخیستل شوی د prefs snapshot بیرته راولي. هغه clearnet حسابونه چې په قصدي ډول لیرې شوي په عادي ډول کار کوي."
+  },
+  "messageIdTitle": {
+    "message": "Message-ID FQDN"
+  },
+  "messageIdIntro": {
+    "message": "په وتلو Message-ID کې FQDN ستاسو په میلونو کې تکراري ګوته نښه ده. ډیفالټ ستاسو د From-آدرس ډومین کاروي تر څو د هماغه چمتو کوونکي د منظمو کاروونکو سره ګډ شئ. د TorBirdy localhost.localdomain حالت د ښکاره میراثي انتخاب په توګه شتون لري."
+  },
+  "modeLabel": {
+    "message": "حالت:"
+  },
+  "fqdnFromDomain": {
+    "message": "د From-آدرس ډومین (وړاندیز شوی)"
+  },
+  "fqdnLocalhost": {
+    "message": "localhost"
+  },
+  "fqdnLocalhostLegacy": {
+    "message": "localhost.localdomain (میراث)"
+  },
+  "fqdnCustom": {
+    "message": "ځانګړی…"
+  },
+  "saveButton": {
+    "message": "خوندي کړئ"
+  },
+  "torTestTitle": {
+    "message": "د Tor ازموینې حالت"
+  },
+  "torTestIntro": {
+    "message": "پرته له میل لیږلو یا د Thunderbird prefs بدلولو دا چې محلي Tor SOCKS endpoint رسیدلی شي. تڅیب د Tor SOCKS5 RESOLVE امر سره د نوي تصادفي جلا کولو ټوکن کاروي، نو هدف کوربه د سیسټم DNS له لارې نه حل کیږي."
+  },
+  "runTorTestButton": {
+    "message": "اوس Tor وازمویئ"
+  },
+  "torTestRunning": {
+    "message": " ازموینه کیږي…"
+  },
+  "torTestUnknown": {
+    "message": "نا معلوم"
+  },
+  "torTestAvailable": {
+    "message": "Tor شته"
+  },
+  "torTestUnavailable": {
+    "message": "Tor نشته"
+  },
+  "torTestNotRun": {
+    "message": "تر اوسه نه دی پلی شوی."
+  },
+  "torTestOk": {
+    "message": "Tor SOCKS په $1:$2 ($3) رسیدلی شي. د Thunderbird prefs بدل شوي نه دي."
+  },
+  "torTestNoTor": {
+    "message": "د رسیدو وړ Tor SOCKS endpoint و نه موندل شو. هڅه شوي: $1"
+  },
+  "torTestError": {
+    "message": "د Tor ازموینه ناکامه شوه: $1"
+  },
+  "torTestResultCell": {
+    "message": "پایله"
+  },
+  "torTestEndpointCell": {
+    "message": "SOCKS endpoint"
+  },
+  "torTestProbeHostCell": {
+    "message": "د تڅیب کوربه"
+  },
+  "torTestTriedCell": {
+    "message": "هڅه شوي"
+  },
+  "torTestSourceRequested": {
+    "message": "غوښتل شوی"
+  },
+  "torTestSourceExistingPref": {
+    "message": "موجود pref"
+  },
+  "torTestSourceSystemTor": {
+    "message": "د سیسټم Tor"
+  },
+  "torTestSourceTorBrowser": {
+    "message": "Tor Browser"
+  },
+  "torTestSourceFallback": {
+    "message": "بدیل"
+  },
+  "torTestSourceCurrentPref": {
+    "message": "اوسنی pref"
+  },
+  "dnsLeakTitle": {
+    "message": "د DNS لیک حالت"
+  },
+  "dnsLeakIntro": {
+    "message": "هغه IP چې Tor د SOCKS5 RESOLVE له لارې راګرځوي د سیسټم resolver د راګرځول شوي IP سره پرتله کوي. توپیر کیدای شي معنا ولري چې OS غیر Tor DNS کاروي؛ د CDN-ملاتړ شوي نومونه لاهم بې زیانه دي."
+  },
+  "hostLabel": {
+    "message": "کوربه:"
+  },
+  "runSelfTestButton": {
+    "message": "اوس د ځان ازموینه پیل کړئ"
+  },
+  "runningLabel": {
+    "message": " روان دي…"
+  },
+  "canaryHostCell": {
+    "message": "کوربه"
+  },
+  "ipDetailLabel": {
+    "message": "د IP تفصیل"
+  },
+  "revealRawIps": {
+    "message": "خام IPs وښیئ"
+  },
+  "verdictLabel": {
+    "message": "پریکړه"
+  },
+  "errorLabel": {
+    "message": "تېروتنه"
+  },
+  "canaryUnknown": {
+    "message": "نا معلوم"
+  },
+  "canaryNoLeak": {
+    "message": "هیڅ لیک نشته"
+  },
+  "canaryLeakSuspected": {
+    "message": "لیک د شک وړ"
+  },
+  "canaryDiverged": {
+    "message": "جلا شوی"
+  },
+  "canaryInconclusive": {
+    "message": "غیر پایلیز"
+  },
+  "canaryError": {
+    "message": "تېروتنه"
+  },
+  "canaryVerdictNoData": {
+    "message": "تر اوسه معلومات نشته"
+  },
+  "canaryVerdictLeak": {
+    "message": "د سیسټم resolver ځواب په هیڅ Tor circuit کې نه لیدل کیږي؛ د سیسټم DNS routing تایید کړئ"
+  },
+  "canaryVerdictOk": {
+    "message": "system_ip په Tor سیټ کې دی ($1 circuit(s) هڅه شوي)"
+  },
+  "canaryVerdictDiverged": {
+    "message": "system_ip په Tor سیټ کې نه دی، خو heuristic وايي چې دا کیدای شي بې زیانه وي؛ تفصیلات وپلټئ"
+  },
+  "canaryVerdictMissingData": {
+    "message": "د لټونونو څخه یوه معلومات و نه راګرځول"
+  },
+  "canaryErrorTor9050": {
+    "message": "Tor په 127.0.0.1:9050 ځواب نه ورکوي. د Tor daemon پیل کړئ، یا د Tor Browser لپاره port 9150 وکاروئ."
+  },
+  "canaryErrorTor9150": {
+    "message": "Tor Browser روان نه دی. پیل یې کړئ؛ د SOCKS اوریدونکی یې معمولا په 9150 وي."
+  },
+  "canaryErrorSocksRefused": {
+    "message": "د SOCKS اړیکه رد شوه. د تنظیم شوي Tor کوربه او port وپلټئ."
+  },
+  "canaryErrorNetworkUnreachable": {
+    "message": "شبکه پر دې لار وتلی ترافیک بندوي. Bridges یا pluggable transports اړتیا کیدای شي."
+  },
+  "canaryErrorTimeout": {
+    "message": "Tor رسیدلی، خو circuit په وخت کې پای ته و نه رسید. بیا هڅه وکړئ یا circuits بدل کړئ."
+  },
+  "canaryErrorDnsStatus": {
+    "message": "د OS resolver یوه تېروتنه راګرځوله. د بشپړ ساتنې لپاره د سیسټم DNS باید Tor DNSPort وکاروي یا د Whonix/Tails دننه پیل شي."
+  },
+  "logApplyingHardening": {
+    "message": "کلکوالی پلی کیږي…"
+  },
+  "logRestoringPrefs": {
+    "message": "د کلکوالي وړاندې prefs بیرته راګرځول کیږي…"
+  },
+  "logDone": {
+    "message": "بشپړ شو"
+  },
+  "logWarnings": {
+    "message": "د خبرتیاوو سره بشپړ شو"
+  },
+  "disableConfirm": {
+    "message": "دا ستاسو prefs د کلکوالي د لومړي فعالولو وړاندې اخیستل شوي snapshot ته بیرته راګرځوي. Tor-only لیږلونه کیدای شي د clearnet له لارې راستانه شي. دوام ورکوئ؟"
+  },
+  "savingLabel": {
+    "message": "خوندي کیږي…"
+  },
+  "fqdnInvalid": {
+    "message": "ځانګړی FQDN باید د سم multi-label DNS نوم وي، نه د IP آدرس"
+  },
+  "fqdnSaved": {
+    "message": "خوندي شو. mode=$1، $2 identity تازه شوي."
+  },
+  "saveFailed": {
+    "message": "خوندي کول ناکام شول: $1"
+  },
+  "readPrefsFailed": {
+    "message": "prefs ولوستل نه شول: $1"
+  },
+  "errorWithMessage": {
+    "message": "تېروتنه: $1"
+  },
+  "helpTitle": {
+    "message": "مرسته"
+  },
+  "helpModeLabel": {
+    "message": "ژوروالی:"
+  },
+  "helpModeTldr": {
+    "message": "لنډیز"
+  },
+  "helpModeNerd": {
+    "message": "د نرډ حالت"
+  },
+  "helpTldrDoesTitle": {
+    "message": "دا ضمیمه څه کوي"
+  },
+  "helpTldrDoes1": {
+    "message": "د Thunderbird IMAP او SMTP د محلي Tor SOCKS proxy له لارې مسیر کوي او د DNS حل د Tor له لارې لیرې ساتي."
+  },
+  "helpTldrDoes2": {
+    "message": "Fail-closed: که Tor و نه رسیږي، د میل لیږل باید د clearnet ته د بیرته راستنیدو پر ځای ناکامه شي."
+  },
+  "helpTldrDoes3": {
+    "message": "د میل ګوتو نښې لکه User-Agent، X-Mailer، HELO، د وخت زون، Message-ID FQDN، flowed متن او لیرې محتوا کموي."
+  },
+  "helpTldrDoes4": {
+    "message": "د Tor د شتون ازموینه او د DNS canary وړاندې کوي؛ دواړه د Tor SOCKS5 RESOLVE لار کاروي او د Tor خوا لپاره د سیسټم DNS څخه مخنیوی کوي."
+  },
+  "helpTldrDoesNotTitle": {
+    "message": "څه نه کوي"
+  },
+  "helpTldrDoesNot1": {
+    "message": "د Tails، Whonix، Tor gateway یا په سمه توګه تنظیم شوي سیسټم resolver ځای نه نیسي."
+  },
+  "helpTldrDoesNot2": {
+    "message": "هغه mailbox چې تاسو پکې تصدیق کوئ ستاسو د چمتو کوونکي څخه یا د چمتو کوونکي لخوا اضافه شوي Authentication-Results headers څخه نه پټوي."
+  },
+  "helpTldrDoesNot3": {
+    "message": "دا حقیقت نه پټوي چې اخیستونکی کیدای شي د Received headers کې د Tor exit وویني."
+  },
+  "helpTldrDoesNot4": {
+    "message": "د نورو اپلیکیشنونو، د OS-کچې لیکونو، د بدۍ څخه ډک endpoints یا د شبکې-correlation برید پر وړاندې ساتنه نه کوي."
+  },
+  "helpTldrTorbirdyTitle": {
+    "message": "ولې TorBirdy نور کار نه کوي"
+  },
+  "helpTldrTorbirdy1": {
+    "message": "TorBirdy یوه میراثي Thunderbird/XUL غزونه وه. Thunderbird 78 هغه میراثي XUL overlay غزونې سیسټم لرې کړ چې پر دې متکي و."
+  },
+  "helpTldrTorbirdy2": {
+    "message": "د دې وروستی خپرونه په 2018 کې وه، نو پرته له بیا لیکلو په عصري Thunderbird ESR builds کار نه شي کولی."
+  },
+  "helpTldrExperimentsTitle": {
+    "message": "ولې د Experiments API ته اړتیا ده"
+  },
+  "helpTldrExperiments1": {
+    "message": "عادي MailExtensions د Thunderbird د proxy prefs، د SMTP server internals، د identity prefs، د DNS cache، د login manager یا خام د SOCKS self-tests بدلولی نه شي."
+  },
+  "helpTldrExperiments2": {
+    "message": "Experiments API هغه د Thunderbird internals ښکاره کوي؛ OnionBird د privileged سطحې لږ ساتلو لپاره د allowlist له لارې writes گيت کوي."
+  },
+  "helpNerdDoesTitle": {
+    "message": "د نرډ حالت: پلي شوي ساتنې"
+  },
+  "helpNerdDoes1": {
+    "message": "Proxy prefs: network.proxy.type=1، د SOCKS5 host/port اتومات-تڅیب، socks_remote_dns=true، failover_direct=false او د proxy bypass لیست نشته."
+  },
+  "helpNerdDoes2": {
+    "message": "د Header پاکوالی: User-Agent/X-Mailer غیرفعالوي، HELO/EHLO په [127.0.0.1] مجبوروي، د خوندي Message-ID FQDN ټاکي، flowed plaintext غیر فعالوي او UTC/RFP پورې اړوند چلند پکې کوي."
+  },
+  "helpNerdDoes3": {
+    "message": "د شبکې کلکوالی: DoH/TRR، OCSP، speculative connects، DNS prefetch، predictor، WebRTC، geolocation، ECH HTTPS-RR lookup، captive-portal چیکونه او update phone-home URLs غیر فعالوي."
+  },
+  "helpNerdDoes4": {
+    "message": "د Mail UI کلکوالی: د لیرې میل محتوا لارې، plaintext rendering، د خبرتیاوو لیکونه، د آدرس کتاب اتومات-راټولول او د غیر فعالولو پر مهال د ساتل شوي Tor-login پلټنه/لرې کول غیر فعالوي."
+  },
+  "helpNerdDoes5": {
+    "message": "څارنه: د پیل او دوراني reassert د کلکوالي prefs ترمیموي؛ د ازموینې حالت پرته د pref writes Tor SOCKS چک کوي، او stream-isolated SOCKS5 RESOLVE canary د سیسټم DNS چلند چک کوي."
+  },
+  "helpNerdDoesNotTitle": {
+    "message": "د نرډ حالت: حدود"
+  },
+  "helpNerdDoesNot1": {
+    "message": "تصدیق شوي SMTP لاهم چمتو کوونکی د حساب په اړه پوهوي، او چمتو کوونکي کیدای شي Authentication-Results smtp.auth ارزښتونه اضافه کړي چې اخیستونکو ته ښکاره وي."
+  },
+  "helpNerdDoesNot2": {
+    "message": "SMTP transport لاهم Received chains جوړوي. اخیستونکی ډیری وخت کولی شي د چمتو کوونکي د Tor-exit-facing hop څخه د Tor کارول وپوهیږي."
+  },
+  "helpNerdDoesNot3": {
+    "message": "ضمیمه Thunderbird کنټرولوي، نه د عملیاتي سیسټم. NTP، clipboard، فایلونه، نور اپلیکیشنونه، د TB څخه بهر crash dumps او hostnames د OS-ګواښ-ماډل ستونزې پاتې کیږي."
+  },
+  "helpNerdDoesNot4": {
+    "message": "Canary کشف دی، نه د جادو routing. په stock desktops کې، د OS DNS د Tor DNSPort له لارې مسیر کړئ یا د قویترې تضمین لپاره Whonix/Tails وکاروئ."
+  },
+  "helpNerdDoesNot5": {
+    "message": "د نړیوال passive دښمنانو، end-to-end timing correlation، بد چمتو کوونکو، بد اخیستونکو، یا د خرابو Thunderbird/profile حالت په وړاندې نه ګټي."
+  },
+  "helpNerdTorbirdyTitle": {
+    "message": "د نرډ حالت: د TorBirdy موافقت"
+  },
+  "helpNerdTorbirdy1": {
+    "message": "TorBirdy د زاړه privileged XUL/XPCOM ضمیمې ماډل په نښه کاوه او د Thunderbird internals ته overlay/bootstrap hooks کارولې."
+  },
+  "helpNerdTorbirdy2": {
+    "message": "Thunderbird 78 میراثي XUL extensions لرې کړل؛ عصري Thunderbird WebExtensions/MailExtensions قبلوي، چې په قصدي ډول هغه privileged mail او pref internals نه ښیي."
+  },
+  "helpNerdTorbirdy3": {
+    "message": "نو د TorBirdy منتقل کول د manifest bump نه دی. privileged برخې باید د Thunderbird Experiments API شاته بیا ولیکل شي."
+  },
+  "helpNerdExperimentsTitle": {
+    "message": "د نرډ حالت: د Experiments API پوله"
+  },
+  "helpNerdExperiments1": {
+    "message": "د MailExtension خوا UI، runtime messages او options لري؛ د Experiments parent script د Services.prefs، MailServices SMTP/identity objects، DNS cache flushing، login-manager پلټنه او خام SOCKS5 RESOLVE لري."
+  },
+  "helpNerdExperiments2": {
+    "message": "دا ویش اړین دی ځکه چې عمومي MailExtension APIs د prefs atomic snapshot/restore نه شي کولی یا per-SMTP HELO/TLS settings نه شي ټاکلی."
+  },
+  "helpNerdExperiments3": {
+    "message": "ځکه چې Experiments د parent-process privilege سره پیل کیږي، OnionBird د pref writes د یوې تنګې allowlist ته محدودوي او د کلکوالي mutations سریالایز کوي."
+  },
+  "sendBlockedCancelStorageError": {
+    "message": "OnionBird: لیږل بند شول — د اضافې حالت لوستل کیدای نشي (د ذخیره کولو تېروتنه). Thunderbird بیا پیل کړئ، بیا د بیا هڅې څخه مخکې د OnionBird Options وګورئ."
+  },
+  "sendBlockedCancelLeakDetected": {
+    "message": "OnionBird: لیږل بند شول — د Tor leak canary یوه DNS حل کول کشف کړل چې د Tor څخه تېر نه شول. د بیا هڅې څخه مخکې OnionBird Options → DNS leak status → Run self-test now خلاص کړئ."
+  },
+  "sendBlockedCancelNoVerdict": {
+    "message": "OnionBird: لیږل بند شول — لاهم د canary پریکړه نشته (نه دی روان شوی یا ذخیره پاک شوې). د بیا هڅې څخه مخکې OnionBird Options → DNS leak status → Run self-test now خلاص کړئ."
+  },
+  "sendBlockedCancelOther": {
+    "message": "OnionBird: لیږل بند شول — د canary پریکړه 'clean' نه ده (حالت: $STATE$). د بیا هڅې څخه مخکې OnionBird Options → DNS leak status → Run self-test now خلاص کړئ.",
+    "placeholders": {
+      "STATE": {
+        "content": "$1",
+        "example": "leak_detected"
+      }
+    }
+  },
+  "socksOverrideTitle": {
+    "message": "SOCKS endpoint override"
+  },
+  "socksOverrideIntro": {
+    "message": "By default the addon detects Thunderbird's existing network.proxy.socks pref or falls back to 127.0.0.1 on port 9050 / 9150. Set host + port here to pin a different endpoint (e.g. a Whonix Gateway IP). Host must be a loopback name (localhost) or an IP literal — DNS-resolvable names would leak via the system resolver before Tor."
+  },
+  "socksOverrideHostLabel": {
+    "message": "Host:"
+  },
+  "socksOverridePortLabel": {
+    "message": "Port:"
+  },
+  "socksOverrideSaveButton": {
+    "message": "Save"
+  },
+  "socksOverrideResetButton": {
+    "message": "Reset to default"
+  },
+  "socksOverrideTestButton": {
+    "message": "Test endpoint"
+  },
+  "socksOverrideStatusOk": {
+    "message": "OK"
+  },
+  "socksOverrideStatusInvalidHost": {
+    "message": "Invalid host — must be `localhost` or an IP literal (IPv4 or IPv6)."
+  },
+  "socksOverrideStatusInvalidPort": {
+    "message": "Invalid port — must be an integer between 1 and 65535."
+  },
+  "socksOverrideTbPrefWarning": {
+    "message": "Thunderbird currently has $TB$ configured; your saved override $OVERRIDE$ will replace it on next enable.",
+    "placeholders": {
+      "TB": {
+        "content": "$1",
+        "example": "127.0.0.1:9050"
+      },
+      "OVERRIDE": {
+        "content": "$2",
+        "example": "10.152.152.10:9050"
+      }
+    }
+  },
+  "socksOverrideStatusReset": {
+    "message": "Override cleared — falling back to auto-detect on next enable."
+  },
+  "autoEnableNotificationTitleSocksUnreachable": {
+    "message": "OnionBird installed — Tor not reachable"
+  },
+  "autoEnableNotificationMessageSocksUnreachable": {
+    "message": "OnionBird could not reach a Tor SOCKS endpoint on 127.0.0.1:9050 or :9150. Outgoing sends are blocked until Tor is reachable. Start the Tor daemon (or Tor Browser) and open OnionBird Options → DNS leak status → Run self-test now."
+  },
+  "autoEnableNotificationTitleCanaryFail": {
+    "message": "OnionBird installed — hardening incomplete"
+  },
+  "autoEnableNotificationMessageCanaryFail": {
+    "message": "OnionBird auto-enabled but the canary self-test did not verify cleanly. Outgoing sends are blocked until the next canary passes. Open OnionBird Options → DNS leak status → Run self-test now to triage."
+  }
+}

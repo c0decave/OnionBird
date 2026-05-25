@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 380" role="img" aria-label="OnionBird — wing-rings">
+  <title>OnionBird — Wing of Onion Rings</title>
+  <defs>
+    <clipPath id="wing-rings-clip">
+      <path d="M 60 200 Q 90 80 220 60 Q 270 130 250 220 Q 180 260 60 200 Z"/>
+    </clipPath>
+  </defs>
+  <!-- wing silhouette filled with onion rings -->
+  <g clip-path="url(#wing-rings-clip)">
+    <rect x="40" y="40" width="240" height="240" fill="#4A2D67"/>
+    <g fill="none" stroke="#F9A11B" stroke-width="4">
+      <circle cx="160" cy="160" r="20"/>
+      <circle cx="160" cy="160" r="40"/>
+      <circle cx="160" cy="160" r="60"/>
+      <circle cx="160" cy="160" r="80"/>
+      <circle cx="160" cy="160" r="100"/>
+      <circle cx="160" cy="160" r="120"/>
+    </g>
+    <circle cx="160" cy="160" r="10" fill="#E66100"/>
+  </g>
+  <!-- wing outline -->
+  <path d="M 60 200 Q 90 80 220 60 Q 270 130 250 220 Q 180 260 60 200 Z" fill="none" stroke="#2B1640" stroke-width="6"/>
+  <!-- bird body hint: small head + beak left -->
+  <circle cx="60" cy="210" r="18" fill="#2B1640"/>
+  <path d="M 42 210 L 18 200 L 18 220 Z" fill="#F9A11B"/>
+  <circle cx="56" cy="205" r="3" fill="#FFF7EE"/>
+  <!-- wordmark -->
+  <text x="160" y="320" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="44" fill="#2B1640">OnionBird</text>
+  <text x="160" y="346" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="500" font-size="12" fill="#7D4698" letter-spacing="6">TOR · THUNDERBIRD</text>
+</svg>

@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 380" role="img" aria-label="OnionBird — t0 monogram">
+  <title>OnionBird — t0 Monogram</title>
+  <!-- backplate -->
+  <rect x="20" y="40" width="280" height="240" rx="28" fill="#FFF7EE"/>
+  <rect x="20" y="40" width="280" height="240" rx="28" fill="none" stroke="#2B1640" stroke-width="4"/>
+  <!-- "t" as lightning bolt -->
+  <path d="M 100 70 L 70 175 L 110 175 L 80 260 L 160 145 L 120 145 L 145 70 Z"
+        fill="#E66100" stroke="#7A2E00" stroke-width="4" stroke-linejoin="round"/>
+  <!-- "0" as onion -->
+  <g transform="translate(220 165)">
+    <circle r="68" fill="#4A2D67"/>
+    <circle r="52" fill="none" stroke="#9C6BB8" stroke-width="4"/>
+    <circle r="36" fill="none" stroke="#C49BD8" stroke-width="3"/>
+    <circle r="20" fill="#7D4698"/>
+    <!-- sprout -->
+    <path d="M 0 -68 Q -6 -86 0 -100 Q 6 -86 0 -68 Z" fill="#4A2D67"/>
+  </g>
+  <!-- wordmark -->
+  <text x="160" y="320" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="44" fill="#2B1640">OnionBird</text>
+  <text x="160" y="346" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="500" font-size="12" fill="#7D4698" letter-spacing="6">TOR · THUNDERBIRD</text>
+</svg>

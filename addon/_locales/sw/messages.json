@@ -1,0 +1,453 @@
+{
+  "extensionName": {
+    "message": "OnionBird"
+  },
+  "extensionDescription": {
+    "message": "Uunganishaji wa Tor na kupambana na utambuzi wa alama (anti-fingerprinting) kwa Thunderbird — mrithi wa TorBirdy."
+  },
+  "pageTitle": {
+    "message": "Mipangilio ya OnionBird"
+  },
+  "statusLabel": {
+    "message": "Hali:"
+  },
+  "statusLoading": {
+    "message": "inapakia…"
+  },
+  "statusText": {
+    "message": "API v$1, programu jalizi v$2 — uimarishaji $3"
+  },
+  "statusActive": {
+    "message": "INAFANYA KAZI"
+  },
+  "statusInactive": {
+    "message": "haifanyi kazi"
+  },
+  "appearanceTitle": {
+    "message": "Muonekano"
+  },
+  "themeLabel": {
+    "message": "Mandhari:"
+  },
+  "themeSystem": {
+    "message": "Mfumo"
+  },
+  "themeLight": {
+    "message": "Mwanga"
+  },
+  "themeDark": {
+    "message": "Giza"
+  },
+  "hardeningTitle": {
+    "message": "Uimarishaji"
+  },
+  "enableButton": {
+    "message": "Washa uimarishaji"
+  },
+  "disableButton": {
+    "message": "Zima uimarishaji"
+  },
+  "scrubLoginsLabel": {
+    "message": "Futa nywila zilizohifadhiwa za seva za barua za onion/loopback wakati wa kuzima"
+  },
+  "disableHelp": {
+    "message": "Kuzima kunarejesha picha ya mipangilio iliyochukuliwa kabla uimarishaji haujawashwa kwa mara ya kwanza. Akaunti za clearnet zilizopuuzwa kwa makusudi zinaendelea kufanya kazi kawaida."
+  },
+  "messageIdTitle": {
+    "message": "FQDN ya Message-ID"
+  },
+  "messageIdIntro": {
+    "message": "FQDN katika Message-ID zinazotoka ni alama ya kudumu katika barua zako. Chaguo la msingi ni kikoa cha anwani yako ya From ili uchanganyike na watumiaji wa kawaida wa mtoa huduma huyo huyo. Mfumo wa TorBirdy wa localhost.localdomain bado upo kama chaguo la urithi."
+  },
+  "modeLabel": {
+    "message": "Hali:"
+  },
+  "fqdnFromDomain": {
+    "message": "Kikoa cha anwani ya From (kinashauriwa)"
+  },
+  "fqdnLocalhost": {
+    "message": "localhost"
+  },
+  "fqdnLocalhostLegacy": {
+    "message": "localhost.localdomain (urithi)"
+  },
+  "fqdnCustom": {
+    "message": "maalum…"
+  },
+  "saveButton": {
+    "message": "Hifadhi"
+  },
+  "torTestTitle": {
+    "message": "Hali ya jaribio la Tor"
+  },
+  "torTestIntro": {
+    "message": "Inakagua kama mwisho wa SOCKS wa Tor wa karibu unafikika bila kutuma barua au kubadilisha mipangilio ya Thunderbird. Jaribio linatumia amri ya SOCKS5 RESOLVE ya Tor na alama mpya ya bahati nasibu, hivyo mwenyeji lengwa haisuluhishwi kupitia DNS ya mfumo."
+  },
+  "runTorTestButton": {
+    "message": "Jaribu Tor sasa"
+  },
+  "torTestRunning": {
+    "message": " inajaribu…"
+  },
+  "torTestUnknown": {
+    "message": "haijulikani"
+  },
+  "torTestAvailable": {
+    "message": "Tor inapatikana"
+  },
+  "torTestUnavailable": {
+    "message": "Tor haipatikani"
+  },
+  "torTestNotRun": {
+    "message": "Haijaendeshwa bado."
+  },
+  "torTestOk": {
+    "message": "SOCKS ya Tor inafikika kwenye $1:$2 ($3). Hakuna mipangilio ya Thunderbird iliyobadilishwa."
+  },
+  "torTestNoTor": {
+    "message": "Hakuna mwisho wa SOCKS wa Tor unaofikika uliopatikana. Imejaribiwa: $1"
+  },
+  "torTestError": {
+    "message": "Jaribio la Tor limeshindwa: $1"
+  },
+  "torTestResultCell": {
+    "message": "matokeo"
+  },
+  "torTestEndpointCell": {
+    "message": "mwisho wa SOCKS"
+  },
+  "torTestProbeHostCell": {
+    "message": "mwenyeji wa kujaribu"
+  },
+  "torTestTriedCell": {
+    "message": "imejaribiwa"
+  },
+  "torTestSourceRequested": {
+    "message": "iliyoombwa"
+  },
+  "torTestSourceExistingPref": {
+    "message": "mpangilio uliopo"
+  },
+  "torTestSourceSystemTor": {
+    "message": "Tor ya mfumo"
+  },
+  "torTestSourceTorBrowser": {
+    "message": "Tor Browser"
+  },
+  "torTestSourceFallback": {
+    "message": "kuregea nyuma"
+  },
+  "torTestSourceCurrentPref": {
+    "message": "mpangilio wa sasa"
+  },
+  "dnsLeakTitle": {
+    "message": "Hali ya uvujaji wa DNS"
+  },
+  "dnsLeakIntro": {
+    "message": "Inalinganisha IP ambayo Tor inarudisha kupitia SOCKS5 RESOLVE na IP iliyorudishwa na suluhishi lako la mfumo. Tofauti inaweza kumaanisha kuwa OS inatumia DNS isiyo ya Tor; majina yanayotumia CDN bado yanaweza kuwa salama."
+  },
+  "hostLabel": {
+    "message": "Mwenyeji:"
+  },
+  "runSelfTestButton": {
+    "message": "Endesha jaribio binafsi sasa"
+  },
+  "runningLabel": {
+    "message": " inaendesha…"
+  },
+  "canaryHostCell": {
+    "message": "mwenyeji"
+  },
+  "ipDetailLabel": {
+    "message": "Maelezo ya IP"
+  },
+  "revealRawIps": {
+    "message": "onyesha IP halisi"
+  },
+  "verdictLabel": {
+    "message": "uamuzi"
+  },
+  "errorLabel": {
+    "message": "kosa"
+  },
+  "canaryUnknown": {
+    "message": "haijulikani"
+  },
+  "canaryNoLeak": {
+    "message": "hakuna uvujaji"
+  },
+  "canaryLeakSuspected": {
+    "message": "uvujaji unashukiwa"
+  },
+  "canaryDiverged": {
+    "message": "imetofautiana"
+  },
+  "canaryInconclusive": {
+    "message": "haina hitimisho"
+  },
+  "canaryError": {
+    "message": "kosa"
+  },
+  "canaryVerdictNoData": {
+    "message": "hakuna data bado"
+  },
+  "canaryVerdictLeak": {
+    "message": "jibu la suluhishi la mfumo halipo katika mtazamo wa mzunguko wowote wa Tor; thibitisha uelekezaji wa DNS wa mfumo"
+  },
+  "canaryVerdictOk": {
+    "message": "system_ip iko katika seti ya Tor (mizunguko $1 imejaribiwa)"
+  },
+  "canaryVerdictDiverged": {
+    "message": "system_ip haipo katika seti ya Tor, lakini heuristiki inasema hii pengine ni salama; kagua maelezo"
+  },
+  "canaryVerdictMissingData": {
+    "message": "moja ya utafutaji haukurudisha data"
+  },
+  "canaryErrorTor9050": {
+    "message": "Tor haijibu kwenye 127.0.0.1:9050. Anzisha daemon ya Tor, au tumia bandari 9150 kwa Tor Browser."
+  },
+  "canaryErrorTor9150": {
+    "message": "Tor Browser haifanyi kazi. Ianzishe; msikilizaji wake wa SOCKS kawaida uko kwenye 9150."
+  },
+  "canaryErrorSocksRefused": {
+    "message": "Muunganisho wa SOCKS umekataliwa. Kagua mwenyeji na bandari ya Tor iliyosanidiwa."
+  },
+  "canaryErrorNetworkUnreachable": {
+    "message": "Mtandao unazuia trafiki ya nje kwenye njia hii. Madaraja au usafirishaji unaoweza kuunganishwa unaweza kuhitajika."
+  },
+  "canaryErrorTimeout": {
+    "message": "Tor inafikika, lakini mzunguko haukukamilika kwa wakati. Jaribu tena au zungusha mizunguko."
+  },
+  "canaryErrorDnsStatus": {
+    "message": "Suluhishi la OS limerudisha kosa. Kwa ulinzi kamili, DNS ya mfumo inapaswa kutumia Tor DNSPort au kuendesha ndani ya Whonix/Tails."
+  },
+  "logApplyingHardening": {
+    "message": "Inatumia uimarishaji…"
+  },
+  "logRestoringPrefs": {
+    "message": "Inarejesha mipangilio ya kabla ya uimarishaji…"
+  },
+  "logDone": {
+    "message": "Imekamilika"
+  },
+  "logWarnings": {
+    "message": "Imekamilika na maonyo"
+  },
+  "disableConfirm": {
+    "message": "Hii inarejesha mipangilio yako kwa picha iliyochukuliwa kabla uimarishaji haujawashwa kwa mara ya kwanza. Utumaji wa Tor pekee unaweza kurudi kupitia clearnet. Endelea?"
+  },
+  "savingLabel": {
+    "message": "inahifadhi…"
+  },
+  "fqdnInvalid": {
+    "message": "FQDN maalum lazima iwe jina halali la DNS lenye sehemu nyingi, sio anwani ya IP"
+  },
+  "fqdnSaved": {
+    "message": "imehifadhiwa. mode=$1, $2 utambulisho umesasishwa."
+  },
+  "saveFailed": {
+    "message": "uhifadhi umeshindwa: $1"
+  },
+  "readPrefsFailed": {
+    "message": "haikuweza kusoma mipangilio: $1"
+  },
+  "errorWithMessage": {
+    "message": "kosa: $1"
+  },
+  "helpTitle": {
+    "message": "Msaada"
+  },
+  "helpModeLabel": {
+    "message": "Kina:"
+  },
+  "helpModeTldr": {
+    "message": "Muhtasari"
+  },
+  "helpModeNerd": {
+    "message": "Hali ya kitaalam"
+  },
+  "helpTldrDoesTitle": {
+    "message": "Programu jalizi inafanya nini"
+  },
+  "helpTldrDoes1": {
+    "message": "Inaelekeza IMAP na SMTP za Thunderbird kupitia proksi ya SOCKS ya Tor ya karibu na inaweka utatuzi wa DNS kwa mbali kupitia Tor."
+  },
+  "helpTldrDoes2": {
+    "message": "Inafunga kwa usalama: ikiwa Tor haifikiki, kutuma barua kutaaminika kushindwa badala ya kurudi kwenye clearnet."
+  },
+  "helpTldrDoes3": {
+    "message": "Inapunguza alama za barua kama User-Agent, X-Mailer, HELO, eneo la wakati, FQDN ya Message-ID, maandishi ya flowed na maudhui ya mbali."
+  },
+  "helpTldrDoes4": {
+    "message": "Inatoa jaribio la upatikanaji wa Tor na canary ya DNS; vyote vinatumia njia ya SOCKS5 RESOLVE ya Tor na kuepuka DNS ya mfumo kwa upande wa Tor."
+  },
+  "helpTldrDoesNotTitle": {
+    "message": "Haifanyi nini"
+  },
+  "helpTldrDoesNot1": {
+    "message": "Haichukui nafasi ya Tails, Whonix, lango la Tor, au suluhishi la mfumo lililosanidiwa vizuri."
+  },
+  "helpTldrDoesNot2": {
+    "message": "Haifichi sanduku la barua unayoyathibitisha kutoka kwa mtoa huduma wako au kutoka kwa Authentication-Results vichwa vilivyoongezwa na mtoa huduma."
+  },
+  "helpTldrDoesNot3": {
+    "message": "Haifichi ukweli kwamba mpokeaji anaweza kuona kutoka kwa Tor katika vichwa vya Received."
+  },
+  "helpTldrDoesNot4": {
+    "message": "Hailindi programu nyingine, uvujaji wa kiwango cha OS, vituo vilivyoingiliwa, au mashambulizi ya uhusiano wa mtandao."
+  },
+  "helpTldrTorbirdyTitle": {
+    "message": "Kwa nini TorBirdy haifanyi kazi tena"
+  },
+  "helpTldrTorbirdy1": {
+    "message": "TorBirdy ilikuwa programu jalizi ya kale ya Thunderbird/XUL. Thunderbird 78 iliondoa mfumo wa programu jalizi za overlay za XUL za kale ambazo ilizitegemea."
+  },
+  "helpTldrTorbirdy2": {
+    "message": "Toleo lake la mwisho lilikuwa mwaka 2018, kwa hivyo haiwezi kuendesha kwenye builds za kisasa za Thunderbird ESR bila kuandikwa upya."
+  },
+  "helpTldrExperimentsTitle": {
+    "message": "Kwa nini API ya Experiments inahitajika"
+  },
+  "helpTldrExperiments1": {
+    "message": "MailExtensions za kawaida haziwezi kubadilisha mipangilio ya proksi ya Thunderbird, ndani ya seva ya SMTP, mipangilio ya utambulisho, cache ya DNS, kidhibiti cha kuingia, au majaribio binafsi ya SOCKS halisi."
+  },
+  "helpTldrExperiments2": {
+    "message": "API ya Experiments inaweka wazi maeneo hayo ya ndani ya Thunderbird; OnionBird inadhibiti maandishi kupitia orodha ya idhini ili kuweka uso wenye marupurupu mdogo."
+  },
+  "helpNerdDoesTitle": {
+    "message": "Hali ya kitaalam: ulinzi uliotekelezwa"
+  },
+  "helpNerdDoes1": {
+    "message": "Mipangilio ya proksi: network.proxy.type=1, kujaribu kiotomatiki kwa mwenyeji/bandari ya SOCKS5, socks_remote_dns=true, failover_direct=false na hakuna orodha ya kupita proksi."
+  },
+  "helpNerdDoes2": {
+    "message": "Usafi wa vichwa: inakandamiza User-Agent/X-Mailer, inalazimisha HELO/EHLO kuwa [127.0.0.1], inachagua FQDN salama zaidi ya Message-ID, inazima flowed plaintext na inasukuma tabia inayohusiana na UTC/RFP."
+  },
+  "helpNerdDoes3": {
+    "message": "Uimarishaji wa mtandao: inazima DoH/TRR, OCSP, miunganisho ya kubahatisha, DNS prefetch, predictor, WebRTC, geolocation, utafutaji wa ECH HTTPS-RR, ukaguzi wa lango la captive na URL za update phone-home."
+  },
+  "helpNerdDoes4": {
+    "message": "Uimarishaji wa UI ya barua: inazima njia za maudhui ya barua ya mbali, uwasilishaji wa plaintext, uvujaji wa arifa, kukusanya kiotomatiki kitabu cha anwani na ukaguzi/uondoaji wa kuingia wa Tor uliyohifadhiwa wakati wa kuzima."
+  },
+  "helpNerdDoes5": {
+    "message": "Ufuatiliaji: anzio na uthibitisho wa mara kwa mara unarekebisha mipangilio iliyoimarishwa; hali ya jaribio inakagua SOCKS ya Tor bila kuandika mipangilio, na canary ya SOCKS5 RESOLVE iliyotengwa kwa mtiririko inakagua tabia ya DNS ya mfumo."
+  },
+  "helpNerdDoesNotTitle": {
+    "message": "Hali ya kitaalam: mipaka"
+  },
+  "helpNerdDoesNot1": {
+    "message": "SMTP iliyothibitishwa bado inampa mtoa huduma akaunti, na watoa huduma wanaweza kuongeza thamani za Authentication-Results smtp.auth zinazoonekana kwa wapokeaji."
+  },
+  "helpNerdDoesNot2": {
+    "message": "Usafirishaji wa SMTP bado huunda minyororo ya Received. Mpokeaji mara nyingi anaweza kuhitimisha matumizi ya Tor kutoka kwa hop ya mtoa huduma inayoangalia kutoka kwa Tor."
+  },
+  "helpNerdDoesNot3": {
+    "message": "Programu jalizi inadhibiti Thunderbird, sio mfumo wa uendeshaji. NTP, ubao wa nakala, faili, programu zingine, dampo za ajali nje ya TB na majina ya wenyeji yanabaki kuwa masuala ya mfano wa tishio wa OS."
+  },
+  "helpNerdDoesNot4": {
+    "message": "Canary ni utambuzi, sio uelekezaji wa kichawi. Kwenye desktop za kawaida, elekeza DNS ya OS kupitia Tor DNSPort au tumia Whonix/Tails kwa dhamana yenye nguvu zaidi."
+  },
+  "helpNerdDoesNot5": {
+    "message": "Haiwashindi maadui wa kupita wa kimataifa, uhusiano wa wakati wa mwisho-hadi-mwisho, watoa huduma wenye nia mbaya, wapokeaji wenye nia mbaya, au hali ya wasifu/Thunderbird iliyoingiliwa."
+  },
+  "helpNerdTorbirdyTitle": {
+    "message": "Hali ya kitaalam: utangamano wa TorBirdy"
+  },
+  "helpNerdTorbirdy1": {
+    "message": "TorBirdy ililenga mfumo wa kale wenye marupurupu wa XUL/XPCOM wa programu jalizi na ulitumia overlay/bootstrap hooks ndani ya Thunderbird."
+  },
+  "helpNerdTorbirdy2": {
+    "message": "Thunderbird 78 iliondoa programu jalizi za kale za XUL; Thunderbird ya kisasa inakubali WebExtensions/MailExtensions, ambazo kwa makusudi hazifichui maeneo hayo ya ndani yenye marupurupu ya barua na mipangilio."
+  },
+  "helpNerdTorbirdy3": {
+    "message": "Kubeba TorBirdy kwa hivyo sio kuongeza manifest tu. Vipande vyenye marupurupu lazima viandikwe upya nyuma ya API ya Thunderbird Experiments."
+  },
+  "helpNerdExperimentsTitle": {
+    "message": "Hali ya kitaalam: mpaka wa API ya Experiments"
+  },
+  "helpNerdExperiments1": {
+    "message": "Upande wa MailExtension unamiliki UI, ujumbe wa runtime na chaguzi; script ya mzazi ya Experiments inamiliki Services.prefs, vitu vya MailServices SMTP/utambulisho, kusafisha cache ya DNS, ukaguzi wa kidhibiti cha kuingia na SOCKS5 RESOLVE halisi."
+  },
+  "helpNerdExperiments2": {
+    "message": "Mgawanyiko huu ni muhimu kwa sababu APIs za umma za MailExtension haziwezi kuchukua/kurejesha mipangilio kwa pamoja au kuweka mipangilio ya HELO/TLS kwa kila SMTP."
+  },
+  "helpNerdExperiments3": {
+    "message": "Kwa sababu Experiments huendesha na marupurupu ya mchakato wa mzazi, OnionBird inazuia maandishi ya mipangilio kwa orodha nyembamba ya idhini na inaweka safu ya mabadiliko ya uimarishaji."
+  },
+  "sendBlockedCancelStorageError": {
+    "message": "OnionBird: kutuma kumezuiliwa — hali ya nyongeza haiwezi kusomwa (kosa la hifadhi). Anzisha tena Thunderbird, kisha angalia OnionBird Options kabla ya kujaribu tena."
+  },
+  "sendBlockedCancelLeakDetected": {
+    "message": "OnionBird: kutuma kumezuiliwa — Tor leak canary iligundua ufafanuzi wa DNS ambao haukupita Tor. Fungua OnionBird Options → DNS leak status → Run self-test now kabla ya kujaribu tena."
+  },
+  "sendBlockedCancelNoVerdict": {
+    "message": "OnionBird: kutuma kumezuiliwa — hakuna uamuzi wa canary bado (haijaendeshwa au hifadhi imesafishwa). Fungua OnionBird Options → DNS leak status → Run self-test now kabla ya kujaribu tena."
+  },
+  "sendBlockedCancelOther": {
+    "message": "OnionBird: kutuma kumezuiliwa — uamuzi wa canary si 'clean' (hali: $STATE$). Fungua OnionBird Options → DNS leak status → Run self-test now kabla ya kujaribu tena.",
+    "placeholders": {
+      "STATE": {
+        "content": "$1",
+        "example": "leak_detected"
+      }
+    }
+  },
+  "socksOverrideTitle": {
+    "message": "SOCKS endpoint override"
+  },
+  "socksOverrideIntro": {
+    "message": "By default the addon detects Thunderbird's existing network.proxy.socks pref or falls back to 127.0.0.1 on port 9050 / 9150. Set host + port here to pin a different endpoint (e.g. a Whonix Gateway IP). Host must be a loopback name (localhost) or an IP literal — DNS-resolvable names would leak via the system resolver before Tor."
+  },
+  "socksOverrideHostLabel": {
+    "message": "Host:"
+  },
+  "socksOverridePortLabel": {
+    "message": "Port:"
+  },
+  "socksOverrideSaveButton": {
+    "message": "Save"
+  },
+  "socksOverrideResetButton": {
+    "message": "Reset to default"
+  },
+  "socksOverrideTestButton": {
+    "message": "Test endpoint"
+  },
+  "socksOverrideStatusOk": {
+    "message": "OK"
+  },
+  "socksOverrideStatusInvalidHost": {
+    "message": "Invalid host — must be `localhost` or an IP literal (IPv4 or IPv6)."
+  },
+  "socksOverrideStatusInvalidPort": {
+    "message": "Invalid port — must be an integer between 1 and 65535."
+  },
+  "socksOverrideTbPrefWarning": {
+    "message": "Thunderbird currently has $TB$ configured; your saved override $OVERRIDE$ will replace it on next enable.",
+    "placeholders": {
+      "TB": {
+        "content": "$1",
+        "example": "127.0.0.1:9050"
+      },
+      "OVERRIDE": {
+        "content": "$2",
+        "example": "10.152.152.10:9050"
+      }
+    }
+  },
+  "socksOverrideStatusReset": {
+    "message": "Override cleared — falling back to auto-detect on next enable."
+  },
+  "autoEnableNotificationTitleSocksUnreachable": {
+    "message": "OnionBird installed — Tor not reachable"
+  },
+  "autoEnableNotificationMessageSocksUnreachable": {
+    "message": "OnionBird could not reach a Tor SOCKS endpoint on 127.0.0.1:9050 or :9150. Outgoing sends are blocked until Tor is reachable. Start the Tor daemon (or Tor Browser) and open OnionBird Options → DNS leak status → Run self-test now."
+  },
+  "autoEnableNotificationTitleCanaryFail": {
+    "message": "OnionBird installed — hardening incomplete"
+  },
+  "autoEnableNotificationMessageCanaryFail": {
+    "message": "OnionBird auto-enabled but the canary self-test did not verify cleanly. Outgoing sends are blocked until the next canary passes. Open OnionBird Options → DNS leak status → Run self-test now to triage."
+  }
+}

@@ -1,0 +1,453 @@
+{
+  "extensionName": {
+    "message": "OnionBird"
+  },
+  "extensionDescription": {
+    "message": "Thunderbird ལ་ Tor བསྡུ་མཐུན་དང་ མཛུབ་རྗེས་ལ་ངོ་རྒོལ་ — TorBirdy ཡི་ཚབ་པ།"
+  },
+  "pageTitle": {
+    "message": "OnionBird འདེམས་ངེས།"
+  },
+  "statusLabel": {
+    "message": "གནས་སྟངས།:"
+  },
+  "statusLoading": {
+    "message": "འཇུག་སྒྲིལ་བཞིན་པ…"
+  },
+  "statusText": {
+    "message": "API v$1, ཁ་སྐོང་ v$2 — སྲ་བརྟན་སྒྲུབ་པ $3"
+  },
+  "statusActive": {
+    "message": "ལས་འཁོར"
+  },
+  "statusInactive": {
+    "message": "མི་ལས་འཁོར"
+  },
+  "appearanceTitle": {
+    "message": "བཟོ་ལྟ"
+  },
+  "themeLabel": {
+    "message": "བརྗོད་གཞི།:"
+  },
+  "themeSystem": {
+    "message": "མ་ལག"
+  },
+  "themeLight": {
+    "message": "འོད་ཆེན"
+  },
+  "themeDark": {
+    "message": "མུན་ནག"
+  },
+  "hardeningTitle": {
+    "message": "སྲ་བརྟན་སྒྲུབ་པ"
+  },
+  "enableButton": {
+    "message": "སྲ་བརྟན་སྒྲུབ་པ་སྤྱོད་སྦྱོར།"
+  },
+  "disableButton": {
+    "message": "སྲ་བརྟན་སྒྲུབ་པ་ཕྱིར་འཐེན།"
+  },
+  "scrubLoginsLabel": {
+    "message": "ཕྱིར་འཐེན་སྐབས། onion/loopback གློག་ཡིག་འཕྲིན་ཁང་གི་ ཉར་ཚགས་གསང་ཨང་གཞན་ཕྱི་ལོགས་བཀར་སྤོར།"
+  },
+  "disableHelp": {
+    "message": "ཕྱིར་འཐེན་གྱིས་སྲ་བརྟན་སྒྲུབ་པ་ ཐོག་མར་སྤྱོད་སྦྱོར་སྔོན་ལེན་པའི་ prefs པར་ལེན་སླར་གསོ་བྱེད། ཆེད་དུ་ཕར་སོང་བའི་ clearnet ཡི་ཁུངས་སྤྱི་ཐུན་མོང་ཐབས་ལམ་ནང་ལས་འགུལ་མུ་མཐུད་སྤེལ།"
+  },
+  "messageIdTitle": {
+    "message": "Message-ID FQDN"
+  },
+  "messageIdIntro": {
+    "message": "ཕྱིར་འགྲོ་བའི་ Message-ID ཡི་ FQDN ནི། ཁྱེད་ཀྱི་གློག་ཡིག་ཁྲོད། ཡང་སྦྱར་གྱི་མཛུབ་རྗེས་ཡིན། སྔོན་འདེམས་ནི་ཁྱེད་ཀྱི་ From-ས་གནས་ཀྱི་སྡོམ་ཁྱབ་ལག་ལེན། འདི་སྤྱོད་པར་མཁོ་སྦྱོར་པ་གཅིག་གི་སྤྱིར་བཏང་ལག་སྤྱོད་པ་གཞན་དང་འདྲེས་ཐུབ། TorBirdy ཡི་ localhost.localdomain ནི་ གསལ་པོའི་སྔ་སྲོལ་འདེམས་སྟོང་ལ་ཤེས་པ་ཡིན།"
+  },
+  "modeLabel": {
+    "message": "གནས་སྟངས།:"
+  },
+  "fqdnFromDomain": {
+    "message": "From-ས་གནས་ཀྱི་སྡོམ་ཁྱབ (འོས་འཚམས)"
+  },
+  "fqdnLocalhost": {
+    "message": "localhost"
+  },
+  "fqdnLocalhostLegacy": {
+    "message": "localhost.localdomain (སྔ་སྲོལ)"
+  },
+  "fqdnCustom": {
+    "message": "རང་ངོས…"
+  },
+  "saveButton": {
+    "message": "ཉར་ཚགས།"
+  },
+  "torTestTitle": {
+    "message": "Tor ཚོད་ལྟའི་གནས་སྟངས།"
+  },
+  "torTestIntro": {
+    "message": "གློག་ཡིག་མི་སྤྲོད་པར་ ཡང་ན་ Thunderbird prefs མི་བསྒྱུར་བར། ས་གནས་ Tor SOCKS endpoint ལ་འབྱོར་ཐུབ་མིན་བརྟག་པ། ཚོད་ལྟས་ Tor ཡི་ SOCKS5 RESOLVE བཀའ་རྒྱ་གསར་པའི་རྐྱང་མཚོན་ལག་ལེན་ལ་སྦྱོར། དེར་བརྟེན། འཛུལ་པའི་ host དེ་ མ་ལག་ DNS བརྒྱུད་ནས་བཤད་མི་སྲིད།"
+  },
+  "runTorTestButton": {
+    "message": "ད་ལྟ་ Tor བརྟག།"
+  },
+  "torTestRunning": {
+    "message": " ཚོད་ལྟ་བཞིན་པ…"
+  },
+  "torTestUnknown": {
+    "message": "མི་ཤེས་པ"
+  },
+  "torTestAvailable": {
+    "message": "Tor རྙེད་ཐུབ"
+  },
+  "torTestUnavailable": {
+    "message": "Tor མེད"
+  },
+  "torTestNotRun": {
+    "message": "ད་དུང་བརྟག་མེད།"
+  },
+  "torTestOk": {
+    "message": "Tor SOCKS ནི $1:$2 ($3) ལ་འབྱོར་ཐུབ། Thunderbird prefs གཅིག་ཀྱང་བསྒྱུར་མེད།"
+  },
+  "torTestNoTor": {
+    "message": "འབྱོར་ཐུབ་པའི་ Tor SOCKS endpoint མ་རྙེད། བརྟག་པ: $1"
+  },
+  "torTestError": {
+    "message": "Tor ཚོད་ལྟ་ཕམ་སོང: $1"
+  },
+  "torTestResultCell": {
+    "message": "གྲུབ་འབྲས"
+  },
+  "torTestEndpointCell": {
+    "message": "SOCKS endpoint"
+  },
+  "torTestProbeHostCell": {
+    "message": "བརྟག་པའི་ host"
+  },
+  "torTestTriedCell": {
+    "message": "བརྟགས་པ"
+  },
+  "torTestSourceRequested": {
+    "message": "ཞུ་འདུན་བཏང་བ"
+  },
+  "torTestSourceExistingPref": {
+    "message": "ཡོད་པའི pref"
+  },
+  "torTestSourceSystemTor": {
+    "message": "མ་ལག་ Tor"
+  },
+  "torTestSourceTorBrowser": {
+    "message": "Tor Browser"
+  },
+  "torTestSourceFallback": {
+    "message": "ཕྱིར་ལོག"
+  },
+  "torTestSourceCurrentPref": {
+    "message": "ད་ལྟའི pref"
+  },
+  "dnsLeakTitle": {
+    "message": "DNS ཟགས་པའི་གནས་སྟངས།"
+  },
+  "dnsLeakIntro": {
+    "message": "Tor ནས་ SOCKS5 RESOLVE བརྒྱུད་ལ་སླར་སྤྲོད་པའི་ IP དང་ ཁྱེད་ཀྱི་མ་ལག་གི་ resolver ནས་སླར་སྤྲོད་པའི་ IP གཉིས་ལ་བསྡུར། ཁྱད་པར་ནི་ OS ཀྱིས་ Tor མིན་པའི་ DNS ལག་ལེན་སྦྱོར་སྲིད། ཡིན་ནའང་ CDN-ཡིས་རྒྱབ་སྐྱོར་བྱས་པའི་མིང་འདི་དག་ད་དུང་སྐྱོན་མེད་པ་སྲིད།"
+  },
+  "hostLabel": {
+    "message": "Host:"
+  },
+  "runSelfTestButton": {
+    "message": "ད་ལྟ་རང་ཉིད་ཚོད་ལྟ་སྒྲུབ།"
+  },
+  "runningLabel": {
+    "message": " སྒྲུབ་བཞིན་པ…"
+  },
+  "canaryHostCell": {
+    "message": "host"
+  },
+  "ipDetailLabel": {
+    "message": "IP ཞིབ་བཤེར"
+  },
+  "revealRawIps": {
+    "message": "རྩ་བ IPs སྟོན།"
+  },
+  "verdictLabel": {
+    "message": "ཐག་གཅོད"
+  },
+  "errorLabel": {
+    "message": "ནོར་འཁྲུལ"
+  },
+  "canaryUnknown": {
+    "message": "མི་ཤེས་པ"
+  },
+  "canaryNoLeak": {
+    "message": "ཟགས་པ་མེད"
+  },
+  "canaryLeakSuspected": {
+    "message": "ཟགས་པ་དོགས་པ"
+  },
+  "canaryDiverged": {
+    "message": "ཁ་བྲལ"
+  },
+  "canaryInconclusive": {
+    "message": "མི་གཏན་འཁེལ"
+  },
+  "canaryError": {
+    "message": "ནོར་འཁྲུལ"
+  },
+  "canaryVerdictNoData": {
+    "message": "ད་དུང་གནས་ཚུལ་མེད"
+  },
+  "canaryVerdictLeak": {
+    "message": "མ་ལག་ resolver གྱི་ལན་ནི་ Tor circuit གང་ཞིག་གི་མིག་ཁྱབ་ནང་མི་གནས། མ་ལག་ DNS routing ལ་ངེས་པར་བཤེར་དགོས"
+  },
+  "canaryVerdictOk": {
+    "message": "system_ip Tor གྲུབ་ཚན་ནང་ཡོད ($1 circuit བརྟགས)"
+  },
+  "canaryVerdictDiverged": {
+    "message": "system_ip Tor གྲུབ་ཚན་ནང་མེད། ཡིན་ནའང་ heuristic ཀྱིས་འདི་གཟུགས་སུ་ཕན་མེད་པ་སྲིད་ཟེར། ཞིབ་བཤེར་གྱིས།"
+  },
+  "canaryVerdictMissingData": {
+    "message": "འཚོལ་བཤར་གཅིག་གིས་གནས་ཚུལ་སླར་མ་སྤྲོད།"
+  },
+  "canaryErrorTor9050": {
+    "message": "Tor ནི 127.0.0.1:9050 ལ་ལན་མི་འདེབས། Tor daemon སྤྱོད་སྦྱོར་གྱིས། ཡང་ན་ Tor Browser ལ་ port 9150 ལག་ལེན།"
+  },
+  "canaryErrorTor9150": {
+    "message": "Tor Browser ལས་འགུལ་མི་སྤེལ། སྤྱོད་སྦྱོར་གྱིས། ཁོ་ཡི་ SOCKS ཉན་ཞུགས་ནི་སྤྱིར་བཏང་ 9150 ལ་ཡོད།"
+  },
+  "canaryErrorSocksRefused": {
+    "message": "SOCKS འབྲེལ་མཐུད་ལ་འགོག་རྐྱེན། སྒྲིག་ཟིན་པའི་ Tor host དང་ port བརྟག།"
+  },
+  "canaryErrorNetworkUnreachable": {
+    "message": "དྲ་རྒྱས་ལམ་འདིའི་སྟེང་ཕྱིར་འགྲོ་བའི་སྐུལ་ལོ་འགོག། Bridges ཡང་ན་ pluggable transports མཁོ་འདོན་སྲིད།"
+  },
+  "canaryErrorTimeout": {
+    "message": "Tor འབྱོར་ཐུབ། ཡིན་ནའང་ circuit དུས་སུ་མཇུག་སྡོམ་མ་ཐུབ། ཡང་སྐྱར་བརྟག། ཡང་ན་ circuit འཁོར་སྐོར།"
+  },
+  "canaryErrorDnsStatus": {
+    "message": "OS resolver ནས་ནོར་འཁྲུལ་སླར་སྤྲོད། ཡོངས་སུ་སྲུང་སྐྱོབ་སད། མ་ལག་ DNS ནི་ Tor DNSPort ལག་ལེན། ཡང་ན་ Whonix/Tails ཡི་ནང་སྤེལ།"
+  },
+  "logApplyingHardening": {
+    "message": "སྲ་བརྟན་སྒྲུབ་པ་སྦྱོར་བཞིན་པ…"
+  },
+  "logRestoringPrefs": {
+    "message": "སྲ་བརྟན་སྒྲུབ་པའི་སྔོན་གྱི prefs སླར་གསོ་བཞིན་པ…"
+  },
+  "logDone": {
+    "message": "ཟིན་པ"
+  },
+  "logWarnings": {
+    "message": "ཉེན་བརྡས་མཉམ་དུ་ཟིན"
+  },
+  "disableConfirm": {
+    "message": "འདི་ཡིས་ཁྱེད་ཀྱི prefs ནི་ སྲ་བརྟན་སྒྲུབ་པ་ ཐོག་མར་སྤྱོད་སྦྱོར་སྔོན་ལེན་པའི་པར་ལེན་ལ་སླར་གསོ། Tor-only གཏོང་ལུགས་ clearnet བརྒྱུད་ནས་ཕྱིར་ལོག་སྲིད། མུ་མཐུད?"
+  },
+  "savingLabel": {
+    "message": "ཉར་ཚགས་བཞིན་པ…"
+  },
+  "fqdnInvalid": {
+    "message": "རང་ངོས FQDN ནི་ཡང་དག་ multi-label DNS མིང་ཡིན་དགོས། IP ས་གནས་མིན།"
+  },
+  "fqdnSaved": {
+    "message": "ཉར་ཚགས་ཟིན། mode=$1, identity $2 གསར་བཅོས་ཟིན།"
+  },
+  "saveFailed": {
+    "message": "ཉར་ཚགས་ཕམ་སོང: $1"
+  },
+  "readPrefsFailed": {
+    "message": "prefs སྡུན་མི་ཐུབ: $1"
+  },
+  "errorWithMessage": {
+    "message": "ནོར་འཁྲུལ: $1"
+  },
+  "helpTitle": {
+    "message": "རོགས་སྐྱོར"
+  },
+  "helpModeLabel": {
+    "message": "ཟབ་ཚད:"
+  },
+  "helpModeTldr": {
+    "message": "མདོར་བསྡུས"
+  },
+  "helpModeNerd": {
+    "message": "ནར་ཌི་གནས་སྟངས།"
+  },
+  "helpTldrDoesTitle": {
+    "message": "ཁ་སྐོང་འདི་ག་རེ་བྱེད"
+  },
+  "helpTldrDoes1": {
+    "message": "Thunderbird IMAP དང་ SMTP ནི་ས་གནས་ Tor SOCKS proxy བརྒྱུད་ལམ་ཁ་སྐོང་བཟོ། DNS བཤད་པ་ནི་ Tor བརྒྱུད་ནས་རྒྱང་འགྲོར་འཇོག།"
+  },
+  "helpTldrDoes2": {
+    "message": "Fail-closed: Tor འབྱོར་མི་ཐུབ་ན་ གློག་ཡིག་གཏོང་བ་ clearnet ལ་ཕྱིར་ལོག་པའི་ཚབ་ལ་ཕམ་དགོས།"
+  },
+  "helpTldrDoes3": {
+    "message": "User-Agent, X-Mailer, HELO, དུས་ཁུལ, Message-ID FQDN, flowed ཡི་གེ་དང་ རྒྱང་འགྲོའི་ནང་དོན་ལྟ་བུའི་ གློག་ཡིག་མཛུབ་རྗེས་ཉུང་ཐབས་སྒྲུབ།"
+  },
+  "helpTldrDoes4": {
+    "message": "Tor ཡོད་མེད་ཚོད་ལྟ་དང་ DNS canary འདོན་སྤྲོད། གཉིས་ཀས་ Tor ཡི་ SOCKS5 RESOLVE ལམ་ལག་ལེན་ནས། Tor ཕྱོགས་ལ་མ་ལག་ DNS སྤོང།"
+  },
+  "helpTldrDoesNotTitle": {
+    "message": "ག་རེ་མི་བྱེད"
+  },
+  "helpTldrDoesNot1": {
+    "message": "འདིས་ Tails, Whonix, Tor gateway ཡང་ན་ ཡང་དག་སྒྲིག་ཟིན་པའི་མ་ལག་ resolver གྱི་ཚབ་མི་བྱེད།"
+  },
+  "helpTldrDoesNot2": {
+    "message": "ཁྱེད་ཀྱིས་ངོས་འཛིན་གྱི་ mailbox ནི། ཁྱེད་ཀྱི་མཁོ་སྦྱོར་པ་ནས་ ཡང་ན་ མཁོ་སྦྱོར་པས་སྣོན་པའི་ Authentication-Results headers ནས་མི་སྦེད།"
+  },
+  "helpTldrDoesNot3": {
+    "message": "ལེན་མཁན་གྱིས་ Received headers ནང་ Tor exit མཐོང་སྲིད་པའི་དོན་དངོས་མི་སྦེད།"
+  },
+  "helpTldrDoesNot4": {
+    "message": "ཉེར་སྤྱོད་གཞན། OS-རིམ་པའི་ཟགས་པ། ཉམས་ཟིན་པའི endpoints ཡང་ན་ དྲ་རྒྱ་-correlation འཛིང་སྡོང་སོགས་ནས་སྲུང་མི་སྐྱོབ།"
+  },
+  "helpTldrTorbirdyTitle": {
+    "message": "TorBirdy ག་རེར་ད་ལྟ་ལས་མི་ཐུབ"
+  },
+  "helpTldrTorbirdy1": {
+    "message": "TorBirdy ནི་སྔ་སྲོལ་ Thunderbird/XUL ཁ་སྐོང་ཞིག་ཡིན། Thunderbird 78 ཡིས་འདི་རྟེན་པའི་སྔ་སྲོལ་ XUL overlay ཁ་སྐོང་མ་ལག་སྤོ་ཟིན།"
+  },
+  "helpTldrTorbirdy2": {
+    "message": "འདིའི་མཐའ་མའི་འགྲེམ་སྤེལ་ནི 2018 ལོར་ཡིན། དེར་བརྟེན། ཡང་སྐྱར་འབྲི་མེད་པར་ དེང་རབས་ Thunderbird ESR builds སྟེང་ལས་མི་ཐུབ།"
+  },
+  "helpTldrExperimentsTitle": {
+    "message": "Experiments API ག་རེར་མཁོ"
+  },
+  "helpTldrExperiments1": {
+    "message": "རྒྱུན་ལྡན MailExtensions ཀྱིས Thunderbird ཀྱི proxy prefs, SMTP server internals, identity prefs, DNS cache, login manager ཡང་ན་ རྩ་བ SOCKS self-tests བསྒྱུར་མི་ཐུབ།"
+  },
+  "helpTldrExperiments2": {
+    "message": "Experiments API ཡིས་དེ་དག་ Thunderbird internals གསལ་སྟོན། OnionBird ནི་ ཐོབ་ཐང་གི་ངོས་གཟུགས་ཆུང་ངུ་འཇོག་སད་ allowlist བརྒྱུད་ནས writes ཁ་གྲོ་བྱེད།"
+  },
+  "helpNerdDoesTitle": {
+    "message": "ནར་ཌི་གནས་སྟངས: ལག་བསྟར་སྲུང་སྐྱོབ"
+  },
+  "helpNerdDoes1": {
+    "message": "Proxy prefs: network.proxy.type=1, SOCKS5 host/port རང་-བཤེར, socks_remote_dns=true, failover_direct=false དང་ proxy bypass ཐོ་མེད།"
+  },
+  "helpNerdDoes2": {
+    "message": "Header གཙང་སྦྲ: User-Agent/X-Mailer ནོན། HELO/EHLO ནི [127.0.0.1] ལ་འགོག། ཉེན་ཁ་དམའ་བའི Message-ID FQDN འདེམས། flowed plaintext གཏང་པ་སྤོ། UTC/RFP ལ་འབྲེལ་སྤྱོད་འཕུར།"
+  },
+  "helpNerdDoes3": {
+    "message": "དྲ་རྒྱས་སྲ་བརྟན་སྒྲུབ: DoH/TRR, OCSP, speculative connects, DNS prefetch, predictor, WebRTC, geolocation, ECH HTTPS-RR lookup, captive-portal བརྟག་ཞིབ། དང update phone-home URLs སྤོ།"
+  },
+  "helpNerdDoes4": {
+    "message": "Mail UI སྲ་བརྟན་སྒྲུབ: རྒྱང་འགྲོའི་གློག་ཡིག་ནང་དོན་ལམ་ཀ། plaintext rendering, དྲན་གསོ་ཟགས་པ། ས་གནས་དཔེ་མཛོད་རང་-བསྡུ་འཁྱེར དང་ ཕྱིར་འཐེན་སྐབས་ཉར་ཚགས་ Tor-login བརྟག་ཞིབ/འཐེན་པ་སྤོ།"
+  },
+  "helpNerdDoes5": {
+    "message": "བལྟ་སྲུང: སྒོ་འབྱེད་དང་དུས་ཐོག་ཡང་སྐུལ་གྱིས་སྲ་བརྟན་སྒྲུབ་པའི prefs ཉམས་གསོ། ཚོད་ལྟའི་གནས་སྟངས་ཀྱིས pref writes མེད་པར Tor SOCKS བརྟག། stream-isolated SOCKS5 RESOLVE canary ཡིས་མ་ལག་ DNS སྤྱོད་སྦྱོར་བརྟག།"
+  },
+  "helpNerdDoesNotTitle": {
+    "message": "ནར་ཌི་གནས་སྟངས: མཚམས།"
+  },
+  "helpNerdDoesNot1": {
+    "message": "ངོས་འཛིན་ཟིན་པའི SMTP ད་དུང་མཁོ་སྦྱོར་པར་ཁ་གསལ་སྟོན། མཁོ་སྦྱོར་པས་ལེན་མཁན་ལ་མཐོང་ཐུབ་པའི Authentication-Results smtp.auth རིན་ཐང་ཁ་སྣོན་སྲིད།"
+  },
+  "helpNerdDoesNot2": {
+    "message": "SMTP transport ད་དུང Received ཆགས་ལུགས་སྐྲུན། ལེན་མཁན་གྱིས་མཁོ་སྦྱོར་པའི Tor-exit-facing hop ནས Tor སྤྱོད་སྦྱོར་ཤེས་སྲིད།"
+  },
+  "helpNerdDoesNot3": {
+    "message": "ཁ་སྐོང་ནི Thunderbird ཁོ་ནས་སྐྱོང་སྲིད། operating system མིན། NTP, clipboard, ཡིག་ཆ, ཉེར་སྤྱོད་གཞན། TB ཡི་ཕྱི་རོལ་གྱི crash dumps དང hostnames ནི OS-ཉེན་བཟུང-དཔེ་གཟུགས་གནད་དོན་ལ་འཇོག།"
+  },
+  "helpNerdDoesNot4": {
+    "message": "Canary ནི་མཐོང་འཕྲུལ། འཕྲུལ་ལོའི routing མིན། སྤྱིར་བཏང desktops སྟེང་ལ OS DNS ནི Tor DNSPort བརྒྱུད་ལ་ནང་ཀ ཡང་ན ཤུགས་ཆེ་བའི་ཁག་འགན་སད Whonix/Tails ལག་ལེན།"
+  },
+  "helpNerdDoesNot5": {
+    "message": "འདིས་སྤྱི་ཁྱབ passive རྒོལ་པ། end-to-end timing correlation, ངན་མཁོ་སྦྱོར་པ། ངན་ལེན་མཁན། ཡང་ན་ ཉམས་ཟིན་པའི Thunderbird/profile གནས་སྟངས་ལས་མི་རྒྱལ།"
+  },
+  "helpNerdTorbirdyTitle": {
+    "message": "ནར་ཌི་གནས་སྟངས: TorBirdy མཐུན་འགྱུར"
+  },
+  "helpNerdTorbirdy1": {
+    "message": "TorBirdy ནི་སྔོན་གྱི་ཐོབ་ཐང་ལྡན་པའི XUL/XPCOM ཁ་སྐོང་དཔེ་གཟུགས་འཁྲིད། Thunderbird internals ལ overlay/bootstrap hooks ལག་ལེན།"
+  },
+  "helpNerdTorbirdy2": {
+    "message": "Thunderbird 78 ཡིས་སྔ་སྲོལ XUL extensions སྤོ། དེང་རབས Thunderbird ཡིས WebExtensions/MailExtensions ལེན། འདི་གཉིས་ནི་ཆེད་དུ་ཐོབ་ཐང་ཡོད་པའི mail དང pref internals མི་སྟོན།"
+  },
+  "helpNerdTorbirdy3": {
+    "message": "དེར་བརྟེན TorBirdy སྤོ་བ་ནི manifest bump མིན། ཐོབ་ཐང་ལྡན་པའི་ཆ་ཤས་རྣམས་ Thunderbird Experiments API ཡི་རྒྱབ་ལོགས་ཡང་སྐྱར་བྲིས་དགོས།"
+  },
+  "helpNerdExperimentsTitle": {
+    "message": "ནར་ཌི་གནས་སྟངས: Experiments API མཚམས།"
+  },
+  "helpNerdExperiments1": {
+    "message": "MailExtension ངོས་ལ UI, runtime messages དང options དབང་སྒྱུར། Experiments parent script ལ Services.prefs, MailServices SMTP/identity objects, DNS cache flushing, login-manager བརྟག་ཞིབ་དང་ རྩ་བ SOCKS5 RESOLVE དབང་སྒྱུར།"
+  },
+  "helpNerdExperiments2": {
+    "message": "བར་གཅོད་འདི་ཁག་ཆེ། རྒྱུ་མཚན་ནི། སྤྱི་ཐུན MailExtension APIs ཀྱིས prefs ལ atomically snapshot/restore མི་ཐུབ། ཡང་ན per-SMTP HELO/TLS settings འཇོག་མི་ཐུབ།"
+  },
+  "helpNerdExperiments3": {
+    "message": "Experiments parent-process ཐོབ་ཐང་གིས་ལས་འགུལ་སྤེལ་བར་བརྟེན། OnionBird ཡིས pref writes ལ་དོག་ཀྱིང་བའི allowlist ལ་ཚོད་འཛིན། སྲ་བརྟན་སྒྲུབ་པའི mutations ལ serialize སྒྲུབ།"
+  },
+  "sendBlockedCancelStorageError": {
+    "message": "OnionBird: གཏོང་བ་བཀག་པ — ཁ་སྐོང་གི་གནས་སྟངས་སྡུན་མི་ཐུབ (ཉར་ཚགས་ནོར་འཁྲུལ). Thunderbird ཡང་བསྐྱར་སྤོར་གྱིས། ཡང་སྒར་མ་སྔོན་ལ OnionBird Options ལ་གཟིགས།"
+  },
+  "sendBlockedCancelLeakDetected": {
+    "message": "OnionBird: གཏོང་བ་བཀག་པ — Tor leak canary ཡིས Tor བརྒྱུད་ནས་མ་སོང་བའི DNS ཤེས་པ་མཐོང་སོང། ཡང་སྒར་མ་སྔོན OnionBird Options → DNS leak status → Run self-test now འབྱེད།"
+  },
+  "sendBlockedCancelNoVerdict": {
+    "message": "OnionBird: གཏོང་བ་བཀག་པ — ད་དུང canary ཐག་གཅོད་མེད (མ་སོང་ཡང་ན་ཉར་ཚགས་གཙང་སེལ). ཡང་སྒར་མ་སྔོན OnionBird Options → DNS leak status → Run self-test now འབྱེད།"
+  },
+  "sendBlockedCancelOther": {
+    "message": "OnionBird: གཏོང་བ་བཀག་པ — canary ཐག་གཅོད་ནི 'clean' མིན (གནས: $STATE$). ཡང་སྒར་མ་སྔོན OnionBird Options → DNS leak status → Run self-test now འབྱེད།",
+    "placeholders": {
+      "STATE": {
+        "content": "$1",
+        "example": "leak_detected"
+      }
+    }
+  },
+  "socksOverrideTitle": {
+    "message": "SOCKS endpoint override"
+  },
+  "socksOverrideIntro": {
+    "message": "By default the addon detects Thunderbird's existing network.proxy.socks pref or falls back to 127.0.0.1 on port 9050 / 9150. Set host + port here to pin a different endpoint (e.g. a Whonix Gateway IP). Host must be a loopback name (localhost) or an IP literal — DNS-resolvable names would leak via the system resolver before Tor."
+  },
+  "socksOverrideHostLabel": {
+    "message": "Host:"
+  },
+  "socksOverridePortLabel": {
+    "message": "Port:"
+  },
+  "socksOverrideSaveButton": {
+    "message": "Save"
+  },
+  "socksOverrideResetButton": {
+    "message": "Reset to default"
+  },
+  "socksOverrideTestButton": {
+    "message": "Test endpoint"
+  },
+  "socksOverrideStatusOk": {
+    "message": "OK"
+  },
+  "socksOverrideStatusInvalidHost": {
+    "message": "Invalid host — must be `localhost` or an IP literal (IPv4 or IPv6)."
+  },
+  "socksOverrideStatusInvalidPort": {
+    "message": "Invalid port — must be an integer between 1 and 65535."
+  },
+  "socksOverrideTbPrefWarning": {
+    "message": "Thunderbird currently has $TB$ configured; your saved override $OVERRIDE$ will replace it on next enable.",
+    "placeholders": {
+      "TB": {
+        "content": "$1",
+        "example": "127.0.0.1:9050"
+      },
+      "OVERRIDE": {
+        "content": "$2",
+        "example": "10.152.152.10:9050"
+      }
+    }
+  },
+  "socksOverrideStatusReset": {
+    "message": "Override cleared — falling back to auto-detect on next enable."
+  },
+  "autoEnableNotificationTitleSocksUnreachable": {
+    "message": "OnionBird installed — Tor not reachable"
+  },
+  "autoEnableNotificationMessageSocksUnreachable": {
+    "message": "OnionBird could not reach a Tor SOCKS endpoint on 127.0.0.1:9050 or :9150. Outgoing sends are blocked until Tor is reachable. Start the Tor daemon (or Tor Browser) and open OnionBird Options → DNS leak status → Run self-test now."
+  },
+  "autoEnableNotificationTitleCanaryFail": {
+    "message": "OnionBird installed — hardening incomplete"
+  },
+  "autoEnableNotificationMessageCanaryFail": {
+    "message": "OnionBird auto-enabled but the canary self-test did not verify cleanly. Outgoing sends are blocked until the next canary passes. Open OnionBird Options → DNS leak status → Run self-test now to triage."
+  }
+}

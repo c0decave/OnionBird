@@ -1,0 +1,453 @@
+{
+  "extensionName": {
+    "message": "OnionBird"
+  },
+  "extensionDescription": {
+    "message": "Thunderbird အတွက် Tor ပေါင်းစည်းမှုနှင့် ဖင်ဂါပရင့်ဆန့်ကျင်ရေး — TorBirdy ၏ဆက်ခံသူ။"
+  },
+  "pageTitle": {
+    "message": "OnionBird ရွေးချယ်စရာများ"
+  },
+  "statusLabel": {
+    "message": "အခြေအနေ:"
+  },
+  "statusLoading": {
+    "message": "ဖွင့်နေသည်…"
+  },
+  "statusText": {
+    "message": "API v$1, ပလပ်အင် v$2 — ခိုင်ခံ့စေခြင်း $3"
+  },
+  "statusActive": {
+    "message": "အသုံးပြုနေသည်"
+  },
+  "statusInactive": {
+    "message": "မအသုံးပြုပါ"
+  },
+  "appearanceTitle": {
+    "message": "အသွင်အပြင်"
+  },
+  "themeLabel": {
+    "message": "အပြင်အဆင်:"
+  },
+  "themeSystem": {
+    "message": "စနစ်"
+  },
+  "themeLight": {
+    "message": "အလင်း"
+  },
+  "themeDark": {
+    "message": "အမှောင်"
+  },
+  "hardeningTitle": {
+    "message": "ခိုင်ခံ့စေခြင်း"
+  },
+  "enableButton": {
+    "message": "ခိုင်ခံ့စေခြင်းကို ဖွင့်ပါ"
+  },
+  "disableButton": {
+    "message": "ခိုင်ခံ့စေခြင်းကို ပိတ်ပါ"
+  },
+  "scrubLoginsLabel": {
+    "message": "ပိတ်လိုက်သည့်အခါ onion/loopback မေးလ်ဆာဗာများအတွက် သိမ်းထားသော စကားဝှက်များကို ဖျက်ပါ"
+  },
+  "disableHelp": {
+    "message": "ပိတ်လိုက်ခြင်းသည် ခိုင်ခံ့စေခြင်းကို ပထမဆုံးအကြိမ်ဖွင့်ခြင်းမတိုင်မီ ယူထားသော prefs snapshot ကို ပြန်လည်ထူထောင်ပေးသည်။ ရည်ရွယ်ချက်ဖြင့် ကျော်လွှားထားသော clearnet အကောင့်များသည် ပုံမှန်အတိုင်း ဆက်လက်အလုပ်လုပ်နေသည်။"
+  },
+  "messageIdTitle": {
+    "message": "Message-ID FQDN"
+  },
+  "messageIdIntro": {
+    "message": "ထွက်လာသော Message-ID များတွင် FQDN သည် သင်၏မေးလ်များတစ်လျှောက် ထပ်ခါတလဲလဲဖြစ်နေသော ဖင်ဂါပရင့်တစ်ခုဖြစ်သည်။ မူလအနေဖြင့် သင်၏ From-လိပ်စာ၏ ဒိုမိန်းကိုသုံးပြီး တူညီသောဝန်ဆောင်မှုပေးသူ၌ ပုံမှန်အသုံးပြုသူများနှင့် ရောစပ်ထားရန်ဖြစ်သည်။ TorBirdy ၏ localhost.localdomain မုဒ်သည် ရှင်းရှင်းလင်းလင်း မူရင်းရွေးချယ်မှုအဖြစ် ဆက်လက်ရရှိနိုင်သည်။"
+  },
+  "modeLabel": {
+    "message": "မုဒ်:"
+  },
+  "fqdnFromDomain": {
+    "message": "From-လိပ်စာ၏ ဒိုမိန်း (အကြံပြုထားသည်)"
+  },
+  "fqdnLocalhost": {
+    "message": "localhost"
+  },
+  "fqdnLocalhostLegacy": {
+    "message": "localhost.localdomain (မူရင်း)"
+  },
+  "fqdnCustom": {
+    "message": "စိတ်ကြိုက်…"
+  },
+  "saveButton": {
+    "message": "သိမ်းပါ"
+  },
+  "torTestTitle": {
+    "message": "Tor စမ်းသပ်မုဒ်"
+  },
+  "torTestIntro": {
+    "message": "မေးလ်မပို့ဘဲ သို့မဟုတ် Thunderbird prefs ကို မပြောင်းလဲဘဲ ဒေသခံ Tor SOCKS endpoint သို့ ရောက်ရှိနိုင်/မရှိနိုင်ကို စစ်ဆေးသည်။ စမ်းသပ်မှုသည် Tor ၏ SOCKS5 RESOLVE အမိန့်ကို ကျပန်းသီးခြားနှင့်အတူ အသုံးပြုသည်၊ ထို့ကြောင့် ပစ်မှတ်ဟို့စ်သည် စနစ်၏ DNS မှတဆင့် ဖြေရှင်းခြင်းမရှိပါ။"
+  },
+  "runTorTestButton": {
+    "message": "Tor ကို ယခုစမ်းသပ်ပါ"
+  },
+  "torTestRunning": {
+    "message": " စမ်းသပ်နေသည်…"
+  },
+  "torTestUnknown": {
+    "message": "မသိရှိ"
+  },
+  "torTestAvailable": {
+    "message": "Tor ရရှိနိုင်သည်"
+  },
+  "torTestUnavailable": {
+    "message": "Tor မရရှိနိုင်ပါ"
+  },
+  "torTestNotRun": {
+    "message": "မလုပ်ဆောင်ရသေးပါ။"
+  },
+  "torTestOk": {
+    "message": "Tor SOCKS သည် $1:$2 ($3) တွင် ရောက်ရှိနိုင်သည်။ Thunderbird prefs များ ပြောင်းလဲထားခြင်းမရှိပါ။"
+  },
+  "torTestNoTor": {
+    "message": "ရောက်ရှိနိုင်သော Tor SOCKS endpoint မတွေ့ပါ။ ကြိုးစားခဲ့သည်: $1"
+  },
+  "torTestError": {
+    "message": "Tor စမ်းသပ်မှု မအောင်မြင်ပါ: $1"
+  },
+  "torTestResultCell": {
+    "message": "ရလဒ်"
+  },
+  "torTestEndpointCell": {
+    "message": "SOCKS endpoint"
+  },
+  "torTestProbeHostCell": {
+    "message": "စမ်းသပ်ဟို့စ်"
+  },
+  "torTestTriedCell": {
+    "message": "ကြိုးစားခဲ့သည်"
+  },
+  "torTestSourceRequested": {
+    "message": "တောင်းဆိုခဲ့သည်"
+  },
+  "torTestSourceExistingPref": {
+    "message": "ရှိနေသော pref"
+  },
+  "torTestSourceSystemTor": {
+    "message": "စနစ် Tor"
+  },
+  "torTestSourceTorBrowser": {
+    "message": "Tor Browser"
+  },
+  "torTestSourceFallback": {
+    "message": "နောက်ပြန်"
+  },
+  "torTestSourceCurrentPref": {
+    "message": "လက်ရှိ pref"
+  },
+  "dnsLeakTitle": {
+    "message": "DNS ယိုပေါက်အခြေအနေ"
+  },
+  "dnsLeakIntro": {
+    "message": "Tor မှ SOCKS5 RESOLVE ဖြင့် ပြန်ပေးသော IP နှင့် သင်၏စနစ်ဖြေရှင်းသူ ပြန်ပေးသော IP ကို နှိုင်းယှဉ်သည်။ ကွဲပြားမှုသည် OS က Tor မဟုတ်သော DNS အသုံးပြုနေသည်ဟု ဆိုလိုနိုင်သည်၊ သို့သော် CDN-ထောက်ပံ့ထားသော အမည်များ ပတ်သက်လောက်ဘွယ်မရှိနိုင်ပါ။"
+  },
+  "hostLabel": {
+    "message": "ဟို့စ်:"
+  },
+  "runSelfTestButton": {
+    "message": "ကိုယ်တိုင်စစ်ဆေးခြင်းကို ယခုလုပ်ဆောင်ပါ"
+  },
+  "runningLabel": {
+    "message": " လုပ်ဆောင်နေသည်…"
+  },
+  "canaryHostCell": {
+    "message": "ဟို့စ်"
+  },
+  "ipDetailLabel": {
+    "message": "IP အသေးစိတ်"
+  },
+  "revealRawIps": {
+    "message": "အကြမ်း IP များ ပြသပါ"
+  },
+  "verdictLabel": {
+    "message": "စီရင်ချက်"
+  },
+  "errorLabel": {
+    "message": "အမှား"
+  },
+  "canaryUnknown": {
+    "message": "မသိရှိ"
+  },
+  "canaryNoLeak": {
+    "message": "ယိုပေါက်မရှိ"
+  },
+  "canaryLeakSuspected": {
+    "message": "ယိုပေါက်သံသယ"
+  },
+  "canaryDiverged": {
+    "message": "ကွဲပြားခဲ့သည်"
+  },
+  "canaryInconclusive": {
+    "message": "မပြတ်သားသော"
+  },
+  "canaryError": {
+    "message": "အမှား"
+  },
+  "canaryVerdictNoData": {
+    "message": "ဒေတာမရှိသေးပါ"
+  },
+  "canaryVerdictLeak": {
+    "message": "စနစ်ဖြေရှင်းသူ၏ အဖြေသည် မည်သည့် Tor မြှောင်တွင်မှ မပါဝင်ပါ; စနစ် DNS routing ကို စစ်ဆေးပါ"
+  },
+  "canaryVerdictOk": {
+    "message": "system_ip သည် Tor အစုအဝေးတွင် ပါဝင်သည် ($1 ဆားကစ်ကြိုးစားခဲ့)"
+  },
+  "canaryVerdictDiverged": {
+    "message": "system_ip သည် Tor အစုအဝေးတွင် မပါသော်လည်း heuristic က ၎င်းသည် ပတ်သက်လောက်ဘွယ်မရှိနိုင်ဟု ဆိုသည်; အသေးစိတ်စစ်ဆေးပါ"
+  },
+  "canaryVerdictMissingData": {
+    "message": "ရှာဖွေမှုများထဲမှ တစ်ခုသည် ဒေတာပြန်မပေးခဲ့ပါ"
+  },
+  "canaryErrorTor9050": {
+    "message": "Tor သည် 127.0.0.1:9050 တွင် မဖြေပါ။ Tor daemon ကို စတင်ပါ၊ သို့မဟုတ် Tor Browser အတွက် port 9150 ကို သုံးပါ။"
+  },
+  "canaryErrorTor9150": {
+    "message": "Tor Browser အလုပ်မလုပ်ပါ။ ၎င်းကို စတင်ပါ; ၎င်း၏ SOCKS listener သည် 9150 တွင် အများအားဖြင့်ရှိသည်။"
+  },
+  "canaryErrorSocksRefused": {
+    "message": "SOCKS ချိတ်ဆက်မှု ငြင်းပယ်ခံရသည်။ ပြင်ဆင်ထားသော Tor ဟို့စ်နှင့် port ကို စစ်ဆေးပါ။"
+  },
+  "canaryErrorNetworkUnreachable": {
+    "message": "ကွန်ရက်သည် ဤလမ်းပေါ်တွင် ထွက်သွားသော တရာဖစ်ကို တားဆီးထားသည်။ Bridges သို့မဟုတ် pluggable transports လိုအပ်နိုင်သည်။"
+  },
+  "canaryErrorTimeout": {
+    "message": "Tor ရောက်ရှိနိုင်သော်လည်း ဆားကစ်သည် အချိန်မီ မပြီးခဲ့ပါ။ ထပ်ကြိုးစားပါ သို့မဟုတ် ဆားကစ်များကို လှည့်ပါ။"
+  },
+  "canaryErrorDnsStatus": {
+    "message": "OS ဖြေရှင်းသူက အမှားတစ်ခု ပြန်ပေးခဲ့သည်။ အပြည့်အဝကာကွယ်မှုအတွက် စနစ် DNS သည် Tor DNSPort အသုံးပြုသင့်သည် သို့မဟုတ် Whonix/Tails ထဲတွင် အလုပ်လုပ်သင့်သည်။"
+  },
+  "logApplyingHardening": {
+    "message": "ခိုင်ခံ့စေခြင်းကို သုံးနေသည်…"
+  },
+  "logRestoringPrefs": {
+    "message": "ခိုင်ခံ့စေခြင်းမတိုင်မီ prefs များကို ပြန်လည်ထူထောင်နေသည်…"
+  },
+  "logDone": {
+    "message": "ပြီးပါပြီ"
+  },
+  "logWarnings": {
+    "message": "သတိပေးချက်များဖြင့် ပြီးပြီ"
+  },
+  "disableConfirm": {
+    "message": "ဤသည် ခိုင်ခံ့စေခြင်းကို ပထမဆုံးအကြိမ်ဖွင့်ခြင်းမတိုင်မီ ယူထားသော snapshot သို့ သင်၏ prefs ကို ပြန်လည်ထူထောင်သည်။ Tor-only ပို့မှုများသည် clearnet သို့ ပြန်သွားနိုင်သည်။ ဆက်လုပ်မလား?"
+  },
+  "savingLabel": {
+    "message": "သိမ်းနေသည်…"
+  },
+  "fqdnInvalid": {
+    "message": "စိတ်ကြိုက် FQDN သည် IP လိပ်စာ မဟုတ်ဘဲ မှန်ကန်သော multi-label DNS အမည်ဖြစ်ရမည်"
+  },
+  "fqdnSaved": {
+    "message": "သိမ်းပြီး။ mode=$1, identity $2 ခု အပ်ဒိတ်လုပ်ပြီး။"
+  },
+  "saveFailed": {
+    "message": "သိမ်းခြင်း မအောင်မြင်ပါ: $1"
+  },
+  "readPrefsFailed": {
+    "message": "prefs ဖတ်၍မရပါ: $1"
+  },
+  "errorWithMessage": {
+    "message": "အမှား: $1"
+  },
+  "helpTitle": {
+    "message": "အကူအညီ"
+  },
+  "helpModeLabel": {
+    "message": "အနက်:"
+  },
+  "helpModeTldr": {
+    "message": "အကျဉ်းချုပ်"
+  },
+  "helpModeNerd": {
+    "message": "နာ့ဒ်မုဒ်"
+  },
+  "helpTldrDoesTitle": {
+    "message": "ဤပလပ်အင် ဘာလုပ်သနည်း"
+  },
+  "helpTldrDoes1": {
+    "message": "Thunderbird IMAP နှင့် SMTP ကို ဒေသခံ Tor SOCKS proxy မှတဆင့် လမ်းကြောင်းပြောင်းပြီး DNS ဖြေရှင်းမှုကို Tor မှတဆင့် အဝေးတွင်ထားသည်။"
+  },
+  "helpTldrDoes2": {
+    "message": "Fail-closed: Tor မရောက်ရှိနိုင်လျှင် clearnet သို့ ပြန်သွားမည့်အစား မေးလ်ပို့ခြင်း မအောင်မြင်သင့်သည်။"
+  },
+  "helpTldrDoes3": {
+    "message": "User-Agent, X-Mailer, HELO, အချိန်ဇုန်, Message-ID FQDN, flowed စာသား နှင့် အဝေးအကြောင်းအရာ ကဲ့သို့သော မေးလ် ဖင်ဂါပရင့်များကို လျှော့ချသည်။"
+  },
+  "helpTldrDoes4": {
+    "message": "Tor ရရှိနိုင်မှု စစ်ဆေးခြင်းနှင့် DNS canary ကို ပေးသည်; နှစ်ခုလုံးသည် Tor ၏ SOCKS5 RESOLVE လမ်းကြောင်းကိုသုံးပြီး Tor ဘက်အတွက် စနစ် DNS ကို ရှောင်ကြဉ်သည်။"
+  },
+  "helpTldrDoesNotTitle": {
+    "message": "ဘာမလုပ်သနည်း"
+  },
+  "helpTldrDoesNot1": {
+    "message": "၎င်းသည် Tails, Whonix, Tor gateway သို့မဟုတ် ပြင်ဆင်ထားသော စနစ်ဖြေရှင်းသူကို အစားထိုးခြင်းမဟုတ်ပါ။"
+  },
+  "helpTldrDoesNot2": {
+    "message": "၎င်းသည် သင် authenticate လုပ်သော မေးလ်ပုံးကို သင်၏ဝန်ဆောင်မှုပေးသူ သို့မဟုတ် ဝန်ဆောင်မှုပေးသူက ထည့်သော Authentication-Results header များမှ ဖုံးကွယ်မထားပါ။"
+  },
+  "helpTldrDoesNot3": {
+    "message": "လက်ခံသူသည် Received headers တွင် Tor exit ကို မြင်နိုင်သည့်အချက်ကို ဖုံးကွယ်မထားပါ။"
+  },
+  "helpTldrDoesNot4": {
+    "message": "၎င်းသည် အခြားအက်ပ်လီကေးရှင်းများ၊ OS-အဆင့်ယိုပေါက်များ၊ အပေးအယူခံရသော endpoints သို့မဟုတ် ကွန်ရက်-correlation တိုက်ခိုက်မှုများကို မကာကွယ်ပါ။"
+  },
+  "helpTldrTorbirdyTitle": {
+    "message": "TorBirdy ဘာကြောင့်အလုပ်မလုပ်တော့သလဲ"
+  },
+  "helpTldrTorbirdy1": {
+    "message": "TorBirdy သည် ဟောင်းနွမ်းသော Thunderbird/XUL extension ဖြစ်ခဲ့သည်။ Thunderbird 78 သည် ၎င်းမှီခိုနေသော ဟောင်းနွမ်းသော XUL overlay extension စနစ်ကို ဖျက်ပစ်ခဲ့သည်။"
+  },
+  "helpTldrTorbirdy2": {
+    "message": "၎င်း၏နောက်ဆုံးထုတ်လုပ်မှုသည် 2018 တွင်ဖြစ်သည်၊ ထို့ကြောင့် ပြန်လည်ရေးသားခြင်းမရှိဘဲ ခေတ်မီ Thunderbird ESR builds တွင် မလုပ်ဆောင်နိုင်ပါ။"
+  },
+  "helpTldrExperimentsTitle": {
+    "message": "Experiments API ဘာကြောင့်လိုသနည်း"
+  },
+  "helpTldrExperiments1": {
+    "message": "ပုံမှန် MailExtensions များသည် Thunderbird ၏ proxy prefs, SMTP server internals, identity prefs, DNS cache, login manager သို့မဟုတ် raw SOCKS self-tests ကို ပြောင်းလဲ၍မရပါ။"
+  },
+  "helpTldrExperiments2": {
+    "message": "Experiments API သည် ထို Thunderbird internals ကို ဖော်ပြသည်; OnionBird သည် ခွင့်ပြုထားသော မျက်နှာပြင်ကို သေးငယ်ထားရန် allowlist မှတဆင့် writes ကို ဂိတ်လုပ်သည်။"
+  },
+  "helpNerdDoesTitle": {
+    "message": "နာ့ဒ်မုဒ်: အကောင်အထည်ဖော်ထားသော ကာကွယ်မှုများ"
+  },
+  "helpNerdDoes1": {
+    "message": "Proxy prefs: network.proxy.type=1, SOCKS5 ဟို့စ်/port အလိုအလျောက်စမ်းသပ်ခြင်း, socks_remote_dns=true, failover_direct=false နှင့် proxy bypass စာရင်းမရှိ။"
+  },
+  "helpNerdDoes2": {
+    "message": "Header သန့်ရှင်းမှု: User-Agent/X-Mailer ကို နှိမ်နင်းသည်, HELO/EHLO ကို [127.0.0.1] သို့ အတင်းအကြပ်ထား, ပိုလုံခြုံသော Message-ID FQDN ကို ရွေးချယ်, flowed plaintext ကို ပိတ်ပြီး UTC/RFP-ဆိုင်ရာ အပြုအမူကို တွန်းအား။"
+  },
+  "helpNerdDoes3": {
+    "message": "ကွန်ရက်ခိုင်ခံ့စေခြင်း: DoH/TRR, OCSP, speculative connects, DNS prefetch, predictor, WebRTC, geolocation, ECH HTTPS-RR lookup, captive-portal စစ်ဆေးမှု နှင့် update phone-home URL များကို ပိတ်သည်။"
+  },
+  "helpNerdDoes4": {
+    "message": "Mail UI ခိုင်ခံ့စေခြင်း: အဝေးမေးလ်အကြောင်းအရာ လမ်းကြောင်းများ, plaintext rendering, အသိပေးချက်ယိုပေါက်များ, လိပ်စာစာအုပ် အလိုအလျောက်စုဆောင်းခြင်း နှင့် ပိတ်ချိန်တွင် သိမ်းထားသော Tor-login စစ်ဆေး/ဖယ်ရှားခြင်းကို ပိတ်သည်။"
+  },
+  "helpNerdDoes5": {
+    "message": "စောင့်ကြည့်ခြင်း: စတင်ချိန်နှင့် ပုံမှန် reassert သည် ခိုင်ခံ့စေထားသော prefs ကို ပြုပြင်သည်; စမ်းသပ်မုဒ်သည် pref writes မရှိဘဲ Tor SOCKS ကို စစ်ဆေးပြီး stream-isolated SOCKS5 RESOLVE canary သည် စနစ် DNS အပြုအမူကို စစ်ဆေးသည်။"
+  },
+  "helpNerdDoesNotTitle": {
+    "message": "နာ့ဒ်မုဒ်: နယ်နိမိတ်များ"
+  },
+  "helpNerdDoesNot1": {
+    "message": "Authenticated SMTP သည် ဝန်ဆောင်မှုပေးသူကို အကောင့်အကြောင်း သိစေပြီး ဝန်ဆောင်မှုပေးသူများသည် လက်ခံသူများ မြင်နိုင်သော Authentication-Results smtp.auth တန်ဖိုးများကို ထည့်နိုင်သည်။"
+  },
+  "helpNerdDoesNot2": {
+    "message": "SMTP transport သည် Received ကွင်းဆက်များကို ဖန်တီးနေဆဲဖြစ်သည်။ လက်ခံသူသည် ဝန်ဆောင်မှုပေးသူ၏ Tor-exit-facing hop မှ Tor အသုံးပြုခြင်းကို မကြာခဏ ကောက်ချက်ဆွဲနိုင်သည်။"
+  },
+  "helpNerdDoesNot3": {
+    "message": "ပလပ်အင်သည် Thunderbird ကိုထိန်းချုပ်သည်၊ operating system ကိုမဟုတ်ပါ။ NTP, clipboard, ဖိုင်များ, အခြားအက်ပ်လီကေးရှင်းများ, TB အပြင်ဘက်ရှိ crash dumps နှင့် hostnames များသည် OS-ခြိမ်းခြောက်မှု-မော်ဒယ်ပြဿနာများအဖြစ် ကျန်ရှိနေသည်။"
+  },
+  "helpNerdDoesNot4": {
+    "message": "Canary သည် ထောက်လှမ်းခြင်းဖြစ်ပြီး မှော်စွမ်းအား routing မဟုတ်ပါ။ Stock desktops တွင် OS DNS ကို Tor DNSPort မှတဆင့် လမ်းကြောင်းပြောင်းပါ သို့မဟုတ် အင်အားအကြီးဆုံး အာမခံချက်အတွက် Whonix/Tails ကို သုံးပါ။"
+  },
+  "helpNerdDoesNot5": {
+    "message": "၎င်းသည် ကမ္ဘာလုံးဆိုင်ရာ passive ရန်သူများ, end-to-end timing correlation, ဆိုးယုတ်သော ဝန်ဆောင်မှုပေးသူများ, ဆိုးယုတ်သော လက်ခံသူများ သို့မဟုတ် အပေးအယူခံရသော Thunderbird/profile အခြေအနေကို မအောင်နိုင်ပါ။"
+  },
+  "helpNerdTorbirdyTitle": {
+    "message": "နာ့ဒ်မုဒ်: TorBirdy တွဲဖက်နိုင်မှု"
+  },
+  "helpNerdTorbirdy1": {
+    "message": "TorBirdy သည် ဟောင်းနွမ်းသော privileged XUL/XPCOM ပလပ်အင် မော်ဒယ်ကို ပစ်မှတ်ထား၍ Thunderbird internals အတွင်း overlay/bootstrap hooks ကို သုံးခဲ့သည်။"
+  },
+  "helpNerdTorbirdy2": {
+    "message": "Thunderbird 78 သည် ဟောင်းနွမ်းသော XUL extensions များကို ဖျက်ပစ်ခဲ့သည်; ခေတ်မီ Thunderbird သည် WebExtensions/MailExtensions ကို လက်ခံသည်၊ ၎င်းသည် ထို privileged mail နှင့် pref internals များကို ရည်ရွယ်ချက်ဖြင့် မဖော်ထုတ်ပါ။"
+  },
+  "helpNerdTorbirdy3": {
+    "message": "ထို့ကြောင့် TorBirdy ကို port လုပ်ခြင်းသည် manifest bump မဟုတ်ပါ။ Privileged အပိုင်းများကို Thunderbird Experiments API နောက်ကွယ်တွင် ပြန်လည်ရေးသားရမည်။"
+  },
+  "helpNerdExperimentsTitle": {
+    "message": "နာ့ဒ်မုဒ်: Experiments API နယ်နိမိတ်"
+  },
+  "helpNerdExperiments1": {
+    "message": "MailExtension ဘက်တွင် UI, runtime messages နှင့် options များကို ပိုင်ဆိုင်သည်; Experiments parent script တွင် Services.prefs, MailServices SMTP/identity objects, DNS cache ဖျက်ခြင်း, login-manager စစ်ဆေး နှင့် raw SOCKS5 RESOLVE များကို ပိုင်ဆိုင်သည်။"
+  },
+  "helpNerdExperiments2": {
+    "message": "ဤခွဲခြားမှုသည် လိုအပ်သည် အဘယ်ကြောင့်ဆိုသော် အများသူငှာ MailExtension API များသည် prefs ကို atomically snapshot/restore လုပ်၍မရပါ သို့မဟုတ် per-SMTP HELO/TLS settings ကို ထား၍မရပါ။"
+  },
+  "helpNerdExperiments3": {
+    "message": "Experiments သည် parent-process privilege ဖြင့် အလုပ်လုပ်သောကြောင့် OnionBird သည် pref writes ကို ကျဉ်းမြောင်းသော allowlist သို့ ကန့်သတ်ပြီး ခိုင်ခံ့စေသော mutations များကို serialize လုပ်သည်။"
+  },
+  "sendBlockedCancelStorageError": {
+    "message": "OnionBird: ပို့ဆောင်မှု ပိတ်ထားသည် — ထည့်သွင်းမှု အခြေအနေ ဖတ်၍မရပါ (သိမ်းဆည်းမှု အမှား)။ Thunderbird ကို ပြန်လည်စတင်ပါ၊ ပြီးနောက် ထပ်ကြိုးစားခြင်းမတိုင်မီ OnionBird Options ကို ကြည့်ပါ။"
+  },
+  "sendBlockedCancelLeakDetected": {
+    "message": "OnionBird: ပို့ဆောင်မှု ပိတ်ထားသည် — Tor leak canary သည် Tor ကို မဖြတ်သန်းသော DNS ဖြေရှင်းမှုကို ဖော်ထုတ်ခဲ့သည်။ ထပ်ကြိုးစားခြင်းမတိုင်မီ OnionBird Options → DNS leak status → Run self-test now ကို ဖွင့်ပါ။"
+  },
+  "sendBlockedCancelNoVerdict": {
+    "message": "OnionBird: ပို့ဆောင်မှု ပိတ်ထားသည် — canary ဆုံးဖြတ်ချက် မရှိသေးပါ (မလုပ်ဆောင်ရသေး သို့မဟုတ် သိမ်းဆည်းမှု ရှင်းပစ်ထား)။ ထပ်ကြိုးစားခြင်းမတိုင်မီ OnionBird Options → DNS leak status → Run self-test now ကို ဖွင့်ပါ။"
+  },
+  "sendBlockedCancelOther": {
+    "message": "OnionBird: ပို့ဆောင်မှု ပိတ်ထားသည် — canary ဆုံးဖြတ်ချက်သည် 'clean' မဟုတ်ပါ (အခြေအနေ: $STATE$)။ ထပ်ကြိုးစားခြင်းမတိုင်မီ OnionBird Options → DNS leak status → Run self-test now ကို ဖွင့်ပါ။",
+    "placeholders": {
+      "STATE": {
+        "content": "$1",
+        "example": "leak_detected"
+      }
+    }
+  },
+  "socksOverrideTitle": {
+    "message": "SOCKS endpoint override"
+  },
+  "socksOverrideIntro": {
+    "message": "By default the addon detects Thunderbird's existing network.proxy.socks pref or falls back to 127.0.0.1 on port 9050 / 9150. Set host + port here to pin a different endpoint (e.g. a Whonix Gateway IP). Host must be a loopback name (localhost) or an IP literal — DNS-resolvable names would leak via the system resolver before Tor."
+  },
+  "socksOverrideHostLabel": {
+    "message": "Host:"
+  },
+  "socksOverridePortLabel": {
+    "message": "Port:"
+  },
+  "socksOverrideSaveButton": {
+    "message": "Save"
+  },
+  "socksOverrideResetButton": {
+    "message": "Reset to default"
+  },
+  "socksOverrideTestButton": {
+    "message": "Test endpoint"
+  },
+  "socksOverrideStatusOk": {
+    "message": "OK"
+  },
+  "socksOverrideStatusInvalidHost": {
+    "message": "Invalid host — must be `localhost` or an IP literal (IPv4 or IPv6)."
+  },
+  "socksOverrideStatusInvalidPort": {
+    "message": "Invalid port — must be an integer between 1 and 65535."
+  },
+  "socksOverrideTbPrefWarning": {
+    "message": "Thunderbird currently has $TB$ configured; your saved override $OVERRIDE$ will replace it on next enable.",
+    "placeholders": {
+      "TB": {
+        "content": "$1",
+        "example": "127.0.0.1:9050"
+      },
+      "OVERRIDE": {
+        "content": "$2",
+        "example": "10.152.152.10:9050"
+      }
+    }
+  },
+  "socksOverrideStatusReset": {
+    "message": "Override cleared — falling back to auto-detect on next enable."
+  },
+  "autoEnableNotificationTitleSocksUnreachable": {
+    "message": "OnionBird installed — Tor not reachable"
+  },
+  "autoEnableNotificationMessageSocksUnreachable": {
+    "message": "OnionBird could not reach a Tor SOCKS endpoint on 127.0.0.1:9050 or :9150. Outgoing sends are blocked until Tor is reachable. Start the Tor daemon (or Tor Browser) and open OnionBird Options → DNS leak status → Run self-test now."
+  },
+  "autoEnableNotificationTitleCanaryFail": {
+    "message": "OnionBird installed — hardening incomplete"
+  },
+  "autoEnableNotificationMessageCanaryFail": {
+    "message": "OnionBird auto-enabled but the canary self-test did not verify cleanly. Outgoing sends are blocked until the next canary passes. Open OnionBird Options → DNS leak status → Run self-test now to triage."
+  }
+}

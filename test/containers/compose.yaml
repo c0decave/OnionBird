@@ -1,0 +1,139 @@
+networks:
+  t0net:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.30.112.0/24
+          gateway: 172.30.112.1
+
+services:
+  tor:
+    build:
+      context: ./tor
+      dockerfile: ../Containerfile.tor
+    container_name: t0_tor
+    networks:
+      t0net:
+        ipv4_address: 172.30.112.4
+    volumes:
+      - tor-data:/var/lib/tor
+    healthcheck:
+      test: ["CMD-SHELL", "ss -lnt 2>/dev/null | grep -q ':9050' || netstat -lnt 2>/dev/null | grep -q ':9050'"]
+      interval: 5s
+      timeout: 2s
+      retries: 30
+      start_period: 30s
+
+  smtp-trap:
+    build:
+      context: ./smtp-trap
+      dockerfile: ../Containerfile.smtp-trap
+    container_name: t0_smtp
+    networks:
+      t0net:
+        ipv4_address: 172.30.112.2
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8025/healthz').read()"]
+      interval: 5s
+      retries: 10
+
+  dns-trap:
+    build:
+      context: ./dns-trap
+      dockerfile: ../Containerfile.dns-trap
+    container_name: t0_dns
+    networks:
+      t0net:
+        ipv4_address: 172.30.112.3
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8053/healthz').read()"]
+      interval: 5s
+      retries: 10
+
+  # Sidecar dns-trap that points at a guaranteed-unreachable upstream
+  # (127.0.0.1:1). Used by the fail-closed test
+  # (test_dns_trap_fail_closed_when_tor_dns_unreachable) to verify the
+  # server.py `_forward_to_tor returns None → disposition='nxdomain'`
+  # branch actually fires. Without this sidecar that branch had zero
+  # CI coverage — the OnionBird 100%-Tor policy treats untested
+  # fail-closed paths as P0 gaps.
+  dns-trap-blackhole:
+    build:
+      context: ./dns-trap
+      dockerfile: ../Containerfile.dns-trap
+    container_name: t0_dns_blackhole
+    networks:
+      t0net:
+        ipv4_address: 172.30.112.6
+    environment:
+      - T0_TOR_DNS_HOST=127.0.0.1
+      - T0_TOR_DNS_PORT=1
+      # Short timeout so the test finishes in seconds.
+      - T0_FORWARD_TIMEOUT_S=1.5
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8053/healthz').read()"]
+      interval: 5s
+      retries: 10
+
+  thunderbird:
+    build:
+      context: ./thunderbird
+      dockerfile: ../Containerfile.thunderbird
+    container_name: t0_tb
+    # Pin TB to .10 so it doesn't DHCP into .5 (runner's pinned IP) when
+    # runner starts last.
+    networks:
+      t0net:
+        ipv4_address: 172.30.112.10
+    # DNS-leak detection: TB resolves via dns-trap. Container-name lookups
+    # use /etc/hosts (populated by extra_hosts) so they bypass dns-trap.
+    extra_hosts:
+      - "smtp-trap:172.30.112.2"
+      - "dns-trap:172.30.112.3"
+      - "tor:172.30.112.4"
+      - "runner:172.30.112.5"
+    environment:
+      - T0_DNS_TRAP_IP=172.30.112.3
+    volumes:
+      - ../../build:/build:ro
+      - tb-profile:/home/tbuser/.thunderbird
+    depends_on:
+      tor:
+        condition: service_healthy
+      smtp-trap:
+        condition: service_healthy
+      dns-trap:
+        condition: service_healthy
+
+  runner:
+    build:
+      context: ./runner
+      dockerfile: ../Containerfile.runner
+    container_name: t0_runner
+    # Pin runner to the IP that thunderbird's extra_hosts already claims
+    # (avoids a latent name-vs-IP mismatch if a test ever wants to reach
+    # the runner from TB by name).
+    networks:
+      t0net:
+        ipv4_address: 172.30.112.5
+    volumes:
+      - ../integration:/tests/integration:ro
+      - ../unit:/tests/unit:ro
+      - ../helpers:/tests/helpers:ro
+      - ../containers:/tests/containers:ro
+      - ../fixtures:/tests/fixtures:ro
+      - ../external:/tests/external:ro
+      - ../../build:/build:ro
+      - ../../user-js:/user-js:ro
+      - ../../addon:/addon:ro
+      - ../../scripts:/scripts:ro
+      - ../../Makefile:/Makefile:ro
+      - ../..:/repo:ro
+    environment:
+      - PYTHONPATH=/tests
+    depends_on:
+      - thunderbird
+
+volumes:
+  tor-data:
+  tb-profile:

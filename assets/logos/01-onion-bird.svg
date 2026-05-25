@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 380" role="img" aria-label="OnionBird — onion-bird">
+  <title>OnionBird — Onion-Bird</title>
+  <!-- body: onion as bird torso -->
+  <g transform="translate(160 165)">
+    <ellipse cx="0" cy="0" rx="98" ry="110" fill="#4A2D67"/>
+    <ellipse cx="0" cy="0" rx="78" ry="88" fill="none" stroke="#7D4698" stroke-width="4"/>
+    <ellipse cx="0" cy="0" rx="58" ry="66" fill="none" stroke="#9C6BB8" stroke-width="3"/>
+    <ellipse cx="0" cy="0" rx="38" ry="44" fill="#E66100"/>
+    <ellipse cx="0" cy="-6" rx="20" ry="22" fill="#F9A11B"/>
+    <!-- onion sprout / tail spike up -->
+    <path d="M 0 -110 Q -8 -140 -2 -160 Q 4 -140 0 -110 Z" fill="#4A2D67"/>
+  </g>
+  <!-- wing sweep (thunderbird gesture) -->
+  <path d="M 165 90 Q 245 95 280 175 Q 245 205 195 195 Q 175 175 165 90 Z" fill="#E66100"/>
+  <path d="M 195 195 Q 215 155 250 145" fill="none" stroke="#F9A11B" stroke-width="4" stroke-linecap="round"/>
+  <!-- beak -->
+  <path d="M 60 165 L 28 152 L 28 178 Z" fill="#F9A11B"/>
+  <!-- eye -->
+  <circle cx="90" cy="142" r="6" fill="#FFF7EE"/>
+  <circle cx="91" cy="143" r="3" fill="#1A1024"/>
+  <!-- wordmark -->
+  <text x="160" y="320" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="800" font-size="44" fill="#2B1640" letter-spacing="1">OnionBird</text>
+  <text x="160" y="346" text-anchor="middle" font-family="'Helvetica Neue', Arial, sans-serif" font-weight="500" font-size="12" fill="#7D4698" letter-spacing="6">TOR · THUNDERBIRD</text>
+</svg>
