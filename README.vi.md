@@ -2,7 +2,7 @@
 
 **Ngôn ngữ:** [English](README.md) · [Deutsch](README.de.md) · [Français](README.fr.md) · [Português](README.pt.md) · [Español](README.es.md) · [Polski](README.pl.md) · [Українська](README.uk.md) · [Русский](README.ru.md) · [Беларуская](README.be.md) · [Türkçe](README.tr.md) · [فارسی](README.fa.md) · [العربية](README.ar.md) · [עברית](README.he.md) · [Kurdî](README.ku.md) · [اردو](README.ur.md) · [پښتو](README.ps.md) · [ئۇيغۇرچە](README.ug.md) · [हिन्दी](README.hi.md) · [বাংলা](README.bn.md) · [简体中文](README.zh-CN.md) · [བོད་ཡིག](README.bo.md) · **Tiếng Việt** · [ภาษาไทย](README.th.md) · [မြန်မာ](README.my.md) · [Bahasa Indonesia](README.id.md) · [Afrikaans](README.af.md) · [Kiswahili](README.sw.md) · [አማርኛ](README.am.md) · [ትግርኛ](README.ti.md) · [ქართული](README.ka.md)
 
-> **ALPHA — alpha cuối, không rò rỉ trên OS có DNS đi qua Tor. Đọc [yêu cầu trước](#trước-khi-cài-đặt) trước khi cài.**
+> **BETA — alpha cuối, không rò rỉ trên OS có DNS đi qua Tor. Đọc [yêu cầu trước](#trước-khi-cài-đặt) trước khi cài.**
 
 > Đọc [mô hình mối đe dọa](docs/threat-model.md) và [danh sách follow-up](docs/follow-up.md) trước khi tin cậy OnionBird cho các tác vụ quan trọng về ẩn danh.
 

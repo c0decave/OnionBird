@@ -2,7 +2,7 @@
 
 **Tale:** [English](README.md) · [Deutsch](README.de.md) · [Français](README.fr.md) · [Português](README.pt.md) · [Español](README.es.md) · [Polski](README.pl.md) · [Українська](README.uk.md) · [Русский](README.ru.md) · [Беларуская](README.be.md) · [Türkçe](README.tr.md) · [فارسی](README.fa.md) · [العربية](README.ar.md) · [עברית](README.he.md) · [Kurdî](README.ku.md) · [اردو](README.ur.md) · [پښتو](README.ps.md) · [ئۇيغۇرچە](README.ug.md) · [हिन्दी](README.hi.md) · [বাংলা](README.bn.md) · [简体中文](README.zh-CN.md) · [བོད་ཡིག](README.bo.md) · [Tiếng Việt](README.vi.md) · [ภาษาไทย](README.th.md) · [မြန်မာ](README.my.md) · [Bahasa Indonesia](README.id.md) · **Afrikaans** · [Kiswahili](README.sw.md) · [አማርኛ](README.am.md) · [ትግርኛ](README.ti.md) · [ქართული](README.ka.md)
 
-> **ALPHA — laat-alfa, lekdig op 'n bedryfstelsel met Tor-bewuste DNS. Lees [die voorvereistes](#voor-installasie) voor installasie.**
+> **BETA — laat-alfa, lekdig op 'n bedryfstelsel met Tor-bewuste DNS. Lees [die voorvereistes](#voor-installasie) voor installasie.**
 
 > Lees [die bedreigingsmodel](docs/threat-model.md) en die [follow-up-lys](docs/follow-up.md) voordat jy OnionBird vertrou vir gebruik wat krities is vir anonimiteit.
 

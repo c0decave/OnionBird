@@ -62,28 +62,30 @@ def test_mv3_keeps_same_gecko_id_and_experiments() -> None:
 
 
 def test_manifests_strict_max_is_wildcard_not_auto_disable() -> None:
-    """F-011 (Mozilla ATN policy reversal 2026-05-26): ATN now REQUIRES
-    `strict_max_version` for Mail Experiments, but a CONCRETE version
-    (e.g. `140.*`) silently auto-disables the addon on the next TB
-    release — leaking the user's persisted hardening prefs into a
-    runtime where SOCKS+rdns enforcement is no longer applied. The
-    correct value is the wildcard `*`: it satisfies ATN's schema
-    requirement while preserving the F-011 'never silently disable'
-    invariant. A concrete pin re-introduces the leak class F-011 was
-    filed to close."""
+    """F-011 (Mozilla ATN policy reversal 2026-05-26 + regex 2026-05-26):
+    ATN requires `strict_max_version` for Mail Experiments. We initially
+    tried bare `*` (no upper bound) but Mozilla's schema validator
+    rejects it: pattern `^[0-9]{1,3}(\\.[a-z0-9*]+)+$` demands a 1-3
+    digit major. Largest permissible value: `999.*`. At ~1 ESR per ~6
+    months, the addon won't auto-disable for ~860 years — effective
+    infinity. The F-011 invariant 'never silently disable so user
+    thinks hardening is active while runtime enforcement is gone' is
+    preserved within all realistic timeframes. A concrete current-ESR
+    pin (e.g. `140.*`) re-introduces the original F-011 leak class."""
     mv2 = _read_json(ADDON_DIR / "manifest.json")
     mv3 = _read_json(ADDON_DIR / "manifest.mv3.json")
     mv2_gecko = mv2["applications"]["gecko"]
     mv3_gecko = mv3["browser_specific_settings"]["gecko"]
-    assert mv2_gecko.get("strict_max_version") == "*", (
-        f"F-011: MV2 strict_max_version must be the wildcard `*` "
-        f"(Mozilla ATN requires the key, but any concrete value "
-        f"re-introduces the silent-auto-disable leak class). Got "
+    assert mv2_gecko.get("strict_max_version") == "999.*", (
+        f"F-011: MV2 strict_max_version must be `999.*` (Mozilla's "
+        f"highest-permitted major.* under the schema regex). Any "
+        f"concrete current/near-future value re-introduces the "
+        f"silent-auto-disable leak class. Got "
         f"{mv2_gecko.get('strict_max_version')!r}."
     )
-    assert mv3_gecko.get("strict_max_version") == "*", (
-        f"F-011: MV3 strict_max_version must be the wildcard `*`. "
-        f"Got {mv3_gecko.get('strict_max_version')!r}."
+    assert mv3_gecko.get("strict_max_version") == "999.*", (
+        f"F-011: MV3 strict_max_version must be `999.*`. Got "
+        f"{mv3_gecko.get('strict_max_version')!r}."
     )
 
 

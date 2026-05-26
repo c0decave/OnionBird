@@ -2,7 +2,7 @@
 
 **Idiomas:** [English](README.md) · [Deutsch](README.de.md) · [Français](README.fr.md) · **Português** · [Español](README.es.md) · [Polski](README.pl.md) · [Українська](README.uk.md) · [Русский](README.ru.md) · [Беларуская](README.be.md) · [Türkçe](README.tr.md) · [فارسی](README.fa.md) · [العربية](README.ar.md) · [עברית](README.he.md) · [Kurdî](README.ku.md) · [اردو](README.ur.md) · [پښتو](README.ps.md) · [ئۇيغۇرچە](README.ug.md) · [हिन्दी](README.hi.md) · [বাংলা](README.bn.md) · [简体中文](README.zh-CN.md) · [བོད་ཡིག](README.bo.md) · [Tiếng Việt](README.vi.md) · [ภาษาไทย](README.th.md) · [မြန်မာ](README.my.md) · [Bahasa Indonesia](README.id.md) · [Afrikaans](README.af.md) · [Kiswahili](README.sw.md) · [አማርኛ](README.am.md) · [ትግርኛ](README.ti.md) · [ქართული](README.ka.md)
 
-> **ALPHA — alfa tardia, à prova de vazamentos em SO com DNS por Tor. Leia [os pré-requisitos](#antes-de-instalar) antes de instalar.**
+> **BETA — alfa tardia, à prova de vazamentos em SO com DNS por Tor. Leia [os pré-requisitos](#antes-de-instalar) antes de instalar.**
 
 > Leia [o modelo de ameaça](docs/threat-model.md) e a [lista de follow-up](docs/follow-up.md) antes de confiar em OnionBird para uso crítico para anonimato.
 

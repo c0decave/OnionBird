@@ -2,7 +2,7 @@
 
 **Languages:** **English** · [Deutsch](README.de.md) · [Français](README.fr.md) · [Português](README.pt.md) · [Español](README.es.md) · [Polski](README.pl.md) · [Українська](README.uk.md) · [Русский](README.ru.md) · [Беларуская](README.be.md) · [Türkçe](README.tr.md) · [فارسی](README.fa.md) · [العربية](README.ar.md) · [עברית](README.he.md) · [Kurdî](README.ku.md) · [اردو](README.ur.md) · [پښتو](README.ps.md) · [ئۇيغۇرچە](README.ug.md) · [हिन्दी](README.hi.md) · [বাংলা](README.bn.md) · [简体中文](README.zh-CN.md) · [བོད་ཡིག](README.bo.md) · [Tiếng Việt](README.vi.md) · [ภาษาไทย](README.th.md) · [မြန်မာ](README.my.md) · [Bahasa Indonesia](README.id.md) · [Afrikaans](README.af.md) · [Kiswahili](README.sw.md) · [አማርኛ](README.am.md) · [ትግርኛ](README.ti.md) · [ქართული](README.ka.md)
 
-> **ALPHA — late-alpha, leak-tight on Tor-DNS-aware OS. Read [the prerequisites](#before-you-install) before installing.**
+> **BETA — leak-tight on Tor-DNS-aware OS in our test environment; no production user base yet. Read [the prerequisites](#before-you-install) before installing.**
 
 > Read [the threat model](docs/threat-model.md) and [the follow-up
 > list](docs/follow-up.md) before trusting it for anonymity-critical use.

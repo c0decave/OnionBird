@@ -2,7 +2,7 @@
 
 **Bahasa:** [English](README.md) · [Deutsch](README.de.md) · [Français](README.fr.md) · [Português](README.pt.md) · [Español](README.es.md) · [Polski](README.pl.md) · [Українська](README.uk.md) · [Русский](README.ru.md) · [Беларуская](README.be.md) · [Türkçe](README.tr.md) · [فارسی](README.fa.md) · [العربية](README.ar.md) · [עברית](README.he.md) · [Kurdî](README.ku.md) · [اردو](README.ur.md) · [پښتو](README.ps.md) · [ئۇيغۇرچە](README.ug.md) · [हिन्दी](README.hi.md) · [বাংলা](README.bn.md) · [简体中文](README.zh-CN.md) · [བོད་ཡིག](README.bo.md) · [Tiếng Việt](README.vi.md) · [ภาษาไทย](README.th.md) · [မြန်မာ](README.my.md) · **Bahasa Indonesia** · [Afrikaans](README.af.md) · [Kiswahili](README.sw.md) · [አማርኛ](README.am.md) · [ትግርኛ](README.ti.md) · [ქართული](README.ka.md)
 
-> **ALPHA — alpha akhir, kedap bocor pada OS yang sadar Tor-DNS. Baca [prasyarat](#sebelum-instalasi) sebelum memasang.**
+> **BETA — alpha akhir, kedap bocor pada OS yang sadar Tor-DNS. Baca [prasyarat](#sebelum-instalasi) sebelum memasang.**
 
 > Baca [model ancaman](docs/threat-model.md) dan [daftar follow-up](docs/follow-up.md) sebelum mempercayakan OnionBird untuk pemakaian yang kritikal bagi anonimitas.
 
