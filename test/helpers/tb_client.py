@@ -4,8 +4,9 @@ from __future__ import annotations
 
 import contextlib
 import time
+from collections.abc import Callable
 from pathlib import Path
-from typing import Any, Callable
+from typing import Any
 
 from marionette_driver.addons import Addons
 from marionette_driver.marionette import Marionette

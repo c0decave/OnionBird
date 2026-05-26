@@ -30,9 +30,25 @@ import sys
 from pathlib import Path
 
 
+def _resolve_repo() -> Path:
+    for cand in (Path("/repo"), Path(__file__).resolve().parent.parent.parent):
+        if (cand / "Makefile").exists() and (cand / "scripts").exists():
+            return cand
+    return Path("/repo")
+
+
+REPO = _resolve_repo()
+BUILD_XPI = (
+    Path("/scripts/build_xpi.py")
+    if Path("/scripts/build_xpi.py").exists()
+    else REPO / "scripts" / "build_xpi.py"
+)
+ADDON = Path("/addon") if Path("/addon").exists() else REPO / "addon"
+
+
 def _load_build_module():
     spec = importlib.util.spec_from_file_location(
-        "build_xpi", "/scripts/build_xpi.py"
+        "build_xpi", BUILD_XPI
     )
     mod = importlib.util.module_from_spec(spec)
     spec.loader.exec_module(mod)
@@ -53,8 +69,8 @@ def _build_with_epoch(epoch: str, dst: Path, variant: str = "mv2") -> str:
     subprocess.run(
         [
             sys.executable,
-            "/scripts/build_xpi.py",
-            "/addon",
+            str(BUILD_XPI),
+            str(ADDON),
             str(dst),
             f"--manifest={variant}",
         ],
@@ -73,7 +89,7 @@ def test_build_is_reproducible_with_source_date_epoch(tmp_path: Path) -> None:
     sha_a = _build_with_epoch("1700000000", a)
     # Touch some source files between builds so the on-disk mtime drifts —
     # the build must NOT pick up that drift.
-    for p in Path("/addon").rglob("*"):
+    for p in ADDON.rglob("*"):
         if p.is_file():
             try:
                 os.utime(p, (1234567890, 1234567890))
@@ -157,7 +173,7 @@ def test_F052_sign_target_uploads_validated_xpi_not_addon_dir() -> None:
     deterministic rules — producing a different SHA-256 from
     `$(XPI)`. Reviewers checking the published SHA against a clean
     rebuild would never get a match."""
-    mk = Path("/repo/Makefile") if Path("/repo/Makefile").exists() else None
+    mk = REPO / "Makefile" if (REPO / "Makefile").exists() else None
     if mk is None:
         # In the test container the repo root is not mounted; the
         # Makefile is available via the mounted /addon's grandparent.
@@ -224,7 +240,7 @@ def test_build_without_source_date_epoch_is_reproducible(tmp_path: Path) -> None
     env = {k: v for k, v in os.environ.items() if k != "SOURCE_DATE_EPOCH"}
     for dst in (a, b):
         subprocess.run(
-            [sys.executable, "/scripts/build_xpi.py", "/addon", str(dst)],
+            [sys.executable, str(BUILD_XPI), str(ADDON), str(dst)],
             check=True,
             env=env,
             capture_output=True,
@@ -258,16 +274,6 @@ def test_build_without_source_date_epoch_is_reproducible(tmp_path: Path) -> None
 #   resilient JSON parse.
 
 
-def _resolve_repo() -> Path:
-    for cand in (Path("/repo"), Path(__file__).resolve().parent.parent.parent):
-        if (cand / "Makefile").exists() and (cand / "scripts").exists():
-            return cand
-    return Path("/repo")
-
-
-REPO = _resolve_repo()
-
-
 def test_T075_reproducibility_actually_normalises_mtime_drift(tmp_path: Path) -> None:
     """SAD path proper: copy /addon to a writable tmp dir, mutate
     several files' mtimes BETWEEN two builds, assert the SHAs still
@@ -277,8 +283,8 @@ def test_T075_reproducibility_actually_normalises_mtime_drift(tmp_path: Path) ->
     import shutil
     src1 = tmp_path / "addon_v1"
     src2 = tmp_path / "addon_v2"
-    shutil.copytree("/addon", src1)
-    shutil.copytree("/addon", src2)
+    shutil.copytree(ADDON, src1)
+    shutil.copytree(ADDON, src2)
     # Mutate mtimes on a handful of files in src2 to simulate the
     # "different CI host with different filesystem mtime" case.
     for p in list(src2.rglob("*"))[:50]:
@@ -289,11 +295,11 @@ def test_T075_reproducibility_actually_normalises_mtime_drift(tmp_path: Path) ->
     out1 = tmp_path / "a.xpi"
     out2 = tmp_path / "b.xpi"
     subprocess.run(
-        [sys.executable, "/scripts/build_xpi.py", str(src1), str(out1)],
+        [sys.executable, str(BUILD_XPI), str(src1), str(out1)],
         check=True, env=env, capture_output=True,
     )
     subprocess.run(
-        [sys.executable, "/scripts/build_xpi.py", str(src2), str(out2)],
+        [sys.executable, str(BUILD_XPI), str(src2), str(out2)],
         check=True, env=env, capture_output=True,
     )
     assert _sha256(out1) == _sha256(out2), (

@@ -8,7 +8,7 @@
 
 OnionBird — це додаток для Thunderbird, який маршрутизує IMAP/SMTP через локальний Tor-проксі та видаляє чи нормалізує заголовки повідомлень, історично використовувані для деанонімізації відправників. Ціль: Thunderbird 140 ESR. Задуманий як сучасний наступник непідтримуваного TorBirdy (останній випуск v0.2.6 у 2018, припинено через видалення Legacy XUL у TB 78).
 
-Поточна версія: **0.1.1**.
+Поточна версія: **0.1.4**.
 
 ---
 
@@ -88,12 +88,18 @@ make build-mv3
 # Підняти test pod (Tor+DNSPort + aiosmtpd + DNS-forwarder + Xvfb+TB + runner)
 make COMPOSE_ENGINE=docker test-up
 
-# Запустити інтеграційну suite (148 тести у 0.1.1)
+# Запустити інтеграційну suite (148 тести у 0.1.4)
 make COMPOSE_ENGINE=docker test-integration
 
 # Згорнути
 make COMPOSE_ENGINE=docker test-down
 ```
+
+### Підписання для ATN
+
+Див. [docs/atn-signing.md](docs/atn-signing.md) — потребує облікових даних Mozilla developer.
+
+---
 
 ## Архітектура
 

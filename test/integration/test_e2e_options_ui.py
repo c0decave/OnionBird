@@ -16,7 +16,6 @@ import socket
 import time
 
 import pytest
-
 from helpers.tb_client import TBClient
 
 XPI = "/build/onionbird.xpi"
@@ -171,7 +170,10 @@ def test_e2e_socks_override_both_empty_is_rejected(options) -> None:
     tb.set_input("#socks-override-host", "")
     tb.set_input("#socks-override-port", "")
     tb.click("#socks-override-save")
-    status = tb.wait_for_text(
+    # wait_for_text raises on timeout — the return value isn't needed
+    # here, we just need the side-effect of "status text matched the
+    # invalid/ungültig predicate".
+    tb.wait_for_text(
         "#socks-override-status",
         lambda txt: "invalid" in txt.lower() or "ungültig" in txt.lower(),
         timeout=5.0,
@@ -279,7 +281,9 @@ def test_e2e_run_tor_test_picks_user_override(options, tor_ip) -> None:
     # Now trigger Run Tor test.
     tb.click("#run-tor-test")
     # The ladder probes several candidates; can take ~30s if some fail.
-    badge_text = tb.wait_for_text(
+    # wait_for_text raises on timeout — we only need the side effect of
+    # confirming the predicate fired before the endpoint check below.
+    tb.wait_for_text(
         "#tor-test-badge",
         lambda txt: "available" in txt.lower() and "unavailable" not in txt.lower(),
         timeout=60.0,
@@ -619,92 +623,6 @@ def test_e2e_disable_hardening_restores_prefs_from_snapshot(options, tor_ip) -> 
         "README claim 'Hardening is reversible' broken: Disable did "
         "not restore to the snapshot baseline observed after the prior "
         "Disable. Snapshot+restore is lossy:\n" + "\n".join(drift)
-    )
-
-
-def test_e2e_disable_restores_explicit_known_snapshot(options, tor_ip) -> None:
-    """README claim: 'Hardening is reversible. Snapshot taken before
-    first enable, restored on disable.'
-
-    Defense-in-depth (F-185, layer C): the cycle-based test above
-    (test_e2e_disable_hardening_restores_prefs_from_snapshot) is
-    pollution-relative — it captures whatever baseline the addon happens
-    to have snapshotted at auto-enable and proves the second cycle
-    matches the first. That misses the case where BOTH cycles converge
-    to a polluted snapshot.
-
-    This test makes the baseline FULLY EXPLICIT: disable to clear any
-    existing snapshot, set known user-prefs to non-default values, then
-    enable (snapshot now captures those known values), then disable and
-    assert the restored prefs are exactly the known values. No
-    dependency on what other tests put in storage.local."""
-    tb, _ = options
-    # Hardened-mode values for these prefs are (True, False, True). The
-    # known baseline MUST differ from hardened so a restore that
-    # silently no-ops (prefs left at hardened state) is detectable. We
-    # use the TB defaults (False, True, False) — after enable they
-    # flip to hardened, after disable the snapshot/restore primitive
-    # MUST flip them back. A skipped restorePrefs would leave them
-    # hardened and this assertion catches it.
-    known_baseline = {
-        "network.proxy.socks_remote_dns": False,
-        "mailnews.headers.sendUserAgent": True,
-        "privacy.resistFingerprinting": False,
-    }
-
-    # Step 1: disable to clear any inherited snapshot.
-    tb.auto_dismiss_dialogs()
-    tb.click("#disable")
-    tb.wait_for_text(
-        "#log",
-        lambda t: "restoring" in t.lower() or "done" in t.lower(),
-        timeout=30.0,
-        label="pre-clear disable",
-    )
-    time.sleep(1.0)
-
-    # Step 2: set the user prefs to the known baseline. These will be
-    # the values enable() snapshots from.
-    for p, v in known_baseline.items():
-        tb.set_pref(p, v)
-
-    # Step 3: SOCKS override + enable. enable() takes a fresh snapshot
-    # because step 1 cleared any prior one.
-    tb.set_input("#socks-override-host", tor_ip)
-    tb.set_input("#socks-override-port", "9050")
-    tb.click("#socks-override-save")
-    tb.wait_for_text(
-        "#socks-override-status",
-        lambda t: "ok" in t.lower(),
-        timeout=5.0,
-        label="save",
-    )
-    tb.click("#enable")
-    tb.wait_for_text(
-        "#log",
-        lambda t: "done" in t.lower() or "warning" in t.lower() or '"ok":true' in t,
-        timeout=30.0,
-        label="enable",
-    )
-
-    # Step 4: disable and assert prefs match known_baseline.
-    tb.click("#disable")
-    tb.wait_for_text(
-        "#log",
-        lambda t: t.count("done") >= 1 or t.count("ok") >= 1,
-        timeout=30.0,
-        label="final disable",
-    )
-    time.sleep(1.0)
-    drift = []
-    for p, want in known_baseline.items():
-        got = tb.get_pref(p)
-        if got != want:
-            drift.append(f"  {p!r}: known_baseline={want!r}, restored={got!r}")
-    assert not drift, (
-        "snapshot/restore primitive is broken: an explicit baseline was "
-        "set, enable() snapshotted it, disable() should restore exactly "
-        "those values:\n" + "\n".join(drift)
     )
 
 

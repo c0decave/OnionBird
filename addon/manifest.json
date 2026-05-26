@@ -2,16 +2,19 @@
   "manifest_version": 2,
   "name": "__MSG_extensionName__",
   "short_name": "onionbird",
-  "version": "0.1.1",
+  "version": "0.1.4",
   "description": "__MSG_extensionDescription__",
   "applications": {
     "gecko": {
       "id": "onionbird@undisclose.de",
-      "strict_min_version": "128.0"
+      "strict_min_version": "128.0",
+      "strict_max_version": "*"
     }
   },
   "background": {
-    "scripts": ["background.js"]
+    "scripts": [
+      "background.js"
+    ]
   },
   "permissions": [
     "accountsRead",
@@ -23,9 +26,15 @@
     "onionbird": {
       "schema": "experiments/onionbird/schema.json",
       "parent": {
-        "scopes": ["addon_parent"],
+        "scopes": [
+          "addon_parent"
+        ],
         "script": "experiments/onionbird/implementation.js",
-        "paths": [["onionbird"]]
+        "paths": [
+          [
+            "onionbird"
+          ]
+        ]
       }
     }
   },
@@ -34,8 +43,8 @@
     "open_in_tab": true
   },
   "icons": {
-    "48":  "icons/onionbird.svg",
-    "96":  "icons/onionbird.svg",
+    "48": "icons/onionbird.svg",
+    "96": "icons/onionbird.svg",
     "128": "icons/onionbird.svg"
   },
   "default_locale": "en"

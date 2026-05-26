@@ -20,7 +20,6 @@ propagated to all 30 locales via the existing pipeline.
 from __future__ import annotations
 
 import json
-import re
 
 
 def _read(path: str) -> str:

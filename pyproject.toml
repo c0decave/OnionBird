@@ -1,0 +1,5 @@
+# Ruff config moved to .ruff.toml so the deps_justified hard gate
+# (which scans pyproject.toml for newly-added dependency-like lines
+# and parses per-file-ignores keys as package names) stops flagging
+# the per-file-ignores entries as missing Dependency-Justification
+# trailers. See .ruff.toml for the live config.

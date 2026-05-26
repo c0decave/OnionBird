@@ -8,7 +8,7 @@
 
 OnionBird 是一个 Thunderbird 扩展,通过本地 Tor 代理路由 IMAP/SMTP,并剥离或归一化历史上被用来对发件人去匿名的邮件头。目标:Thunderbird 140 ESR。定位为不再维护的 TorBirdy 扩展(末版 v0.2.6,2018 年;在 TB 78 移除 Legacy XUL 后失效)的现代继任者。
 
-当前版本:**0.1.1**。
+当前版本:**0.1.4**。
 
 ---
 

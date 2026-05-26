@@ -8,7 +8,7 @@
 
 OnionBird, IMAP/SMTP'yi yerel bir Tor proxy üzerinden yönlendiren ve gönderenleri deanonymize etmek için tarihsel olarak kullanılmış mesaj başlıklarını kaldıran/normalize eden bir Thunderbird eklentisidir. Hedef: Thunderbird 140 ESR. Bakımı bırakılmış TorBirdy eklentisinin modern halefi olarak tasarlandı (son sürüm v0.2.6, 2018'de; TB 78'deki Legacy XUL kaldırılmasıyla öldü).
 
-Mevcut sürüm: **0.1.1**.
+Mevcut sürüm: **0.1.4**.
 
 ---
 

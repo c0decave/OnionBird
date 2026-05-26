@@ -8,7 +8,7 @@
 
 OnionBird là một tiện ích Thunderbird định tuyến IMAP/SMTP qua proxy Tor cục bộ và loại bỏ hoặc chuẩn hoá các header email từng được dùng để vạch danh tính người gửi. Mục tiêu: Thunderbird 140 ESR. Được thiết kế như người kế tục hiện đại cho tiện ích TorBirdy không còn được duy trì (bản cuối v0.2.6 năm 2018; bị diệt do TB 78 loại Legacy XUL).
 
-Phiên bản hiện tại: **0.1.1**.
+Phiên bản hiện tại: **0.1.4**.
 
 ---
 

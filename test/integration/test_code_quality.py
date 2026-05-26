@@ -22,9 +22,10 @@ auto-XPASSes and prompts the marker removal.
 
 from __future__ import annotations
 
-import pytest
 import re
 from pathlib import Path
+
+import pytest
 
 
 def _resolve_repo() -> Path:

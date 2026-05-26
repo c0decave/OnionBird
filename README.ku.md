@@ -8,7 +8,7 @@
 
 OnionBird pêvekek e ji bo Thunderbird ku IMAP/SMTP bi rêya proxyeke herêmî ya Tor dişîne û sernavên peyaman ên ku berê ji bo lêveçûna ji ya nepenîtiya şander hatibûn bikaranîn ji nav dibe an nasnav dike. Armanc: Thunderbird 140 ESR. Wek şûnşînê nûjen ê pêveka TorBirdy ya bê lênihêr (berdana dawî v0.2.6 di 2018an, bi rakirina Legacy XUL di TB 78an de mir).
 
-Versiyona heyî: **0.1.1**.
+Versiyona heyî: **0.1.4**.
 
 ---
 

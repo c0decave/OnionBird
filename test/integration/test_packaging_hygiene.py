@@ -208,18 +208,14 @@ def test_B083_api_version_literal_matches_manifest_version() -> None:
     `const API_VERSION = "X.Y.Z"` literal that `browser.onionbird.
     getApiVersion()` returns at runtime. The literal is hand-
     maintained and drifts from `manifest.json::version` on every
-    version bump — caught by the v0.1.0 → v0.1.1 bump in the
-    handoff-2026-05-25-evening release commit, which shipped XPIs
-    whose runtime `getApiVersion()` lied about the version.
+    version bump.
 
     Two-layer check:
       1. SOURCE: `implementation.js`'s API_VERSION literal must
          equal `manifest.json::version` AND `manifest.mv3.json::
-         version` right now. Without this the suite green-lights a
-         drift and only `make build` catches it.
+         version` right now.
       2. BUILD: `build-xpi.sh` must contain the assertion that
-         re-verifies equivalence at build time (defense-in-depth
-         in case someone bypasses the suite)."""
+         re-verifies equivalence at build time."""
     import json
     import re
     import pytest
@@ -245,9 +241,7 @@ def test_B083_api_version_literal_matches_manifest_version() -> None:
         f"implementation.js != manifest.json::version "
         f"{mv2_version!r}. Runtime `browser.onionbird."
         f"getApiVersion()` will lie about the version — bump them "
-        f"together. (v0.1.0 → v0.1.1 release commit a2d35db missed "
-        f"this exact drift; build-xpi.sh now refuses to build, but "
-        f"this test catches it earlier, before any build attempt.)"
+        f"together."
     )
     assert api_version == mv3_version, (
         f"B-083: API_VERSION literal {api_version!r} != "

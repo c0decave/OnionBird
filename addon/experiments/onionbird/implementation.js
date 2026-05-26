@@ -27,7 +27,7 @@ try {
   MailServices = null;
 }
 
-const API_VERSION = "0.1.1";
+const API_VERSION = "0.1.4";
 const MAX_PREF_NAME_LENGTH = 256;
 const MAX_PREF_STRING_LENGTH = 65536;
 const MAX_PREF_BATCH_SIZE = 256;
@@ -237,18 +237,54 @@ function isValidPrefValue(value, allowNull = false) {
     );
 }
 
-function writePref(name, value) {
-  if (!isAllowedPref(name)) {
-    throw new Error(`pref not in allowlist: ${name}`);
+function normalizeAddonOwnedPrefValue(name, value) {
+  if (!isValidPrefValue(value)) {
+    throw new Error(`invalid pref value for ${safePrefName(name)}`);
+  }
+  if (name === "onionbird.socks.host") {
+    const host = typeof value === "string" ? value.trim() : "";
+    if (!host || !(isLoopbackSocksHost(host) || isIpLiteralSocksHost(host))) {
+      throw new Error(
+        "invalid SOCKS override host (must be loopback or IP literal)"
+      );
+    }
+    return host;
+  }
+  if (name === "onionbird.socks.port") {
+    if (typeof value !== "number" || !Number.isInteger(value)) {
+      throw new Error("invalid SOCKS override port");
+    }
+    return normalizeSocksPortValue(value);
+  }
+  return value;
+}
+
+function normalizePrefValueForWrite(name, value) {
+  if (isAddonOwnedPref(name)) {
+    return normalizeAddonOwnedPrefValue(name, value);
   }
   if (!isValidPrefValue(value)) {
     throw new Error(`invalid pref value for ${safePrefName(name)}`);
   }
+  return value;
+}
+
+function writePref(name, value) {
+  if (!isAllowedPref(name)) {
+    throw new Error(`pref not in allowlist: ${name}`);
+  }
+  const normalizedValue = normalizePrefValueForWrite(name, value);
   const branch = Services.prefs;
-  if (typeof value === "boolean") branch.setBoolPref(name, value);
-  else if (typeof value === "number" && Number.isInteger(value))
-    branch.setIntPref(name, value);
-  else branch.setCharPref(name, String(value));
+  if (typeof normalizedValue === "boolean") {
+    branch.setBoolPref(name, normalizedValue);
+  } else if (
+    typeof normalizedValue === "number" &&
+    Number.isInteger(normalizedValue)
+  ) {
+    branch.setIntPref(name, normalizedValue);
+  } else {
+    branch.setCharPref(name, String(normalizedValue));
+  }
 }
 
 function isValidDnsHost(host) {

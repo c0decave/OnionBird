@@ -16,31 +16,6 @@ def pytest_configure(config):
         "for tests that genuinely do not touch Thunderbird (T-079)",
     )
 
-
-# F-185 Defense-in-depth (B): even with reset_global_prefs uninstalling
-# the addon between tests, deterministic ordering insulates snapshot-
-# sensitive tests from accidental future regressions. The two tests
-# below verify the addon's snapshot/restore PRIMITIVE — they are the
-# canaries that catch storage.local pollution if A regresses. Pinning
-# them to the front of the integration run keeps them in the cleanest
-# possible TB session state (no prior installs accumulated forensics).
-_SNAPSHOT_SENSITIVE_TESTS = frozenset({
-    "test_e2e_disable_hardening_restores_prefs_from_snapshot",
-    "test_e2e_disable_restores_explicit_known_snapshot",
-})
-
-
-def pytest_collection_modifyitems(items):
-    snapshot_first = []
-    rest = []
-    for item in items:
-        if item.originalname in _SNAPSHOT_SENSITIVE_TESTS or \
-                item.name in _SNAPSHOT_SENSITIVE_TESTS:
-            snapshot_first.append(item)
-        else:
-            rest.append(item)
-    items[:] = snapshot_first + rest
-
 SMTP_TRAP_HTTP = "http://smtp-trap:8025"
 DNS_TRAP_HTTP = "http://dns-trap:8053"
 TOR_HOST = "tor"
@@ -55,24 +30,7 @@ THUNDERBIRD_MARIONETTE_PORT = 2828
 # test left around. The compose-window helper has a try/close path, but if a
 # test crashes mid-helper or returns early the window leaks into the next
 # test's TB session and confuses any test that looks at `getEnumerator("msgcompose")`.
-# F-185: also uninstall any installed onionbird addon so the next install
-# triggers a fresh `onInstalled` (storage.local persists across temporary
-# re-installs for the same addon ID — without this, the hardening snapshot
-# captured at the first auto-enable in the suite becomes the source-of-truth
-# for every later test's disable/restore cycle. Caused intermittent failures
-# of test_e2e_disable_hardening_restores_prefs_from_snapshot when an earlier
-# test's snapshot didn't match the current pre-test pref state.)
 RESET_GLOBAL_PREFS = r"""
-try {
-  const { AddonManager } = ChromeUtils.importESModule(
-    "resource://gre/modules/AddonManager.sys.mjs"
-  );
-  const addon = await AddonManager.getAddonByID("onionbird@undisclose.de");
-  if (addon) {
-    await addon.uninstall();
-  }
-} catch (e) {}
-
 const prefs = [
   "network.proxy.type",
   "network.proxy.socks",

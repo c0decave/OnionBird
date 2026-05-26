@@ -19,8 +19,6 @@ The fix moves the forensic-scrub calls outside the `if (ok)` gate
 """
 from __future__ import annotations
 
-import re
-
 
 def test_F169_addon_owned_prefs_cleared_independent_of_restore_ok() -> None:
     """clearAddonOwnedPrefs must NOT be gated by `if (ok)` — it's a

@@ -15,7 +15,7 @@ deanonymise senders. Supports Thunderbird **128+** (manifest
 unmaintained TorBirdy extension (last release v0.2.6 in 2018, killed
 by the removal of Legacy XUL in TB 78).
 
-Current add-on version: **0.1.1**.
+Current add-on version: **0.1.4**.
 
 ---
 
@@ -94,7 +94,7 @@ Concretely this means:
    This is a known cross-cutting side-effect of the global
    `resistFingerprinting` switch; the proper fix is per-feature
    replacement (UTC `Date` hook + per-compose locale-rewrite) and is
-   tracked in [docs/follow-up.md](docs/follow-up.md). *Workaround for now:*
+   tracked in `docs/follow-up.md` F-018. *Workaround for now:*
    accept the en-US UI, OR disable hardening when reading mail in
    the native UI locale is required (you lose the network-
    fingerprint defence in that window).
@@ -182,7 +182,7 @@ changed and the fix is no longer needed).
 | **Per-install random fallback** | shared `localhost.localdomain` | persistent `m<10hex>.invalid` per installation — different installs have different Message-ID FQDNs |
 | **Default-identity branch** | per-identity only | also writes `mail.identity.default.*` so a new identity created after enable can't inherit the host's real FQDN |
 | **Application-layer send-block on leak** | none — relied entirely on `failover_direct=false` at the proxy layer | `compose.onBeforeSend` listener cancels outgoing sends with a visible compose-window notification when the canary's last verdict is anything other than `clean`; works for slow-developing DNS poisoning that doesn't trip the transport-layer safety net |
-| **UI locales shipped** | EN + a handful of community translations, no recent update | 30 locale bundles for the bulk of the UI — Western Latin/Slavic/Turkic (EN, DE, FR, PT, ES, PL, UK, RU, BE, TR) · RTL Arabic-script (FA, AR, HE, KU, UR, PS, UG) · South Asian (HI, BN) · East Asian (ZH-CN, BO) · SE Asian (VI, TH, MY, ID) · African (AF, SW, AM, TI) · Caucasian (KA). PS/UG/BO/MY/BN/SW/AM/TI/KA target repression/censorship hotspots; AI-translated pending native-speaker PR review. Newly-added feature strings (e.g. SOCKS-override UI) ship hand-translated in EN + DE and English-fallback in the other 28 until the next translation pass — `browser.i18n.getMessage` returns the English text on the non-translated locales so the UI stays functional |
+| **UI locales shipped** | EN + a handful of community translations, no recent update | 30 locale bundles for the bulk of the UI — Western Latin/Slavic/Turkic (EN, DE, FR, PT, ES, PL, UK, RU, BE, TR) · RTL Arabic-script (FA, AR, HE, KU, UR, PS, UG) · South Asian (HI, BN) · East Asian (ZH-CN, BO) · SE Asian (VI, TH, MY, ID) · African (AF, SW, AM, TI) · Caucasian (KA). PS/UG/BO/MY/BN/SW/AM/TI/KA target repression/censorship hotspots; AI-translated pending native-speaker PR review. Newly-added feature strings (e.g. F-168 SOCKS-override UI) ship hand-translated in EN + DE and English-fallback in the other 28 until the next translation pass — `browser.i18n.getMessage` returns the English text on the non-translated locales so the UI stays functional |
 
 ### Where they are equivalent
 
@@ -316,8 +316,8 @@ matches your environment:
   the required Experiments API boundary.
 - Auto-enables on first install. **Disable button** in the Options page
   restores the snapshot.
-- Only **onion + loopback** SMTP servers are hardened by default:
-  your existing clearnet accounts keep working.
+- Only **onion + loopback** SMTP servers are hardened by default
+  (B-003): your existing clearnet accounts keep working.
 - Companion `user.js` for pre-startup hardening + a script that
   enumerates your existing accounts in `prefs.js` and emits matching
   per-server lines.
@@ -355,6 +355,13 @@ If `T0R_RECV_USER` is set, the receiver must be a distinct mailbox:
 `T0R_RECV_EMAIL` has to be a valid recipient address different from the
 sender, and `T0R_RECV_PASS` must be non-empty.
 
+### Signing for ATN
+
+See [docs/atn-signing.md](docs/atn-signing.md) — requires Mozilla developer
+credentials.
+
+---
+
 ## Architecture
 
 OnionBird is a hybrid: a MailExtension background script provides the
@@ -366,7 +373,9 @@ raw SOCKS5 RESOLVE / RESOLVE_PTR, and `nsIDNSService.clearCache`
 manipulation. The two halves communicate through the addon's custom
 `browser.onionbird.*` namespace.
 
-See [docs/architecture.md](docs/architecture.md) for a diagram.
+See [docs/architecture.md](docs/architecture.md) for a diagram and
+[docs/audit-2026-05-21-bug-report.md](docs/audit-2026-05-21-bug-report.md)
+for the audit findings that shaped the current design.
 
 ---
 

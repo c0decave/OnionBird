@@ -8,7 +8,7 @@
 
 OnionBird adalah add-on Thunderbird yang merutekan IMAP/SMTP melalui proxy Tor lokal dan membuang atau menormalkan header pesan yang secara historis digunakan untuk membuka identitas pengirim. Target: Thunderbird 140 ESR. Dirancang sebagai penerus modern bagi ekstensi TorBirdy yang tidak lagi dipelihara (rilis terakhir v0.2.6 pada 2018; mati karena Legacy XUL dihapus di TB 78).
 
-Versi saat ini: **0.1.1**.
+Versi saat ini: **0.1.4**.
 
 ---
 

@@ -17,7 +17,7 @@ como sucesor moderno de la extensión TorBirdy (sin mantenimiento;
 última versión v0.2.6 en 2018, rota tras la eliminación de Legacy XUL
 en TB 78).
 
-Versión actual del complemento: **0.1.1**.
+Versión actual del complemento: **0.1.4**.
 
 ---
 
@@ -171,7 +171,7 @@ de anonimato.
    `dns-trap` del stack de tests registra *cada* consulta DNS que TB
    hace durante un envío real — 0 consultas observadas para el host
    SMTP/IMAP. La auditoría SMTP onion exige un mensaje capturado por
-   `smtp-trap` antes de que pueda pasar la aserción de no-DNS.
+   `smtp-trap` antes de que pueda pasar la aserción de no-DNS. Ver
 3. **Canario continuo.** Corre al inicio de TB y periódicamente mientras
    el hardening está activo, compara 3 circuitos Tor aislados por stream
    contra el conjunto completo del resolver del sistema y exige que
@@ -285,7 +285,7 @@ make build-mv3
 # Xvfb+TB + runner)
 make COMPOSE_ENGINE=docker test-up
 
-# Ejecuta la suite de integración (148 tests en la versión 0.1.1)
+# Ejecuta la suite de integración (148 tests en la versión 0.1.4)
 make COMPOSE_ENGINE=docker test-integration
 
 # Desmonta
@@ -303,6 +303,13 @@ de pytest. Si `T0R_RECV_USER` está definido, el receptor debe ser un
 buzón distinto: `T0R_RECV_EMAIL` debe ser una dirección válida
 diferente del remitente y `T0R_RECV_PASS` no puede estar vacío.
 
+### Firmado para ATN
+
+Ver [docs/atn-signing.md](docs/atn-signing.md) — requiere credenciales
+de desarrollador de Mozilla.
+
+---
+
 ## Arquitectura
 
 OnionBird es híbrido: un script background de MailExtension provee la
@@ -314,7 +321,9 @@ padre y expone manipulación de `Services.prefs`,
 / RESOLVE_PTR crudos y `nsIDNSService.clearCache`. Las dos mitades se
 comunican vía el namespace custom `browser.onionbird.*`.
 
-Ver [docs/architecture.md](docs/architecture.md) para un diagrama.
+Ver [docs/architecture.md](docs/architecture.md) para un diagrama y
+[docs/audit-2026-05-21-bug-report.md](docs/audit-2026-05-21-bug-report.md)
+para los hallazgos de auditoría que dieron forma al diseño actual.
 
 ---
 

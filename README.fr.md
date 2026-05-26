@@ -8,7 +8,7 @@
 
 OnionBird est une extension Thunderbird qui route IMAP/SMTP via un proxy Tor local et qui supprime ou normalise les en-têtes de message historiquement utilisés pour désanonymiser l’expéditeur. Cible : Thunderbird 140 ESR. Conçu comme le successeur moderne de l’extension TorBirdy non maintenue (dernière version v0.2.6 en 2018, tuée par le retrait de Legacy XUL dans TB 78).
 
-Version actuelle de l’extension : **0.1.1**.
+Version actuelle de l’extension : **0.1.4**.
 
 ---
 
@@ -56,14 +56,12 @@ Il n’existe pas un unique projet « mail Tor ». Plusieurs efforts couvrent le
 
 > ⚠️ **Empilez avec un OS Tor-durci** — OnionBird → Thunderbird; [Tails](https://tails.net/) / [Whonix](https://www.whonix.org/) → OS-level isolation.
 
-
 **Ce qu’elles ont en commun :** routage via Tor, reconnaissance que le simple routage ne suffit pas, et nécessité d’un OS qui ne fuit pas DNS / NTP / hostname hors bande.
 
 **Ce qui distingue OnionBird :**
 
 1. **Une extension Thunderbird normale, pas un OS séparé.** Tails et Whonix restent l’étalon-or, mais nécessitent un démarrage ou une VM séparés. OnionBird part du principe que vous avez déjà Tor en cours (ou que vous êtes sur Tails/Whonix) et durcit le comportement de TB dans cet environnement.
-2. **Vérification empirique de bout en bout.** Suite locale : 5 smoke tests et 148 tests d’intégration (1 skip prévu), plus 7+ scénarios avec un vrai Tor sur `undisclose.de` et un audit en-têtes octet-par-octet (H1–H15). Le `dns-trap` du stack de tests enregistre *chaque* requête DNS faite par TB pendant un envoi réel — 0 requête observée pour l’hôte SMTP/IMAP.
-3. **Canary continu.** Démarre au lancement de TB et tourne périodiquement ; compare 3 circuits Tor isolés en stream à l’ensemble complet du résolveur système, et exige que chaque IP publique divergente soit confirmée par PTR via Tor comme étant l’hôte cible ou un sous-domaine. Expose la suspicion de fuite à l’utilisateur au lieu de « faire confiance » à l’extension.
+2. **Vérification empirique de bout en bout.** Suite locale : 5 smoke tests et 148 tests d’intégration (1 skip prévu), plus 7+ scénarios avec un vrai Tor sur `undisclose.de` et un audit en-têtes octet-par-octet (H1–H15). Le `dns-trap` du stack de tests enregistre *chaque* requête DNS faite par TB pendant un envoi réel — 0 requête observée pour l’hôte SMTP/IMAP.3. **Canary continu.** Démarre au lancement de TB et tourne périodiquement ; compare 3 circuits Tor isolés en stream à l’ensemble complet du résolveur système, et exige que chaque IP publique divergente soit confirmée par PTR via Tor comme étant l’hôte cible ou un sous-domaine. Expose la suspicion de fuite à l’utilisateur au lieu de « faire confiance » à l’extension.
 4. **Pas de Message-ID supercluster.** Les anciens outils mail-Tor (TorBirdy surtout) utilisaient `Message-ID: <uuid@localhost.localdomain>` — une empreinte globale distinctive. OnionBird utilise par défaut le domaine de l’adresse From (correspond au `d=` DKIM, se fond avec les utilisateurs normaux du fournisseur) ; configurable via la page Options en `localhost`, `localhost.localdomain` ou personnalisé.
 5. **Configurable, pas dogmatique.** TorBirdy était à prendre ou à laisser. OnionBird vous laisse activer/désactiver le durcissement, choisir votre port SOCKS (Tor système 9050, Tor Browser bundle 9150, Whonix workstation `10.152.152.10:9050`) et choisir la stratégie de FQDN Message-ID.
 
@@ -115,12 +113,18 @@ make build-mv3
 # Démarrer le pod de test (Tor+DNSPort + aiosmtpd + DNS-forwarder + Xvfb+TB + runner)
 make COMPOSE_ENGINE=docker test-up
 
-# Lancer la suite d’intégration (148 tests en 0.1.1)
+# Lancer la suite d’intégration (148 tests en 0.1.4)
 make COMPOSE_ENGINE=docker test-integration
 
 # Démontage
 make COMPOSE_ENGINE=docker test-down
 ```
+
+### Signature pour l’ATN
+
+Voir [docs/atn-signing.md](docs/atn-signing.md) — nécessite des identifiants Mozilla developer.
+
+---
 
 ## Architecture
 

@@ -201,7 +201,6 @@ def test_T078_tb_observes_nxdomain_from_blackhole_dns() -> None:
     success result from some other resolver path. The previous
     coverage stopped at the container's edge; this verifies the
     addon's stated 100%-Tor guarantee at TB's own DNS surface."""
-    import pytest
     try:
         from helpers.tb_client import TBClient
     except ImportError:

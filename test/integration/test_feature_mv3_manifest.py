@@ -61,13 +61,30 @@ def test_mv3_keeps_same_gecko_id_and_experiments() -> None:
     )
 
 
-def test_manifests_do_not_strict_max_disable_future_tb() -> None:
+def test_manifests_strict_max_is_wildcard_not_auto_disable() -> None:
+    """F-011 (Mozilla ATN policy reversal 2026-05-26): ATN now REQUIRES
+    `strict_max_version` for Mail Experiments, but a CONCRETE version
+    (e.g. `140.*`) silently auto-disables the addon on the next TB
+    release — leaking the user's persisted hardening prefs into a
+    runtime where SOCKS+rdns enforcement is no longer applied. The
+    correct value is the wildcard `*`: it satisfies ATN's schema
+    requirement while preserving the F-011 'never silently disable'
+    invariant. A concrete pin re-introduces the leak class F-011 was
+    filed to close."""
     mv2 = _read_json(ADDON_DIR / "manifest.json")
     mv3 = _read_json(ADDON_DIR / "manifest.mv3.json")
     mv2_gecko = mv2["applications"]["gecko"]
     mv3_gecko = mv3["browser_specific_settings"]["gecko"]
-    assert "strict_max_version" not in mv2_gecko
-    assert "strict_max_version" not in mv3_gecko
+    assert mv2_gecko.get("strict_max_version") == "*", (
+        f"F-011: MV2 strict_max_version must be the wildcard `*` "
+        f"(Mozilla ATN requires the key, but any concrete value "
+        f"re-introduces the silent-auto-disable leak class). Got "
+        f"{mv2_gecko.get('strict_max_version')!r}."
+    )
+    assert mv3_gecko.get("strict_max_version") == "*", (
+        f"F-011: MV3 strict_max_version must be the wildcard `*`. "
+        f"Got {mv3_gecko.get('strict_max_version')!r}."
+    )
 
 
 def test_mv3_xpi_swaps_manifest_correctly(tmp_path) -> None:

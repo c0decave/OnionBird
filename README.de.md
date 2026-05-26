@@ -17,7 +17,7 @@ Schiene. Geplant als der moderne Nachfolger der nicht mehr gepflegten
 TorBirdy-Erweiterung (letzte Version v0.2.6 in 2018, von Mozilla durch
 Entfernung von Legacy-XUL in TB 78 abgewürgt).
 
-Aktuelle Add-on-Version: **0.1.1**.
+Aktuelle Add-on-Version: **0.1.4**.
 
 ---
 
@@ -374,6 +374,13 @@ eine eigene Mailbox sein: `T0R_RECV_EMAIL` muss eine valide
 Empfängeradresse sein, verschieden vom Sender, und `T0R_RECV_PASS`
 darf nicht leer sein.
 
+### Signieren für ATN
+
+Siehe [docs/atn-signing.md](docs/atn-signing.md) — erfordert
+Mozilla-Developer-Credentials.
+
+---
+
 ## Architektur
 
 OnionBird ist ein Hybrid: ein MailExtension-Background-Skript stellt
@@ -385,7 +392,9 @@ und `Services.prefs`, `MailServices.outgoingServer`,
 `nsIDNSService.clearCache`-Manipulation exponiert. Die beiden Hälften
 kommunizieren über den Custom-Namespace `browser.onionbird.*`.
 
-Siehe [docs/architecture.md](docs/architecture.md) für ein Diagramm.
+Siehe [docs/architecture.md](docs/architecture.md) für ein Diagramm
+und [docs/audit-2026-05-21-bug-report.md](docs/audit-2026-05-21-bug-report.md)
+für die Audit-Findings, die das aktuelle Design geformt haben.
 
 ---
 
