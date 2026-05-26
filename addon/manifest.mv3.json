@@ -8,7 +8,7 @@
     "gecko": {
       "id": "onionbird@undisclose.de",
       "strict_min_version": "128.0",
-      "strict_max_version": "999.*"
+      "strict_max_version": "153.*"
     }
   },
   "background": {

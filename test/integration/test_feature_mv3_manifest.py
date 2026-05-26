@@ -61,30 +61,30 @@ def test_mv3_keeps_same_gecko_id_and_experiments() -> None:
     )
 
 
-def test_manifests_strict_max_is_wildcard_not_auto_disable() -> None:
-    """F-011 (Mozilla ATN policy reversal 2026-05-26 + regex 2026-05-26):
-    ATN requires `strict_max_version` for Mail Experiments. We initially
-    tried bare `*` (no upper bound) but Mozilla's schema validator
-    rejects it: pattern `^[0-9]{1,3}(\\.[a-z0-9*]+)+$` demands a 1-3
-    digit major. Largest permissible value: `999.*`. At ~1 ESR per ~6
-    months, the addon won't auto-disable for ~860 years — effective
-    infinity. The F-011 invariant 'never silently disable so user
-    thinks hardening is active while runtime enforcement is gone' is
-    preserved within all realistic timeframes. A concrete current-ESR
-    pin (e.g. `140.*`) re-introduces the original F-011 leak class."""
+def test_manifests_strict_max_pinned_to_next_planned_esr() -> None:
+    """F-011 (Mozilla ATN policy 2026-05-26 — third revision after
+    research): ATN requires `strict_max_version` for Mail Experiments
+    AND only accepts values matching real planned TB releases.
+      - Bare `*` → rejected by schema regex `^[0-9]{1,3}(\\.[a-z0-9*]+)+$`
+      - `999.*` → rejected by ATN's version-resolver (no such release)
+      - `<current>.*` → accepted but auto-disables on next major (F-011)
+    Compromise: pin to the NEXT planned TB-ESR (`153.*`, scheduled
+    21 July 2026). Widest concrete value ATN currently accepts. The
+    F-011 silent-disable leak is no longer manifest-preventable; it
+    becomes a RELEASE-PROCESS obligation (bump strict_max + re-sign,
+    or use Mozilla's Compatibility Bumper) on each new TB major.
+    """
     mv2 = _read_json(ADDON_DIR / "manifest.json")
     mv3 = _read_json(ADDON_DIR / "manifest.mv3.json")
     mv2_gecko = mv2["applications"]["gecko"]
     mv3_gecko = mv3["browser_specific_settings"]["gecko"]
-    assert mv2_gecko.get("strict_max_version") == "999.*", (
-        f"F-011: MV2 strict_max_version must be `999.*` (Mozilla's "
-        f"highest-permitted major.* under the schema regex). Any "
-        f"concrete current/near-future value re-introduces the "
-        f"silent-auto-disable leak class. Got "
+    assert mv2_gecko.get("strict_max_version") == "153.*", (
+        f"F-011: MV2 strict_max_version must be `153.*` (next planned "
+        f"TB-ESR, widest ATN-accepted upper bound). Got "
         f"{mv2_gecko.get('strict_max_version')!r}."
     )
-    assert mv3_gecko.get("strict_max_version") == "999.*", (
-        f"F-011: MV3 strict_max_version must be `999.*`. Got "
+    assert mv3_gecko.get("strict_max_version") == "153.*", (
+        f"F-011: MV3 strict_max_version must be `153.*`. Got "
         f"{mv3_gecko.get('strict_max_version')!r}."
     )
 
